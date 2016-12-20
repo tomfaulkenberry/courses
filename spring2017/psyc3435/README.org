@@ -2,4 +2,6 @@
 
 - [[psyc3435-spring2017.org][Course syllabus]]
 - Lecture notes
+  - Week 1
+  - Week 2
 - Exam reviews
