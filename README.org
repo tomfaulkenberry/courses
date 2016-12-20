@@ -1,6 +1,9 @@
 #+TITLE: Course Materials
 
-This repository hosts course materials (syllabi, lecture notes, etc.) for my courses at Tarleton State University.
+This repository hosts course materials (syllabi, lecture notes, etc.) 
+for my courses at Tarleton State University.
 
 ** Spring 2016
+
+- [[spring2017/psyc3435/README.org][PSYC 3435]]
 
