@@ -100,22 +100,22 @@ It is the policy of Tarleton State University to comply with the Americans with 
  
 ** Schedule of lectures
 
-| Week | Dates        | Lecture topic                                                          |
-|------+--------------+------------------------------------------------------------------------|
-|    1 | Jan 11-15    | Knowing in psychological science (Ch 1)                                |
-|    2 | Jan 18-22    | Reading the literature / APA style (Ch 2,8)                            |
-|    3 | Jan 25-29    | Basic research methods (Ch 3)                                          |
-|    4 | Feb 1-5      | Ethics in psychological science (Ch 5)                                 |
-|    5 | Feb 8-12     | *Exam 1*                                                               |
-|    6 | Feb 15-19    | Experiments: selecting and manipulating variables (Ch 4)               |
-|    7 | Feb 22-26    | Experiments: sampling methods (Ch 6)                                   |
-|    8 | Feb 29-Mar 4 | Experiments: basic designs (Ch 11)                                     |
-|    - | Mar 7-11     | *Spring break!*                                                        |
-|    9 | Mar 14-18    | Experiments: factorial designs (Ch 11)                                 |
-|   10 | Mar 21-25    | *Exam 2*                                                               |
-|   11 | Mar 28-Apr 1 | Non-experiments: survey methods (Ch 9)                                 |
-|   12 | Apr 4-8      | Non-experiments: correlations and regression (Ch 10)                   |
-|   13 | Apr 11-15    | Non-experiments: quasi-experiments and developmental designs (Ch 12,13 |
-|   14 | Apr 18-22    | *Exam 3*                                                               |
-|   15 | Apr 25-29    | Course review                                                          |
-|   16 | May 2-6      | *Final exam*                                                           |
+| Week | Dates        | Lecture topic                                                           |
+|------+--------------+-------------------------------------------------------------------------|
+|    1 | Jan 11-15    | Knowing in psychological science (Ch 1)                                 |
+|    2 | Jan 18-22    | Reading the literature / APA style (Ch 2,8)                             |
+|    3 | Jan 25-29    | Basic research methods (Ch 3)                                           |
+|    4 | Feb 1-5      | Ethics in psychological science (Ch 5)                                  |
+|    5 | Feb 8-12     | *Exam 1*                                                                |
+|    6 | Feb 15-19    | Experiments: selecting and manipulating variables (Ch 4)                |
+|    7 | Feb 22-26    | Experiments: sampling methods (Ch 6)                                    |
+|    8 | Feb 29-Mar 4 | Experiments: basic designs (Ch 11)                                      |
+|    - | Mar 7-11     | *Spring break!*                                                         |
+|    9 | Mar 14-18    | Experiments: factorial designs (Ch 11)                                  |
+|   10 | Mar 21-25    | *Exam 2*                                                                |
+|   11 | Mar 28-Apr 1 | Non-experiments: survey methods (Ch 9)                                  |
+|   12 | Apr 4-8      | Non-experiments: correlations and regression (Ch 10)                    |
+|   13 | Apr 11-15    | Non-experiments: quasi-experiments and developmental designs (Ch 12,13) |
+|   14 | Apr 18-22    | *Exam 3*                                                                |
+|   15 | Apr 25-29    | Course review                                                           |
+|   16 | May 2-6      | *Final exam*                                                            |

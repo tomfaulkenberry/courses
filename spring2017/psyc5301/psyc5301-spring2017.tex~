@@ -1,0 +1,171 @@
+% Created 2016-12-27 Tue 18:28
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[left=1in,right=1in,bottom=1in,top=1in]{geometry}
+\author{Thomas J. Faulkenberry, Ph.D.}
+\date{Spring 2017}
+\title{PSYC 5301: Research Methods}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.1.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+
+\section*{Contact info}
+\label{sec-1}
+\begin{itemize}
+\item Professor: Thomas J. Faulkenberry, Ph.D
+\item Office: Math 319
+\item Office hours: MWF 9-11, TR 1-3
+\item Email: faulkenberry@tarleton.edu
+\item Twitter: \href{http://twitter.com/tomfaulkenberry}{tomfaulkenberry}
+\item Phone: 254-968-9816
+\end{itemize}
+
+\section*{NEED TO UPDATE Course description}
+\label{sec-2}
+
+This course is designed to provide the student with a solid grounding in
+the techniques of experimentation and subsequent statistical modeling that
+form the empirical basis of modern psychological science.  We will 
+accomplish this through lectures, textbook reading, and several hands-on
+"laboratory" experiences, each designed to give the student a taste of the
+research process, including data collection, analysis, and reporting.
+All students enrolled in this course are required to have 
+\textbf{previously taken} PSYC 5300 (Behavioral Statistics). 
+
+\section*{NEED TO UPDATE Course materials}
+\label{sec-3}
+
+\begin{itemize}
+\item \emph{The Process of Research in Psychology} (3rd ed.) by McBride (2015) \href{https://www.amazon.com/Process-Research-Psychology-Dawn-McBride/dp/1483347605/}{Amazon link}
+\item \emph{APA Publication Manual} (6th ed.) \href{http://www.amazon.com/Publication-Manual-American-Psychological-Association/dp/1433805618/}{Amazon link}
+\item JASP statistical software (free download from \href{http://jasp-stats.org}{jasp-stats.org}
+\end{itemize}
+
+\section*{NEED TO UPDATE Student learning outcomes}
+\label{sec-4}
+
+\begin{enumerate}
+\item Describe advantages of the scientific method compared to other approaches
+\item Identify various research designs and uses of each
+\item Conduct library research
+\item Paraphrase and cite material from primary sources
+\item Develop a research question and write hypotheses appropriate for it
+\item Design and conduct a research project to test hypotheses
+\item Analyze data collected from research using computer software
+\item Communicate the findings of research as a complete APA style manuscript
+\end{enumerate}
+
+\section*{NEED TO UPDATE Requirements and grading}
+\label{sec-5}
+
+There will be four exams throughout the semester.  They will cover material from the text and the lectures.  Exam questions will be a mix of multiple choice and short answer and will be worth 100 points each.
+
+Dates:
+
+\begin{itemize}
+\item Exam 1 (Wednesday, Feb 10)
+\item Exam 2 (Wednesday, March 23)
+\item Exam 3 (Wednesday, April 20)
+\item Final exam (Monday, May 2, 3:00-5:30 pm)
+\end{itemize}
+
+\subsection*{Unit quizzes (14\% of grade)}
+\label{sec-5-1}
+
+Every Friday (excluding exam weeks), there will be a short in-class quiz over the material covered in lectures on Monday and Wednesday. Typically, the quizzes will consist of multiple choice questions, although the format may change occasionally depending on material.  Your final quiz average will be scaled to a total of 100 points for the semester (i.e., if you average 8.6/10 points over all quizzes, your final quiz grade will be 86/100).
+
+\subsection*{Lab assignments (14\% of grade)}
+\label{sec-5-2}
+
+There will be four lab assignments this semester.  Each assignment is designed to give you first hand experience with essential research skills, such as conducting an experiment, collecting data, and writing up an APA manuscript.  Except for Lab 1 (an APA exercise), each of you will administer a short experiment, collect some data, analyze the collected data for the class, and compose an APA manuscript based on the experiment and the results. 
+
+Lab Assignments and dates
+
+\begin{itemize}
+\item Lab 1 – APA formatting (10 points), due Friday, Feb 12
+\item Lab 2.1 – Correlational design, data collection (10 points), due Friday, Feb 19
+\item Lab 2.2 – Correlational design, analysis and report (20 points), due Friday, Mar 4
+\item Lab 3.1 – Independent groups design, data collection (10 points), due Friday, Mar 25
+\item Lab 3.2 – Independent groups design, analysis and report (20 pts.), due Friday, Apr 8
+\item Lab 4.1 – Factorial design, data collection (10 points), due Friday, Apr 15
+\item Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, Apr 29
+\end{itemize}
+
+\subsection*{Research participation (8\% of grade)}
+\label{sec-5-3}
+
+Research is the lifeblood of psychology!  In order to promote your growth as a psychological scientist, you will be required to participate in 2 "units" of research over the course of the semester.  Roughly defined, a "unit" of research consists of either (1) participation in one hour of psychological experiments, usually offered right here in the Psychology department at Tarleton, or (2) a 3-5 page critical reflection of an empirical research article related to human learning and/or cognition, usually chosen by me.  Instructions for participation will be given in class.
+
+\section*{Course Communication}
+\label{sec-6}
+
+I am your primary resource for this course. I AM an experimental psychologist, so I do the stuff I teach about daily. Hence, my primary interest is for you to learn this material and do well in the course. You may contact me using any means necessary (email and Twitter are the best). That being said, many people prefer to use Blackboard messages. I don’t mind these, but keep in mind that I may not receive your message until I actually open Blackboard. With email/Twitter, if you send me a message at 9:00 pm, I may actually respond pretty quickly. 
+
+\section*{University Policy on "F" Grades}
+\label{sec-7}
+
+Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
+
+\section*{Academic Honesty}
+\label{sec-8}
+
+Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
+
+In particular, any exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  The minimum sanction for violation of this policy is a grade of 0 on the affected exam.
+
+\section*{Students with Disabilities Policy}
+\label{sec-9}
+
+It is the policy of Tarleton State University to comply with the Americans with Disabilities Act and other applicable laws. If you are a student with a disability seeking accommodations for this course, please contact the Center for Access and Academic Testing, at 254.968.9400 or caat@tarleton.edu. The office is located in Math 201. More information can be found at www.tarleton.edu/caat or in the University Catalog.
+
+
+
+\textbf{\textbf{Note:  any changes to this syllabus will be communicated to you by the instructor!}}
+
+\section*{Schedule of lectures}
+\label{sec-10}
+
+\begin{center}
+\begin{tabular}{rll}
+Week & Dates & Lecture topic\\
+\hline
+1 & Jan 11-15 & Knowing in psychological science (Ch 1)\\
+2 & Jan 18-22 & Reading the literature / APA style (Ch 2,8)\\
+3 & Jan 25-29 & Basic research methods (Ch 3)\\
+4 & Feb 1-5 & Ethics in psychological science (Ch 5)\\
+5 & Feb 8-12 & \textbf{Exam 1}\\
+6 & Feb 15-19 & Experiments: selecting and manipulating variables (Ch 4)\\
+7 & Feb 22-26 & Experiments: sampling methods (Ch 6)\\
+8 & Feb 29-Mar 4 & Experiments: basic designs (Ch 11)\\
+- & Mar 7-11 & \textbf{Spring break!}\\
+9 & Mar 14-18 & Experiments: factorial designs (Ch 11)\\
+10 & Mar 21-25 & \textbf{Exam 2}\\
+11 & Mar 28-Apr 1 & Non-experiments: survey methods (Ch 9)\\
+12 & Apr 4-8 & Non-experiments: correlations and regression (Ch 10)\\
+13 & Apr 11-15 & Non-experiments: quasi-experiments and developmental designs (Ch 12,13)\\
+14 & Apr 18-22 & \textbf{Exam 3}\\
+15 & Apr 25-29 & Course review\\
+16 & May 2-6 & \textbf{Final exam}\\
+\end{tabular}
+\end{center}
+% Emacs 25.1.1 (Org mode 8.2.10)
+\end{document}

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>PSYC 5301: Research Methods</title>
+<!-- 2016-12-27 Tue 19:06 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Thomas J. Faulkenberry, Ph.D." />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">PSYC 5301: Research Methods</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Contact info</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Professor: Thomas J. Faulkenberry, Ph.D
+</li>
+<li>Office: Math 319
+</li>
+<li>Office hours: MWF 9-11, TR 1-3
+</li>
+<li>Email: faulkenberry@tarleton.edu
+</li>
+<li>Twitter: <a href="http://twitter.com/tomfaulkenberry">tomfaulkenberry</a>
+</li>
+<li>Phone: 254-968-9816
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Course description</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+This course is designed to provide the student with a solid grounding in
+the techniques of experimentation and subsequent statistical modeling that
+form the empirical basis of modern psychological science.  We will 
+accomplish this through lectures, textbook reading, and several hands-on
+"laboratory" experiences, each designed to give the student a taste of the
+research process, including data collection, analysis, and reporting.
+All students enrolled in this course are required to have 
+<b>previously taken</b> PSYC 5300 (Behavioral Statistics). 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Course materials</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><i>The Design and Conduct of Meaningful Experiments Involving Human Participants: 25 Scientific Principles</i> by R. B. Bausell <a href="https://www.amazon.com/Conduct-Meaningful-Experiments-Involving-Participants/dp/0199385238">Amazon link</a>
+</li>
+<li><i>APA Publication Manual</i> (6th ed.) <a href="http://www.amazon.com/Publication-Manual-American-Psychological-Association/dp/1433805618/">Amazon link</a>
+</li>
+<li>JASP statistical software (free download from <a href="http://jasp-stats.org">jasp-stats.org</a>)
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">NEED TO UPDATE Student learning outcomes</h2>
+<div class="outline-text-2" id="text-4">
+<ol class="org-ol">
+<li>Develop a research question and write hypotheses appropriate for it
+</li>
+<li>Design and conduct a research project to test hypotheses
+</li>
+<li>Analyze data collected from research using computer software
+</li>
+<li>Communicate the findings of research as a complete APA style manuscript
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">NEED TO UPDATE Requirements and grading</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>online quizzes
+</li>
+<li id="labs">5 labs at 20 points each
+</li>
+<li>IRB protocol
+</li>
+<li>class participation 
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Course Communication</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+I am your primary resource for this course. I AM an experimental psychologist, so I do the stuff I teach about daily. Hence, my primary interest is for you to learn this material and do well in the course. You may contact me using any means necessary (email and Twitter are the best). That being said, many people prefer to use Blackboard messages. I don’t mind these, but keep in mind that I may not receive your message until I actually open Blackboard. With email/Twitter, if you send me a message at 9:00 pm, I may actually respond pretty quickly. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">University Policy on "F" Grades</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">Academic Honesty</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
+</p>
+
+<p>
+In particular, any exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  The minimum sanction for violation of this policy is a grade of 0 on the affected exam.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">Students with Disabilities Policy</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+It is the policy of Tarleton State University to comply with the Americans with Disabilities Act and other applicable laws. If you are a student with a disability seeking accommodations for this course, please contact the Center for Access and Academic Testing, at 254.968.9400 or caat@tarleton.edu. The office is located in Math 201. More information can be found at www.tarleton.edu/caat or in the University Catalog.
+</p>
+
+
+
+<p>
+<b><b>Note:  any changes to this syllabus will be communicated to you by the instructor!</b></b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10">Schedule of lectures</h2>
+<div class="outline-text-2" id="text-10">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">Week</th>
+<th scope="col" class="left">Date</th>
+<th scope="col" class="left">Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">1</td>
+<td class="left">1/17</td>
+<td class="left">Lab: why randomization matters / Intro to JASP</td>
+</tr>
+
+<tr>
+<td class="right">3</td>
+<td class="left">1/31</td>
+<td class="left">Lab: independent groups experiment - theory and design</td>
+</tr>
+
+<tr>
+<td class="right">5</td>
+<td class="left">2/14</td>
+<td class="left">Lab: independent groups experiment - data analysis</td>
+</tr>
+
+<tr>
+<td class="right">7</td>
+<td class="left">2/28</td>
+<td class="left">Lab: repeated measures experiment - theory and design</td>
+</tr>
+
+<tr>
+<td class="right">9</td>
+<td class="left">3/21</td>
+<td class="left">Lab: repeated measures experiment - data analysis</td>
+</tr>
+
+<tr>
+<td class="right">11</td>
+<td class="left">4/4</td>
+<td class="left">Lab: factorial experiment (between-subjects)</td>
+</tr>
+
+<tr>
+<td class="right">13</td>
+<td class="left">4/18</td>
+<td class="left">Lab: factorial experiment - data analysis</td>
+</tr>
+
+<tr>
+<td class="right">15</td>
+<td class="left">5/2</td>
+<td class="left">Lab: factorial experiment with repeated measures</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Spring 2017</p>
+<p class="author">Author: Thomas J. Faulkenberry, Ph.D.</p>
+<p class="date">Created: 2016-12-27 Tue 19:06</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
