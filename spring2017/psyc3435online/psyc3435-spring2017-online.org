@@ -1,4 +1,4 @@
-#+TITLE: PSYC 3435: Principles of Research for the Behavorial Sciences
+#+TITLE: PSYC 3435: Principles of Research for the Behavorial Sciences (online)
 #+AUTHOR: 
 #+DATE: Spring 2017
 #+OPTIONS: toc:nil
@@ -45,18 +45,17 @@ textbook. All students enrolled in this course are required to have
 
 ** Requirements and grading
 
-There will be four exams throughout the semester.  They will cover material from the text and the lectures.  Exam questions will be a mix of multiple choice and short answer and will be worth 100 points each.
+There will be three exams throughout the semester.  Exams are due by 11:59 pm on the due date.  Each exam will have a time limit and may only be attempted once.  Note that the final exam (Exam 3) is comprehensive.
 
-Dates:
+Exam dates:
 
-- Exam 1 (Friday, Feb 17)
-- Exam 2 (Friday, March 31)
-- Exam 3 (Friday, April 28)
-- Final exam (Monday, May 8, 3:00-5:30 pm)
+- Exam 1, due Sunday, March 5
+- Exam 2, due Sunday, April 16
+- Exam 3, due Sunday, May 7
 
 *** Unit quizzes (14% of grade)
 
-Every Friday (excluding exam weeks), there will be a short in-class quiz over the material covered in lectures on Monday and Wednesday. Typically, the quizzes will consist of multiple choice questions, although the format may change occasionally depending on material.  Your final quiz average will be scaled to a total of 100 points for the semester (i.e., if you average 8.6/10 points over all quizzes, your final quiz grade will be 86/100).
+At the completion of each unit, there will be a short quiz covering the main content.  Each quiz is worth 10 points (for a total of 100 possible quiz points for the semester).  Each quiz will be timed and may only be attempted once, and is due by 11:59 pm on the due date.
 
 *** Lab assignments (14% of grade)
 
@@ -64,17 +63,13 @@ There will be four lab assignments this semester.  Each assignment is designed t
 
 Lab Assignments and dates
 
-- Lab 1 – APA formatting (10 points), due Friday, Feb 10
-- Lab 2.1 – Correlational design, data collection (10 points), due Friday, Feb 17
-- Lab 2.2 – Correlational design, analysis and report (20 points), due Friday, Mar 3
-- Lab 3.1 – Independent groups design, data collection (10 points), due Friday, Mar 10
-- Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, Apr 7
-- Lab 4.1 – Factorial design, data collection (10 points), due Friday, Apr 14
-- Lab 4.2 – Factorial design, analysis and report (20 points), due Wednesday, May 5
-
-*** Research participation (8% of grade)
-
-    Research is the lifeblood of psychology!  In order to promote your growth as a psychological scientist, you will be required to participate in 2 "units" of research over the course of the semester.  Roughly defined, a "unit" of research consists of either (1) participation in one hour of psychological experiments, usually offered right here in the Psychology department at Tarleton, or (2) a 3-5 page critical reflection of an empirical research article related to human learning and/or cognition, usually chosen by me.  Instructions for participation will be given in class.
+- Lab 1 – APA formatting (10 points), due Friday, Feb 3
+- Lab 2.1 – Correlational design, data collection (10 points), due Friday, Feb 10
+- Lab 2.2 – Correlational design, analysis and report (20 points), due Friday, Feb 24
+- Lab 3.1 – Independent groups design, data collection (10 points), due Friday, Mar 3
+- Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, Mar 24
+- Lab 4.1 – Factorial design, data collection (10 points), due Friday, Apr 7
+- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, Apr 21
 
 ** Course Communication
 
@@ -110,24 +105,21 @@ located in Math 201. More information can be found at www.tarleton.edu/sds or in
 
 **Note:  any changes to this syllabus will be communicated to you by the instructor!**
  
-** Schedule of lectures
+** Semester schedule
 
-| Week | Dates        | Lecture topic                                                           |
+| Unit | Dates        | Topic                                                                   |
 |------+--------------+-------------------------------------------------------------------------|
-|    1 | Jan 16-20    | Knowing in psychological science (Ch 1)                                 |
-|    2 | Jan 23-27    | Reading the literature / APA style (Ch 2,8)                             |
-|    3 | Jan 30-Feb 3 | Basic research methods (Ch 3)                                           |
-|    4 | Feb 6-10     | Ethics in psychological science (Ch 5)                                  |
-|    5 | Feb 13-17    | *Exam 1*                                                                |
-|    6 | Feb 20-24    | Experiments: selecting and manipulating variables (Ch 4)                |
-|    7 | Feb 27-Mar 3 | Experiments: sampling methods (Ch 6)                                    |
-|    8 | Mar 6-10     | Experiments: basic designs (Ch 11)                                      |
-|    - | Mar 13-17    | *Spring break!*                                                         |
-|    9 | Mar 20-24    | Experiments: factorial designs (Ch 11)                                  |
-|   10 | Mar 27-31    | *Exam 2*                                                                |
-|   11 | Apr 3-7      | Non-experiments: survey methods (Ch 9)                                  |
-|   12 | Apr 10-14    | Non-experiments: correlations and regression (Ch 10)                    |
-|   13 | Apr 17-21    | Non-experiments: quasi-experiments and developmental designs (Ch 12,13) |
-|   14 | Apr 24-28    | *Exam 3*                                                                |
-|   15 | May 1-5      | Course review                                                           |
-|   16 | May 8-12     | *Final exam: Monday, May 8, 3:00-5:30 pm*                               |
+|    0 | Jan 17-29    | Statistics review                                                       |
+|    1 | Jan 30-Feb 5 | Knowing in psychological science                                        |
+|    2 | Feb 6-12     | Reading the literature / APA style                                      |
+|    3 | Feb 13-19    | Basic research methods                                                  |
+|    4 | Feb 20-26    | Ethics in psychological science                                         |
+|    - | Feb 27-Mar 5 | *Exam 1 (due Mar 5)*                                                    |
+|    5 | Mar 6-12     | Experiments: selecting and manipulating variables                       |
+|    - | Mar 13-19    | *Spring Break*                                                          |
+|    6 | Mar 20-26    | Experiments: sampling methods                                           |
+|    7 | Mar 27-Apr 9 | Experiments: classic designs                                            |
+|    - | Apr 10-16    | *Exam 2 (due Apr 16)*                                                   |
+|    8 | Apr 17-23    | Non-experiments: survey and correlational designs)                      |
+|    9 | Apr 24-30    | Non-experiments: quasi-experiments and developmental designs (Ch 12,13) |
+|    - | May 1-7      | *Exam 3 (due May 7)*                                                    |

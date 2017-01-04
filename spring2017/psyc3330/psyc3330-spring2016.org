@@ -1,4 +1,5 @@
 #+TITLE: PSYC 3330: Elementary Statistics for the Behavioral Sciences
+#+AUTHOR: 
 #+DATE: Spring 2017
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
@@ -9,9 +10,9 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: MTWRF 1:30-3:00 pm; TR 10:00-11:30 am
+- Office hours: MTWRF 1-3 pm
 - Email: faulkenberry@tarleton.edu
-- Twitter: [[http://twitter.com/tomfaulkenberry][@tomfaulkenberry]]
+- Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
 
 ** Course description
@@ -74,14 +75,8 @@ around 5 problems and be worth a maximum of 5 points.  Since there are 10
 units, you will be able to earn a maximum of 50 points for the semester.
 
 ** Course Communication
-I am your primary resource for this course. I AM an experimental 
-psychologist, so I do the stuff I teach about daily. Hence, my primary 
-interest is for you to learn this material and do well in the course. You 
-may contact me using any means necessary (email is the best).  That being 
-said, many people prefer to use Blackboard messages. I don’t mind these, 
-but keep in mind that I may not receive your message until I actually 
-open Blackboard and check those messages.  I check emails much more 
-frequently and tend to respond more quickly to those.
+
+I am your primary resource for this course. I AM an experimental psychologist, so I do the stuff I teach about daily. Hence, my primary interest is for you to learn this material and do well in the course. If you have a question, always feel free to stop by my office and visit.  If you require electronic communication, email is best, but you may also send me a Blackboard message.  Just keep in mind that I don't get any notifications of Blackboard messages, so I may not see your message until I next log into the course.
 
 ** University Policy on "F" Grades
 Beginning in Fall 2015, Tarleton will begin differentiating between a 
@@ -93,34 +88,30 @@ attending class can result in the student having to return aid monies
 received.  For more information see the Tarleton Financial Aid website.
 
 ** Academic Honesty
-Cheating, plagiarism (submitting another person’s materials or ideas as 
-one’s own), or doing work for another person who will receive academic 
-credit are all disallowed. This includes the use of unauthorized books, 
-notebooks, or other sources in order to secure of give help during an 
-examination, the unauthorized copying of examinations, assignments, 
-reports, or term papers, or the presentation of unacknowledged material 
-as if it were the student’s own work. Disciplinary action may be taken 
-beyond the academic discipline administered by the faculty member who 
-teaches the course in which the cheating took place.
 
-In particular, any exam taken online must be completed without the aid of 
-any unauthorized resource (including using any search engine, Google,
-etc.).  Authorized resources are limited only to the official textbook 
-and any lecture notes from the course.  Any other authorized resources 
-will be provided to you before the exam.  The minimum sanction for 
-violation of this policy is a grade of 0 on the affected exam.
+Tarleton State University expects its students to maintain high standards of
+personal and scholarly conduct. Students guilty of academic dishonesty are
+subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
+
+In particular, any exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  The minimum sanction for violation of this policy is a grade of 0 on the affected exam.
+
+Each student’s honesty and integrity are taken for granted. However, if I find
+evidence of academic misconduct I will pursue the matter
+to the fullest extent permitted by the university. ACADEMIC MISCONDUCT OR
+DISHONESTY WILL RESULT IN A GRADE OF F FOR THE COURSE.  Students are
+strongly advised to avoid even the /appearance/ of academic misconduct. 
 
 ** Students with Disabilities Policy
-It is the policy of Tarleton State University to comply with the Americans
-with Disabilities Act (ADA) and other federal, state, and local laws 
-relative to the provision of disability services. Students with 
-disabilities attending Tarleton State University may contact the Office 
-of Disability Services at (254) 968-9478 to request appropriate 
-accommodation. Furthermore, formal accommodation requests cannot be made 
-until the student has been officially admitted to Tarleton State 
-University.
 
-*Note:  any changes to this syllabus will be communicated to you by the instructor!*
+It is the policy of Tarleton State University to comply with the Americans
+with Disabilities Act and other applicable laws. If you are a student with a
+disability seeking accommodations for this course, please contact Trina
+Geye, Director of Student Disability Services, at 254.968.9400 or
+geye@tarleton.edu. Student Disability Services is
+located in Math 201. More information can be found at www.tarleton.edu/sds or in the University Catalog.
+
+
+**Note:  any changes to this syllabus will be communicated to you by the instructor!**
  
 ** Semester Schedule
 | Unit | Dates        | Topic                                                        |
