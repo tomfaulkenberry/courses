@@ -1,5 +1,5 @@
 #+TITLE: PSYC 5301 -- Research Methods
 
-- Course syllabus
+- [[psyc5301-spring2017.org][Course syllabus]]
 - Lecture notes
 - Exam reviews
