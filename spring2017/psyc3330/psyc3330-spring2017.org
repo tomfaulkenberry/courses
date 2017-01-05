@@ -43,14 +43,14 @@ that we can apply to data, including t-tests and analysis of variance.
 - Exam 1 (100 pts)
 - Exam 2 (100 pts)
 - Exam 3 (100 pts)
-- Final exam (150 pts)
+- Final exam (100 pts)
 - Unit quizzes (100 pts)
-- Homework exercises (50 pts)
+- Homework exercises (100 pts)
 - /Total = 600 points/
 
 Grades will be assigned based on the percentage of points you accumulate out of these 600 points.  I will use the standard grading scale of A=90%, B=80%, etc.
 
-*** Exams (75% of grade)
+*** Exams (67% of grade)
 There will be four total exams throughout the semester, occurring 
 approximately once every three to four weeks.  They will cover material 
 from lectures, quizzes, and homework exercises.  Exam questions will be a mix of multiple choice and short answer.  Exams are due by 11:59 pm on 
@@ -69,7 +69,7 @@ At the end of each unit, you will complete a quiz over the content of that
 unit. Each quiz counts for 10 possible points.  Since there are 10 units, 
 you will earn up to 100 points for your quiz grade.
 
-*** Homework exercises (8% of grade)
+*** Homework exercises (17% of grade)
 In order to practice the statistical concepts you learn this semester, you will complete short homework assignments for every unit.  A set of homework exercises (no more than 10 exercises per unit) will be provided to you on Blackboard.  You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit).  Completed exercises should be handwritten and scanned to submit on Blackboard.  Note that if you do not have access to a good scanner, you may instead just take photos of the completed pages with your phone and upload these photos.  Please just make sure that your submitted photo files are not too large (e.g., use the "small" or "medium" size setting on your phone).
 
 ** Course Communication
