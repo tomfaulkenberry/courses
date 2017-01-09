@@ -45,6 +45,16 @@ textbook. All students enrolled in this course are required to have
 
 ** Requirements and grading
 
+- Exam 1 (100 pts)
+- Exam 2 (100 pts)
+- Exam 3 (100 pts)
+- Unit quizzes (100 pts)
+- Lab assignments (100 pts)
+- /Total = 500 points/
+
+Grades will be assigned based on the percentage of points you accumulate out of these 600 points.  I will use the standard grading scale of A=90%, B=80%, etc.
+
+*** Exams (60% of grade)
 There will be three exams throughout the semester.  Exams are due by 11:59 pm on the due date.  Each exam will have a time limit and may only be attempted once.  Note that the final exam (Exam 3) is comprehensive.
 
 Exam dates:
@@ -53,11 +63,11 @@ Exam dates:
 - Exam 2, due Sunday, April 16
 - Exam 3, due Sunday, May 7
 
-*** Unit quizzes (14% of grade)
+*** Unit quizzes (20% of grade)
 
 At the completion of each unit, there will be a short quiz covering the main content.  Each quiz is worth 10 points (for a total of 100 possible quiz points for the semester).  Each quiz will be timed and may only be attempted once, and is due by 11:59 pm on the due date.
 
-*** Lab assignments (14% of grade)
+*** Lab assignments (20% of grade)
 
 There will be four lab assignments this semester.  Each assignment is designed to give you first hand experience with essential research skills, such as conducting an experiment, collecting data, and writing up an APA manuscript.  Except for Lab 1 (an APA exercise), each of you will administer a short experiment, collect some data, analyze the collected data for the class, and compose an APA manuscript based on the experiment and the results. 
 
