@@ -141,17 +141,17 @@ It is the policy of Tarleton State University to comply with the Americans with 
 /Note: this schedule will be updated as the semester goes!/
 - Week 1: Jan 17 (face-to-face)
   - intro to course
-  - review of statistics
+  - review of statistical foundations
   - intro to JASP
 - Week 2: Jan 24 (online)
-  - read ???
+  - read Chapters 1 and 2
   - online discussion board 
 - Week 3: Jan 31 (face-to-face)
   - introduce Lab 1 assignment
   - writing effective intro and method sections 
 - Week 4: Feb 7 (online)
   - collect Lab 1 data
-  - read ???
+  - read Chapters 3 and 4
   - online discussion board
 - Week 5: Feb 14 (face-to-face)
   - Turn in Lab 1 data
@@ -159,30 +159,32 @@ It is the policy of Tarleton State University to comply with the Americans with 
   - writing effective results and discussion sections
 - Week 6: Feb 21 (online)
   - work on Lab 1 manuscript
-  - read ???
+  - read Chapter 5
   - online discussion board
 - Week 7: Feb 28 (face-to-face)
   - turn in Lab 1 manuscript
   - introduce Lab 2 assignment
 - Week 8: Mar 7 (online)
   - collect Lab 2 data
-  - read ???
+  - read Chapter 6
   - online discussion board
 - Week 9: Mar 21 (online)
   - continue collecting Lab 2 data
-  - read ???
+  - read Chapter 7
   - online discussion board
 - Week 10: Mar 28 (face-to-face)
   - turn in Lab 2 data
   - data analysis techniques
 - Week 11: Apr 4 (online)
   - work on Lab 2 manuscrip
-  - read ???
+  - read Chapter 8
   - online discussion board
 - Week 12: Apr 11 (face-to-face)
   - Turn in Lab 2 manuscript
   - how to complete IRB protocols
 - Week 13: Apr 18 (online)
+  - read Chapters 9 and 10
+  - online discussion board
   - work on IRB protocol
 - Week 14: Apr 25 (face-to-face)
   - turn in IRB protocol
