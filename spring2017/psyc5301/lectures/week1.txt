@@ -1,0 +1,24 @@
+		   __________________________________
+
+		    WEEK 1 LECTURE NOTES - PSYC 5301
+
+				  tom
+		   __________________________________
+
+
+
+
+
+Agenda:
+=======
+
+  - go over syllabus
+  - administer stats refresher
+  - lecture
+
+
+Lecture notes
+=============
+
+Philosophy: null hypothesis testing via Neyman-Pearson versus Fisher
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

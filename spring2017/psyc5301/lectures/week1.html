@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Week 1 lecture notes - PSYC 5301</title>
+<!-- 2017-01-13 Fri 10:54 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Week 1 lecture notes - PSYC 5301</h1>
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Philosophical underpinnings</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The goal of research is to find the <b>one truth</b>&#x2026;however, the <b>paths are many</b>.  Let's see how an ancient Hindu text can actually serve as a metaphor for how we do science.
+</p>
+
+<p>
+Three paths to enlightenment (Bhagavad Gita, 500 BCE):
+</p>
+<ol class="org-ol">
+<li>Karma yoga - the path of <i>action</i>
+</li>
+<li>Jnana yoga - path of <i>knowledge</i>
+</li>
+<li>Bhakti yoga - path of <i>devotion</i>
+</li>
+</ol>
+
+<p>
+These map nicely onto Royall's (1997) three questions one should ask regarding data:
+</p>
+<ol class="org-ol">
+<li>What should I do?
+</li>
+<li>What's the relative evidence?
+</li>
+<li>What should I believe?
+</li>
+</ol>
+
+<p>
+Paths for research:
+</p>
+<ol class="org-ol">
+<li><b>Path of action</b>: search for rules to govern our <i>behavior</i> such that, in the long run, we will not be wrong too often
+<ul class="org-ul">
+<li>\(p < \alpha\): reject \(H_0\)
+</li>
+<li>\(p > \alpha\): remain in doubt
+</li>
+<li>A rule to govern our <i>behavior</i> in the <i>long run</i>.  It tells us <i>nothing</i> about the <i>current test</i>.
+</li>
+</ul>
+</li>
+
+<li><b>Path of knowledge</b>:  compare the likelihood of different hypotheses, given the data.
+<ul class="org-ul">
+<li>suppose you flip a coin 10 times: you get 6 heads and 4 tails.  Is the coin biased (unfair)?
+</li>
+<li>Two hypotheses: 
+<ul class="org-ul">
+<li>\(H_1\): the coin is biased (the true proportion of heads/tails is 0.6
+</li>
+<li>\(H_2\): the coin is fair (true proportion of heads/tails is 0.5
+</li>
+<li>Question: given the data, how much more likely is \(H_1\) than \(H_2\)
+</li>
+<li><img src="figures/coinFlip.png" alt="coinFlip.png" />
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li><b>Path of belief</b>: do I really <i>believe</i> this coin will come up heads 60% of the time?
+<ul class="org-ul">
+<li>No&#x2026;I have <i>prior</i> beliefs. 
+</li>
+<li>One "experiment" with 6 heads does not <i>change</i> my prior beliefs
+</li>
+</ul>
+</li>
+</ol>
+
+
+<p>
+These paths form the basis of three dominant statistical paradigms in the psychological literature:
+</p>
+<ol class="org-ol">
+<li>Neyman-Pearson (the most common)
+</li>
+<li>Likelihood
+</li>
+<li>Bayesian
+</li>
+</ol>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Neyman-Pearson method</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Historically, our method of hypothesis testing (using \(p\)-values) is an amalgamation of two (quite different) ideas from a couple of early 20th century statisticians:
+</p>
+
+<ul class="org-ul">
+<li>Jerzy Neyman: \(p\)-value tells you what <i>action</i> to perform.  If \(p<\alpha\), then we reject null hypothesis
+</li>
+<li>Ronald Fisher: \(p\)-value measures evidence&#x2026;the smaller the \(p\)-value, the greater the evidence (this is actually incorrect)
+</li>
+<li>Note: when I teach undergraduate statistics, I teach <i>only</i> the Neyman method.  - define \(H_0\)
+<ul class="org-ul">
+<li>set \(\alpha\) (usually 0.05) and find the critical test statistic
+</li>
+<li>if test statistic exceeds critical, we we reject \(H_0\) (action)
+</li>
+</ul>
+</li>
+<li>However, most psychological literature (and many courses) implicitly tack on the incorrect Fisher ideas.  
+<ul class="org-ul">
+<li>Example: I got \(p=0.03\) for "Effect 1" and \(p=0.003\) for "Effect 2"..which has "more evidence"?
+</li>
+<li>Answer: neither, but Fisher thought Effect 2 would have more evidence
+</li>
+<li>this understanding is implicit everywhere in psychology, but it is wrong!
+</li>
+</ul>
+</li>
+</ul>
+<p>
+This is why we hyphenate the two and refer to the entire paradigm as "Neyman-Fisher"
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Jan 21, 2017</p>
+<p class="date">Created: 2017-01-13 Fri 10:54</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
