@@ -1,4 +1,4 @@
-% Created 2017-01-13 Fri 10:33
+% Created 2017-01-13 Fri 11:01
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -47,7 +47,7 @@ These map nicely onto Royall's (1997) three questions one should ask regarding d
 
 Paths for research:
 \begin{enumerate}
-\item \textbf{Path of action}: search for rules to govern our behavior such that, in the long run, we will not be wrong too often
+\item \textbf{Path of action}: search for rules to govern our \emph{behavior} such that, in the long run, we will not be wrong too often
 \begin{itemize}
 \item $p < \alpha$: reject $H_0$
 \item $p > \alpha$: remain in doubt
@@ -62,10 +62,45 @@ Paths for research:
 \item $H_1$: the coin is biased (the true proportion of heads/tails is 0.6
 \item $H_2$: the coin is fair (true proportion of heads/tails is 0.5
 \item Question: given the data, how much more likely is $H_1$ than $H_2$
+\item \includegraphics[width=.9\linewidth]{figures/coinFlip.png}
 \end{itemize}
+\end{itemize}
+
+\item \textbf{Path of belief}: do I really \emph{believe} this coin will come up heads 60\% of the time?
+\begin{itemize}
+\item No\ldots{}I have \emph{prior} beliefs.
+\item One "experiment" with 6 heads does not \emph{change} my prior beliefs
 \end{itemize}
 \end{enumerate}
 
-\includegraphics[width=.9\linewidth]{figures/coinFlip.png}
+
+These paths form the basis of three dominant statistical paradigms in the psychological literature:
+\begin{enumerate}
+\item Neyman-Pearson (the most common)
+\item Likelihood
+\item Bayesian
+\end{enumerate}
+
+\subsection*{Neyman-Pearson method}
+\label{sec-1-1}
+
+Historically, our method of hypothesis testing (using $p$-values) is an amalgamation of two (quite different) ideas from a couple of early 20th century statisticians:
+
+\begin{itemize}
+\item Jerzy Neyman: $p$-value tells you what \emph{action} to perform.  If $p<\alpha$, then we reject null hypothesis
+\item Ronald Fisher: $p$-value measures evidence\ldots{}the smaller the $p$-value, the greater the evidence (this is actually incorrect)
+\item Note: when I teach undergraduate statistics, I teach \emph{only} the Neyman method.  - define $H_0$
+\begin{itemize}
+\item set $\alpha$ (usually 0.05) and find the critical test statistic
+\item if test statistic exceeds critical, we we reject $H_0$ (action)
+\end{itemize}
+\item However, most psychological literature (and many courses) implicitly tack on the incorrect Fisher ideas.  
+\begin{itemize}
+\item Example: I got $p=0.03$ for "Effect 1" and $p=0.003$ for "Effect 2"..which has "more evidence"?
+\item Answer: neither, but Fisher thought Effect 2 would have more evidence
+\item this understanding is implicit everywhere in psychology, but it is wrong!
+\end{itemize}
+\end{itemize}
+This is why we hyphenate the two and refer to the entire paradigm as "Neyman-Fisher"
 % Emacs 25.1.1 (Org mode 8.2.10)
 \end{document}
