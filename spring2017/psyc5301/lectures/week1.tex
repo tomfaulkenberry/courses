@@ -1,4 +1,4 @@
-% Created 2017-01-13 Fri 11:01
+% Created 2017-01-16 Mon 18:17
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -27,8 +27,39 @@
 \maketitle
 
 
-\section*{Philosophical underpinnings}
+\section*{An example}
 \label{sec-1}
+Suppose you have a treatment that you suspect may alter performance on a certain task.  The two groups were significantly different, $t(18)=2.7$, $p=0.01$.  Decide whether each of the following statements is true or false:
+\begin{enumerate}
+\item You have disproved the null hypothesis
+\item You have found the probability of the null hypothesis being true
+\item You have proved your experimental hypothesis
+\item You can deduce the probability of the experimental hypothesis being true
+\item If you decide to reject the null hypothesis, you know the probability that you are making the wrong decision
+\item You have a reliable experimental finding in the sense that if, hypothetically, the experiment were repeated a large number of times, you would obtain a significant result on 99\% of the replications.
+\end{enumerate}
+
+\section*{Some definitions}
+\label{sec-2}
+\subsection*{What is a p-value?}
+\label{sec-2-1}
+\begin{itemize}
+\item $p$-values tell you how \emph{surprising} the \emph{data} is, assuming there is \emph{no effect}.
+\item Benjamini (2016): "In some sense it offers a first line of defense against being fooled by randomness, separating signal from noise"
+\item from sample statistics ($M$, $SD$, $n$), we calculate a \emph{test statistic} and compare against a distribution (e.g., $z$, $t$, $F$)
+\begin{itemize}
+\item $p<0.05$ --> data is surprising
+\item $p>0.05$ --> data is \emph{not} surprising
+\end{itemize}
+\item $p$-value is the probability of getting the observed (or more extreme) data, \emph{assuming the null hypothesis is true}
+\begin{itemize}
+\item Note: a $p$-value is the probability of the \emph{data}, not the probability of a \emph{theory}
+\item $p = P(D|H) \neq P(H|D)$
+\end{itemize}
+\end{itemize}
+
+\section*{Philosophical underpinnings}
+\label{sec-3}
 The goal of research is to find the \textbf{one truth}\ldots{}however, the \textbf{paths are many}.  Let's see how an ancient Hindu text can actually serve as a metaphor for how we do science.
 
 Three paths to enlightenment (Bhagavad Gita, 500 BCE):
@@ -49,8 +80,8 @@ Paths for research:
 \begin{enumerate}
 \item \textbf{Path of action}: search for rules to govern our \emph{behavior} such that, in the long run, we will not be wrong too often
 \begin{itemize}
-\item $p < \alpha$: reject $H_0$
-\item $p > \alpha$: remain in doubt
+\item $p < \alpha$: reject $H_0$.  \emph{Act} as if data is not noise
+\item $p > \alpha$: remain in doubt. \emph{Act} as if data is just noise
 \item A rule to govern our \emph{behavior} in the \emph{long run}.  It tells us \emph{nothing} about the \emph{current test}.
 \end{itemize}
 
@@ -82,12 +113,15 @@ These paths form the basis of three dominant statistical paradigms in the psycho
 \end{enumerate}
 
 \subsection*{Neyman-Pearson method}
-\label{sec-1-1}
+\label{sec-3-1}
 
 Historically, our method of hypothesis testing (using $p$-values) is an amalgamation of two (quite different) ideas from a couple of early 20th century statisticians:
 
 \begin{itemize}
 \item Jerzy Neyman: $p$-value tells you what \emph{action} to perform.  If $p<\alpha$, then we reject null hypothesis
+\begin{itemize}
+\item When we \emph{act} as if there is an effect when $p<0.05$, in the \emph{long run} we won't be wrong more than 5\% of the time
+\end{itemize}
 \item Ronald Fisher: $p$-value measures evidence\ldots{}the smaller the $p$-value, the greater the evidence (this is actually incorrect)
 \item Note: when I teach undergraduate statistics, I teach \emph{only} the Neyman method.  - define $H_0$
 \begin{itemize}
@@ -100,7 +134,28 @@ Historically, our method of hypothesis testing (using $p$-values) is an amalgama
 \item Answer: neither, but Fisher thought Effect 2 would have more evidence
 \item this understanding is implicit everywhere in psychology, but it is wrong!
 \end{itemize}
+\item Goal of Neyman-Pearson method: error control
+\begin{itemize}
+\item don't make a fool out of yourself in the long run
 \end{itemize}
-This is why we hyphenate the two and refer to the entire paradigm as "Neyman-Fisher"
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{lll}
+action / truth & H0 false (effect) & H0 true (no effect)\\
+\hline
+reject H0 & correct decision & \textbf{Type 1 error}\\
+"accept" H0 & \textbf{Type II error} & correct decision\\
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item more definitions:
+\begin{itemize}
+\item $\alpha$ = probability of finding significant result when H0 is true (Type I error rate)
+\item $\beta$ = probability of finding nonsignificant result when H0 is false (Type II error rate)
+\item $1-\beta$ = probability of finding signficant result when H0 is false (statistical power)
+\end{itemize}
+\end{itemize}
 % Emacs 25.1.1 (Org mode 8.2.10)
 \end{document}
