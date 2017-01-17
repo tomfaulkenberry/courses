@@ -1,0 +1,14 @@
+#+TITLE: Discussion Questions - PSYC 5301
+#+AUTHOR:
+#+DATE: Spring 2017 
+#+OPTIONS: toc:nil num:nil
+
+* Week 2 (January 24, 2017)
+1. In Chapter 1, Bausell lists 5 principles for conducting scientific research in psychology.  Which of these principles do YOU feel is most important?  Explain your reasoning.
+
+2. In Chapter 2, Bausell introduces the logical fallacy known as "post hoc, ergo propter hoc".  What does this mean?  Give an example in your field of interest of how such reasoning could occur and why it is invalid. 
+
+3. In your research career, you will likely be performing many studies.  Thus, it is important to get a feel for how often you should expect "significant" results.  This question is designed to help introduce you to such thinking.  Note that each problem has a definite mathematical solution, but I am not necessarily looking for this.  Instead, I am wanting to work on your statistical intuitions.
+  - Suppose you design a study that tests a null hypothesis H0 that is known to be TRUE (that is, there is no effect), and you replicate this study 100 times.  For how many of those replications would you expect a significant result (i.e., a p-value less than 0.05)?  Explain.
+  - Suppose instead that your null hypothesis H0 is known to be FALSE (that is, there is a real effect), and suppose further that your sample size gives you 50% power.  For how many of the 100 replications would you expect a significant result?  Explain.
+  - Suppose you design a study with 80% power that is designed to test a null hypothesis H0 with unknown truth (that is, H0 and H1 are equally likely to be true).  Which of the following experimental outcomes do you think is most likely to occur: finding a significant result, or finding a nonsignificant result?  Explain.
