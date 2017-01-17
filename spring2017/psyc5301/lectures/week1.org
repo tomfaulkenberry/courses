@@ -24,6 +24,17 @@ Suppose you have a treatment that you suspect may alter performance on a certain
   - Note: a $p$-value is the probability of the /data/, not the probability of a /theory/
   - $p = P(D|H) \neq P(H|D)$
 
+** Decisions
+| action / truth | H0 false (effect) | H0 true (no effect) |
+|----------------+-------------------+---------------------|
+| reject H0      | correct decision  | *Type 1 error*      |
+| "accept" H0    | *Type II error*   | correct decision    |
+        
+- more definitions:
+  - $\alpha$ = probability of finding significant result when H0 is true (Type I error rate)
+  - $\beta$ = probability of finding nonsignificant result when H0 is false (Type II error rate)
+  - $1-\beta$ = probability of finding signficant result when H0 is false (statistical power)
+
 * Philosophical underpinnings
 The goal of research is to find the *one truth*...however, the *paths are many*.  Let's see how an ancient Hindu text can actually serve as a metaphor for how we do science.
 
@@ -68,7 +79,8 @@ Historically, our method of hypothesis testing (using $p$-values) is an amalgama
 - Jerzy Neyman: $p$-value tells you what /action/ to perform.  If $p<\alpha$, then we reject null hypothesis
   - When we /act/ as if there is an effect when $p<0.05$, in the /long run/ we won't be wrong more than 5% of the time
 - Ronald Fisher: $p$-value measures evidence...the smaller the $p$-value, the greater the evidence (this is actually incorrect)
-- Note: when I teach undergraduate statistics, I teach /only/ the Neyman method.  - define $H_0$
+- Note: when I teach undergraduate statistics, I teach /only/ the Neyman method.  
+  - define $H_0$
   - set $\alpha$ (usually 0.05) and find the critical test statistic
   - if test statistic exceeds critical, we we reject $H_0$ (action)
 - However, most psychological literature (and many courses) implicitly tack on the incorrect Fisher ideas.  
@@ -78,12 +90,3 @@ Historically, our method of hypothesis testing (using $p$-values) is an amalgama
 - Goal of Neyman-Pearson method: error control
   - don't make a fool out of yourself in the long run
 
-| action / truth | H0 false (effect) | H0 true (no effect) |
-|----------------+-------------------+---------------------|
-| reject H0      | correct decision  | *Type 1 error*      |
-| "accept" H0    | *Type II error*   | correct decision    |
-        
-- more definitions:
-  - $\alpha$ = probability of finding significant result when H0 is true (Type I error rate)
-  - $\beta$ = probability of finding nonsignificant result when H0 is false (Type II error rate)
-  - $1-\beta$ = probability of finding signficant result when H0 is false (statistical power)

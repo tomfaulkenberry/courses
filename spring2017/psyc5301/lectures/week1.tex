@@ -1,4 +1,4 @@
-% Created 2017-01-16 Mon 18:17
+% Created 2017-01-17 Tue 09:40
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -55,6 +55,26 @@ Suppose you have a treatment that you suspect may alter performance on a certain
 \begin{itemize}
 \item Note: a $p$-value is the probability of the \emph{data}, not the probability of a \emph{theory}
 \item $p = P(D|H) \neq P(H|D)$
+\end{itemize}
+\end{itemize}
+
+\subsection*{Decisions}
+\label{sec-2-2}
+\begin{center}
+\begin{tabular}{lll}
+action / truth & H0 false (effect) & H0 true (no effect)\\
+\hline
+reject H0 & correct decision & \textbf{Type 1 error}\\
+"accept" H0 & \textbf{Type II error} & correct decision\\
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item more definitions:
+\begin{itemize}
+\item $\alpha$ = probability of finding significant result when H0 is true (Type I error rate)
+\item $\beta$ = probability of finding nonsignificant result when H0 is false (Type II error rate)
+\item $1-\beta$ = probability of finding signficant result when H0 is false (statistical power)
 \end{itemize}
 \end{itemize}
 
@@ -123,8 +143,9 @@ Historically, our method of hypothesis testing (using $p$-values) is an amalgama
 \item When we \emph{act} as if there is an effect when $p<0.05$, in the \emph{long run} we won't be wrong more than 5\% of the time
 \end{itemize}
 \item Ronald Fisher: $p$-value measures evidence\ldots{}the smaller the $p$-value, the greater the evidence (this is actually incorrect)
-\item Note: when I teach undergraduate statistics, I teach \emph{only} the Neyman method.  - define $H_0$
+\item Note: when I teach undergraduate statistics, I teach \emph{only} the Neyman method.  
 \begin{itemize}
+\item define $H_0$
 \item set $\alpha$ (usually 0.05) and find the critical test statistic
 \item if test statistic exceeds critical, we we reject $H_0$ (action)
 \end{itemize}
@@ -137,24 +158,6 @@ Historically, our method of hypothesis testing (using $p$-values) is an amalgama
 \item Goal of Neyman-Pearson method: error control
 \begin{itemize}
 \item don't make a fool out of yourself in the long run
-\end{itemize}
-\end{itemize}
-
-\begin{center}
-\begin{tabular}{lll}
-action / truth & H0 false (effect) & H0 true (no effect)\\
-\hline
-reject H0 & correct decision & \textbf{Type 1 error}\\
-"accept" H0 & \textbf{Type II error} & correct decision\\
-\end{tabular}
-\end{center}
-
-\begin{itemize}
-\item more definitions:
-\begin{itemize}
-\item $\alpha$ = probability of finding significant result when H0 is true (Type I error rate)
-\item $\beta$ = probability of finding nonsignificant result when H0 is false (Type II error rate)
-\item $1-\beta$ = probability of finding signficant result when H0 is false (statistical power)
 \end{itemize}
 \end{itemize}
 % Emacs 25.1.1 (Org mode 8.2.10)
