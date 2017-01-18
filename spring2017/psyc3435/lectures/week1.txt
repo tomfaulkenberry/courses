@@ -18,44 +18,56 @@ Ways of knowing
   - How do you know these things?
 
   "Ways of knowing" versus "Types of knowledge"
-   Ways/Types  Objective      Subjective  
-  ----------------------------------------
-   Analysis    /Observation/  /Deduction/ 
-   Acceptance  /Authority/    /Intuition/ 
-  ----------------------------------------
+
+   Ways/Types  Objective    Subjective 
+  -------------------------------------
+   Analysis    Observation  Deduction  
+   Acceptance  Authority    Intuition  
+  -------------------------------------
 
 
-  Definitions:
-  - /Intuition/: relying on /common sense/ as a means of knowing about
-    the world
-  - /Deduction/: using logical reasoning and current knowledge as a
-    means of knowing about the world
-  - /Authority/: relying on a knowledgeable person/group as a means of
+Definitions:
+============
+
+  - Intuition: relying on common sense as a means of knowing about the
+    world
+  - Deduction: using logical reasoning and current knowledge as a means
+    of knowing about the world
+  - Authority: relying on a knowledgeable person/group as a means of
     knowing about the world
-  - /Observation/: relying on what one observes as a means of knowing
+  - Observation: relying on what one observes as a means of knowing
     about the world
 
-  Why do research?
+
+Why do research?
+================
+
   - foundational to field of psychology -- it is how we know what we
     know
-  - basic human desire -- we like to know /how things work/
-  - pragmatism -- helping professions need to /understand human
-    behavior/ in order to design treatments/therapies
+  - basic human desire -- we like to know how things work
+  - pragmatism -- helping professions need to understand human behavior
+    in order to design treatments/therapies
 
-  How do we do research?
+
+How do we do research?
+======================
+
   - research = systematic observation
-  - four /canons (laws)/ of the scientific method
+  - four canons (laws) of the scientific method
     1. empiricism - knowledge comes from experience/observation
-    2. determinism - phenomena have identifiable /causes/
+    2. determinism - phenomena have identifiable causes
     3. parsimony - given two possible explanations for a behavior, the
        simplest is the "correct" one
-       - important because simple explanations are easier to /falsify/
+       - important because simple explanations are easier to falsify
     4. testability - explanations for behavior can be tested (and
        falsified)
 
-  Types of research:
+
+Types of research:
+==================
+
   - basic research
     - goal = developing consistent, mechanistic explanations for human
       behavior
   - applied research
-    - goal = applying results /beyond the lab/
+    - goal = applying results beyond the lab
