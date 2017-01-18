@@ -45,6 +45,18 @@ textbook. All students enrolled in this course are required to have
 
 ** Requirements and grading
 
+- Exam 1 (100 pts)
+- Exam 2 (100 pts)
+- Exam 3 (100 pts)
+- Final exam (150 pts)
+- Unit quizzes (100 pts)
+- Lab assignments (100 pts)
+- Research participation (50 pts)
+- /Total = 700 points/
+
+Grades will be assigned based on the percentage of points you accumulate out of these 600 points.  I will use the standard grading scale of A=90%, B=80%, etc.
+
+*** Exams (64% of grade)
 There will be four exams throughout the semester.  They will cover material from the text and the lectures.  Exam questions will be a mix of multiple choice and short answer and will be worth 100 points each.
 
 Dates:
@@ -74,7 +86,7 @@ Lab Assignments and dates
 
 *** Research participation (8% of grade)
 
-    Research is the lifeblood of psychology!  In order to promote your growth as a psychological scientist, you will be required to participate in 2 "units" of research over the course of the semester.  Roughly defined, a "unit" of research consists of either (1) participation in one hour of psychological experiments, usually offered right here in the Psychology department at Tarleton, or (2) a 3-5 page critical reflection of an empirical research article related to human learning and/or cognition, usually chosen by me.  Instructions for participation will be given in class.
+Research is the lifeblood of psychology!  In order to promote your growth as a psychological scientist, you will be required to participate in 2 "units" of research over the course of the semester.  Roughly defined, a "unit" of research consists of either (1) participation in one hour of psychological experiments, usually offered right here in the Psychology department at Tarleton, or (2) a 3-5 page critical reflection of an empirical research article related to human learning and/or cognition, usually chosen by me.  Instructions for participation will be given in class.
 
 ** Course Communication
 
