@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Week 2 lecture notes - PSYC 3435</title>
+<!-- 2017-01-23 Mon 08:17 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Week 2 lecture notes - PSYC 3435</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">How do we do research?</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>research = systematic observation
+</li>
+<li>four canons (laws) of the scientific method
+<ol class="org-ol">
+<li>empiricism - knowledge comes from experience/observation
+</li>
+<li>determinism - phenomena have identifiable causes
+</li>
+<li>parsimony - given two possible explanations for a behavior, the simplest is the "correct" one
+<ul class="org-ul">
+<li>important because simple explanations are easier to falsify
+</li>
+</ul>
+</li>
+<li>testability - explanations for behavior can be tested (and falsified) 
+</li>
+</ol>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Types of research:</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>basic research
+<ul class="org-ul">
+<li>goal = developing consistent, mechanistic explanations for human behavior
+</li>
+</ul>
+</li>
+<li>applied research
+<ul class="org-ul">
+<li>goal = applying results beyond the lab
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Getting research ideas &#x2013; must know the <b>literature</b></h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">Why review the literature?</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>getting ideas
+</li>
+<li>know what has been done, and what <b>hasn't</b> been done
+</li>
+<li>understand relevant theories/models
+</li>
+<li>what variables are important?
+</li>
+<li>avoid past mistakes
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">What is the literature?</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>Primary sources - the original report
+<ul class="org-ul">
+<li>journal articles
+</li>
+<li>edited books
+</li>
+<li>professional meetings (proceedings, abstracts)
+</li>
+<li>electronic publishing (PsyArXiv)
+</li>
+</ul>
+</li>
+<li>Secondary sources - a report of the report
+<ul class="org-ul">
+<li>literature reviews (Perspectives, TiCS, PsychBull, etc.)
+</li>
+<li>text books
+</li>
+<li>citations
+</li>
+<li>note: secondary sources are a good start, but limited (bias, lack of detail, etc.)
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">Goals of research paper</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>report the research
+</li>
+<li>explain methods (for further tests/replications)
+</li>
+<li>convince others
+</li>
+<li>needs standardization of format (APA style)
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4">Why APA style?</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>eases communication
+</li>
+<li>forces minimal amount of information
+</li>
+<li>provides logical framework for argument
+</li>
+<li>consistent format within a discipline
+<ul class="org-ul">
+<li>readers know what to expect
+</li>
+<li>where to find information in article
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5">Goals of APA-style writing</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>write with clarity
+</li>
+<li>avoid overstatements (use "hedging" language)
+</li>
+<li>avoid jargon, slang, bias
+</li>
+<li>be concise
+<ul class="org-ul">
+<li>say the most information in the fewest words
+</li>
+<li>longer <code>/</code> better
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-6" class="outline-3">
+<h3 id="sec-3-6">Structure of an APA document</h3>
+<div class="outline-text-3" id="text-3-6">
+<ul class="org-ul">
+<li>Title page - title, authors, affiliations
+</li>
+<li>Abstract - short summary of article
+<ul class="org-ul">
+<li>this is the first thing most people read, so very important!
+</li>
+</ul>
+</li>
+<li>Introduction - gives background that reader needs. 
+<ul class="org-ul">
+<li>written for broader audience
+</li>
+<li>Recipe:
+<ol class="org-ol">
+<li>state the issue under current study
+</li>
+<li>review past literature
+</li>
+<li>states purpose of current study
+</li>
+<li>predictions
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Method - tells reader what you did
+<ul class="org-ul">
+<li>very detailed
+</li>
+<li>Recipe:
+<ol class="org-ol">
+<li>Participants - who were data collected from?
+</li>
+<li>Materials - what was used to collect data?
+</li>
+<li>Design - describe what/how variables were manipulated
+</li>
+<li>Procedure - what did each participant do?
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Results - tells reader what you found
+<ul class="org-ul">
+<li>very detailed
+</li>
+<li>reports results of statistical tests
+</li>
+</ul>
+</li>
+<li>Discussion - tells reader <b>your</b> interpretation of results
+<ul class="org-ul">
+<li>relationship between purpose and results
+</li>
+<li>emphasize theoretical contribution
+</li>
+<li>broader implications
+</li>
+<li>future directions
+</li>
+</ul>
+</li>
+<li>The rest
+<ul class="org-ul">
+<li>references
+</li>
+<li>tables
+</li>
+<li>figures
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Jan 23-27, 2017</p>
+<p class="date">Created: 2017-01-23 Mon 08:17</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
