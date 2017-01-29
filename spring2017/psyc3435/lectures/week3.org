@@ -1,0 +1,70 @@
+#+TITLE: Week 3 lecture notes - PSYC 3435
+#+AUTHOR:
+#+DATE: Jan 30-Feb 3, 2017 
+#+OPTIONS: toc:nil num:nil
+
+* Building a good research question
+- Suppose we want to claim that people perform best with a good night of sleep
+  1. must FOCUS the idea
+    - break more general idea into smaller, more specific ideas
+      - what do we mean by "performance" -- academic? physical?
+      - what do we mean by "good night of sleep" -- 8 hours? uninterrupted? 3 hours of REM?
+    - develop underlying theoretical model
+      - since consolidation of memories happens during REM sleep, we can predict that getting more REM sleep should lead to better recall
+  2. must EVALUATE the idea
+    - ROT test -- is it:
+      - replicable?
+      - observable?
+      - testable?
+  3. TEST the idea
+    - what are the variables of interest?
+    - what is the hypothesized relationship between these variables?
+    - how should we test it?
+
+* Some definitions
+- Operational definition - a definition of an abstract concept that is formulated in terms of how the concept is being measured
+  - Example: define "memory ability" as score on a memory test
+- External validity - the degree to which results of a study apply (generalize) to individuals/behaviors outside context of the study
+- Internal validity - the degree to which a study provides *causal* information about behavior
+- Reliability - the degree to which the results of a study can be replicated under similar conditions
+
+* General research methods
+1. Naturalistic observation: observation and description within a natural setting
+  - high external validity
+  - hard to do well
+    - reactivity effects
+    - takes a long time
+    - need multiple observers
+2. Survey methods -- questionnaires/interviews that ask people to provide information about themselves
+  - widely used
+  - best way to collect particular kinds of data (descriptive data, preferences, etc.)
+  - large amounts of data very quickly
+  - difficult to do correctly with high validity
+3. Archival data - examine existing public/private records
+
+- Note: these are all called "observation without manipulation"
+  - Advantages:
+    1. can observe complex patterns of behavior
+    2. useful when little is known about subject of study
+    3. may learn something new that would never have been predicted
+  - Disadvantages:
+    1. cannot establish causality
+    2. threats to internal validity
+      - lots of "confounds"
+      - lots of alternative explanations
+    3. sometimes results are not reproducible
+
+4. Correlational methods -- measure two (or more) variables for each individual and see if the variables co-vary (suggesting they are related)
+  - used for
+    - making predictions
+    - establishing reliability and validity
+  - problem: cannot make causal claims!
+
+5. Experiments -- manipulating and controlling variables in laboratory experiments
+  - involves some type of comparison
+    - at least two groups that get compared (random assignment to groups)
+    - quasi-experiment - groups NOT randomly assigned
+  - types of variables
+    - Independent variable (IV) -- variable that is manipulated
+    - Dependent variable (DV) -- variable that is measured
+    - Control variable -- held constant for all participants in experiment (either through explicit control or randomization)
