@@ -45,8 +45,8 @@ Some definitions
     (generalize) to individuals/behaviors outside context of the study
   - Internal validity - the degree to which a study provides *causal*
     information about behavior
-  - Reliability - the degree to which the results of a study can be
-    replicated under similar conditions
+  - Reliability - the degree to which the results of a study are
+    consistent under repeated replications
 
 
 General research methods

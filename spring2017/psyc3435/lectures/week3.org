@@ -26,7 +26,7 @@
   - Example: define "memory ability" as score on a memory test
 - External validity - the degree to which results of a study apply (generalize) to individuals/behaviors outside context of the study
 - Internal validity - the degree to which a study provides *causal* information about behavior
-- Reliability - the degree to which the results of a study can be replicated under similar conditions
+- Reliability - the degree to which the results of a study are consistent under repeated replications
 
 * General research methods
 1. Naturalistic observation: observation and description within a natural setting
