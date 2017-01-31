@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Week 3 lecture notes - PSYC 5301</title>
+<!-- 2017-01-31 Tue 09:52 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Week 3 lecture notes - PSYC 5301</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Review of Question 3 from Week 2</h2>
+<div class="outline-text-2" id="text-1">
+<ol class="org-ol">
+<li>suppose H0 true &#x2013; how many sig results from 100 replications?
+<ul class="org-ul">
+<li>5 said "0 sig results"
+</li>
+<li>2 said "5 or fewer"
+</li>
+<li>1 said "5%"
+</li>
+<li>2 did not specify a clear answer
+</li>
+</ul>
+</li>
+
+<li>suppose H1 false, with 50% power &#x2013; how many sig results from 100 replications?
+<ul class="org-ul">
+<li>6 said "50"
+</li>
+<li>3 said "50%"
+</li>
+<li>1 said "45-55%"
+</li>
+</ul>
+</li>
+
+<li>suppose 80% power, H0 and H1 equally likely &#x2013; which is more likely to be found: sig or nonsig?
+<ul class="org-ul">
+<li>2 said "sig result"
+</li>
+<li>1 said "nonsig result"
+</li>
+<li>1 said "false result" (what does this mean?)
+</li>
+<li>2 said "50/50"
+</li>
+<li>4 did not specify a clear answer
+</li>
+</ul>
+</li>
+</ol>
+
+<p>
+Answers:
+</p>
+
+<ol class="org-ol">
+<li>correct answer is 5.  This is because the Type 1 error rate (\(\alpha\)) is 5%.  So, we should expect to reject a true null hypothesis (Type I error) 5% of the time.  Out of 100 trials, this is 5 "significant" results.
+</li>
+
+<li>correct answer is 50.  This is because power is 50%, so probability of correctly rejecting false H0 is 50%.  So, out of 100 trials, we should expect 50 "significant" results.
+</li>
+
+<li>correct answer is that a "nonsignificant" result is more likely to occur.  This might be a bit counterintuitive.  Suppose that we replicate the experiment 1000 times (let's call these replications "trials").  Then H0 is true on 500 trials, and H0 is false on 500 trials.  Now, based on our values for power (80%) and \(\alpha\) (5%), we can complete the following table:
+</li>
+</ol>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">decision</th>
+<th scope="col" class="left">HO true</th>
+<th scope="col" class="left">H0 false</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">reject H0</td>
+<td class="left">25 trials</td>
+<td class="left">400 trials</td>
+</tr>
+
+<tr>
+<td class="left">accept H0</td>
+<td class="left">475 trials</td>
+<td class="left">100 trials</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+From this, we see that we reject H0 (a "significant" result) on 425 trials (42.5%), whereas we accept H0 (a "nonsignificant" result) on 575 trials (57.5%).  Thus, finding a nonsignificant result is quite more likely than a sig result!
+</p>
+
+<ul class="org-ul">
+<li>note: this may seem depressing, but consider the following.  Our supposition was that H0 and H1 were "equally likely"&#x2026;in other words, we had no prior evidence in favor of either hypothesis.  In "real" research situations, past evidence tends to point in favor of one hypothesis over the other.  So, if you start with H0 and H1 being weighted differently, the outcome of this problem will be vastly different.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Review of APA style</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">Goals of research paper</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>report the research
+</li>
+<li>explain methods (for further tests/replications)
+</li>
+<li>convince others
+</li>
+<li>needs standardization of format (APA style)
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">Why APA style?</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>eases communication
+</li>
+<li>forces minimal amount of information
+</li>
+<li>provides logical framework for argument
+</li>
+<li>consistent format within a discipline
+<ul class="org-ul">
+<li>readers know what to expect
+</li>
+<li>where to find information in article
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3">Goals of APA-style writing</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>write with clarity
+</li>
+<li>avoid overstatements (use "hedging" language)
+</li>
+<li>avoid jargon, slang, bias
+</li>
+<li>be concise
+<ul class="org-ul">
+<li>say the most information in the fewest words
+</li>
+<li>longer <code>/</code> better
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4">Structure of an APA document</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>Title page - title, authors, affiliations
+</li>
+<li>Abstract - short summary of article
+<ul class="org-ul">
+<li>this is the first thing most people read, so very important!
+</li>
+</ul>
+</li>
+<li>Introduction - gives background that reader needs. 
+<ul class="org-ul">
+<li>written for broader audience
+</li>
+<li>Recipe:
+<ol class="org-ol">
+<li>state the issue under current study
+</li>
+<li>review past literature
+</li>
+<li>states purpose of current study
+</li>
+<li>predictions
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Method - tells reader what you did
+<ul class="org-ul">
+<li>very detailed
+</li>
+<li>Recipe:
+<ol class="org-ol">
+<li>Participants - who were data collected from?
+</li>
+<li>Materials - what was used to collect data?
+</li>
+<li>Design - describe what/how variables were manipulated
+</li>
+<li>Procedure - what did each participant do?
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Results - tells reader what you found
+<ul class="org-ul">
+<li>very detailed
+</li>
+<li>reports results of statistical tests
+</li>
+</ul>
+</li>
+<li>Discussion - tells reader <b>your</b> interpretation of results
+<ul class="org-ul">
+<li>relationship between purpose and results
+</li>
+<li>emphasize theoretical contribution
+</li>
+<li>broader implications
+</li>
+<li>future directions
+</li>
+</ul>
+</li>
+<li>The rest
+<ul class="org-ul">
+<li>references
+</li>
+<li>tables
+</li>
+<li>figures
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Lab 1 assignment</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Assignment for next meeting (Feb 14)
+</p>
+<ol class="org-ol">
+<li>You will need to put together a brief literature review (2-3 manuscript pages).  Do some background reading and find some papers that will help you address the following:
+<ul class="org-ul">
+<li>What is meant by the "levels of processing" (LOP) framework?  Craik and Lockhart (1972) will be a good reference here.
+</li>
+<li>Find at least three papers that use the LOP paradigm in different applied contexts (e.g., LOP effects on memory for chess positions).  The only requirement is that the papers (1) use LOP manipulation, and (2) are interesting to you.  Devote a paragraph to each of these papers, explaining what the authors did and what they found.
+</li>
+<li>Briefly describe the experiment we are conducting.  Be sure to describe the manipulation, and lay out some conceptual predictions.
+</li>
+</ul>
+</li>
+
+<li>You will need to write a very specific method section.  Specifically, you will need the following sections:
+<ul class="org-ul">
+<li>Participants: wait until after we've collected data to complete this.
+</li>
+<li>Materials: describe the word list and how these words are formatted for display to participants.
+</li>
+<li>Design: explain the design of the experiment (independent groups design? repeated measures design?)  Give operational definitions of each variable (both independent variables as well as any dependent variables).
+</li>
+<li>Procedure: describe the steps each participant experiences during the experiment.
+</li>
+</ul>
+</li>
+
+<li>Collect data!  Details are given on the lab assignment sheet.
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Jan 31, 2017</p>
+<p class="date">Created: 2017-01-31 Tue 09:52</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -2,5 +2,7 @@
 
 - [[psyc5301-spring2017.org][Course syllabus]]
 - Lecture notes
-  - Week 1 ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week1.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week1.pdf][pdf]] / [[file:lectures/week1.org][org]])
+  - Week 1 ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week1.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week1.pdf][pdf]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week1.txt][txt]])
+  - Week 3 ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week3.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week3.pdf][pdf]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week3.txt][txt]])
+
 - Exam reviews
