@@ -13,13 +13,28 @@
 Review of Question 3 from Week 2
 ================================
 
+  First, let's define some new (fancy) notation: $X \sim
+  \mathcal{N}(\mu,\sigma)$ means that $X$ is normally distributed with
+  mean $\mu$ and standard deviation $\sigma$.
+
+  Let $X$ be defined as the distribution of IQ scores after some "brain
+  training" program.  Recall that $X \sim \mathcal{N}(100,15)$.
+
+  We want to test whether the brain training program had a significant
+  effect on the IQ scores.  So, we will define the following two
+  hypotheses:
+  - H0: $\mu=100$
+  - H1: $\mu \neq 100$
+
+  Now, let's consider our three discussion questions:
+
   1. suppose H0 true -- how many sig results from 100 replications?
      - 5 said "0 sig results"
      - 2 said "5 or fewer"
      - 1 said "5%"
      - 2 did not specify a clear answer
 
-  2. suppose H1 false, with 50% power -- how many sig results from 100
+  2. suppose H0 false, with 50% power -- how many sig results from 100
      replications?
      - 6 said "50"
      - 3 said "50%"
@@ -33,7 +48,8 @@ Review of Question 3 from Week 2
      - 2 said "50/50"
      - 4 did not specify a clear answer
 
-  Answers:
+  Answers (using definitions and mathematical reasoning...note that we
+  will also sdo some simulations in R to verify our reasoning):
 
   1. correct answer is 5.  This is because the Type 1 error rate
      ($\alpha$) is 5%.  So, we should expect to reject a true null

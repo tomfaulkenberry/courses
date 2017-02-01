@@ -1,4 +1,4 @@
-% Created 2017-01-31 Tue 09:52
+% Created 2017-01-31 Tue 18:17
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -28,6 +28,19 @@
 
 \section*{Review of Question 3 from Week 2}
 \label{sec-1}
+
+First, let's define some new (fancy) notation:  $X \sim \mathcal{N}(\mu,\sigma)$ means that $X$ is normally distributed with mean $\mu$ and standard deviation $\sigma$.
+
+Let $X$ be defined as the distribution of IQ scores after some "brain training" program.  Recall that $X \sim \mathcal{N}(100,15)$.
+
+We want to test whether the brain training program had a significant effect on the IQ scores.  So, we will define the following two hypotheses:
+\begin{itemize}
+\item H0: $\mu=100$
+\item H1: $\mu \neq 100$
+\end{itemize}
+
+Now, let's consider our three discussion questions:
+
 \begin{enumerate}
 \item suppose H0 true -- how many sig results from 100 replications?
 \begin{itemize}
@@ -37,7 +50,7 @@
 \item 2 did not specify a clear answer
 \end{itemize}
 
-\item suppose H1 false, with 50\% power -- how many sig results from 100 replications?
+\item suppose H0 false, with 50\% power -- how many sig results from 100 replications?
 \begin{itemize}
 \item 6 said "50"
 \item 3 said "50\%"
@@ -54,7 +67,7 @@
 \end{itemize}
 \end{enumerate}
 
-Answers:
+Answers (using definitions and mathematical reasoning\ldots{}note that we will also sdo some simulations in R to verify our reasoning):
 
 \begin{enumerate}
 \item correct answer is 5.  This is because the Type 1 error rate ($\alpha$) is 5\%.  So, we should expect to reject a true null hypothesis (Type I error) 5\% of the time.  Out of 100 trials, this is 5 "significant" results.
