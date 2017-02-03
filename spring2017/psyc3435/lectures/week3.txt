@@ -99,3 +99,45 @@ General research methods
        - Dependent variable (DV) -- variable that is measured
        - Control variable -- held constant for all participants in
          experiment (either through explicit control or randomization)
+
+
+Class activity for Friday
+=========================
+
+  1. hand out activity sheet.  Have students return sheets without names
+  2. talk about False Consensus Effect (Ross et al., 1977; Mullen et
+     al., 1985)
+     - Our predictions of others' behaviors tend to err in the direction
+       of our own behaviors
+     - Example: Ross et al. (1977) found that college students who
+       preferred brown bread estimated that over 50% of other college
+       students preferred brown bread, whereas white-bread eaters
+       estimated more accurately that 37% showed a preference for brown
+       bread.
+     - We are going to try to replicate this effect with our data:
+
+  3. Tasks for students
+     - divide into 6 groups...assign one question for each group.
+     - in each group: tabulate the answers for assigned question and
+       calculate the mean for personal answers.  We'll deal with
+       predicted class mean later.  We will rotate the data sheets
+       through each group in batches until all groups have tabulated all
+       data.
+     - Write the question means on the board.
+     - Give each student one of the data sheets.
+     - Have students compute a score for each data sheet as follows:
+       - for each question, score a +1 if personal answer and predicted
+         mean are on same side of mean (that is, both above or both
+         below)
+       - score a -1 if personal answer and predicted mean are on
+         opposite sides (that is, one above and one below).
+       - sum all 6 questions (+1s and -1s) and get a single integer
+         score between -6 and +6
+       - write down that score and return paper to front.
+
+  4. Task for class
+     - What would support for False Consensus effect look like?
+     - If people err in the direction of their own behavior tendencies,
+       then the mean score should be positive
+     - If people err randomly, then the mean score should be 0.
+     - do a single-sample t-test on the scores
