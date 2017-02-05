@@ -1,0 +1,32 @@
+#+TITLE: Week 4 lecture notes - PSYC 3435
+#+AUTHOR:
+#+DATE: Feb 6-10, 2017 
+#+OPTIONS: toc:nil num:nil
+
+* Ethics in research
+There are two basic categories of ethical concerns
+  - consider the rights of our participants in our research
+  - behave ethically as scientists and practitioners
+
+* Using humans in research
+** APA Code of Ethics
+  - Respect for persons
+    - basic courtesy
+    - informed consent
+    - debriefing
+    - avoid deception
+  - Beneficience
+    - protection from harm
+    - risk/benefit analysis
+    - confidentiality
+  - Justice
+    - freedom from coercion
+
+** Monitoring of ethics - role of IRB
+Researcher submits a protocol to IRB to ensure the following criteria are met:
+  - minimize risk
+  - benefits > risk
+  - equal opportunity sampling
+  - informed consent w/ documentation
+  - data monitoring
+  - privacy and confidentiality 
