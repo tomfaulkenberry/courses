@@ -1,0 +1,70 @@
+		   __________________________________
+
+		    WEEK 4 LECTURE NOTES - PSYC 3435
+		   __________________________________
+
+
+			     Feb 6-10, 2017
+
+
+
+
+
+Ethics in research
+==================
+
+  There are two basic categories of ethical concerns
+  - consider the rights of our participants in our research
+  - behave ethically as scientists and practitioners
+
+  First, we'll talk about the historical precedents for modern ethical
+  guidelines:
+
+
+Nuremberg Code (1949)- developed in response to Nazi atrocities during World War II
+===================================================================================
+
+  - participation is voluntary
+  - participants must be given information about risks
+  - research should contribute to knowledge and conducted by qualified
+    researchers
+  - researchers must avoid unnecessary harm and ensure that benefits
+    outweigh risks
+  - participants must have right to quit at any time
+
+
+APA Code of Ethics (1953)
+=========================
+
+  - basically same as Nuremberg code, with two additions
+    - researchers must reduce harm due to deception
+    - researchers must ensure confidentiality
+    - note: original APA code left sole oversight to researchers. This
+      led to two infamous experiments that stretched the bounds of the
+      APA code:
+      - Milgram obedience study (1963)
+      - Zimbardo prison experiment (1973)
+
+
+Belmont report (1979) - list of ethical guidelines in response to Tuskegee syphillis study
+==========================================================================================
+
+  - Three principles (and resulting modern research behavior)
+    1. Respect for persons (consent form)
+    2. Beneficience (risk-benefit analysis and confidentiality)
+    3. Justice (fair selection)
+
+
+Monitoring of ethics - role of IRB
+==================================
+
+  - IRB -> Institutional Review Board: a committee of individuals who
+    oversee all research with human subjects
+  - Researcher submits a protocol to IRB to ensure the following
+    criteria are met:
+    - minimize risk
+    - benefits > risk
+    - equal opportunity sampling
+    - informed consent w/ documentation
+    - data monitoring
+    - privacy and confidentiality
