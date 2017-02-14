@@ -12,3 +12,17 @@
   - Suppose you design a study that tests a null hypothesis H0 that is known to be TRUE (that is, there is no effect), and you replicate this study 100 times.  For how many of those replications would you expect a significant result (i.e., a p-value less than 0.05)?  Explain.
   - Suppose instead that your null hypothesis H0 is known to be FALSE (that is, there is a real effect), and suppose further that your sample size gives you 50% power.  For how many of the 100 replications would you expect a significant result?  Explain.
   - Suppose you design a study with 80% power that is designed to test a null hypothesis H0 with unknown truth (that is, H0 and H1 are equally likely to be true).  Which of the following experimental outcomes do you think is most likely to occur: finding a significant result, or finding a nonsignificant result?  Explain.
+* Week 4 (February 7, 2017)
+1. In Chapter 4, Bausell lists 10 experimental artifacts that seriously undermine the internal validity of the single-group pretest-posttest design.  Thinking ahead to your own thesis (or applied project), which of these do you think might be the most important for you to consider?  How might you eliminate this artifact in your study?
+
+2. Suppose you are testing a hypothesis H1.  The prior literature indicates that, a priori, this hypothesis is 3 times more likely than the null H0.  Suppose further that you have 80% power and set alpha = 0.05.  What is the probability that you will make a Type I error? 
+
+3. Suppose that for your thesis, you propose to collect data from 100 individuals.  However, data collection is running pretty slowly (it is late spring, after all, and a lot of the undergraduate participant pool is slowly dying from the pressure of papers, finals, and the Larry Joe Taylor festival).  So, after running your 50th participant, your advisor recommends that you run the data and see if you have a significant effect.  You don't, but it is close (p=0.062).  So, you collect 5 more participants and check then.  Now, you have a significant effect (p=0.034).  You and your advisor decide to stop data collection and write up the results for publication.
+
+a.  Does stopping at 55 participants (instead of running the planned 100) affect the probability that you've made a Type I error?  Why/why not?
+
+b.  Do you think the results would change if you continued data collection and ran all 100 participants?  That is, do you think your conclusions about the presence of an effect would differ?  Explain.
+
+c.  Is your advisor promoting good research practice?  Why/why not?
+
+ 
