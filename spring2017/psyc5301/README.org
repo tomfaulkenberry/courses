@@ -6,4 +6,5 @@
   - Week 3 ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week3.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week3.pdf][pdf]])
   - Week 5 ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week5.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week5.pdf][pdf]])
 - Data for labs
-  - Lab 1 ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lab1data-spring2017.csv][csv]]) 
+  - sample CSV formatted data for Week 5 lecture ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lab1-exampleData.csv][csv]])
+  - Lab 1 data ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lab1data-spring2017.pdf][pdf]]) 
