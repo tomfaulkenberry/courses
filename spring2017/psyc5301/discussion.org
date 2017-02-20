@@ -25,4 +25,15 @@ b.  Do you think the results would change if you continued data collection and r
 
 c.  Is your advisor promoting good research practice?  Why/why not?
 
- 
+* Week 6 (February 21, 2017)
+1.  As you read in Chapter 5 of Bausell, randomization is an integral, necessary part of any experimental design.  
+
+a.  Why is randomization necessary in order to infer a causal relationship from an experiment?
+
+b.  Suppose you design an experiment to test for a difference in test scores between two groups A and B.  In order to properly design your experiment, you propose to randomly assign 100 participants to these two groups.  Find and describe two different methods for performing this randomization procedure.  Discuss the advantages/disadvantages of your two methods.  Hint: Bausell mentions at least one online randomization calculator...start here, but try find two other methods.
+
+2.  The last few weeks, we have been thinking about what p-values we should expect when the null is true (i.e., no effect).  This week, we will think about what we should expect when the null is false (i.e., there is an effect).
+
+Suppose you design an experiment for your thesis that has extremely high power (e.g., 95% power).  Suppose further that after collecting data from all of your planned 100 subjects, you get a p-value of 0.045.  Given your background in null-hypothesis significance testing, you decide to reject the null and conclude that you have a significant effect.
+
+One of your committee members (who may or may not have the initials TJF) counters with an argument that your obtained p-value actually lends more evidence for the null than the alternative.  How do you respond?
