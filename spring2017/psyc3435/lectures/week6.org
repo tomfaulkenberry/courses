@@ -42,11 +42,18 @@ Recall that internal validity refers to the extent to which an experiment provid
 Let's look at one example of a study with LOW internal validity:
 
 ** class demo: a "test of attentional focus"
-  - divide room into two groups (male and female is best)
-  - Females given Stroop task with interference...measure time
-  - Males given Stroop task with no interference...measure time
-  - Who wins?  Does that mean males/females have better attentional focus?
-  - No (why?)
+
+1. divide room into two groups (male and female is best)
+2. Females given Stroop task with no interference...measure time
+file:figures/list1.jpg
+
+3. Males given Stroop task with interference...measure time
+
+file:figures/list2.jpg
+ 
+4. Who wins?  Does that mean males/females have better attentional focus?
+
+file:figures/compare.jpg
 
 ** Confounds
 
