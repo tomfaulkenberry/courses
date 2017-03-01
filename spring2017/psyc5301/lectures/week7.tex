@@ -1,0 +1,158 @@
+% Created 2017-02-28 Tue 14:31
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\date{Feb 28, 2017}
+\title{Week 7 lecture notes - PSYC 5301}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.1.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\section*{Review of Questions from Week 6}
+\label{sec-1}
+
+\subsection*{Why is randomization necessary in order to infer a causal relationship from an experiment?}
+\label{sec-1-1}
+
+Student responses:
+\begin{itemize}
+\item (CB) prevents individual differences from being "unequally skewed"
+\item (KL) eliminates differences between individuals in a sample
+\item (MD) isolates confounds
+\item (JH) eliminates bias (what kind of bias)?
+\item (HH) reduce unknown variables from influencing outcomes
+\item (DU) differences between groups are likely due to experiment procedures
+\item (SH) participants have equal chance of being assigned to a group
+\item (KS) varies types of people in each condition
+\item (MR) removes the need for control of individual differences
+\end{itemize}
+
+\subsubsection*{Confounds: a class demo}
+\label{sec-1-1-1}
+
+\begin{enumerate}
+\item divide room into two groups (male and female is best)
+\item Females given Stroop task with no interference\ldots{}measure time
+\item Males given Stroop task with interference\ldots{}measure time
+\item Who wins?  Does that mean males/females have better attentional focus?
+\end{enumerate}
+
+\includegraphics[width=.9\linewidth]{figures/compare.jpg}
+
+The problem with our inference in this experiment is that one variable (color/word interference) is perfectly correlated with another (gender).  This is called a \emph{confound}, and it is a threat to internal validity.
+
+The goal in any experimental design is to minimize confounds.
+
+Types of confounds (and solutions):
+\begin{itemize}
+\item Group differences (solution: use random assignment)
+\item Order/testing effects (solution: use counterbalancing)
+\item experimenter bias (solution: use blinding)
+\end{itemize}
+
+\subsubsection*{Aside: does randomization REALLY remove individual differences?}
+\label{sec-1-1-2}
+
+R demo: open \verb~residenceData.R~  
+
+This script loads a data file of 26 individuals measured on various characteristics (e.g., age, \# hours work per week).
+
+The script does the following:
+\begin{itemize}
+\item randomly select half of the individuals and assign them to Group A
+\item other half is assigned to Group B
+\item Age and Work are supposed to be \emph{individual differences}.  Random assignment to Groups A and B \emph{should} remove the individual differences..that is, Groups A and B should be \emph{equivalent} with respect to Age and Work
+\item test this claim via an independent samples t-test..what do we see?
+\item let's simulate this process 10,000 times.  How often are the two groups equivalent?  How often are they different?
+\end{itemize}
+
+\includegraphics[width=.9\linewidth]{figures/ageWorkPvalues.png} 
+
+
+\subsection*{You report p=0.045 with a high powered experiment.  One of your committee members counters that your obtained p-value actually lends more evidence for the null than the alternative.  How do you respond?}
+\label{sec-1-2}
+
+Student responses:
+\begin{itemize}
+\item 5 agreed
+\begin{itemize}
+\item 3 expected smaller p-value
+\item 1 expected smaller p-value, but supported "decision" to reject
+\item 1 said 95\% power --> should expect large effect
+\end{itemize}
+\item 4 disagreed
+\begin{itemize}
+\item 2 correctly said 5\% Type II error rate, but based decision to reject on this (incorrect)
+\item 1 said "p < 0.05, so reject"
+\item 1 said "have confidence that alternative is true" (what does this mean?)
+\end{itemize}
+\end{itemize}
+
+Let's investigate this!
+
+Open \verb~pValues-lindley.R~.  This is our usual simulation of sampling IQ scores then comparing our sample to hypothesized mean of 100.  Each run of the script generates 100,000 p-values and plots the resulting distribution.
+
+Start with M=100.  This simulates H0=true.  What do we noticed about p-value distribution?
+\includegraphics[width=.9\linewidth]{figures/lindley1.png}
+
+Change M to 107.  This simulates H1=true with a specific effect size.  What do we notice?
+\includegraphics[width=.9\linewidth]{figures/lindley2.png}
+
+Clearly we have a lot of power.  Let's zoom in a bit on the "significant" p-values (below 0.05).  First, we'll make the following changes:
+\begin{itemize}
+\item M=100 (back to H0=true)
+\item bars = 100
+\item ylim = c(0,nSims/10)
+\end{itemize}
+
+This is essentially the same uniform distribution as above, but this time, we have one bar for p-values between 0 and 0.01, 0.01 and 0.02, etc.
+\includegraphics[width=.9\linewidth]{figures/lindley3.png}
+
+Now, lets zoom in a bit on the "significance zone" between p=0 and p=0.05.  Change xlim to c(0,0.05).  Notice the red horizontal line..this tells us what proportion of p-values we should expect when there is NO effect.
+
+\includegraphics[width=.9\linewidth]{figures/lindley4.png}
+
+Let's go back to the situation where we have a lot of power.  Change M to 107. Which p-values are the most frequent?  Which are LEAST frequent?
+
+\includegraphics[width=.9\linewidth]{figures/lindley5.png}
+
+Let's get even more power\ldots{}change to M = 109.
+
+\includegraphics[width=.9\linewidth]{figures/lindley6.png}
+
+Specifically, look at the p-values between 0.04 and 0.05.  The red line shows how often we can expect them when HO is true.  Notice that we can expect them EVEN LESS OFTEN when H0 is false!
+
+Said another way:  p=0.045 is surprising when there is no effect.  p=0.045 is EVEN MORE SURPRSING when there IS an effect!  What???
+
+This is known as \emph{Lindley's Paradox}, and it is an example of when frequentist and Bayesian approaches differ in their conclusions:
+\begin{itemize}
+\item frequentist decision: reject H0 (since p<0.05)
+\item Bayesian decision: accept HO, since p=0.045 is twice as likely under HO as it is under H1.
+\end{itemize}
+
+Of course, this only seems to happens when power is extremely high (well above 90\%).  So what about "marginal" p-values in lower power situations?
+
+Open \verb~pValues-likelihoods.R~.  This script replicates our calculations above 100,000 times, counting the proportion of "marginal" p-values obtained at varying levels of power (ranging from 0.1 to 0.99).  Further, it transforms these proportions to likelihood ratios (alternative to null and null to alternative).
+
+\includegraphics[width=.9\linewidth]{figures/likelihoods.png}
+
+As you can see, the "relative likelihood" of the alternative over the null maxes at 4.  Thus, in the \textbf{best case scenario}, a p-value of 0.045 is only 4 times more likely under H1 than it is under H0.  Is this "evidence" for an effect? 
+% Emacs 25.1.1 (Org mode 8.2.10)
+\end{document}
