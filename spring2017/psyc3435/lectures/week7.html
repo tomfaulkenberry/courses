@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 7 lecture notes - PSYC 3435</title>
-<!-- 2017-02-26 Sun 14:33 -->
+<!-- 2017-03-03 Fri 08:15 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -133,6 +133,48 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
 </head>
 <body>
 <div id="content">
@@ -204,14 +246,70 @@ Examples:
 <h2 id="sec-2">Experimental Control</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-<i>coming soon!</i>
+When we do an experiment, we see variability in the DV.  How much of this variability is due to our experimental manipulation?
 </p>
+
+<p>
+Let's do a little math:
+</p>
+
+<p>
+\(T = NR_{exp} + NR_{other} + R\), where
+</p>
+<ul class="org-ul">
+<li>\(T\) = total variability in DV
+</li>
+<li>\(NR_{exp}\) = non-random variability due to IV manipulation
+</li>
+<li>\(NR_{other}\) = non-random extraneous variables that covary with IV (confounds)
+</li>
+<li>\(R\) = random variability due to measurement error
+</li>
+</ul>
+
+<p>
+Our goal is to detect \(NR_{exp}\), so we need to <i>minimize</i> \(NR_{other}\) and \(R\)
+</p>
+
+<p>
+Visualization:
+</p>
+
+<p>
+Imagine the difference sources of variability as weights:
+</p>
+
+
+<div class="figure">
+<p><img src="figures/weights.png" alt="weights.png" />
+</p>
+</div>
+
+<p>
+If \(NR_{other}\) and \(R\) are <i>large</i> relative to \(NR_{exp}\), then detecting the difference may be difficult
+</p>
+
+
+<div class="figure">
+<p><img src="figures/balance1.png" alt="balance1.png" />
+</p>
+</div>
+
+<p>
+But if we reduce the size of \(NR_{other}\) and \(R\) relative to \(R_{exp}\), detecting the difference becomes much easier.
+</p>
+
+
+<div class="figure">
+<p><img src="figures/balance2.png" alt="balance2.png" />
+</p>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: Feb 27-Mar 3, 2017</p>
-<p class="date">Created: 2017-02-26 Sun 14:33</p>
+<p class="date">Created: 2017-03-03 Fri 08:15</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

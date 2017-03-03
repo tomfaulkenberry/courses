@@ -1,4 +1,4 @@
-% Created 2017-02-26 Sun 14:33
+% Created 2017-03-03 Fri 08:15
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -63,6 +63,33 @@ Examples:
 
 \section*{Experimental Control}
 \label{sec-2}
-\emph{coming soon!}
+
+When we do an experiment, we see variability in the DV.  How much of this variability is due to our experimental manipulation?
+
+Let's do a little math:
+
+$T = NR_{exp} + NR_{other} + R$, where
+\begin{itemize}
+\item $T$ = total variability in DV
+\item $NR_{exp}$ = non-random variability due to IV manipulation
+\item $NR_{other}$ = non-random extraneous variables that covary with IV (confounds)
+\item $R$ = random variability due to measurement error
+\end{itemize}
+
+Our goal is to detect $NR_{exp}$, so we need to \emph{minimize} $NR_{other}$ and $R$
+
+Visualization:
+
+Imagine the difference sources of variability as weights:
+
+\includegraphics[width=.9\linewidth]{figures/weights.png}
+
+If $NR_{other}$ and $R$ are \emph{large} relative to $NR_{exp}$, then detecting the difference may be difficult
+
+\includegraphics[width=.9\linewidth]{figures/balance1.png}
+
+But if we reduce the size of $NR_{other}$ and $R$ relative to $R_{exp}$, detecting the difference becomes much easier.
+
+\includegraphics[width=.9\linewidth]{figures/balance2.png}
 % Emacs 25.1.1 (Org mode 8.2.10)
 \end{document}

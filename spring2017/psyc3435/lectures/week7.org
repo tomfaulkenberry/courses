@@ -29,4 +29,30 @@ Examples:
   - Quota sampling - identify specific subgroups, then take from each group until desired number of individuals
 
 * Experimental Control
-/coming soon!/
+
+When we do an experiment, we see variability in the DV.  How much of this variability is due to our experimental manipulation?
+
+Let's do a little math:
+
+$T = NR_{exp} + NR_{other} + R$, where
+  - $T$ = total variability in DV
+  - $NR_{exp}$ = non-random variability due to IV manipulation
+  - $NR_{other}$ = non-random extraneous variables that covary with IV (confounds)
+  - $R$ = random variability due to measurement error
+
+Our goal is to detect $NR_{exp}$, so we need to /minimize/ $NR_{other}$ and $R$
+
+Visualization:
+
+Imagine the difference sources of variability as weights:
+
+file:figures/weights.png
+
+If $NR_{other}$ and $R$ are /large/ relative to $NR_{exp}$, then detecting the difference may be difficult
+
+file:figures/balance1.png
+
+But if we reduce the size of $NR_{other}$ and $R$ relative to $R_{exp}$, detecting the difference becomes much easier.
+
+file:figures/balance2.png
+
