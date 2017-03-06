@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Week 8 lecture notes - PSYC 3435</title>
+<!-- 2017-03-06 Mon 09:10 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Week 8 lecture notes - PSYC 3435</h1>
+<p>
+This week, we'll talk about issues related to experiments with one independent variable, called <b>single factor designs</b>
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Between subjects designs</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>In a between-subjects design, participants experience <i>only one</i> level of the independent variable.
+</li>
+<li>participants randomly assigned to one of the levels
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Threat to validity &#x2013; group differences</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>random assignment usually eliminates individual differences by dispersing them across groups, so only difference between the groups is the manipulation
+</li>
+<li>may not be sufficient with small sample!
+</li>
+<li>Solution 1: use a <i>matched design</i>
+<ul class="org-ul">
+<li>participants matched across groups on some characteristic
+</li>
+<li>Ex: O'Hanlon and Roberson (2006) - studied children's learning of color words.  
+</li>
+<li>different groups taught color words under different feedback conditions
+</li>
+<li>created matched sets of participants based on age and vocabulary ability, then randomly assigned one member of each matched set to each feedback condition
+</li>
+</ul>
+</li>
+<li>Solution 2: measure individual differences, then use them as <i>covariates</i> in statistical analysis
+</li>
+<li>Solution 3: use a <i>within-subjects</i> design
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Within subjects designs</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>in a within-subjects design, participants experience <i>all</i> levels of the independent variable
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">Threat to validity &#x2013; order effects</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>the order in which participants experience the experimental conditions may affect the results
+<ul class="org-ul">
+<li>Example: test effect of problem format (digits/words) on arithmetic performance.  
+</li>
+<li>within-subjects design &#x2013; give digit problems first, then word problems
+</li>
+<li>suppose you find that word problems result in lower performance.  Why?
+</li>
+<li>could be something about word problems that affects encoding?
+</li>
+<li>OR, could be fatigue (since word problems ALWAYS occurred at end of experiment)
+</li>
+</ul>
+</li>
+<li>solution: use <i>counterbalancing</i>
+<ul class="org-ul">
+<li>two conditions: 2 possible orders (AB, BA).  Half of participants randomly assigned to AB order, other half assigned to BA
+</li>
+<li>three conditions: 6 possible orders (ABC, ACB, BAC, BCA, CBA, CAB).  Assign participants randomly to these orders
+</li>
+<li>four conditions: 24 possible orders!
+</li>
+<li>five conditions: 120 possible orders!
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Note: when you have four or more conditions, it is difficult to use ALL possible orders.  So, you have to do a <i>partial counterbalancing</i>.  This is done with a <i>Latin-square</i> design.
+</p>
+<ul class="org-ul">
+<li>Example: notice that each condition appears in each possible order position
+</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">Order 1</td>
+<td class="left">A</td>
+<td class="left">B</td>
+<td class="left">C</td>
+<td class="left">D</td>
+</tr>
+
+<tr>
+<td class="left">Order 2</td>
+<td class="left">B</td>
+<td class="left">C</td>
+<td class="left">D</td>
+<td class="left">A</td>
+</tr>
+
+<tr>
+<td class="left">Order 3</td>
+<td class="left">C</td>
+<td class="left">D</td>
+<td class="left">A</td>
+<td class="left">B</td>
+</tr>
+
+<tr>
+<td class="left">Order 4</td>
+<td class="left">D</td>
+<td class="left">A</td>
+<td class="left">B</td>
+<td class="left">C</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+However, notice that A appears before B on 3/4 of orders.  So, there might still be an order effect of A before B.
+</p>
+
+<p>
+Solution: use a <i>balanced</i> Latin square
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">Order 1</td>
+<td class="left">A</td>
+<td class="left">B</td>
+<td class="left">D</td>
+<td class="left">C</td>
+</tr>
+
+<tr>
+<td class="left">Order 2</td>
+<td class="left">B</td>
+<td class="left">C</td>
+<td class="left">A</td>
+<td class="left">D</td>
+</tr>
+
+<tr>
+<td class="left">Order 3</td>
+<td class="left">C</td>
+<td class="left">D</td>
+<td class="left">B</td>
+<td class="left">A</td>
+</tr>
+
+<tr>
+<td class="left">Order 4</td>
+<td class="left">D</td>
+<td class="left">A</td>
+<td class="left">C</td>
+<td class="left">B</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Here, each condition appears <b>before</b> and <b>after</b> all the others equally.  For example, A appears before B in half of orders, and A after B in the other half.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Assignment for Wednesday</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+You will be randomly assigned to one of the following 4 articles.  For the article you read, please be prepared to answer the following questions:
+</p>
+
+<ol class="org-ol">
+<li>Consider the design of the study. What is the independent variable? What are the levels of the IV?  What is the DV?
+</li>
+<li>Was the independent variable in the experiments manipulated between-subjects or within-subjects?  How do you know?
+</li>
+<li>Do you think the study could have been conducted as the other type of design (opposite to your answer in #2)?  Why?
+</li>
+</ol>
+
+<p>
+Articles: 
+</p>
+<ul class="org-ul">
+<li>Storm, B. C., &amp; Stone, S. M. (2015). Saving-enhanced memory: The benefits of saving on the learning and remembering of new information. <i>Psychological Science, 26</i>, 182-188. (look at Experiment 1)
+</li>
+<li>Ferre, E. R., Lopez, C., &amp; Haggard, P. (2014). Anchoring the self to the body: Vestibular contribution to the sense of self. <i>Psychological Science, 25</i>, 2106-2108.
+</li>
+<li>Bastian, B., Jetten, J., &amp; Ferris, L. J. (2014). Pain as social glue: Shared pain increases cooperation. <i>Psychological Science, 25</i>, 2079-2085. (look at Experiment 1.)
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Mar 6-10, 2017</p>
+<p class="date">Created: 2017-03-06 Mon 09:10</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
