@@ -1,0 +1,119 @@
+% Created 2017-03-19 Sun 19:07
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\date{Mar 20-24, 2017}
+\title{Week 9 lecture notes - PSYC 3435}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.1.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+This week, we'll talk about factorial designs
+
+\section*{Motivation}
+\label{sec-1}
+So far, all of our experiments have had exactly \textbf{one} independent variable.  What happens when you have two or more?
+
+\subsection*{Example}
+\label{sec-1-1}
+Suppose you are interested in the effects of modality (visual versus auditory) on memory.  Consider the following experiment:
+\begin{itemize}
+\item procedure: give participants a list of words to remember
+\item IV1: presentation mode (visual, auditory)
+\item IV2: test mode (visual, auditory)
+\item DV: score on a recognition test ("was this word in the list?")
+\end{itemize}
+
+One way to approach this is to run two t-tests on memory scores:
+\begin{itemize}
+\item Test 1: compare means for visual study and auditory study
+\item Test 2: compare means for visual test and auditory test
+\end{itemize}
+
+Here's some data (use JASP dataset?):
+\begin{itemize}
+\item Study mode:
+\begin{itemize}
+\item visual study: M = 65
+\item auditory study: M = 65
+\end{itemize}
+
+\item Test mode:
+\begin{itemize}
+\item visual test: M = 65
+\item auditory test: M = 65
+\end{itemize}
+
+\item what would we say about the results of our manipulations??
+\begin{itemize}
+\item no effect of study mode AND no effect of test mode!
+\end{itemize}
+\end{itemize}
+
+However, we might be missing something:
+\begin{itemize}
+\item what happens when we consider various combinations of our IVs?
+\end{itemize}
+
+Data:
+
+\begin{center}
+\begin{tabular}{lrr}
+ & visual pres & auditory pres\\
+\hline
+visual test & 80 & 50\\
+auditory test & 50 & 80\\
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item what happens when we plot these?
+\item what story does this data tell?
+\item this is a textbook example of an \emph{interaction}, and is the result of a \textbf{factorial design}
+\end{itemize}
+
+\section*{Definitions - Factorial Desins}
+\label{sec-2}
+\begin{itemize}
+\item \emph{factors} - another name for independent variable
+\begin{itemize}
+\item ex: test mode
+\end{itemize}
+\item \emph{levels} - the values each factor can take
+\begin{itemize}
+\item ex: test mode has two levels: visual, auditory
+\end{itemize}
+\item an N x M factorial design has \emph{two} factors; the first with N levels and the second with M levels
+\item Example: in our previous study, we had a 2 x 2 design.
+\item Example: consider a 2 x 4 design:
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{lllll}
+ & B1 & B2 & B3 & B4\\
+\hline
+A1 &  &  &  & \\
+A2 &  &  &  & \\
+\end{tabular}
+\end{center}
+
+The number of \emph{conditions} is calculated by multiplying the numbers of levels, so a 2x4 design has 8 conditions.
+% Emacs 25.1.1 (Org mode 8.2.10)
+\end{document}

@@ -1,0 +1,62 @@
+#+TITLE: Week 9 lecture notes - PSYC 3435
+#+AUTHOR:
+#+DATE: Mar 20-24, 2017 
+#+OPTIONS: toc:nil num:nil
+
+This week, we'll talk about factorial designs
+
+* Motivation
+So far, all of our experiments have had exactly *one* independent variable.  What happens when you have two or more?
+
+** Example
+Suppose you are interested in the effects of modality (visual versus auditory) on memory.  Consider the following experiment:
+  - procedure: give participants a list of words to remember
+  - IV1: presentation mode (visual, auditory)
+  - IV2: test mode (visual, auditory)
+  - DV: score on a recognition test ("was this word in the list?")
+
+One way to approach this is to run two t-tests on memory scores:
+  - Test 1: compare means for visual study and auditory study
+  - Test 2: compare means for visual test and auditory test
+
+Here's some data (use JASP dataset?):
+  - Study mode:
+    - visual study: M = 65
+    - auditory study: M = 65
+
+  - Test mode:
+    - visual test: M = 65
+    - auditory test: M = 65
+
+  - what would we say about the results of our manipulations??
+    - no effect of study mode AND no effect of test mode!
+
+However, we might be missing something:
+  - what happens when we consider various combinations of our IVs?
+
+Data:
+
+|               | visual pres | auditory pres |
+|---------------+-------------+---------------|
+| visual test   |          80 |            50 |
+| auditory test |          50 |            80 |
+               
+  - what happens when we plot these?
+  - what story does this data tell?
+  - this is a textbook example of an /interaction/, and is the result of a *factorial design*
+
+* Definitions - Factorial Desins
+  - /factors/ - another name for independent variable
+    - ex: test mode 
+  - /levels/ - the values each factor can take
+    - ex: test mode has two levels: visual, auditory
+  - an N x M factorial design has /two/ factors; the first with N levels and the second with M levels
+  - Example: in our previous study, we had a 2 x 2 design.
+  - Example: consider a 2 x 4 design:
+
+|    | B1 | B2 | B3 | B4 |
+|----+----+----+----+----|
+| A1 |    |    |    |    |
+| A2 |    |    |    |    |
+
+The number of /conditions/ is calculated by multiplying the numbers of levels, so a 2x4 design has 8 conditions.

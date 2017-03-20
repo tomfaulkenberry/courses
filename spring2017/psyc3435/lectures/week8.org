@@ -55,7 +55,7 @@ Solution: use a /balanced/ Latin square
 
 Here, each condition appears *before* and *after* all the others equally.  For example, A appears before B in half of orders, and A after B in the other half.
 
-* Assignment for Wednesday
+* Assignment
 You will be randomly assigned to one of the following 3 articles.  For the article you read, please be prepared to answer the following questions:
 
 1. Consider the design of the study. What is the independent variable? What are the levels of the IV?  What is the DV?
