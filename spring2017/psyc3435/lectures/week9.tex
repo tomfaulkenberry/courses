@@ -1,4 +1,4 @@
-% Created 2017-03-19 Sun 19:07
+% Created 2017-03-22 Wed 09:19
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -89,7 +89,7 @@ auditory test & 50 & 80\\
 \item this is a textbook example of an \emph{interaction}, and is the result of a \textbf{factorial design}
 \end{itemize}
 
-\section*{Definitions - Factorial Desins}
+\section*{Definitions - Factorial Designs}
 \label{sec-2}
 \begin{itemize}
 \item \emph{factors} - another name for independent variable
@@ -115,5 +115,96 @@ A2 &  &  &  & \\
 \end{center}
 
 The number of \emph{conditions} is calculated by multiplying the numbers of levels, so a 2x4 design has 8 conditions.
+
+\subsection*{Anatomy of a 2x2 design}
+\label{sec-2-1}
+
+\begin{center}
+\begin{tabular}{llll}
+ & A1 & A2 & \\
+\hline
+B1 & condition mean A1B1 & condition mean A2B1 & marginal mean B1\\
+B2 & condition mean A1B2 & condition mean A2B2 & marginal mean B2\\
+\hline
+ & marginal mean A1 & marginal mean A2 & \\
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item if marginal means differ, this is called a \emph{main effect}
+\item if pattern in one variable changes across the levels of the other, this is called an \emph{interaction}
+\end{itemize}
+
+\subsection*{Advantage of factorial design}
+\label{sec-2-2}
+
+If you have only one independent variable, there are only two possible outcomes: there is an effect, or there is not
+
+If you have TWO independent variables, things are much more interesting!
+
+Let 
+\begin{itemize}
+\item A = main effect of factor A
+\item B = main effect of factor B
+\item AB = interaction of A and B
+\end{itemize}
+
+Then there are EIGHT possible outcomes:
+\begin{itemize}
+\item No effects at all
+\item A only
+\item B only
+\item AB only
+\item A and B, but not AB
+\item A and AB, but not B
+\item B and AB, but not A
+\item A, B, and AB
+\end{itemize}
+
+\section*{Examples of 2x2 designs}
+\label{sec-3}
+
+For each of the following:
+\begin{itemize}
+\item compute the marginal means
+\item plot the means
+\item decide whether the main effects and/or interactions are significant
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{lrr}
+ & A1 & A2\\
+\hline
+B1 & 30 & 60\\
+B2 & 30 & 60\\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{lrr}
+ & A1 & A2\\
+\hline
+B1 & 60 & 60\\
+B2 & 30 & 30\\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{lrr}
+ & A1 & A2\\
+\hline
+B1 & 60 & 30\\
+B2 & 30 & 60\\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{lrr}
+ & A1 & A2\\
+\hline
+B1 & 30 & 60\\
+B2 & 30 & 30\\
+\end{tabular}
+\end{center}
 % Emacs 25.1.1 (Org mode 8.2.10)
 \end{document}
