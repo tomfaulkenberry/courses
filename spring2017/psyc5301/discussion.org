@@ -37,3 +37,40 @@ b.  Suppose you design an experiment to test for a difference in test scores bet
 Suppose you design an experiment for your thesis that has extremely high power (e.g., 95% power).  Suppose further that after collecting data from all of your planned 100 subjects, you get a p-value of 0.045.  Given your background in null-hypothesis significance testing, you decide to reject the null and conclude that you have a significant effect.
 
 One of your committee members (who may or may not have the initials TJF) counters with an argument that your obtained p-value actually lends more evidence for the null than the alternative.  How do you respond?
+* Week 8 (March 7, 2017)
+No discussion this week..give CITI training and IRB assignment
+* Week 9 (March 22, 2017)
+
+1.  This week, you'll read Bausell, Chapters 6 and 7.  After your reading, consider the following questions:
+
+a. Give an example of an experiment with two between-subjects independent variables (for simplicity, assume they each only have two levels).  Discuss the advantages of employing a factorial design over performing two separate between-subject tests.
+
+b. Is it possible to have an interaction with no main effects?  Explain, giving an example if necessary. 
+
+2. Suppose that after reading some literature, you have come across a truly remarkable finding.  This finding, originally due to Bargh, Chen, and Burrows (1996), revealed that social primes could result in activation of stereotyped behavior.  For example, participants for whom an elderly stereotype was primed (e.g., "old", "lonely", bitter") tended to walk more slowly down the hallway when leaving the experiment than did control participants, a behavior which was consistent with the elderly stereotype!
+
+Amazed by this, you search for more literature on this "elderly priming" phenomenon and collect a table of p-values for a list of elderly priming effects:
+
+| Article                                              | Study | p-value |
+|------------------------------------------------------+-------+---------|
+| Aarts & Dijksterhuis (2002)                          |    1a |   0.028 |
+|                                                      |    1b |   0.041 |
+|                                                      |    2a |   0.032 |
+|                                                      |    2b |   0.015 |
+| Bargh, Chen, & Burrows (1996)                        |    2a |   0.008 |
+|                                                      |    2b |   0.039 |
+| Cesario, Plaks, & Higgins (2006)                     |     1 |   0.047 |
+|                                                      |     2 |   0.019 |
+| Dijksterhuis, Aarts, Bargh, & van Knippenberg (2000) |     1 |   0.048 |
+|                                                      |     2 |   0.046 |
+| Dijksterhuis, Spears, & Lepanasse (2001)             |     1 |   0.042 |
+|                                                      |     2 |  0.0006 |
+|                                                      |     3 |   0.044 |
+| Kawakami, Young, & Dovidio (2002)                    |     1 |   0.017 |
+|                                                      |     2 |   0.033 |
+| Ku, Wang, & Galinksy (2010)                          |     2 |   0.046 |
+|                                                      |     3 |   0.034 |
+| Mussweiler (2006)                                    |     2 | 0.043   |
+
+
+Given this extensive survey of the literature, discuss the evidence for "elderly priming".  Are you convinced that this is a real effect?  Would you expect to find significant results if you replicated one of these experiments?  Why/why not?
