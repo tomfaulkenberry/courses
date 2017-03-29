@@ -2,6 +2,7 @@
 #+AUTHOR:
 #+DATE: March 28, 2017 
 #+OPTIONS: toc:nil num:nil
+#+LaTeX_CLASS_OPTIONS: [article,10pt]
 
 * Review of Questions from  Week 9
 ** Elderly priming?
@@ -181,12 +182,15 @@ YES!  But in general, this can be quite hard!  Fortunately, there are new method
 
 2.  using approximate Bayes factors for ANOVA...see Faulkenberry & Tummolini (2016)
 
+** Assignment for next week (Week 11 (online) -- April 4)
+Find a paper that reports something interesting.  See if you can compute a Bayes factor for that result.
+  - Note: it will be easiest if you find a t-test, because then you can use JASP.  ANOVA is harder, but can be done by hand using Faulkenberry and Tummolini method.
 
 
 
-
+  
 * Next steps on mental arithmetic experiment
-Assignment for next meeting (April 11)
+Assignment for next meeting (Week 12 -- April 11)
 
   1. download the raw data from the course website and compile into a single CSV file.
   2. Start playing with the data in JASP.  What analyses could you run?  Be ready to discuss your results at our next class meeting.
