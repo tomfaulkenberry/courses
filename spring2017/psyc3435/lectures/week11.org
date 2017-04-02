@@ -24,3 +24,29 @@ Example (from Lab 1): is creativity related to objectivity?
     - note: since we failed to reject null, this does NOT mean that the correlation = 0.  We have no evidence for the null.  However, JASP will compute a Bayesian correlation test, which will give us a Bayes factor of 9.3, which means that after seeing our data, the null ($r=0$) is 9.3 times more likely than the alternative ($r\neq 0$).
 
 * Testing predictive hypotheses
+
+Predictive hypotheses are composed of a hypothesized relationship between two classes of variables:
+  - outcome variables
+  - predictor variables 
+
+Typical model of predictive hypotheses is the /linear regression model/: $Y=b_0+b_1X$
+  - $b_0$: intercept
+  - $b_1$: slope (amount of change in Y that is due to a change in X)
+
+Example: does advertising budget predict album sales?
+  - look at albumSales.csv in JASP
+    - Sales = total album sales (in thousands of pounds)
+    - Adverts = advertising budget (in thousands of pounds)
+  - build linear model: $\text{Sales} = b_0 + b_1\cdot \text{Adverts}$
+  - JASP output:
+    - $R = 0.578$: this is the correlation between sales and advertising budget
+    - $R^2 = 0.331$: proportion of variation in album sales that is explained by advertising budget
+    - $b_0 = 134.14$
+    - $b_1 = 0.096$
+  - this results in the following model:
+    - $\text{Sales} = 134.14 + 0.096\cdot\text{Adverts}$
+  - Meaning?
+    1. we can predict sales from adverts: suppose advertising budget = 100,000 dollars.  This means Adverts=100.  Then /predicted/ sales = $134.14+0.096\cdot 100=143.74$.  
+    2. we can describe the /effect/ of each predictor:
+      - as advertising budget increases by one unit, album sales increases by 0.096 units.
+      - since unit = 1000, each $1000 increase in budget increases album sales by $0.096\cdot 1000$ = 96 albums

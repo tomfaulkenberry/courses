@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 11 lecture notes - PSYC 3435</title>
-<!-- 2017-04-02 Sun 16:19 -->
+<!-- 2017-04-02 Sun 17:11 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -215,9 +215,9 @@ Example (from Lab 1): is creativity related to objectivity?
 <ul class="org-ul">
 <li>the most common method for testing this relationship is a <i>Pearson correlation</i> test
 </li>
-<li>Null: the correlation between creativity and objectivity is 0
+<li>Null: the correlation between creativity and objectivity is 0 (\(r=0\))
 </li>
-<li>Alternative: the correlation between creativity and objectivity is not 0
+<li>Alternative: the correlation between creativity and objectivity is not 0 (\(r\neq 0\))
 </li>
 <li>Results from our lab: \(r = -0.004\), \(p = 0.961\)
 </li>
@@ -230,10 +230,83 @@ Example (from Lab 1): is creativity related to objectivity?
 </ul>
 </div>
 </div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Testing predictive hypotheses</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Predictive hypotheses are composed of a hypothesized relationship between two classes of variables:
+</p>
+<ul class="org-ul">
+<li>outcome variables
+</li>
+<li>predictor variables 
+</li>
+</ul>
+
+<p>
+Typical model of predictive hypotheses is the <i>linear regression model</i>: \(Y=b_0+b_1X\)
+</p>
+<ul class="org-ul">
+<li>\(b_0\): intercept
+</li>
+<li>\(b_1\): slope (amount of change in Y that is due to a change in X)
+</li>
+</ul>
+
+<p>
+Example: does advertising budget predict album sales?
+</p>
+<ul class="org-ul">
+<li>look at albumSales.csv in JASP
+<ul class="org-ul">
+<li>Sales = total album sales (in thousands of pounds)
+</li>
+<li>Adverts = advertising budget (in thousands of pounds)
+</li>
+</ul>
+</li>
+<li>build linear model: \(\text{Sales} = b_0 + b_1\cdot \text{Adverts}\)
+</li>
+<li>JASP output:
+<ul class="org-ul">
+<li>\(R = 0.578\): this is the correlation between sales and advertising budget
+</li>
+<li>\(R^2 = 0.331\): proportion of variation in album sales that is explained by advertising budget
+</li>
+<li>\(b_0 = 134.14\)
+</li>
+<li>\(b_1 = 0.096\)
+</li>
+</ul>
+</li>
+<li>this results in the following model:
+<ul class="org-ul">
+<li>\(\text{Sales} = 134.14 + 0.096\cdot\text{Adverts}\)
+</li>
+</ul>
+</li>
+<li>Meaning?
+<ol class="org-ol">
+<li>we can predict sales from adverts: suppose advertising budget = 100,000 dollars.  This means Adverts=100.  Then <i>predicted</i> sales = \(134.14+0.096\cdot 100=143.74\).  
+</li>
+<li>we can describe the <i>effect</i> of each predictor:
+<ul class="org-ul">
+<li>as advertising budget increases by one unit, album sales increases by 0.096 units.
+</li>
+<li>since unit = 1000, each $1000 increase in budget increases album sales by \(0.096\cdot 1000\) = 96 albums
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: April 3-7, 2017</p>
-<p class="date">Created: 2017-04-02 Sun 16:19</p>
+<p class="date">Created: 2017-04-02 Sun 17:11</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
