@@ -1,0 +1,26 @@
+#+TITLE: Week 11 lecture notes - PSYC 3435
+#+AUTHOR:
+#+DATE: April 3-7, 2017 
+#+OPTIONS: toc:nil num:nil
+
+This week, we'll talk about correlational designs
+
+* Definitions
+  - A /correlational study/ is a type of research design that examines the relationships between multiple variables
+    - Note: there is no manipulation involved, so 
+
+  - Two types of questions involved:
+    1. descriptive questions: is there a relationship between different behaviors?
+    2. predictive questions: can one behavior be predicted from another behavior?
+
+* Testing descriptive hypotheses
+
+Example (from Lab 1): is creativity related to objectivity?
+  - the most common method for testing this relationship is a /Pearson correlation/ test
+  - Null: the correlation between creativity and objectivity is 0 ($r=0$)
+  - Alternative: the correlation between creativity and objectivity is not 0 ($r\neq 0$)
+  - Results from our lab: $r = -0.004$, $p = 0.961$
+  - since $p>0.05$, we cannot reject the null.  In other words, we cannot conclude that the correlation is nonzero.
+    - note: since we failed to reject null, this does NOT mean that the correlation = 0.  We have no evidence for the null.  However, JASP will compute a Bayesian correlation test, which will give us a Bayes factor of 9.3, which means that after seeing our data, the null ($r=0$) is 9.3 times more likely than the alternative ($r\neq 0$).
+
+* Testing predictive hypotheses
