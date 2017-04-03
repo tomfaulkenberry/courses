@@ -1,0 +1,113 @@
+% Created 2017-04-03 Mon 09:26
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\date{April 3-7, 2017}
+\title{Week 11 lecture notes - PSYC 3435}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.1.1 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+This week, we'll talk about correlational designs
+
+\section*{Definitions}
+\label{sec-1}
+\begin{itemize}
+\item A \emph{correlational study} is a type of research design that examines the relationships between multiple variables
+\begin{itemize}
+\item Note: there is no manipulation involved, so this is a \emph{nonexperimental} design
+\end{itemize}
+
+\item Two types of questions involved:
+\begin{enumerate}
+\item descriptive questions: is there a relationship between different behaviors?
+\item predictive questions: can one behavior be predicted from another behavior?
+\end{enumerate}
+\end{itemize}
+
+To motivate our discussion, let's take a look at a dataset (albumSales.csv) that shows several variables related to album sales for 200 different metal bands
+
+Column definitions:
+\begin{itemize}
+\item Adverts: advertising budget (in \$1000 units)
+\item Sales: total album sales (in \$1000 units)
+\item Airplay: number of radio plays per week
+\item Attract: a 1-10 rating of the band's attractiveness
+\end{itemize}
+
+
+\section*{Testing descriptive hypotheses}
+\label{sec-2}
+
+Example (from Lab 1): is album sales related to advertising budget?
+\begin{itemize}
+\item the most common method for testing this relationship is a \emph{Pearson correlation} test
+\item Null: the correlation between sales and advertising budget is 0 ($r=0$)
+\item Alternative: the correlation between sales and advertising budget is not 0 ($r\neq 0$)
+\item Results from JASP: $r = 0.578$, $p < 0.001$
+\item since $p<0.05$, we reject the null, from which we conclude that the correlation between sales and budget is nonzero.
+\end{itemize}
+
+\section*{Testing predictive hypotheses}
+\label{sec-3}
+
+Predictive hypotheses are composed of a hypothesized relationship between two classes of variables:
+\begin{itemize}
+\item outcome variables
+\item predictor variables
+\end{itemize}
+
+Typical model of predictive hypotheses is the \emph{linear regression model}: $Y=b_0+b_1X$
+\begin{itemize}
+\item $b_0$: intercept
+\item $b_1$: slope (amount of change in Y that is due to a change in X)
+\end{itemize}
+
+Example: does advertising budget \emph{predict} album sales?
+\begin{itemize}
+\item look at albumSales.csv in JASP
+\begin{itemize}
+\item Sales = total album sales (in thousands of pounds)
+\item Adverts = advertising budget (in thousands of pounds)
+\end{itemize}
+\item build linear model: $\text{Sales} = b_0 + b_1\cdot \text{Adverts}$
+\item JASP output:
+\begin{itemize}
+\item $R = 0.578$: this is the correlation between sales and advertising budget
+\item $R^2 = 0.335$: proportion of variation in album sales that is explained by advertising budget
+\item $b_0 = 167.68$
+\item $b_1 = 0.096$
+\end{itemize}
+\item this results in the following model:
+\begin{itemize}
+\item $\text{Sales} = 167.68 + 0.096\cdot\text{Adverts}$
+\end{itemize}
+\item Meaning?
+\begin{enumerate}
+\item we can predict sales from adverts: suppose advertising budget = 100,000 dollars.  This means Adverts=100.  Then \emph{predicted} sales = $167.68+0.096\cdot 100=177.28$.  Thus, we would predict total album sales of 177,280
+\item we can describe the \emph{effect} of each predictor:
+\begin{itemize}
+\item as advertising budget increases by one unit, album sales increases by 0.096 units.
+\item since unit = 1000, each \$1000 increase in budget increases album sales by $0.096\cdot 1000$ = 96 albums
+\end{itemize}
+\end{enumerate}
+\end{itemize}
+% Emacs 25.1.1 (Org mode 8.2.10)
+\end{document}
