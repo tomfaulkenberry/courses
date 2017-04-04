@@ -1,4 +1,4 @@
-% Created 2017-04-03 Mon 09:26
+% Created 2017-04-04 Tue 14:26
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -67,7 +67,8 @@ Example (from Lab 1): is album sales related to advertising budget?
 
 \section*{Testing predictive hypotheses}
 \label{sec-3}
-
+\subsection*{Single predictor}
+\label{sec-3-1}
 Predictive hypotheses are composed of a hypothesized relationship between two classes of variables:
 \begin{itemize}
 \item outcome variables
@@ -108,6 +109,23 @@ Example: does advertising budget \emph{predict} album sales?
 \item since unit = 1000, each \$1000 increase in budget increases album sales by $0.096\cdot 1000$ = 96 albums
 \end{itemize}
 \end{enumerate}
+\end{itemize}
+
+\subsection*{Multiple predictors}
+\label{sec-3-2}
+There is no reason that we have to be limited to only one variable.  We can have multiple predictor variables.
+
+Example: can we predict album sales from advert budget, airplay, and attractiveness?
+\begin{itemize}
+\item Linear model: $\text{Sales}=b_0+b_1\cdot \text{Adverts}+b_2\cdot\text{Airplay}+b_3\cdot\text{Attract}$
+\item JASP output:
+\begin{itemize}
+\item $R^2=0.665$ - these three predictors explain 2/3 of the variance in album sales
+\item b$_{\text{0}}$ = -33.27
+\item b$_{\text{1}}$ = 0.085 (as advertising budget increases by one unit, album sales increase by 0.085 units)
+\item b$_{\text{2}}$ = 4.209 (as number of radio plays increases by one, album sales increases by 4.209 units)
+\item b$_{\text{3}}$ = 13.86 (as attractiveness increases by one unit, album sales increases by 13.86 units)
+\end{itemize}
 \end{itemize}
 % Emacs 25.1.1 (Org mode 8.2.10)
 \end{document}

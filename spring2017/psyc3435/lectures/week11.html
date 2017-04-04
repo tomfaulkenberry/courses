@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 11 lecture notes - PSYC 3435</title>
-<!-- 2017-04-03 Mon 09:25 -->
+<!-- 2017-04-04 Tue 14:25 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -249,6 +249,9 @@ Example (from Lab 1): is album sales related to advertising budget?
 <div id="outline-container-sec-3" class="outline-2">
 <h2 id="sec-3">Testing predictive hypotheses</h2>
 <div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">Single predictor</h3>
+<div class="outline-text-3" id="text-3-1">
 <p>
 Predictive hypotheses are composed of a hypothesized relationship between two classes of variables:
 </p>
@@ -318,10 +321,42 @@ Example: does advertising budget <i>predict</i> album sales?
 </ul>
 </div>
 </div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">Multiple predictors</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+There is no reason that we have to be limited to only one variable.  We can have multiple predictor variables.
+</p>
+
+<p>
+Example: can we predict album sales from advert budget, airplay, and attractiveness?
+</p>
+<ul class="org-ul">
+<li>Linear model: \(\text{Sales}=b_0+b_1\cdot \text{Adverts}+b_2\cdot\text{Airplay}+b_3\cdot\text{Attract}\)
+</li>
+<li>JASP output:
+<ul class="org-ul">
+<li>\(R^2=0.665\) - these three predictors explain 2/3 of the variance in album sales
+</li>
+<li>b<sub>0</sub> = -33.27
+</li>
+<li>b<sub>1</sub> = 0.085 (as advertising budget increases by one unit, album sales increase by 0.085 units)
+</li>
+<li>b<sub>2</sub> = 4.209 (as number of radio plays increases by one, album sales increases by 4.209 units)
+</li>
+<li>b<sub>3</sub> = 13.86 (as attractiveness increases by one unit, album sales increases by 13.86 units)
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: April 3-7, 2017</p>
-<p class="date">Created: 2017-04-03 Mon 09:25</p>
+<p class="date">Created: 2017-04-04 Tue 14:25</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

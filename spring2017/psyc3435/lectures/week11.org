@@ -32,7 +32,7 @@ Example (from Lab 1): is album sales related to advertising budget?
   - since $p<0.05$, we reject the null, from which we conclude that the correlation between sales and budget is nonzero.
    
 * Testing predictive hypotheses
-
+** Single predictor
 Predictive hypotheses are composed of a hypothesized relationship between two classes of variables:
   - outcome variables
   - predictor variables 
@@ -58,3 +58,15 @@ Example: does advertising budget /predict/ album sales?
     2. we can describe the /effect/ of each predictor:
       - as advertising budget increases by one unit, album sales increases by 0.096 units.
       - since unit = 1000, each $1000 increase in budget increases album sales by $0.096\cdot 1000$ = 96 albums
+
+** Multiple predictors
+There is no reason that we have to be limited to only one variable.  We can have multiple predictor variables.
+
+Example: can we predict album sales from advert budget, airplay, and attractiveness?
+  - Linear model: $\text{Sales}=b_0+b_1\cdot \text{Adverts}+b_2\cdot\text{Airplay}+b_3\cdot\text{Attract}$
+  - JASP output:
+    - $R^2=0.665$ - these three predictors explain 2/3 of the variance in album sales
+    - b_0 = -33.27
+    - b_1 = 0.085 (as advertising budget increases by one unit, album sales increase by 0.085 units)
+    - b_2 = 4.209 (as number of radio plays increases by one, album sales increases by 4.209 units)
+    - b_3 = 13.86 (as attractiveness increases by one unit, album sales increases by 13.86 units)
