@@ -13,4 +13,4 @@
   - Week 11 ([[http://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week11.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week11.pdf][pdf]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week11.txt][txt]]) 
 
 - Data for class activities
-  - Week 11 - hmSuicide.csv ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/hmSuicide.csv][csv]])
+  - Week 11 - hmSuicide.csv ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/hmsuicide.csv][csv]])
