@@ -14,3 +14,5 @@
 
 - Data for class activities
   - Week 11 - hmSuicide.csv ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/hmsuicide.csv][csv]])
+  - on PC, just right click the link and save it somewhere on your computer
+  - on Mac, ctrl+click on the link and save it somewhere.
