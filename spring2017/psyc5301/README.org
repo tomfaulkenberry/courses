@@ -2,11 +2,11 @@
 
 - [[psyc5301-spring2017.org][Course syllabus]]
 - Lecture notes
-  - Week 1 ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week1.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week1.pdf][pdf]])
-  - Week 3 ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week3.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week3.pdf][pdf]])
-  - Week 5 ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week5.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week5.pdf][pdf]])
-  - Week 7 ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week7.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week7.pdf][pdf]])
-  - Week 10 ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week10.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week10.pdf][pdf]])
+  - Week 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week1.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week1.pdf][pdf]])
+  - Week 3 ([[http://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week3.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week3.pdf][pdf]])
+  - Week 5 ([[http://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week5.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week5.pdf][pdf]])
+  - Week 7 ([[http://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week7.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week7.pdf][pdf]])
+  - Week 10 ([[http://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week10.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lectures/week10.pdf][pdf]])
 
 - Data for labs
   - sample CSV formatted data for Week 5 lecture ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc5301/lab1-exampleData.csv][csv]])

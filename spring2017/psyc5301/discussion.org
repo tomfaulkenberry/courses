@@ -74,3 +74,15 @@ Amazed by this, you search for more literature on this "elderly priming" phenome
 
 
 Given this extensive survey of the literature, discuss the evidence for "elderly priming".  Are you convinced that this is a real effect?  Would you expect to find significant results if you replicated one of these experiments?  Why/why not?
+* Week 11 (April 4, 2017)
+Recall last week that we defined the concept of a Bayes factor, which is the extent to which your relative belief in one hypothesis changes after seeing the data.  As you will recall, the larger the Bayes factor (BF), the larger one's belief.
+
+Your assignment is to find a paper that reports something interesting.  See if you can compute a Bayes factor for that result.
+  - Note: it will be easiest if you find a t-test, because then you can use the Summary Stats module in JASP to compute an approximate Bayes factor.  ANOVA is harder, but can be done by hand using Faulkenberry and Tummolini method.  Be sure to ask me questions by email if you choose to do this route.
+
+In your post, I want you to report three things:
+1.  Give the APA reference for the paper you read, and report the result you found to be interesting.  Give the relevant statistical report (e.g., t(54)=3.23, p=0.02), as well as a conceptual description of what the result means in the context of the paper.  Assume that we don't have time to actually go and read your paper! 
+
+2.  Give the Bayes factor that corresponds to the result.
+
+3.  What is your interpretation of this Bayes factor?  Does the result you reported give evidence in favor (or against) a particular hypothesis?  Explain.
