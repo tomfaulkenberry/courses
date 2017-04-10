@@ -1,0 +1,56 @@
+		  ___________________________________
+
+		   WEEK 12 LECTURE NOTES - PSYC 3435
+		  ___________________________________
+
+
+			     April 10, 2017
+
+
+This is a short week due to Easter... we will talk about
+quasi-experimental designs
+
+
+Definitions
+===========
+
+  A /quasi-experiment/ is a type of research design where a comparison
+  is made, but *no random assignment* occurs
+
+  Examples:
+  - studies with /subject variables/ (e.g., high vs. low IQ, males
+    vs. females, smokers vs. nonsmokers, etc.)
+  - time is used as a variable (e.g., pretest-posttest, developmental
+    designs [more on this later])
+
+
+Pretest-posttest designs
+========================
+
+  In a pretest/posttest design, a behavior is measured /twice/
+  - once before treatment (pretest)
+  - once after treatment (posttest)
+
+  [file:figures/prePost.jpg]
+
+  But...
+  - /history effects/ -- events that occur during the course of a study
+    that can result in bias
+  - /maturation/ -- natural changes that happen to participant during
+    course of study
+
+  Better: pretest/posttest with /nonequivalent groups/
+
+  [file:figures/prePost2.jpg]
+
+  But..
+  - /testing effects/ - occur when participants are tested multiple
+    times and each subsequent test is affected by the previous tests
+
+  Even better: Solomon four-group design
+
+  [file:figures/solomon.jpg]
+
+  Method: compare posttest scores across group sets
+  - if no differences between Group Set 1 and Group Set 2, then no
+    testing effects have occurred.
