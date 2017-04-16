@@ -1,0 +1,62 @@
+#+TITLE: Week 13 lecture notes - PSYC 3435
+#+AUTHOR:
+#+DATE: April 17-21, 2017 
+#+OPTIONS: toc:nil num:nil
+
+This week we will finish talking about nonexperimental designs with two new types of designs: /developmental designs/ and /small N designs/
+
+* Developmental designs
+
+Used to study changes in behavior that occur as a function of /changes in age/
+  - age = quasi-independent variable
+
+Three major types:
+  - cross-sectional
+  - longitudinal
+  - cohort-sequential
+
+** Cross-sectional design
+  - study groups of individuals of different ages at the same time
+  - age is treated as a /between-subjects/ variable
+
+file:figures/crossSectional.jpg
+
+Advantages:
+  - much faster -- can gather data about different groups (ages) at the same time
+
+Disadvantages:
+  - individuals not followed over time (does not reveal /development/ of individuals)
+  - cohort effects: individuals of different ages may be inherently different due to factors in the environment
+
+** Longitudinal design
+  - study same invididuals/groups over time
+  - age is treated as a /within-subjects/ variable
+
+file:figures/long.jpg
+
+Advantages:
+  - can see developmental changes
+  - avoid cohort effects
+
+Disadvantages:
+  - time consuming
+  - attrition and practice effects
+
+** Cohort-sequential design
+  - measure groups of participants as they age
+  - combines best parts of cross-sectional and longitudinal designs
+
+file:figures/seq.jpg
+
+* Small $N$ designs
+
+Used to study behavior is a small number of participants.
+
+  - observations begin at /baseline/ (absence of a treatment)
+  - Basic idea: you want to show that
+    - when treatment occurs, you get an effect
+    - when you remove the treatment, the effect reverses
+
+Most common example: ABA design
+
+file:figures/aba.jpg
