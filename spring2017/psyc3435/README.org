@@ -12,6 +12,7 @@
   - Week 9 ([[http://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week9.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week9.pdf][pdf]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week9.txt][txt]]) 
   - Week 11 ([[http://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week11.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week11.pdf][pdf]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week11.txt][txt]]) 
   - Week 12 ([[http://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week12.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week12.pdf][pdf]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week12.txt][txt]]) 
+  - Week 13 ([[http://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week13.html][html]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week13.pdf][pdf]] / [[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/lectures/week13.txt][txt]]) 
 
 - Data for class activities
   - Week 11 - Linear regression activity ([[https://rawgit.com/tomfaulkenberry/courses/master/spring2017/psyc3435/linearRegression.pdf][pdf]])
