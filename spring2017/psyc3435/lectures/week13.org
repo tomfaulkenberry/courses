@@ -52,10 +52,17 @@ file:figures/seq.jpg
 
 Used to study behavior is a small number of participants.
 
-  - observations begin at /baseline/ (absence of a treatment)
-  - Basic idea: you want to show that
-    - when treatment occurs, you get an effect
-    - when you remove the treatment, the effect reverses
+Two main types:
+  - Discrete trials design
+    - large number of trials completed by small number of participants
+    - used to study basic behavioral processes that are not likely to differ between people (e.g., learning, attention, memory, etc.)
+    - ex: Ebbinghaus studies -- one participants, MANY trials
+
+  - Baseline designs
+    - observations begin at /baseline/ (absence of a treatment)
+    - Basic idea: you want to show that
+      - when treatment occurs, you get an effect
+      - when you remove the treatment, the effect reverses
 
 Most common example: ABA design
 
