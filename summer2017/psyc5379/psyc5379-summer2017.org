@@ -1,4 +1,4 @@
-#+TITLE: PSYC 3320: Psycholinguistics
+#+TITLE: PSYC 5379 / READ 5379: Advanced Psycholinguistics
 #+AUTHOR: 
 #+DATE: Summer 2017
 #+OPTIONS: toc:nil
@@ -40,11 +40,12 @@ Psycholinguistics is an area of specialization within cognitive psychology that 
 - Exam 3 (100 pts)
 - Exam 4 (100 pts)
 - Unit quizzes (100 pts)
-- /Total = 500 points/
+- Review paper (100 pts)
+- /Total = 600 points/
 
 Grades will be assigned based on the percentage of points you accumulate out of these 500 points.  I will use the standard grading scale of A=90%, B=80%, etc.
 
-*** Exams (80% of grade)
+*** Exams (66.7% of grade)
 There will be four total exams throughout the semester, occurring 
 approximately once every 2  weeks.  They will cover material 
 from your reading, online lectures, and quizzes.  Exam questions will be a mix of multiple choice and short answer.  Exams are due by 11:59 pm on 
@@ -58,10 +59,12 @@ Due dates:
 - Exam 3 (Wednesday, July 26 at 11:59 pm)
 - Final exam (Wednesday, August 9 at 11:59 pm)
   
-*** Unit quizzes (20% of grade)
+*** Unit quizzes (16.6% of grade)
 At the end of each unit, you will complete a quiz over the content of that 
 unit. Each quiz will be graded as number correct out of 10 possible points.  Your total quiz grade will be computed by scaling your average quiz percentage up to a 100 point score.  For example, if you average 8.6/10 on your unit quizzes, your total quiz grade for the semester will be 86/100. 
 
+*** Review paper (16.7% of grade)
+This semester, you will select a topic from the course (or something in the textbook that we did not cover) that relates to your professional interests.  Then, you will write a 10 page review paper that summarizes some literature related to your chosen topic. The literature review should include at least 10 recent (2000 to the present) empirical research articles from peer-reviewed journals. The paper must be formatted in APA style (e.g., double-spaced, APA-style citations, etc.).  Note that the 10-page requirement includes the title page and references.  The paper is due on the last day of class.   
 ** Course Communication
 
 I am your primary resource for this course. I AM an experimental psychologist, so I do the stuff I teach about daily. Hence, my primary interest is for you to learn this material and do well in the course. If you have a question, always feel free to stop by my office and visit, or just give me a call.  If you require asynchronous communication, please send me an email.
