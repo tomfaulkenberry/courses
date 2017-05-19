@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>PSYC 3330: Elementary Statistics for the Behavioral Sciences</title>
+<!-- 2017-05-19 Fri 12:21 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">PSYC 3330: Elementary Statistics for the Behavioral Sciences</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Contact info</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Professor: Thomas J. Faulkenberry, Ph.D
+</li>
+<li>Office: Math 319
+</li>
+<li>Office hours: MTWRF 9-11 am
+</li>
+<li>Email: faulkenberry@tarleton.edu
+</li>
+<li>Website: <a href="http://tomfaulkenberry.github.io">http://tomfaulkenberry.github.io</a>
+</li>
+<li>Phone: 254-968-9816
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Course description</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Statistical methods are the primary tool for research in psychology.  
+They are what allow us as researchers to make consistent, data-driven 
+decisions.  As such, this is an extremely important course and one that I 
+take very seriously as your professor.
+</p>
+
+<p>
+The topics we will cover this semester will include descriptive statistics 
+(how we describe data) and inferential statistics (how we make decisions 
+about data).  Specifically, this includes central tendency, variability, 
+correlation, the distinction between populations and samples, hypothesis 
+testing, statistical significance, and a variety of inferential tests 
+that we can apply to data, including t-tests and analysis of variance.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Course materials</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><i>Statistics for the Behavioral Sciences (10th ed.)</i> by Gravetter and Wallnau <a href="http://www.amazon.com/Statistics-Behavioral-Sciences-MindTap-Psychology/dp/1305504917/">Amazon link</a>
+</li>
+<li>Note:  older editions of this textbook are just fine.  Please feel free to find a used copy of an older edition on Amazon; it will save you a LOT of money!
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Student learning outcomes</h2>
+<div class="outline-text-2" id="text-4">
+<ol class="org-ol">
+<li>Identify variables under study (including independent and dependent variables)
+</li>
+<li>Choose appropriate measures of descriptive statistics
+</li>
+<li>Select and perform appropriate inferential statistics
+</li>
+<li>Draw appropriate statistical conclusions from results of analyses
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Requirements and grading</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>Exam 1 (100 pts)
+</li>
+<li>Exam 2 (100 pts)
+</li>
+<li>Exam 3 (100 pts)
+</li>
+<li>Final exam (100 pts)
+</li>
+<li>Unit quizzes (100 pts)
+</li>
+<li><i>Total = 500 points</i>
+</li>
+</ul>
+
+<p>
+Grades will be assigned based on the percentage of points you accumulate out of these 600 points.  I will use the standard grading scale of A=90%, B=80%, etc.
+</p>
+</div>
+
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1">Exams (80% of grade)</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+There will be four total exams throughout the semester, occurring approximately once every three to four weeks.  They will cover material from lectures, quizzes, and homework exercises.  Exam questions will be a mix of multiple choice and short answer.  Exams are due by 11:59 pm on their due date.  Each exam will have a time limit (2 hours) and may only be attempted once.
+</p>
+
+<p>
+Due dates:
+</p>
+
+<ul class="org-ul">
+<li>Exam 1 (Wednesday, June 28 at 11:59 pm)
+</li>
+<li>Exam 2 (Friday, July 14 at 11:59 pm)
+</li>
+<li>Exam 3 (Friday, August 4 at 11:59 pm)
+</li>
+<li>Final exam (Wednesday, August 9 at 11:59 pm)
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2">Unit quizzes (20% of grade)</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+At the end of each unit, you will complete a 20-question quiz over the content of that unit.  The quizzes will have a generous time limit (60 minutes), and may be attempted twice.  In the event that you complete two attempts, your last graded attempt is the one that will be recorded.  Each quiz counts for 10 possible points.  Since there are 10 units, you will earn up to 100 points for your quiz grade.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Course Communication</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+I am your primary resource for this course. I AM an experimental psychologist, so I do the stuff I teach about daily. Hence, my primary interest is for you to learn this material and do well in the course. If you have a question, always feel free to stop by my office and visit.  If you require electronic communication, please email me.  I will be sending periodic emails to each of you that update you on course progress, due dates, etc.  It is imperative that you check your Tarleton email regularly so that you don't miss any of these messages.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">University Policy on "F" Grades</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8">Academic Honesty</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+Tarleton State University expects its students to maintain high standards of personal and scholarly conduct. Students guilty of academic dishonesty are subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
+</p>
+
+<p>
+In particular, any exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  The minimum sanction for violation of this policy is a grade of 0 on the affected exam.
+</p>
+
+<p>
+Each student’s honesty and integrity are taken for granted. However, if I find evidence of academic misconduct I will pursue the matter to the fullest extent permitted by the university. ACADEMIC MISCONDUCT OR DISHONESTY WILL RESULT IN A GRADE OF F FOR THE COURSE.  Students are strongly advised to avoid even the <i>appearance</i> of academic misconduct. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">Academic Affairs Core Value Statements</h2>
+<div class="outline-text-2" id="text-9">
+</div><div id="outline-container-sec-9-1" class="outline-3">
+<h3 id="sec-9-1">Academic Integrity Statement</h3>
+<div class="outline-text-3" id="text-9-1">
+<p>
+Tarleton State University's core values are integrity, leadership, tradition, civility, excellence, and service.  Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct.  Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9-2" class="outline-3">
+<h3 id="sec-9-2">Academic Civility Statement</h3>
+<div class="outline-text-3" id="text-9-2">
+<p>
+Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9-3" class="outline-3">
+<h3 id="sec-9-3">Academic Excellence Statement</h3>
+<div class="outline-text-3" id="text-9-3">
+<p>
+Tarleton holds high expectations for students to assume responsibility for their own individual learning. Students are also expected to achieve academic excellence by:
+</p>
+<ul class="org-ul">
+<li>honoring Tarleton’s core values, upholding high standards of habit and behavior.
+</li>
+<li>maintaining excellence through class attendance and punctuality, preparing for active participation in all learning experiences. 
+</li>
+<li>putting forth their best individual effort.
+</li>
+<li>continually improving as independent learners.
+</li>
+<li>engaging in extracurricular opportunities that encourage personal and academic growth.
+</li>
+<li>reflecting critically upon feedback and applying these lessons to meet future challenges.
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10">Students with Disabilities Policy</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+It is the policy of Tarleton State University to comply with the Americans
+with Disabilities Act and other applicable laws. If you are a student with a
+disability seeking accommodations for this course, please contact Trina
+Geye, Director of Student Disability Services, at 254.968.9400 or
+geye@tarleton.edu. Student Disability Services is
+located in Math 201. More information can be found at www.tarleton.edu/sds or in the University Catalog.
+</p>
+
+
+<p>
+<b><b>Note:  any changes to this syllabus will be communicated to you by the instructor!</b></b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11">Semester Schedule</h2>
+<div class="outline-text-2" id="text-11">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">Unit</th>
+<th scope="col" class="left">Topic</th>
+<th scope="col" class="left">Due date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">1</td>
+<td class="left">Displaying data</td>
+<td class="left">Friday, June 16</td>
+</tr>
+
+<tr>
+<td class="right">2</td>
+<td class="left">Descriptives 1: central tendency, variation, and z-scores</td>
+<td class="left">Tuesday, June 20</td>
+</tr>
+
+<tr>
+<td class="right">3</td>
+<td class="left">Descriptives 2: correlation</td>
+<td class="left">Friday, June 23</td>
+</tr>
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left"><b>Exam 1</b></td>
+<td class="left">Wednesday, June 28</td>
+</tr>
+
+<tr>
+<td class="right">4</td>
+<td class="left">The normal distribution: measuring likelihood</td>
+<td class="left">Monday, July 3</td>
+</tr>
+
+<tr>
+<td class="right">5</td>
+<td class="left">The logic of hypothesis testing</td>
+<td class="left">Thursday, July 6</td>
+</tr>
+
+<tr>
+<td class="right">6</td>
+<td class="left">Testing means of samples of <b>known</b> populations: \(z\)-tests</td>
+<td class="left">Tuesday, July 11</td>
+</tr>
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left"><b>Exam 2</b></td>
+<td class="left">Friday, July 14</td>
+</tr>
+
+<tr>
+<td class="right">7</td>
+<td class="left">Testing means of samples of <b>unknown</b> populations: \(t\)-tests</td>
+<td class="left">Wednesday, July 19</td>
+</tr>
+
+<tr>
+<td class="right">8</td>
+<td class="left">More \(t\)-tests (independent samples, etc.)</td>
+<td class="left">Monday, July 24</td>
+</tr>
+
+<tr>
+<td class="right">9</td>
+<td class="left">Analysis of variance (ANOVA): one independent variable</td>
+<td class="left">Thursday, July 27</td>
+</tr>
+
+<tr>
+<td class="right">10</td>
+<td class="left">Analysis of variance (ANOVA): two independent variables</td>
+<td class="left">Tuesday, July 31</td>
+</tr>
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left"><b>Exam 3</b></td>
+<td class="left">Friday, August 4</td>
+</tr>
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left"><b>Final exam</b></td>
+<td class="left">Wednesday, August 9</td>
+</tr>
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Spring 2017</p>
+<p class="date">Created: 2017-05-19 Fri 12:21</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
