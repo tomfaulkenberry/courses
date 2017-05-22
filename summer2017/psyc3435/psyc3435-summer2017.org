@@ -1,6 +1,6 @@
-#+TITLE: PSYC 3435: Principles of Research for the Behavorial Sciences (online)
+#+TITLE: PSYC 3435: Principles of Research for the Behavorial Sciences
 #+AUTHOR: 
-#+DATE: Spring 2017
+#+DATE: Summer 2017
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+LATEX_CLASS: article
@@ -10,7 +10,7 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: MTWRF 1-3 pm
+- Office hours: MWF 8-11 am /(or by appointment)/
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
@@ -59,9 +59,9 @@ There will be three exams throughout the semester.  Exams are due by 11:59 pm on
 
 Exam dates:
 
-- Exam 1, due Sunday, March 5
-- Exam 2, due Sunday, April 16
-- Exam 3, due Sunday, May 7
+- Exam 1, due Friday, July 7
+- Exam 2, due Tuesday, July 25
+- Exam 3, due Wednesday, August 9
 
 *** Unit quizzes (20% of grade)
 
@@ -73,35 +73,28 @@ There will be four lab assignments this semester.  Each assignment is designed t
 
 Lab Assignments and dates
 
-- Lab 1 – APA formatting (10 points), due Friday, Feb 3
-- Lab 2.1 – Correlational design, data collection (10 points), due Friday, Feb 10
-- Lab 2.2 – Correlational design, analysis and report (20 points), due Friday, Feb 24
-- Lab 3.1 – Independent groups design, data collection (10 points), due Friday, Mar 3
-- Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, Mar 24
-- Lab 4.1 – Factorial design, data collection (10 points), due Friday, Apr 7
-- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, Apr 21
+- Lab 1 – APA formatting (10 points), due Friday, June 23
+- Lab 2.1 – Correlational design, data collection (10 points), due Friday, June 30
+- Lab 2.2 – Correlational design, analysis and report (20 points), due Friday, July 7
+- Lab 3.1 – Independent groups design, data collection (10 points), due Friday, July 14
+- Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, July 21
+- Lab 4.1 – Factorial design, data collection (10 points), due Friday, July 28
+- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, August 4
 
 ** Course Communication
 
-I am your primary resource for this course. I AM an experimental psychologist, so I do the stuff I teach about daily. Hence, my primary interest is for you to learn this material and do well in the course. If you have a question, always feel free to stop by my office and visit.  If you require electronic communication, email is best, but you may also send me a Blackboard message.  Just keep in mind that I don't get any notifications of Blackboard messages, so I may not see your message until I next log into the course.
+I am your primary resource for this course. I AM an experimental psychologist, so I do the stuff I teach about daily. Hence, my primary interest is for you to learn this material and do well in the course. If you have a question, always feel free to stop by my office and visit.  If you require electronic communication, please email me.  I will be sending periodic emails to each of you that update you on course progress, due dates, etc.  It is imperative that you check your Tarleton email regularly so that you don't miss any of these messages.
 
 ** University Policy on "F" Grades
-
 Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
 
 ** Academic Honesty
 
-Tarleton State University expects its students to maintain high standards of
-personal and scholarly conduct. Students guilty of academic dishonesty are
-subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
+Tarleton State University expects its students to maintain high standards of personal and scholarly conduct. Students guilty of academic dishonesty are subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
 
 In particular, any exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  The minimum sanction for violation of this policy is a grade of 0 on the affected exam.
 
-Each student’s honesty and integrity are taken for granted. However, if I find
-evidence of academic misconduct I will pursue the matter
-to the fullest extent permitted by the university. ACADEMIC MISCONDUCT OR
-DISHONESTY WILL RESULT IN A GRADE OF F FOR THE COURSE.  Students are
-strongly advised to avoid even the /appearance/ of academic misconduct. 
+Each student’s honesty and integrity are taken for granted. However, if I find evidence of academic misconduct I will pursue the matter to the fullest extent permitted by the university. ACADEMIC MISCONDUCT OR DISHONESTY WILL RESULT IN A GRADE OF F FOR THE COURSE.  Students are strongly advised to avoid even the /appearance/ of academic misconduct. 
 
 ** Academic Affairs Core Value Statements
 
@@ -134,19 +127,18 @@ located in Math 201. More information can be found at www.tarleton.edu/sds or in
  
 ** Semester schedule
 
-| Unit | Dates        | Topic                                                                   |
-|------+--------------+-------------------------------------------------------------------------|
-|    0 | Jan 17-29    | Statistics review                                                       |
-|    1 | Jan 30-Feb 5 | Knowing in psychological science                                        |
-|    2 | Feb 6-12     | Reading the literature / APA style                                      |
-|    3 | Feb 13-19    | Basic research methods                                                  |
-|    4 | Feb 20-26    | Ethics in psychological science                                         |
-|    - | Feb 27-Mar 5 | *Exam 1 (due Mar 5)*                                                    |
-|    5 | Mar 6-12     | Experiments: selecting and manipulating variables                       |
-|    - | Mar 13-19    | *Spring Break*                                                          |
-|    6 | Mar 20-26    | Experiments: sampling methods                                           |
-|    7 | Mar 27-Apr 9 | Experiments: classic designs                                            |
-|    - | Apr 10-16    | *Exam 2 (due Apr 16)*                                                   |
-|    8 | Apr 17-23    | Non-experiments: survey and correlational designs)                      |
-|    9 | Apr 24-30    | Non-experiments: quasi-experiments and developmental designs (Ch 12,13) |
-|    - | May 1-7      | *Exam 3 (due May 7)*                                                    |
+| Unit | Topic                                                        | Due date            |
+|------+--------------------------------------------------------------+---------------------|
+|    0 | Statistics review                                            | Friday, June 16     |
+|    1 | Knowing in psychological science                             | Wednesday, June 21  |
+|    2 | Reading the literature / APA style                           | Monday, June 26     |
+|    3 | Basic research methods                                       | Thursday, June 29   |
+|    4 | Ethics in psychological science                              | Wednesday, July 5   |
+|      | *Exam 1*                                                     | *Friday, July 7*    |
+|    5 | Experiments: selecting and manipulating variables            | Wednesday, July 12  |
+|    6 | Experiments: sampling methods                                | Monday, July 17     |
+|    7 | Experiments: classic designs                                 | Thursday, July 20   |
+|      | *Exam 2*                                                     | *Tuesday, July 25*  |
+|    8 | Non-experiments: survey and correlational designs            | Friday, July 28     |
+|    9 | Non-experiments: quasi-experiments and developmental designs | Wednesday, August 3 |
+|      | *Exam 3*                                                     | *Wednesday, August 9* |
