@@ -140,5 +140,5 @@ located in Math 201. More information can be found at www.tarleton.edu/sds or in
 |    7 | Experiments: classic designs                                 | Thursday, July 20   |
 |      | *Exam 2*                                                     | *Tuesday, July 25*  |
 |    8 | Non-experiments: survey and correlational designs            | Friday, July 28     |
-|    9 | Non-experiments: quasi-experiments and developmental designs | Wednesday, August 3 |
+|    9 | Non-experiments: quasi-experiments and developmental designs | Wednesday, August 2 |
 |      | *Exam 3*                                                     | *Wednesday, August 9* |
