@@ -1,6 +1,6 @@
 #+TITLE: PSYC 3330: Elementary Statistics for the Behavioral Sciences
 #+AUTHOR: 
-#+DATE: Spring 2017
+#+DATE: Summer 2017
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+LATEX_CLASS: article
@@ -10,7 +10,7 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: MTWRF 9-11 am
+- Office hours: MWF 8-11 am /(or by appointment)/
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
@@ -120,7 +120,7 @@ located in Math 201. More information can be found at www.tarleton.edu/sds or in
 |    7 | Testing means of samples of *unknown* populations: $t$-tests | Wednesday, July 19  |
 |    8 | More $t$-tests (independent samples, etc.)                   | Monday, July 24     |
 |    9 | Analysis of variance (ANOVA): one independent variable       | Thursday, July 27   |
-|   10 | Analysis of variance (ANOVA): two independent variables      | Tuesday, July 31    |
+|   10 | Analysis of variance (ANOVA): two independent variables      | Tuesday, August 1   |
 |      | *Exam 3*                                                     | Friday, August 4    |
 |      | *Final exam*                                                 | Wednesday, August 9 |
 |      |                                                              |                     |
