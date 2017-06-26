@@ -127,17 +127,19 @@ located in Math 201. More information can be found at www.tarleton.edu/sds or in
  
 ** Semester Schedule
 
-| Unit               | Topic                              | Book chapter(s) |
-|--------------------+------------------------------------+-----------------|
-| 1 (June 14-20)     | Basic linguistics                  |               2 |
-| 2 (June 21-27)     | Foundations of language            |               3 |
-|                    | *Exam 1 (due Wednesday, June 28)*  |                 |
-| 3 (June 28-July 4) | Development of language            |               4 |
-| 4 (July 5-11)      | Bilingualism                       |               5 |
-|                    | *Exam 2 (due Wednesday, July 12)*  |                 |
-| 5 (July 12-18)     | Perception of visual words         |               6 |
-| 6 (July 19-25)     | Perception of spoken language      |               9 |
-|                    | *Exam 3 (due Wednesday, July 26)*  |                 |
-| 7 (July 26-Aug 1)  | Comprehension: parsing sentences   |              10 |
-| 8 (Aug 2-8)        | Comprehension: words and discourse |           11-12 |
-|                    | *Exam 4 (due Wednesday, Aug 9)*    |                 |
+| Unit               | Topic                                             | Book chapter(s) |
+|--------------------+---------------------------------------------------+-----------------|
+| 1 (June 14-20)     | The basics (cognitive psychology and linguistics) |             1,2 |
+| 2 (June 21-27)     | The foundations of language                       |               3 |
+|                    | *Exam 1 (due Wednesday, June 28)*                 |                 |
+| 3 (June 28-July 4) | Language development                              |               4 |
+| 4 (July 5-11)      | Perception of words (visual and spoken)           |             6,9 |
+|                    | *Exam 2 (due Wednesday, July 12)*                 |                 |
+| 5 (July 12-18)     | Reading                                           |             7,8 |
+| 6 (July 19-25)     | Understanding the structure of sentences          |              10 |
+|                    | *Exam 3 (due Wednesday, July 26)*                 |                 |
+| 7 (July 26-Aug 1)  | Word meaning                                      |              11 |
+| 8 (Aug 2-8)        | Language production                               |              13 |
+|                    | *Exam 4 (due Wednesday, Aug 9)*                   |                 |
+
+
