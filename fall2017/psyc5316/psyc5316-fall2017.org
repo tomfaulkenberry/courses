@@ -34,7 +34,7 @@ Tentatively, I expect that we will cover the following topics:
 - inferences based on robust measures
 
 **** Bayesian methods (5 weeks)
-- Bayes' Theorem, priors, likelihoods
+- Bayes' Theorem, priors, likelihoods, and posteriors
 - estimating proportions and rates (using both exact methods via conjugate priors and simulation-based Markov chain Monte Carlo (MCMC) methods)
 - fitting models with JAGS and R
 - Bayesian hypothesis testing
@@ -49,7 +49,13 @@ Tentatively, I expect that we will cover the following topics:
 
 ** Student learning outcomes
 
-1. 
+1. perform and interpret basic calculations in classical frequentist statistics, including confidence intervals.
+2. know how to apply frequentist hypothesis tests to a variety of applied problems 
+3. understand bootstrapping and know how to construct bootstrap estimates via computer software (e.g., R)
+4. compute and perform inference with robust measures of location, including medians, trimmed means, and $M$-estimators
+5. perform basic computations with Bayes' theorem
+6. understand the role of the prior, likelihood, and posterior in the Bayesian framework
+7. perform Bayesian inference for parameter estimation and hypothesis testing
 
 ** Requirements and grading
 
