@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>PSYC 5316: Getting Started With R and RStudio</title>
+<!-- 2017-08-20 Sun 07:15 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Thomas J. Faulkenberry" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">PSYC 5316: Getting Started With R and RStudio</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">Introduction: What is R / RStudio?</a></li>
+<li><a href="#sec-2">Why should I learn R?</a>
+<ul>
+<li><a href="#sec-2-1">R is not point/click software..and that's a good thing!</a></li>
+<li><a href="#sec-2-2">R code is great for reproducibility</a></li>
+<li><a href="#sec-2-3">R is interdisciplinary and extensible</a></li>
+<li><a href="#sec-2-4">R works on data of all shapes and sizes</a></li>
+<li><a href="#sec-2-5">R produces high-quality graphics</a></li>
+<li><a href="#sec-2-6">R has a large community</a></li>
+<li><a href="#sec-2-7">Not only is R free, but it is also open-source and cross-platform</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">Knowing your way around RStudio</a></li>
+<li><a href="#sec-4">Interacting with R</a></li>
+<li><a href="#sec-5">Getting help</a></li>
+<li><a href="#sec-6">Creating objects in R</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Introduction: What is R / RStudio?</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The term "R" is generally used to refer to two things: (1) a statistical programming language, and (2) the software that interprets the scripts written using it.  RStudio is currently a very popular way to not only write your R scripts but also to interact with the R software. To function correctly, RStudio needs R, and therefore both R <b>and</b> RStudio need to be installed on your computer.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Why should I learn R?</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">R is not point/click software..and that's a good thing!</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+The learning curve might be steeper than with other software, but with R, the results of your analysis does not rely on remembering a succession of pointing and clicking, but instead on a series of written commands, and that's a good thing! So, if you want to redo your analysis because you collected more data, you don't have to remember which button you clicked in which order to obtain your results, you just have to run your script again.
+</p>
+
+<p>
+Working with scripts makes the steps you used in your analysis clear, and the code you write can be inspected by someone else who can give you feedback and help you to debug (i.e., spot mistakes in your code).
+</p>
+
+<p>
+Working with scripts also forces you to have a deeper understanding of what you are doing, and facilitates your learning and comprehension of the methods you use.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">R code is great for reproducibility</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Reproducibility is when someone else (including your future self) can obtain the same results from the same dataset when using the same analysis.  R integrates with other tools to generate manuscripts from your code. If you collect more data, or fix a mistake in your dataset, the figures and the statistical tests in your manuscript are updated automatically.
+</p>
+
+<p>
+An increasing number of journals and funding agencies expect your analyses to be reproducible, so knowing R will give you an edge with these requirements.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3">R is interdisciplinary and extensible</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+With over 10,000 packages that can be installed to extend its capabilities, R provides a framework that allows you to combine statistical approaches from many scientific disciplines to best suit the analytical framework you need to analyze your data. For instance, R has packages for image analysis, GIS, time series, population genetics, and a lot more.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4">R works on data of all shapes and sizes</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+The skills you learn with R scale easily with the size of your dataset. Whether your dataset has hundreds or millions of lines, it won't make much difference to you.
+</p>
+
+<p>
+R is designed for data analysis. It comes with special data structures and data types that make handling of missing data and statistical factors convenient.
+</p>
+
+<p>
+R can connect to spreadsheets, databases, and many other data formats, on your computer or on the web.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5">R produces high-quality graphics</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+The plotting functionalities in R are endless, and allow you to adjust <i>any</i> aspect of your graph.  This will help you to convey the message from your data most effectively.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-6" class="outline-3">
+<h3 id="sec-2-6">R has a large community</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+Thousands of people use R daily. Many of them are willing to help you through mailing lists and websites such as <a href="https://stackoverflow.com/">stackoverflow.com</a>.  Most of your questions are simply a Google search away!
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-7" class="outline-3">
+<h3 id="sec-2-7">Not only is R free, but it is also open-source and cross-platform</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+Anyone can inspect the source code to see how R works. Because of this transparency, there is less chance for mistakes, and if you (or someone else) find some, you can report and fix bugs.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Knowing your way around RStudio</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Let's start by learning about <a href="https://www.rstudio.com/">RStudio</a>, which is an Integrated Development Environment (IDE) for working with R.
+</p>
+
+<p>
+The RStudio IDE open-source product is free under the
+<a href="https://www.gnu.org/licenses/agpl-3.0.en.html">Affero General Public License (AGPL) v3</a>.  The RStudio IDE is also available with a commercial license and priority email support from RStudio, Inc.
+</p>
+
+<p>
+We will be using RStudio to write code, navigate the files on our computer, inspect the variables we are going to create, and visualize the plots we will generate. RStudio can also be used for other things (e.g., version control, developing packages, writing Shiny apps) that we will not cover during the semester.
+</p>
+
+
+<div class="figure">
+<p><img src="figures/rstudio-screenshot.png" alt="rstudio-screenshot.png" />
+</p>
+</div>
+
+<p>
+RStudio is divided into 4 "Panes":
+</p>
+<ol class="org-ol">
+<li>the <b>Source</b> for your scripts and documents (top-left, in the default layout)
+</li>
+<li>the R <b>Console</b> (bottom-left), 
+</li>
+<li>your <b>Environment/History</b> (top-right)
+</li>
+<li>your <b>Files/Plots/Packages/Help/Viewer</b> (bottom-right). 
+</li>
+</ol>
+
+<p>
+The placement of these panes and their content can be customized (see menu, Tools -&gt; Global Options -&gt; Pane Layout). In fact, I will show you in class how I prefer to organize my workspace.  
+</p>
+
+<p>
+One of the advantages of using RStudio is that all the information you need to write code is available in a single window. Additionally, with many shortcuts, autocompletion, and highlighting for the major file types you use while developing in R, RStudio will make typing easier and less error-prone.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Interacting with R</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+The basic idea of any computer programming is that we write down instructions for the computer to follow, and then we tell the computer to follow those instructions. We write (code) instructions in R because it is a common language that both the computer and we can understand. We call the instructions <b>commands</b> and we tell the computer to follow the instructions by <b>executing</b> (also called <b>running</b>) those commands.
+</p>
+
+<p>
+There are two main ways of interacting with R: by using the console or by using script files (plain text files that contain your code). The console pane (in RStudio, the bottom left panel) is the place where commands written in the R language can be typed and executed immediately by the computer. It is also where the results will be shown for commands that have been executed. You can type commands directly into the console and press `Enter` to execute those commands, but they will be forgotten when you close the session.
+</p>
+
+<p>
+Because we want our code and workflow to be reproducible, it is better to type the commands we want in the script editor, and save the script. This way, there is a complete record of what we did, and anyone (including our future selves!) can easily replicate the results on their computer.
+</p>
+
+<p>
+RStudio allows you to execute commands directly from the script editor by using the <code>Ctrl</code> + <code>Enter</code> shortcut (on Macs, <code>Cmd</code> + <code>Return</code> will work, too). The command on the current line in the script (indicated by the cursor) or all of the commands in the currently selected text will be sent to the console and executed when you press <code>Ctrl</code> + <code>Enter</code>.
+</p>
+
+<p>
+Note that if the R console is ready to accept commands, the R console shows a <code>&gt;</code> prompt. If it receives a command (either typed or sent from the script editor using <code>Ctrl</code> + <code>Enter</code>), R will try to execute it, and when ready, will show the results and come back with a new <code>&gt;</code> prompt to wait for new
+commands.
+</p>
+
+<p>
+However, if R is still waiting for you to enter more data because it isn't complete yet, the console will show a <code>+</code> prompt. It means that you haven't finished entering a complete command.  This is because you have not 'closed' a parenthesis or quotation (i.e. you don't have the same number of left-parentheses as right-parentheses, or the same number of opening and closing quotation marks).  When this happens, and you thought you finished typing your command, click inside the console window and press <code>Esc</code>; this will cancel the incomplete command and return you to the <code>&gt;</code> prompt.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Getting help</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+One of the most fastest ways to get help, is to use the RStudio help interface. This panel by default can be found at the lower right hand panel of RStudio. As seen in the screenshot, by typing the word "Mean", RStudio tries to also give a number of suggestions that you might be interested in. The description is then shown in the display window.
+</p>
+
+
+<div class="figure">
+<p><img src="figures/rstudiohelp.png" alt="rstudiohelp.png" />
+</p>
+</div>
+
+<p>
+Let's suppose that you know the name of the function I want to use (e.g., <code>barplot</code>) but you're not sure how to use it.  In this case, you can type <code>?barplot</code> in the console, which will pull up the help screen <i>inside the console</i>.
+</p>
+
+<p>
+If you can't find what you are looking for in the help screen, you always can use the <a href="http://www.rdocumentation.org">rdocumentation.org</a> website that searches through the help files across all packages available.  However, in my experience, the easiest way to get R help is a generic Google search.  This  will often either send you to the appropriate package documentation or a helpful forum where someone else has already asked your question.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6">Creating objects in R</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+At its most simplest, R is a command-line driven calculator.  So, you can always get output from R simply by typing some mathematical expression in the console:
+</p>
+
+<pre class="example">
+3 + 5
+12 / 7
+</pre>
+
+<p>
+However, to do useful and interesting things, we need to assign <i>values</i> to <i>objects</i>. To create an object, we need to give it a name followed by the assignment operator <code>&lt;-</code>, and the value we want to give it:
+</p>
+
+<pre class="example">
+weight_kg &lt;- 55
+</pre>
+
+<p>
+As I just mentioned, <code>&lt;-</code> is the assignment operator. It assigns <i>values</i> on the right to <i>objects</i> on the left. So, after executing <code>x &lt;- 3</code>, the value of <code>x</code> is <code>3</code>. The arrow can be read as "3 goes into x".  For historical reasons, you can also use equal sign <code>=</code> for assignments, but not in every context. Because of the <a href="http://blog.revolutionanalytics.com/2008/12/use-equals-or-arrow-for-assignment.html">slight</a> <a href="https://web.archive.org/web/20130610005305/https://stat.ethz.ch/pipermail/r-help/2009-March/191462.html">differences</a> in syntax, it is good practice to always use `&lt;-` for assignments.
+</p>
+
+<p>
+Note: In RStudio, typing <code>Alt</code> + <code>-</code>  will write the assignment operator <code>&lt;-</code> in a single keystroke!  
+</p>
+
+<p>
+Objects can be given any name such as <code>x</code>, <code>current_temperature</code>, or <code>subject_id</code>. You want your object names to be explicit and not too long. They cannot start with a number (<code>2x</code> is not valid, but <code>x2</code> is). R is case sensitive (e.g., <code>weight_kg</code> is different from <code>Weight_kg</code>). There are some names that cannot be used because they are the names of fundamental functions in R (e.g., <code>if</code>, <code>else</code>, <code>for</code>, see <a href="https://stat.ethz.ch/R-manual/R-devel/library/base/html/Reserved.html">here</a> for a complete list). In general, even if it's allowed, it's best to not use other function names (e.g., <code>c</code>, <code>T</code>, <code>mean</code>, <code>data</code>, <code>df</code>, <code>weights</code>). If in doubt, check the help screen to see if the name is already in use. 
+</p>
+
+<p>
+It is also recommended to use nouns for variable names, and verbs for function names. Whatever you do, it is important to be consistent in the styling of your code (where you put spaces, how you name variables, etc.). Using a consistent coding style makes your code clearer to read for your future self and your collaborators. 
+</p>
+
+<p>
+When assigning a value to an object, R does not print anything. You can force R to print the value by using parentheses or by typing the object name:
+</p>
+
+<pre class="example">
+weight_kg &lt;- 55    # doesn't print anything
+(weight_kg &lt;- 55)  # prints the value of `weight_kg`
+weight_kg          # and so does typing the name of the object
+</pre>
+
+<p>
+Now that R has the object <code>weight_kg</code> in memory, we can do arithmetic with it. For instance, we may want to convert this weight into pounds (weight in pounds is 2.2 times the weight in kg):
+</p>
+
+<pre class="example">
+2.2 * weight_kg
+</pre>
+
+<p>
+We can also change a variable's value by assigning it a new one:
+</p>
+
+<pre class="example">
+weight_kg &lt;- 57.5
+2.2 * weight_kg
+</pre>
+
+<p>
+This means that assigning a value to one variable does not change the values of other variables.  For example, let's store the animal's weight in pounds in a new variable, <code>weight_lb</code>:
+</p>
+
+<pre class="example">
+weight_lb &lt;- 2.2 * weight_kg
+</pre>
+
+<p>
+and then change <code>weight_kg</code> to 100.
+</p>
+
+<pre class="example">
+weight_kg &lt;- 100
+</pre>
+
+<p>
+What do you think is the current content of the object <code>weight_lb</code>? 126.5 or 220?
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Fall 2017</p>
+<p class="author">Author: Thomas J. Faulkenberry</p>
+<p class="date">Created: 2017-08-20 Sun 07:15</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
