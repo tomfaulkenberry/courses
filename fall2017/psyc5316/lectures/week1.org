@@ -1,0 +1,35 @@
+#+TITLE: Week 1 lecture notes - PSYC 5316
+#+AUTHOR:
+#+DATE: August 28, 2017 
+#+OPTIONS: toc:nil num:nil
+
+* Course outline
+
+1. Review of classical statistical methods (5 weeks)
+  - Basic probability
+  - distributions used for applied work
+  - sampling distributions and confidence intervals
+  - hypothesis testing
+  - common hypothesis tests (including t-test, anova, chi-square, etc.)
+2. Robust methods (3 weeks)
+  - bootstrapping
+  - robust measures of location (including trimmed means, Winsorized means, $M$-estimators, etc.) 
+  - inferences based on robust measures
+3. Bayesian methods (5 weeks)
+  - Bayes' Theorem, priors, likelihoods, and posteriors
+  - estimating proportions and rates 
+    - exact methods via conjugate priors 
+    - approximate methods, using Markov chain Monte Carlo (MCMC) 
+  - fitting models with JAGS and R
+  - Bayesian hypothesis testing
+
+
+* Basic definitions
+** probability function
+** expected value and variance
+** conditional probability and independence
+
+* Distributions
+** Binomial
+** Normal
+
