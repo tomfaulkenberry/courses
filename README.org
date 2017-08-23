@@ -3,7 +3,7 @@
 This repository hosts course materials (syllabi, lecture notes, etc.) 
 for my courses at Tarleton State University.
 
-** Spring 2017
+** Fall 2017
 
 - [[fall2017/psyc3330/README.org][PSYC 3330]]
 - [[fall2017/psyc5316/README.org][PSYC 5316]]
