@@ -10,7 +10,7 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: /TBA/
+- Office hours: MTWRF 1-3 pm
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
@@ -100,15 +100,9 @@ Tarleton holds high expectations for students to assume responsibility for their
 
 ** Students with Disabilities Policy
 
-It is the policy of Tarleton State University to comply with the Americans
-with Disabilities Act and other applicable laws. If you are a student with a
-disability seeking accommodations for this course, please contact Trina
-Geye, Director of Student Disability Services, at 254.968.9400 or
-geye@tarleton.edu. Student Disability Services is
-located in Math 201. More information can be found at www.tarleton.edu/sds or in the University Catalog.
-
-
-**Note:  any changes to this syllabus will be communicated to you by the instructor!**
+It is the policy of Tarleton State University to comply with the Americans with Disabilities  Act (www.ada.gov) and other applicable laws.  If you are a student with a disability seeking accommodations for this course, please contact the Center for Access and Academic Testing, at 254.968.9400 or caat@tarleton.edu. The office is located in Math 201. More information can be found at www.tarleton.edu/caat or in the University Catalog.​
+ 
+*Note:  any changes to this syllabus will be communicated to you by the instructor!*
  
 ** Semester Schedule
 | Unit | Topic                                                        | Due date        |

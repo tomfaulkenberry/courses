@@ -1,0 +1,5 @@
+#+TITLE: PSYC 3330 -- Elementary Statistics for the Behavioral Sciences
+
+- [[psyc3330-fall2017.org][Course syllabus]]
+- Lecture notes
+  - coming soon!

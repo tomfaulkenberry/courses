@@ -1,0 +1,5 @@
+#+TITLE: PSYC 5316 -- Advanced Quantitative Methods
+
+- [[psyc5316-fall2017.org][Course syllabus]]
+- Lecture notes
+  - coming soon!
