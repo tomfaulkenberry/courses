@@ -60,8 +60,8 @@ Exam dates:
 - Exam 3 (Thursday, November 30)
 - Final exam (Tuesday, December 12, 8-10:30 am)
   
-*** Unit quizzes (20% of grade)
-At the end of each unit, you will complete a 20-question online quiz (on Blackboard) that covers the content of that unit.  The quizzes will have a generous time limit (60 minutes), and may be attempted twice.  In the event that you complete two attempts, your last graded attempt is the one that will be recorded.  Each quiz counts for 10 possible points.  Since there are 10 units, you will earn up to 100 points for your quiz grade.
+*** Weekly quizzes (20% of grade)
+At the end of each week (excluding exam weeks), you will complete a 20-question online quiz (on Blackboard) that covers the content of that week's lectures.  The quizzes will have a generous time limit (60 minutes), and may be attempted twice.  In the event that you complete two attempts, your last graded attempt is the one that will be recorded.  Each quiz counts for 10 possible points.  Since there are 10 such quizzes, you will earn up to 100 points for your quiz grade.
 
 ** Course Communication
 
@@ -105,21 +105,21 @@ It is the policy of Tarleton State University to comply with the Americans with 
 *Note:  any changes to this syllabus will be communicated to you by the instructor!*
  
 ** Semester Schedule
-| Unit | Dates          | Topic                                                        |
-|------+----------------+--------------------------------------------------------------|
-|    1 | Aug 28-Sep 1   | Displaying data                                              |
-|    2 | Sep 4-8        | Descriptives 1: central tendency, variation, and z-scores    |
-|    3 | Sep 11-15      | Descriptives 2: correlation                                  |
-|      | Sep 18-22      | *Exam 1*                                                     |
-|    4 | Sep 25-29      | The normal distribution: measuring likelihood                |
-|    5 | Oct 2-6        | The logic of hypothesis testing                              |
-|    6 | Oct 9-13       | Testing means of samples of *known* populations: $z$-tests   |
-|      | Oct 16-20      | *Exam 2*                                                     |
-|    7 | Oct 23-27      | Testing means of samples of *unknown* populations: $t$-tests |
-|    8 | Oct 30-Nov 3   | More $t$-tests (independent samples, etc.)                   |
-|    9 | Nov 6-10       | Analysis of variance (ANOVA): one independent variable       |
-|   10 | Nov 13-17      | Nonparametric techniques: chi-square and binomial tests |
-|      | Nov 20-24      | /No coursework during week of Thanksgiving holiday/          |
-|      | Nov 27-Dec 1   | *Exam 3*                                                     |
-|      | Dec 4-8        | Course review (no class on Thursday)                         |
-|      | Dec 11-15      | *Final exam on Tuesday, Dec 12, 8-10:30 am*                  |
+| Week | Dates        | Topic                                                        |
+|------+--------------+--------------------------------------------------------------|
+|    1 | Aug 28-Sep 1 | Displaying data                                              |
+|    2 | Sep 4-8      | Descriptives 1: central tendency, variation, and z-scores    |
+|    3 | Sep 11-15    | Descriptives 2: correlation                                  |
+|    4 | Sep 18-22    | *Exam 1*                                                     |
+|    5 | Sep 25-29    | The normal distribution: measuring likelihood                |
+|    6 | Oct 2-6      | The logic of hypothesis testing                              |
+|    7 | Oct 9-13     | Testing means of samples of *known* populations: $z$-tests   |
+|    8 | Oct 16-20    | *Exam 2*                                                     |
+|    9 | Oct 23-27    | Testing means of samples of *unknown* populations: $t$-tests |
+|   10 | Oct 30-Nov 3 | More $t$-tests (independent samples, etc.)                   |
+|   11 | Nov 6-10     | Analysis of variance (ANOVA): one independent variable       |
+|   12 | Nov 13-17    | Nonparametric techniques: chi-square and binomial tests      |
+|     13 | Nov 20-24    | /No coursework during week of Thanksgiving holiday/          |
+|     14 | Nov 27-Dec 1 | *Exam 3*                                                     |
+|     15 | Dec 4-8      | Course review (no class on Thursday)                         |
+|     16 | Dec 11-15    | *Final exam on Tuesday, Dec 12, 8-10:30 am*                  |
