@@ -23,7 +23,6 @@
   - fitting models with JAGS and R
   - Bayesian hypothesis testing
 
-
 * Basic definitions
 ** probability function
 ** expected value and variance
