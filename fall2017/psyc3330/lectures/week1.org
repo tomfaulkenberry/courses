@@ -1,0 +1,43 @@
+#+TITLE: Week 1 lecture notes - PSYC 3330
+#+AUTHOR:
+#+DATE: August 28-Sept 1, 2017 
+#+OPTIONS: toc:nil num:nil
+
+* Why do we need to learn statistics?
+
+- Goals:
+  1.  to *describe* data (descriptive statistics)
+  2.  to *make inferences* about a /population/, given data from a /sample/ (inferential statistics)
+
+After studying statistics, we learn how to say things like:
+  - "We are /95% confident/ that between 65 and 75 percent of voters will turn out for the upcoming election"
+  - "The repeated testing group scored /significantly better/ than the repeated study group on a subsequent memory test."
+
+What do these things mean, exactly?  We'll find out!
+
+* What kinds of data do we deal with?
+
+Data are classified by their /scale of measurement/:
+
+Categorical data:
+  1. nominal scale -- 
+  2. ordinal scale --
+
+Continuous data:
+  3. interval scale --  
+  4. ratio scale --
+
+** Examples:
+
+* Displaying data
+
+For now, we'll focus on how to display /frequency/ -- that is, how often certain measurements show up in the data.
+
+Important -- the type of graph used depends on the scale of measurement:
+
+Categorical data:
+  - bar graph
+  - pie chart
+
+Continuous data:
+  - histogram
