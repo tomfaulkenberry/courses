@@ -19,15 +19,35 @@ What do these things mean, exactly?  We'll find out!
 
 Data are classified by their /scale of measurement/:
 
-Categorical data:
-  1. nominal scale -- 
-  2. ordinal scale --
+*Categorical* data (also called /discrete/) -- measurements consists of separate categories, with no values existing /between/ any two categories
+  1. nominal scale -- measurements correspond to categories with different /names/
+    - no logical relation /between/ categories
+    - examples -- gender, meal preference, religious preference
 
-Continuous data:
-  3. interval scale --  
-  4. ratio scale --
+  2. ordinal scale -- measurements correspond to /ordered/ categories
+    - "nominal + ordering"
+    - examples -- position in a race, student classification, level of agreement
 
-** Examples:
+*Continuous* data -- measurements take on an infinite set of possible values.  Measurements are usually numeric
+  3. interval scale -- measurements consist of numbers where equal differences in measurement reflect equal differences in represented quantity.
+    - measurements /don't/ represent an amount (or magnitude)
+    - example: temperature scale:  the difference between 10 deg F and 40 deg F is the same as the difference between 50 deg F and 80 deg F (namely, the latter in each pair is 30 degrees warmer).
+    - note: ratios DON'T make sense (40 deg F is not "twice as warm" as 20 deg F..it is not clear what this would even mean). 
+
+  4. ratio scale -- interval scale + an absolute zero point
+    - can represent magnitude
+    - ratios make sense
+    - example: any measurement of a "quantity" (weight, response time, etc.)
+
+** class exercise
+
+Identify the scale of measurement for each of the following:
+
+1. ethnic group to which a person belongs
+2. number of times a mouse takes a wrong turn in a maze
+3. position one finishes in a race
+4. a person's score on an IQ test
+
 
 * Displaying data
 
