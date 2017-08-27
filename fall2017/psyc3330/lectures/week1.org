@@ -5,7 +5,7 @@
 
 * Why do we need to learn statistics?
 
-- Goals:
+Goals:
   1.  to *describe* data (descriptive statistics)
   2.  to *make inferences* about a /population/, given data from a /sample/ (inferential statistics)
 
@@ -14,6 +14,11 @@ After studying statistics, we learn how to say things like:
   - "The repeated testing group scored /significantly better/ than the repeated study group on a subsequent memory test."
 
 What do these things mean, exactly?  We'll find out!
+
+/Note:/ in our next course (PSYC 3435), you'll learn that much of what we know about psychology (human behavior) comes from /experiments/ 
+  - how does systematic manipulation of some variable (*independent variable*) affect measurements on some outcome variable (*dependent variable*)?
+
+
 
 * What kinds of data do we deal with?
 
