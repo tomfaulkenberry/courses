@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 1 lecture notes - PSYC 5316</title>
-<!-- 2017-08-25 Fri 13:52 -->
+<!-- 2017-08-27 Sun 15:43 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -234,30 +234,473 @@ for the JavaScript code in this tag.
 <h2 id="sec-2">Basic definitions</h2>
 <div class="outline-text-2" id="text-2">
 </div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1">probability function</h3>
+<h3 id="sec-2-1">probability functions</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+All of statistical inference deals with statements of <i>probability</i>.  But what exactly is probability?
+</p>
+
+<p>
+The following data comes from an online replication of the classic Sherman Kent study on perceptions of uncertainty.  People were asked to assign a percentage of probability to different phrases.
+</p>
+
+<p>
+Results:
+</p>
+
+
+<div class="figure">
+<p><img src="figures/probPlot.png" alt="probPlot.png" />
+</p>
 </div>
+
+<p>
+As you can see, there is a lot of variability in our perceptions of uncertainty.  Thus, it is very important to know <i>exactly</i> what we are talking about when dealing with probability.  We will be very specific about these notions this semester.
+</p>
+
+<p>
+So, to start &#x2013; What exactly is probability?
+</p>
+
+<p>
+Definition: a <b>probability</b> is a function \(p(x)\) that assigns "outcomes" \(x\) to real numbers \(p(x)\) so that the following properties hold:
+</p>
+
+<ol class="org-ol">
+<li>\(p(x)\geq 0\) for any \(x\)
+</li>
+<li>For any two mutually exclusive outcomes \(x\) and \(y\), we have \(p(x\text{ or }y)=p(x)+p(y)\)
+</li>
+<li>\(\sum p(x) = 1\), where the sum is taken over all possible outcomes \(x\)
+</li>
+</ol>
+
+<p>
+Example: verify that the following mapping defines a probability:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">\(x\)</td>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="right">2</td>
+<td class="right">3</td>
+</tr>
+
+<tr>
+<td class="left">\(p(x)\)</td>
+<td class="right">0.125</td>
+<td class="right">0.375</td>
+<td class="right">0.375</td>
+<td class="right">0.125</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Note that we can also construct a bar plot of this probability:
+</p>
+
+<pre class="example">
+x &lt;- c(0, 1, 2, 3)
+p &lt;- c(0.125, 0.375, 0.375, 0.125)
+barplot(p, names.arg=x, xlab="x", ylab="p(x)")
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week1/barplot.png" alt="barplot.png" />
+</p>
+</div>
+
+
+<p>
+This bar plot forms an important visualization tool for us called a <b>probability distribution</b>.  We'll talk more about this a bit later.
+</p>
+</div>
+</div>
+
 <div id="outline-container-sec-2-2" class="outline-3">
 <h3 id="sec-2-2">expected value and variance</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Expected value is a generalization of the concept of mean (which you are already quite familiar with).
+</p>
+
+<p>
+Definition: the <b>expected value</b> of a random variable \(X\) is given by
+</p>
+
+<p>
+\[
+E(X) = \sum_{x\in X}xp(x)
+\]
+</p>
+
+<p>
+Expected value is found by multiplying each outcome by its associated probability, and then adding together all resulting products.
+</p>
+
+<p>
+Example: consider the example we just did above.  Then
+</p>
+
+<p>
+\[
+E(X) = \sum_{x\in X}xp(x) = 0\cdot 0.125 + 1\cdot 0.375 +2\cdot 0.375 + 3\cdot 0.125 = 1.5
+\]
+</p>
+
+<p>
+Note: you can also get the same thing in R very quickly via the following command:
+</p>
+
+<pre class="example">
+sum(x*p)
+</pre>
+
+<p>
+Expected value is a useful concept in many ways:
+</p>
+<ul class="org-ul">
+<li>it allows us to define a notion of "mean" for ANY set of outcomes (even an infinite set)
+</li>
+<li>it gives us a very quick definition of variance!
+</li>
+</ul>
+
+<p>
+Example: the <b>variance</b> of a random variable \(X\) is defined as \(E[(x-\mu)^2]\).
+</p>
+
+<p>
+Before we compute this for our example distribution, lets check that it makes sense.  \(E[(x-\mu)^2]\) represents our "expectation" of the squared difference from the mean.  That is exactly how variance was defined in your past statistics courses.
+</p>
+
+<p>
+Example: consider again our example distribution from earlier.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">\(x\)</td>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="right">2</td>
+<td class="right">3</td>
+</tr>
+
+<tr>
+<td class="left">\(p(x)\)</td>
+<td class="right">0.125</td>
+<td class="right">0.375</td>
+<td class="right">0.375</td>
+<td class="right">0.125</td>
+</tr>
+
+<tr>
+<td class="left">\(x-\mu\)</td>
+<td class="right">-1.5</td>
+<td class="right">0.5</td>
+<td class="right">0.5</td>
+<td class="right">1.5</td>
+</tr>
+
+<tr>
+<td class="left">\((x-\mu)^2\)</td>
+<td class="right">2.25</td>
+<td class="right">0.25</td>
+<td class="right">0.25</td>
+<td class="right">2.25</td>
+</tr>
+
+<tr>
+<td class="left">\((x-\mu)^2\cdot p(x)\)</td>
+<td class="right">0.28125</td>
+<td class="right">0.09375</td>
+<td class="right">0.09375</td>
+<td class="right">0.28125</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+So the variance is \(E[(x-\mu)^2]\) = 0.28125+0.09375+0.98375+0.28125 = 0.75
+</p>
+
+<p>
+As before, this is pretty easy to do in R:
+</p>
+
+<pre class="example">
+mu = sum(x*p)
+sum((x-mu)^2*p)
+</pre>
 </div>
-<div id="outline-container-sec-2-3" class="outline-3">
-<h3 id="sec-2-3">conditional probability and independence</h3>
 </div>
 </div>
 
 <div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">Distributions</h2>
+<h2 id="sec-3">Special Distributions</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1">Binomial</h3>
+<p>
+Many common probability distributions are given by explicit formulas for their probability functions.  Two that we'll talk about this week are the <b>binomial</b> and <b>normal</b> distributions.
+</p>
 </div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">Binomial distribution</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+The binomial distribution goes back to Bernoulli in 1713.  It arises in situations where each experimental trial has only two outcomes, which we'll call success and failure (such trials are called Bernoulli trials).  
+</p>
+
+<p>
+Before presenting the general form of the binomial, lets try a simple example.
+</p>
+
+<p>
+Suppose we flipped a fair coin three times.  The probability of landing heads (which we'll call a "success") is \(p=0.5\).  Consequently, the probability of landing tails (which we'll call "failure") is \(1-p=0.5\).
+</p>
+
+<p>
+Let \(X\) denote the random variable that counts the number of successes in these three trials.
+</p>
+
+<p>
+Some questions:
+</p>
+<ol class="org-ol">
+<li>what are the possible values (outcomes) for \(X\)?
+</li>
+<li>what is the probability of each outcome?
+</li>
+</ol>
+
+<p>
+It is easy to see that we get the same probability distribution that we were working with earlier:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">\(x\)</td>
+<td class="right">0</td>
+<td class="right">1</td>
+<td class="right">2</td>
+<td class="right">3</td>
+</tr>
+
+<tr>
+<td class="left">\(p(x)\)</td>
+<td class="right">0.125</td>
+<td class="right">0.375</td>
+<td class="right">0.375</td>
+<td class="right">0.125</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+If we think about this, it is not too difficult to come up with a mathematical process that generates these probabilities for the general case.
+</p>
+
+<p>
+Suppose we have \(N\) trials, and the probability of success on any one trials is \(p\).
+</p>
+
+<p>
+Then we know the following:
+</p>
+<ol class="org-ol">
+<li>the probability of each success is \(p\)
+</li>
+<li>the probability of each failure is \(1-p\)
+</li>
+<li>we have \(x\) successes
+</li>
+<li>we have \(N-x\) failures
+</li>
+<li>there are \({N\choose x}=\frac{N!}{x!(N-x)!}\) ways to arrange these \(x\) successes from the \(N\) trials
+</li>
+</ol>
+
+<p>
+Thus, the general formula for the binomial probability function is:
+</p>
+
+<p>
+\[
+p(x) = {N\choose x} p^x(1-p)^{N-x}
+\]
+</p>
+</div>
+
+<div id="outline-container-sec-3-1-1" class="outline-4">
+<h4 id="sec-3-1-1">Example 1</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+A coin is tossed 10 times.  What is the probability of getting exactly 7 heads?
+</p>
+
+<p>
+This problem corresponds to a binomial experiment, where there are 10 independent Bernoulli trials, and \(p=0.5\).  Then we can calculate the probability via the binomial distribution:
+</p>
+
+<p>
+\[
+p(x=7) = {10\choose 7} (0.5)^7(0.5)^3
+\]
+</p>
+
+<p>
+Using R, we can calculate this as:
+</p>
+
+<pre class="example">
+choose(10,7)*0.5^7*0.5^3
+</pre>
+
+<p>
+As we can see from the answer (0.117), this outcome is fairly unlikely
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-1-2" class="outline-4">
+<h4 id="sec-3-1-2">Example 2</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<p>
+Suppose you run a series of 5 independent replications of an experiment, each with fairly high power (say 80%).  Suppose there is a true effect; that is, the null hypothesis is false.  What is the probability of getting a significant result (i.e., rejecting the null) in all 5 experiments?
+</p>
+
+<p>
+This situation can also be thought of using a binomial distribution.  Each experiment is an independent trial with two outcomes: reject null, or fail to reject null.  The probability of rejecting the null is 0.8.  Then by the binomial distribution, we have
+</p>
+
+<p>
+\[
+p(x=5) = {5\choose 5} (0.8)^5(0.2)^0 = 0.328
+\]
+</p>
+
+<p>
+This might be surprising!
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-3-1-3" class="outline-4">
+<h4 id="sec-3-1-3">Some R functions</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<p>
+While we can do binomial calcuations from scratch, R has some nice built-in functions to handle these calculations.  Any of the above calculations can be done using the <code>dbinom</code> function.  As an illustration, the two previous examples could be computed using the following commands:
+</p>
+
+<pre class="example">
+dbinom(x=7, size=10, prob=0.5)
+dbinom(x=5, size=5, prob=0.8)
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-3-1-4" class="outline-4">
+<h4 id="sec-3-1-4">digging deeper &#x2013; Likelihoods</h4>
+<div class="outline-text-4" id="text-3-1-4">
+<p>
+If we have time, we can talk about an extension of the binomial distribution.  Suppose we flip a coin 10 times, and we see 8 heads.  Do we believe this coin is fair?
+</p>
+
+<p>
+Notice that this is a different problem than before.  Here, we are given the number of successes, but NOT the probability of success on any one trial.  This is called a <b>likelihood</b> function.  Let's plot it:
+</p>
+
+<pre class="example">
+x = seq(from=0, to=1, by=0.01)
+y = dbinom(x=8, size=10, prob=x)
+plot(x, y, type="l", xlab="p", ylab="likelihood")
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week1/likelihood.png" alt="likelihood.png" />
+</p>
+</div>
+
+<p>
+This curve tells us which values of \(p\) are most likely to give us the data we observed; namely, 8 successes.  Which value of \(p\) do you think is <i>most likely</i>?
+</p>
+
+<p>
+You can test your prediction by adding the command <code>abline(v=est)</code>, where <code>est</code> is the number for \(p\) you estimated.
+</p>
+
+
+<div class="figure">
+<p><img src="figures/week1/mle.png" alt="mle.png" />
+</p>
+</div>
+
+<p>
+Note: this estimator (0.8 in this case) is called the <b>maximum likelihood estimate</b>.  It is literally the estimate for \(p\) which maximizes the likelihood function.  That means it is the estimate for \(p\) that is most likely, given the observed data.  This is a fundamental tool in statistical modeling.
+</p>
+</div>
+</div>
+</div>
+
+
 <div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2">Normal</h3>
+<h3 id="sec-3-2">Normal distribution</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: August 28, 2017</p>
-<p class="date">Created: 2017-08-25 Fri 13:52</p>
+<p class="date">Created: 2017-08-27 Sun 15:43</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
