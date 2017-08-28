@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 1 lecture notes - PSYC 5316</title>
-<!-- 2017-08-27 Sun 15:43 -->
+<!-- 2017-08-28 Mon 12:54 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -181,67 +181,21 @@ for the JavaScript code in this tag.
 <h1 class="title">Week 1 lecture notes - PSYC 5316</h1>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">Course outline</h2>
+<h2 id="sec-1">Basic definitions</h2>
 <div class="outline-text-2" id="text-1">
-<ol class="org-ol">
-<li>Review of classical statistical methods (5 weeks)
-<ul class="org-ul">
-<li>Basic probability
-</li>
-<li>distributions used for applied work
-</li>
-<li>sampling distributions and confidence intervals
-</li>
-<li>hypothesis testing
-</li>
-<li>common hypothesis tests (including t-test, anova, chi-square, etc.)
-</li>
-</ul>
-</li>
-<li>Robust methods (3 weeks)
-<ul class="org-ul">
-<li>bootstrapping
-</li>
-<li>robust measures of location (including trimmed means, Winsorized means, \(M\)-estimators, etc.) 
-</li>
-<li>inferences based on robust measures
-</li>
-</ul>
-</li>
-<li>Bayesian methods (5 weeks)
-<ul class="org-ul">
-<li>Bayes' Theorem, priors, likelihoods, and posteriors
-</li>
-<li>estimating proportions and rates 
-<ul class="org-ul">
-<li>exact methods via conjugate priors 
-</li>
-<li>approximate methods, using Markov chain Monte Carlo (MCMC) 
-</li>
-</ul>
-</li>
-<li>fitting models with JAGS and R
-</li>
-<li>Bayesian hypothesis testing
-</li>
-</ul>
-</li>
-</ol>
-</div>
-</div>
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">probability functions</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Our goal this semester is to develop a toolkit for advanced statistical inference.
+</p>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Basic definitions</h2>
-<div class="outline-text-2" id="text-2">
-</div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1">probability functions</h3>
-<div class="outline-text-3" id="text-2-1">
 <p>
 All of statistical inference deals with statements of <i>probability</i>.  But what exactly is probability?
 </p>
 
 <p>
-The following data comes from an online replication of the classic Sherman Kent study on perceptions of uncertainty.  People were asked to assign a percentage of probability to different phrases.
+Apparently people are not too sure!  The following data comes from an online replication of the classic Sherman Kent study on perceptions of uncertainty.  People were asked to assign a percentage of probability to different phrases.
 </p>
 
 <p>
@@ -335,9 +289,9 @@ This bar plot forms an important visualization tool for us called a <b>probabili
 </div>
 </div>
 
-<div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2">expected value and variance</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">expected value and variance</h3>
+<div class="outline-text-3" id="text-1-2">
 <p>
 Expected value is a generalization of the concept of mean (which you are already quite familiar with).
 </p>
@@ -469,17 +423,16 @@ sum((x-mu)^2*p)
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">Special Distributions</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Special Distributions</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 Many common probability distributions are given by explicit formulas for their probability functions.  Two that we'll talk about this week are the <b>binomial</b> and <b>normal</b> distributions.
 </p>
 </div>
-
-<div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1">Binomial distribution</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">Binomial distribution</h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
 The binomial distribution goes back to Bernoulli in 1713.  It arises in situations where each experimental trial has only two outcomes, which we'll call success and failure (such trials are called Bernoulli trials).  
 </p>
@@ -507,7 +460,61 @@ Some questions:
 </ol>
 
 <p>
-It is easy to see that we get the same probability distribution that we were working with earlier:
+Answers:
+</p>
+<ol class="org-ol">
+<li>we can get 0, 1, 2, or 3 heads. 
+</li>
+<li>let's make a table:
+</li>
+</ol>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">outcome</th>
+<th scope="col" class="left">arrangements</th>
+<th scope="col" class="left">probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">0</td>
+<td class="left">TTT</td>
+<td class="left">1/8 = 0.125</td>
+</tr>
+
+<tr>
+<td class="right">1</td>
+<td class="left">HTT, THT, TTH</td>
+<td class="left">3/8 = 0.375</td>
+</tr>
+
+<tr>
+<td class="right">2</td>
+<td class="left">THH, HTH, HHT</td>
+<td class="left">3/8 = 0.375</td>
+</tr>
+
+<tr>
+<td class="right">3</td>
+<td class="left">HHH</td>
+<td class="left">1/8 = 0.125</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Hence, we get the same probability distribution that we were working with earlier:
 </p>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -544,20 +551,20 @@ It is easy to see that we get the same probability distribution that we were wor
 </table>
 
 <p>
-If we think about this, it is not too difficult to come up with a mathematical process that generates these probabilities for the general case.
+It is not too difficult to come up with a mathematical process that generates these probabilities for the general case.
 </p>
 
 <p>
-Suppose we have \(N\) trials, and the probability of success on any one trials is \(p\).
+Suppose we have \(N\) trials, and the probability of success on any one trials is \(\theta\).  
 </p>
 
 <p>
 Then we know the following:
 </p>
 <ol class="org-ol">
-<li>the probability of each success is \(p\)
+<li>the probability of each success is \(\theta\)
 </li>
-<li>the probability of each failure is \(1-p\)
+<li>the probability of each failure is \(1-\theta\)
 </li>
 <li>we have \(x\) successes
 </li>
@@ -573,20 +580,20 @@ Thus, the general formula for the binomial probability function is:
 
 <p>
 \[
-p(x) = {N\choose x} p^x(1-p)^{N-x}
+p(x) = {N\choose x} \theta^x(1-\theta)^{N-x}
 \]
 </p>
 </div>
 
-<div id="outline-container-sec-3-1-1" class="outline-4">
-<h4 id="sec-3-1-1">Example 1</h4>
-<div class="outline-text-4" id="text-3-1-1">
+<div id="outline-container-sec-2-1-1" class="outline-4">
+<h4 id="sec-2-1-1">Example 1</h4>
+<div class="outline-text-4" id="text-2-1-1">
 <p>
 A coin is tossed 10 times.  What is the probability of getting exactly 7 heads?
 </p>
 
 <p>
-This problem corresponds to a binomial experiment, where there are 10 independent Bernoulli trials, and \(p=0.5\).  Then we can calculate the probability via the binomial distribution:
+This problem corresponds to a binomial experiment, where there are 10 independent Bernoulli trials, and \(\theta=0.5\).  Then we can calculate the probability via the binomial distribution:
 </p>
 
 <p>
@@ -609,9 +616,9 @@ As we can see from the answer (0.117), this outcome is fairly unlikely
 </div>
 </div>
 
-<div id="outline-container-sec-3-1-2" class="outline-4">
-<h4 id="sec-3-1-2">Example 2</h4>
-<div class="outline-text-4" id="text-3-1-2">
+<div id="outline-container-sec-2-1-2" class="outline-4">
+<h4 id="sec-2-1-2">Example 2</h4>
+<div class="outline-text-4" id="text-2-1-2">
 <p>
 Suppose you run a series of 5 independent replications of an experiment, each with fairly high power (say 80%).  Suppose there is a true effect; that is, the null hypothesis is false.  What is the probability of getting a significant result (i.e., rejecting the null) in all 5 experiments?
 </p>
@@ -627,16 +634,14 @@ p(x=5) = {5\choose 5} (0.8)^5(0.2)^0 = 0.328
 </p>
 
 <p>
-This might be surprising!
+(this might be surprising!)
 </p>
 </div>
 </div>
 
-
-
-<div id="outline-container-sec-3-1-3" class="outline-4">
-<h4 id="sec-3-1-3">Some R functions</h4>
-<div class="outline-text-4" id="text-3-1-3">
+<div id="outline-container-sec-2-1-3" class="outline-4">
+<h4 id="sec-2-1-3">using R</h4>
+<div class="outline-text-4" id="text-2-1-3">
 <p>
 While we can do binomial calcuations from scratch, R has some nice built-in functions to handle these calculations.  Any of the above calculations can be done using the <code>dbinom</code> function.  As an illustration, the two previous examples could be computed using the following commands:
 </p>
@@ -648,9 +653,52 @@ dbinom(x=5, size=5, prob=0.8)
 </div>
 </div>
 
-<div id="outline-container-sec-3-1-4" class="outline-4">
-<h4 id="sec-3-1-4">digging deeper &#x2013; Likelihoods</h4>
-<div class="outline-text-4" id="text-3-1-4">
+<div id="outline-container-sec-2-1-4" class="outline-4">
+<h4 id="sec-2-1-4">Example 3</h4>
+<div class="outline-text-4" id="text-2-1-4">
+<p>
+We can use the binomial distribution for an easy hypothesis test. 
+</p>
+
+<p>
+A common experiment in psychophysics involves judgments of relative magnitude.  Suppose participants were asked to pick the larger of two visually presented line segments.  On each trial, the pair was presented for a very brief time (150 ms).  
+</p>
+
+<p>
+Suppose a participant was correct on 9 out of 10 of these trials.  Can we conclude that the participant was operating at "better than chance" level (e.g., that the participant was not guessing)?
+</p>
+
+<p>
+Here, the null hypothesis would be that the participant was guessing, so each trial would have a 50% chance of success.  That is, \(H_0: \theta=0.5\).  The alternative hypothesis would be that the actual probability of success is greater than 50%.  That is, \(H_1: \theta>0.5\).
+</p>
+
+<p>
+Suppose the null (that is, \(\theta=0.5\)).  We will compute the probability of observing 8 or more successes:
+</p>
+
+<p>
+\[
+p(x\geq 9) = p(x=9) + p(x=10)
+\]
+</p>
+
+<p>
+For simplicity, we will compute these probabilities in R:
+</p>
+
+<pre class="example">
+dbinom(x=9, size=10, prob=0.5) + dbinom(x=10, size=10, prob=0.5)
+</pre>
+
+<p>
+We get an answer of 0.01.  That is, if participants were guessing, then the probability of observing 9 or more correct responses is only 0.01.  Therefore, we reject the null hypothesis (\(\theta=0.5\)) in favor of the alternative hypothesis (\(\theta>0.5\)).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-1-5" class="outline-4">
+<h4 id="sec-2-1-5">Digging deeper &#x2013; Likelihoods</h4>
+<div class="outline-text-4" id="text-2-1-5">
 <p>
 If we have time, we can talk about an extension of the binomial distribution.  Suppose we flip a coin 10 times, and we see 8 heads.  Do we believe this coin is fair?
 </p>
@@ -692,15 +740,122 @@ Note: this estimator (0.8 in this case) is called the <b>maximum likelihood esti
 </div>
 </div>
 
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">Normal distribution</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Like the binomial, the normal distribution is also a probability distribution.  Its probability function is given by:
+</p>
 
-<div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2">Normal distribution</h3>
+<p>
+\[
+f(x)=\frac{1}{\sigma\sqrt{2\pi}}\exp \Bigl( -\frac{(x-\mu)^2}{2\sigma^2}\Bigr)
+\]
+</p>
+
+<p>
+Note: it can be shown that:
+</p>
+<ul class="org-ul">
+<li>\(E[x]=\mu\)
+</li>
+<li>$E[(x-&mu;)<sup>2]</sup> = \(\sigma^2\)
+</li>
+</ul>
+
+<p>
+To plot a normal distribution in R, we can use the <code>dnorm</code> function.  For example, lets plot a normal distribution with mean 100 and standard deviation 15.
+</p>
+
+<pre class="example">
+x = seq(from=0, to=200, by=0.1)
+y = dnorm(x, mean=100, sd=15)
+plot(x, y, type="l")
+</pre>
+
+<p>
+For fun, we can add another normal curve to this plot that has the same mean, but different variance.  Try adding the following..what do you notice:
+</p>
+
+<pre class="example">
+lines(x,dnorm(x, mean=100, sd=30), lty=2)
+</pre>
+</div>
+
+<div id="outline-container-sec-2-2-1" class="outline-4">
+<h4 id="sec-2-2-1">computing normal probabilities</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<p>
+The R commands <code>pnorm</code> and <code>qnorm</code> makes computing probabilities with the normal distribution very easy.
+</p>
+
+<p>
+<b>pnorm</b>: The command <code>pnorm(q, mean=0, sd=1)</code> returns the probability that a normal random variable has value less than or equal to <code>q</code>, given a specific value for <code>mean</code> and <code>sd</code>.  
+</p>
+
+<p>
+Example: suppose that cholesterol levels in adults are normally distributed with mean \(\mu=230\) and standard deviation \(\sigma=20\).  
+</p>
+
+<p>
+What is the probability that a randomly selected adult will have a cholesterol level 
+</p>
+
+<ul class="org-ul">
+<li>less than or equal to 200?
+</li>
+</ul>
+
+<pre class="example">
+pnorm(200, mean=230, sd=20)
+</pre>
+
+<ul class="org-ul">
+<li>greater than or equal to 240?
+</li>
+</ul>
+
+<pre class="example">
+1-pnorm(240, mean=230, sd=20)
+</pre>
+
+<ul class="org-ul">
+<li>between 210 and 250
+</li>
+</ul>
+
+<pre class="example">
+pnorm(250, mean=230, sd=20) - pnorm(210, mean=230, sd=20)
+</pre>
+
+
+<p>
+<b>qnorm</b>: the command <code>qnorm(p, mean=0, sd=1)</code> returns the "quantile" (or "percentile") associated with probability \(p\) in a normal distribution with a specific <code>mean</code> and <code>sd</code>.
+</p>
+
+<p>
+Example:  In the cholesterol example above, what cholesterol level would be greater than or equal to 95% of the population?
+</p>
+
+<pre class="example">
+qnorm(0.95, mean=230, sd=20)
+</pre>
+
+<p>
+What interval would contain 95% of the cholesterol levels in the population?
+</p>
+
+<pre class="example">
+qnorm(c(0.025, 0.975), mean=230, sd=20)
+</pre>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: August 28, 2017</p>
-<p class="date">Created: 2017-08-27 Sun 15:43</p>
+<p class="date">Created: 2017-08-28 Mon 12:54</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

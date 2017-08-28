@@ -1,4 +1,4 @@
-% Created 2017-08-27 Sun 15:43
+% Created 2017-08-28 Mon 12:55
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -26,45 +26,15 @@
 
 \maketitle
 
-\section*{Course outline}
-\label{sec-1}
-
-\begin{enumerate}
-\item Review of classical statistical methods (5 weeks)
-\begin{itemize}
-\item Basic probability
-\item distributions used for applied work
-\item sampling distributions and confidence intervals
-\item hypothesis testing
-\item common hypothesis tests (including t-test, anova, chi-square, etc.)
-\end{itemize}
-\item Robust methods (3 weeks)
-\begin{itemize}
-\item bootstrapping
-\item robust measures of location (including trimmed means, Winsorized means, $M$-estimators, etc.)
-\item inferences based on robust measures
-\end{itemize}
-\item Bayesian methods (5 weeks)
-\begin{itemize}
-\item Bayes' Theorem, priors, likelihoods, and posteriors
-\item estimating proportions and rates 
-\begin{itemize}
-\item exact methods via conjugate priors
-\item approximate methods, using Markov chain Monte Carlo (MCMC)
-\end{itemize}
-\item fitting models with JAGS and R
-\item Bayesian hypothesis testing
-\end{itemize}
-\end{enumerate}
-
 \section*{Basic definitions}
-\label{sec-2}
+\label{sec-1}
 \subsection*{probability functions}
-\label{sec-2-1}
+\label{sec-1-1}
+Our goal this semester is to develop a toolkit for advanced statistical inference.
 
 All of statistical inference deals with statements of \emph{probability}.  But what exactly is probability?
 
-The following data comes from an online replication of the classic Sherman Kent study on perceptions of uncertainty.  People were asked to assign a percentage of probability to different phrases.
+Apparently people are not too sure!  The following data comes from an online replication of the classic Sherman Kent study on perceptions of uncertainty.  People were asked to assign a percentage of probability to different phrases.
 
 Results:
 
@@ -105,7 +75,7 @@ barplot(p, names.arg=x, xlab="x", ylab="p(x)")
 This bar plot forms an important visualization tool for us called a \textbf{probability distribution}.  We'll talk more about this a bit later.
 
 \subsection*{expected value and variance}
-\label{sec-2-2}
+\label{sec-1-2}
 Expected value is a generalization of the concept of mean (which you are already quite familiar with).
 
 Definition: the \textbf{expected value} of a random variable $X$ is given by
@@ -160,12 +130,10 @@ sum((x-mu)^2*p)
 \end{verbatim}
 
 \section*{Special Distributions}
-\label{sec-3}
-
+\label{sec-2}
 Many common probability distributions are given by explicit formulas for their probability functions.  Two that we'll talk about this week are the \textbf{binomial} and \textbf{normal} distributions.
-
 \subsection*{Binomial distribution}
-\label{sec-3-1}
+\label{sec-2-1}
 
 The binomial distribution goes back to Bernoulli in 1713.  It arises in situations where each experimental trial has only two outcomes, which we'll call success and failure (such trials are called Bernoulli trials).  
 
@@ -181,7 +149,24 @@ Some questions:
 \item what is the probability of each outcome?
 \end{enumerate}
 
-It is easy to see that we get the same probability distribution that we were working with earlier:
+Answers:
+\begin{enumerate}
+\item we can get 0, 1, 2, or 3 heads.
+\item let's make a table:
+\end{enumerate}
+
+\begin{center}
+\begin{tabular}{rll}
+outcome & arrangements & probability\\
+\hline
+0 & TTT & 1/8 = 0.125\\
+1 & HTT, THT, TTH & 3/8 = 0.375\\
+2 & THH, HTH, HHT & 3/8 = 0.375\\
+3 & HHH & 1/8 = 0.125\\
+\end{tabular}
+\end{center}
+
+Hence, we get the same probability distribution that we were working with earlier:
 
 \begin{center}
 \begin{tabular}{lrrrr}
@@ -190,14 +175,14 @@ $p(x)$ & 0.125 & 0.375 & 0.375 & 0.125\\
 \end{tabular}
 \end{center}
 
-If we think about this, it is not too difficult to come up with a mathematical process that generates these probabilities for the general case.
+It is not too difficult to come up with a mathematical process that generates these probabilities for the general case.
 
-Suppose we have $N$ trials, and the probability of success on any one trials is $p$.
+Suppose we have $N$ trials, and the probability of success on any one trials is $\theta$.  
 
 Then we know the following:
 \begin{enumerate}
-\item the probability of each success is $p$
-\item the probability of each failure is $1-p$
+\item the probability of each success is $\theta$
+\item the probability of each failure is $1-\theta$
 \item we have $x$ successes
 \item we have $N-x$ failures
 \item there are ${N\choose x}=\frac{N!}{x!(N-x)!}$ ways to arrange these $x$ successes from the $N$ trials
@@ -206,14 +191,14 @@ Then we know the following:
 Thus, the general formula for the binomial probability function is:
 
 \[
-p(x) = {N\choose x} p^x(1-p)^{N-x}
+p(x) = {N\choose x} \theta^x(1-\theta)^{N-x}
 \]
 
 \subsubsection*{Example 1}
-\label{sec-3-1-1}
+\label{sec-2-1-1}
 A coin is tossed 10 times.  What is the probability of getting exactly 7 heads?
 
-This problem corresponds to a binomial experiment, where there are 10 independent Bernoulli trials, and $p=0.5$.  Then we can calculate the probability via the binomial distribution:
+This problem corresponds to a binomial experiment, where there are 10 independent Bernoulli trials, and $\theta=0.5$.  Then we can calculate the probability via the binomial distribution:
 
 \[
 p(x=7) = {10\choose 7} (0.5)^7(0.5)^3
@@ -228,7 +213,7 @@ choose(10,7)*0.5^7*0.5^3
 As we can see from the answer (0.117), this outcome is fairly unlikely
 
 \subsubsection*{Example 2}
-\label{sec-3-1-2}
+\label{sec-2-1-2}
 Suppose you run a series of 5 independent replications of an experiment, each with fairly high power (say 80\%).  Suppose there is a true effect; that is, the null hypothesis is false.  What is the probability of getting a significant result (i.e., rejecting the null) in all 5 experiments?
 
 This situation can also be thought of using a binomial distribution.  Each experiment is an independent trial with two outcomes: reject null, or fail to reject null.  The probability of rejecting the null is 0.8.  Then by the binomial distribution, we have
@@ -237,12 +222,10 @@ This situation can also be thought of using a binomial distribution.  Each exper
 p(x=5) = {5\choose 5} (0.8)^5(0.2)^0 = 0.328
 \]
 
-This might be surprising!
+(this might be surprising!)
 
-
-
-\subsubsection*{Some R functions}
-\label{sec-3-1-3}
+\subsubsection*{using R}
+\label{sec-2-1-3}
 
 While we can do binomial calcuations from scratch, R has some nice built-in functions to handle these calculations.  Any of the above calculations can be done using the \texttt{dbinom} function.  As an illustration, the two previous examples could be computed using the following commands:
 
@@ -251,8 +234,32 @@ dbinom(x=7, size=10, prob=0.5)
 dbinom(x=5, size=5, prob=0.8)
 \end{verbatim}
 
-\subsubsection*{digging deeper -- Likelihoods}
-\label{sec-3-1-4}
+\subsubsection*{Example 3}
+\label{sec-2-1-4}
+We can use the binomial distribution for an easy hypothesis test. 
+
+A common experiment in psychophysics involves judgments of relative magnitude.  Suppose participants were asked to pick the larger of two visually presented line segments.  On each trial, the pair was presented for a very brief time (150 ms).  
+
+Suppose a participant was correct on 9 out of 10 of these trials.  Can we conclude that the participant was operating at "better than chance" level (e.g., that the participant was not guessing)?
+
+Here, the null hypothesis would be that the participant was guessing, so each trial would have a 50\% chance of success.  That is, $H_0: \theta=0.5$.  The alternative hypothesis would be that the actual probability of success is greater than 50\%.  That is, $H_1: \theta>0.5$.
+
+Suppose the null (that is, $\theta=0.5$).  We will compute the probability of observing 8 or more successes:
+
+\[
+p(x\geq 9) = p(x=9) + p(x=10)
+\]
+
+For simplicity, we will compute these probabilities in R:
+
+\begin{verbatim}
+dbinom(x=9, size=10, prob=0.5) + dbinom(x=10, size=10, prob=0.5)
+\end{verbatim}
+
+We get an answer of 0.01.  That is, if participants were guessing, then the probability of observing 9 or more correct responses is only 0.01.  Therefore, we reject the null hypothesis ($\theta=0.5$) in favor of the alternative hypothesis ($\theta>0.5$).
+
+\subsubsection*{Digging deeper -- Likelihoods}
+\label{sec-2-1-5}
 If we have time, we can talk about an extension of the binomial distribution.  Suppose we flip a coin 10 times, and we see 8 heads.  Do we believe this coin is fair?
 
 Notice that this is a different problem than before.  Here, we are given the number of successes, but NOT the probability of success on any one trial.  This is called a \textbf{likelihood} function.  Let's plot it:
@@ -273,8 +280,83 @@ You can test your prediction by adding the command \texttt{abline(v=est)}, where
 
 Note: this estimator (0.8 in this case) is called the \textbf{maximum likelihood estimate}.  It is literally the estimate for $p$ which maximizes the likelihood function.  That means it is the estimate for $p$ that is most likely, given the observed data.  This is a fundamental tool in statistical modeling.
 
-
 \subsection*{Normal distribution}
-\label{sec-3-2}
+\label{sec-2-2}
+
+Like the binomial, the normal distribution is also a probability distribution.  Its probability function is given by:
+
+\[
+f(x)=\frac{1}{\sigma\sqrt{2\pi}}\exp \Bigl( -\frac{(x-\mu)^2}{2\sigma^2}\Bigr)
+\]
+
+Note: it can be shown that:
+\begin{itemize}
+\item $E[x]=\mu$
+\item \$E[(x-$\mu$)$^{\text{2]}}$ = $\sigma^2$
+\end{itemize}
+
+To plot a normal distribution in R, we can use the \texttt{dnorm} function.  For example, lets plot a normal distribution with mean 100 and standard deviation 15.
+
+\begin{verbatim}
+x = seq(from=0, to=200, by=0.1)
+y = dnorm(x, mean=100, sd=15)
+plot(x, y, type="l")
+\end{verbatim}
+
+For fun, we can add another normal curve to this plot that has the same mean, but different variance.  Try adding the following..what do you notice:
+
+\begin{verbatim}
+lines(x,dnorm(x, mean=100, sd=30), lty=2)
+\end{verbatim}
+
+\subsubsection*{computing normal probabilities}
+\label{sec-2-2-1}
+
+The R commands \texttt{pnorm} and \texttt{qnorm} makes computing probabilities with the normal distribution very easy.
+
+\textbf{pnorm}: The command \texttt{pnorm(q, mean=0, sd=1)} returns the probability that a normal random variable has value less than or equal to \texttt{q}, given a specific value for \texttt{mean} and \texttt{sd}.  
+
+Example: suppose that cholesterol levels in adults are normally distributed with mean $\mu=230$ and standard deviation $\sigma=20$.  
+
+What is the probability that a randomly selected adult will have a cholesterol level 
+
+\begin{itemize}
+\item less than or equal to 200?
+\end{itemize}
+
+\begin{verbatim}
+pnorm(200, mean=230, sd=20)
+\end{verbatim}
+
+\begin{itemize}
+\item greater than or equal to 240?
+\end{itemize}
+
+\begin{verbatim}
+1-pnorm(240, mean=230, sd=20)
+\end{verbatim}
+
+\begin{itemize}
+\item between 210 and 250
+\end{itemize}
+
+\begin{verbatim}
+pnorm(250, mean=230, sd=20) - pnorm(210, mean=230, sd=20)
+\end{verbatim}
+
+
+\textbf{qnorm}: the command \texttt{qnorm(p, mean=0, sd=1)} returns the "quantile" (or "percentile") associated with probability $p$ in a normal distribution with a specific \texttt{mean} and \texttt{sd}.
+
+Example:  In the cholesterol example above, what cholesterol level would be greater than or equal to 95\% of the population?
+
+\begin{verbatim}
+qnorm(0.95, mean=230, sd=20)
+\end{verbatim}
+
+What interval would contain 95\% of the cholesterol levels in the population?
+
+\begin{verbatim}
+qnorm(c(0.025, 0.975), mean=230, sd=20)
+\end{verbatim}
 % Emacs 25.2.1 (Org mode 8.2.10)
 \end{document}
