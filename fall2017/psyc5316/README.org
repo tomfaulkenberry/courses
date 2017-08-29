@@ -2,4 +2,4 @@
 
 - [[psyc5316-fall2017.org][Course syllabus]]
 - Lecture notes
-  - coming soon!
+  - Week 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week1.html][html]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week1.R][R script]])
