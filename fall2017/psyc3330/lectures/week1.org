@@ -56,13 +56,74 @@ Identify the scale of measurement for each of the following:
 
 * Displaying data
 
-For now, we'll focus on how to display /frequency/ -- that is, how often certain measurements show up in the data.
+For now, we'll focus on how to display /frequency/ for numerical data-- that is, how often certain measurements show up in the data.
 
-Important -- the type of graph used depends on the scale of measurement:
+** Frequency tables
 
-Categorical data:
-  - bar graph
-  - pie chart
+A frequency table presents the *frequency* of each score 
 
-Continuous data:
-  - histogram
+Example: $N=20$ scores on a 10 point quiz
+
+Raw data:
+8, 9, 8, 7, 10
+9, 6, 4, 9, 8
+7, 8, 10, 8, 8
+6, 9, 7, 8, 8
+
+Frequency table:
+
+|  X | f |
+|----+---|
+|  4 | 1 |
+|  5 | 0 |
+|  6 | 2 |
+|  7 | 3 |
+|  8 | 7 |
+|  9 | 5 |
+| 10 | 2 |
+
+Note: the sum of the "f" column = 20, which is the total number of scores!
+
+** Grouped frequency tables
+
+Grouped frequency tables are used whenever we have a large range of scores.  Instead of representing each score separately, we tabulate scores within specified *intervals*
+
+Example: $N=25$ scores on an exam
+
+82, 75, 88, 93, 53
+84, 87, 58, 72, 94
+69, 84, 61, 91, 64
+87, 84, 70, 76, 89
+75, 80, 73, 78, 60
+
+However, it is not clear what the intervals should be.  Here are some guidelines:
+1. should have about 10 intervals
+2. width of each interval should be simple (e.g., whole number)
+3. bottom score of each interval should be multiple of the width
+4. all intervals should be same width
+
+Now, let's apply these to the data:
+
+- smallest score is 53, largest is 94, so range covers 42 points.  If we used 9 intervals of width 5 (total width 45), this would work
+- lowest interval should contain smallest score (53), and starting point of interval should be multiple of width (5).  So, we'll start with 50
+
+Finally, we can construct the table:
+
+|     X | f |
+|-------+---|
+| 50-54 | 1 |
+| 55-59 | 1 |
+| 60-64 | 3 |
+| 65-69 | 1 |
+| 70-74 | 3 |
+| 75-79 | 4 |
+| 80-84 | 5 |
+| 85-89 | 4 |
+| 90-94 | 3 |
+
+** Histograms
+
+A histogram is a graphical representation of a grouped frequency table.
+
+- x-axis: score intervals
+- y-axis: frequency

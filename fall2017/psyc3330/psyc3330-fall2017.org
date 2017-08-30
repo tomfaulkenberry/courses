@@ -64,6 +64,9 @@ Exam dates:
 At the end of each week (excluding exam weeks), you will complete a 20-question online quiz (on Blackboard) that covers the content of that week's lectures.  The quizzes will have a generous time limit (60 minutes), and may be attempted twice.  In the event that you complete two attempts, your last graded attempt is the one that will be recorded.  Each quiz counts for 10 possible points.  Since there are 10 such quizzes, you will earn up to 100 points for your quiz grade.
 
 *** Research participation (8% of grade)
+    :PROPERTIES:
+    :ORDERED:  t
+    :END:
 
 Research is the lifeblood of psychology!  In order to promote your growth as a psychological scientist, you will be required to participate in 2 "units" of research over the course of the semester.  Roughly defined, a "unit" of research consists of either (1) participation in one hour of psychological experiments, usually offered right here in the Psychology department at Tarleton, or (2) a 3-5 page critical reflection of an empirical research article related to human learning and/or cognition, usually chosen by me.  Instructions for participation will be given in class.
 
