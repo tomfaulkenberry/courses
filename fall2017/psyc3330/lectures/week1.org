@@ -19,7 +19,6 @@ What do these things mean, exactly?  We'll find out!
   - how does systematic manipulation of some variable (*independent variable*) affect measurements on some outcome variable (*dependent variable*)?
 
 
-
 * What kinds of data do we deal with?
 
 Data are classified by their /scale of measurement/:
@@ -52,7 +51,6 @@ Identify the scale of measurement for each of the following:
 2. number of times a mouse takes a wrong turn in a maze
 3. position one finishes in a race
 4. a person's score on an IQ test
-
 
 * Displaying data
 
@@ -127,3 +125,17 @@ A histogram is a graphical representation of a grouped frequency table.
 
 - x-axis: score intervals
 - y-axis: frequency
+  
+Example in class: make a histogram of the data from the grouped frequency table above.
+
+Example: the normal distribution
+  - bell shaped
+  - symmetric around the center
+
+file:figures/week1/normal.jpg
+
+Example: skewed distribution
+  - positive skew - scores bunched at *low* values with a tail pointing toward higher values
+  - negative skew - scores bunched at *high* values with a tail pointing toward lower values
+
+file:figures/week1/skew.jpg
