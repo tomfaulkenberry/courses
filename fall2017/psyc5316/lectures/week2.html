@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Maximum Likelihood Estimation</title>
-<!-- 2017-08-30 Wed 14:34 -->
+<!-- 2017-08-31 Thu 11:05 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Week 2 - PSYC 5316" />
@@ -241,7 +241,6 @@ This function gives us the probability of <b>data</b>, <i>given</i> a specific <
 </div>
 </div>
 
-
 <div id="outline-container-sec-4" class="outline-2">
 <h2 id="sec-4">Data and parameters</h2>
 <div class="outline-text-2" id="text-4">
@@ -286,7 +285,6 @@ plot(theta, dbinom(x=12, size=20, prob=theta),
 </div>
 </div>
 
-
 <div id="outline-container-sec-6" class="outline-2">
 <h2 id="sec-6">Likelihood function</h2>
 <div class="outline-text-2" id="text-6">
@@ -309,7 +307,6 @@ Natural question &#x2013; what value of \(\theta\) is <b>most likely</b>, given 
 </div>
 </div>
 </div>
-
 
 <div id="outline-container-sec-7" class="outline-2">
 <h2 id="sec-7">Likelihood function</h2>
@@ -340,12 +337,175 @@ Answer: \(\theta=0.6\)
 
 <div id="outline-container-sec-8" class="outline-2">
 <h2 id="sec-8">Maximum likelihood estimation</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+A key problem in statistical inference is how to infer from <b>sample data</b> to <b>population parameters</b>.
+</p>
+
+<p>
+\vspace{1cm}
+</p>
+
+<p>
+Maximum likelihood estimation is one solution to this problem
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9">Maximum likelihood estimation</h2>
+<div class="outline-text-2" id="text-9">
+
+<div class="figure">
+<p><img src="figures/week2/mlePaper.png" alt="mlePaper.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10">Maximum likelihood estimation</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+Basic workflow:
+</p>
+<ol class="org-ol">
+<li>collect data
+</li>
+<li>decide on a "model" for the data (e.g., binomial, normal, etc.)
+</li>
+<li>define a likelihood function based on the underlying model
+</li>
+<li>find the parameter value(s) that <b>maximize</b> the likelihood function
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11">Three examples</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+We will do three examples of MLE:
+</p>
+<ol class="org-ol">
+<li>binomial model
+</li>
+<li>normal model
+</li>
+<li>ex-Gaussian model
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12">Example 1</h2>
+<div class="outline-text-2" id="text-12">
+<p>
+Suppose that in a sequence of 20 coin flips, we observe 12 successes ("heads").  What is the maximum likelihood estimate for \(\theta\)?
+</p>
+
+<p>
+\vspace{5mm}
+</p>
+
+<p>
+Step 1 &#x2013; collect data
+</p>
+<ul class="org-ul">
+<li>done: we observed \(x=12\) successes
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13">Example 1</h2>
+<div class="outline-text-2" id="text-13">
+<p>
+Suppose that in a sequence of 20 coin flips, we observe 12 successes ("heads").  What is the maximum likelihood estimate for \(\theta\)?
+</p>
+
+<p>
+\vspace{5mm}
+</p>
+
+<p>
+Step 2 &#x2013; choose a model
+</p>
+<ul class="org-ul">
+<li>assume a binomial model
+</li>
+</ul>
+
+<p>
+\[
+x \sim \text{Binomial}(\theta,n)
+\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14">Example 1</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+Suppose that in a sequence of 20 coin flips, we observe 12 successes ("heads").  What is the maximum likelihood estimate for \(\theta\)?
+</p>
+
+<p>
+\vspace{5mm}
+</p>
+
+<p>
+Step 3 &#x2013; define likelihood function
+</p>
+<ul class="org-ul">
+<li>Note: we will actually define the "negative log-likelihood" function
+</li>
+</ul>
+
+<pre class="example">
+nll.binom &lt;- function(data,par){
+  return(-log(dbinom(data, size = 20, prob = par)))
+}
+</pre>
+</div>
+</div>
+
+
+<div id="outline-container-sec-15" class="outline-2">
+<h2 id="sec-15">Example 1</h2>
+<div class="outline-text-2" id="text-15">
+<p>
+Suppose that in a sequence of 20 coin flips, we observe 12 successes ("heads").  What is the maximum likelihood estimate for \(\theta\)?
+</p>
+
+<p>
+\vspace{5mm}
+</p>
+
+<p>
+Step 4 &#x2013; find parameter that maximizes the likelihood function
+</p>
+<ul class="org-ul">
+<li>Note: we will actually <b>minimize</b> the negative log-likelihood
+</li>
+</ul>
+
+<pre class="example">
+optim(par=0.5, fn=nll.binom, data=12)
+</pre>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: September 4, 2017</p>
 <p class="author">Author: Week 2 - PSYC 5316</p>
-<p class="date">Created: 2017-08-30 Wed 14:34</p>
+<p class="date">Created: 2017-08-31 Thu 11:05</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

@@ -2,6 +2,7 @@
 #+AUTHOR: Week 2 - PSYC 5316
 #+DATE: September 4, 2017 
 #+OPTIONS: toc:nil num:nil
+#+startup: beamer
 #+LaTeX_CLASS: beamer
 #+LaTEX_HEADER: \setbeamertemplate{navigation symbols}{}
 
@@ -38,7 +39,6 @@ f(x\mid \theta) = {N\choose x} \theta^x(1-\theta)^{N-x}
 
 This function gives us the probability of *data*, /given/ a specific *parameter*
 
-
 ** Data and parameters
 
 What if we switched these?
@@ -62,7 +62,6 @@ plot(theta, dbinom(x=12, size=20, prob=theta),
 
 file:figures/week2/likelihood.png
 
-
 ** Likelihood function
 Suppose we observed 12 successes in 20 trials:
 
@@ -71,7 +70,6 @@ Suppose we observed 12 successes in 20 trials:
 Natural question -- what value of $\theta$ is *most likely*, given the data?
 
 file:figures/week2/likelihood.png
-
 
 ** Likelihood function
 Suppose we observed 12 successes in 20 trials:
@@ -94,9 +92,277 @@ Maximum likelihood estimation is one solution to this problem
 
 ** Maximum likelihood estimation
 
+file:figures/week2/mlePaper.png
+
+** Maximum likelihood estimation
+
 Basic workflow:
 1. collect data
 2. decide on a "model" for the data (e.g., binomial, normal, etc.)
 3. define a likelihood function based on the underlying model
 4. find the parameter value(s) that *maximize* the likelihood function
 
+
+** Three examples
+
+We will do three examples of MLE:
+1. binomial model
+2. normal model
+3. ex-Gaussian model
+
+
+** Example 1
+
+Suppose that in a sequence of 20 coin flips, we observe 12 successes ("heads").  What is the maximum likelihood estimate for $\theta$?
+
+\vspace{5mm}
+
+Step 1 -- collect data
+  - done: we observed $x=12$ successes
+
+** Example 1
+
+Suppose that in a sequence of 20 coin flips, we observe 12 successes ("heads").  What is the maximum likelihood estimate for $\theta$?
+
+\vspace{5mm}
+
+Step 2 -- choose a model
+  - assume a binomial model
+
+\[
+x \sim \text{Binomial}(\theta, n=20)
+\]
+
+** Example 1
+
+Suppose that in a sequence of 20 coin flips, we observe 12 successes ("heads").  What is the maximum likelihood estimate for $\theta$?
+
+\vspace{5mm}
+
+Step 3 -- define likelihood function
+  - Note: we will actually define the "negative log-likelihood" function
+
+#+BEGIN_SRC
+nll.binom <- function(data,par){
+  return(-log(dbinom(data, size = 20, prob = par)))
+}
+#+END_SRC
+
+
+** Example 1
+
+Suppose that in a sequence of 20 coin flips, we observe 12 successes ("heads").  What is the maximum likelihood estimate for $\theta$?
+
+\vspace{5mm}
+
+Step 4 -- find parameter that maximizes the likelihood function
+  - Note: we will actually *minimize* the negative log-likelihood
+
+#+BEGIN_SRC
+optim(par=0.5, fn=nll.binom, data=12)
+#+END_SRC
+
+
+** Example 1
+
+Suppose that in a sequence of 20 coin flips, we observe 12 successes ("heads").  What is the maximum likelihood estimate for $\theta$?
+
+\vspace{5mm}
+
+file:figures/week2/binomOutput.png
+
+
+** Example 2
+
+The following command will load a data set into R, consisting of 1000 observations.  Fit the data with a normal model and find MLEs for mean and standard deviation.
+
+\vspace{5mm}
+
+Step 1: collect data
+
+#+BEGIN_SRC
+data <- read.csv("https://git.io/v58i8")
+#+END_SRC
+
+
+** Example 2
+
+The following command will load a data set into R, consisting of 1000 observations.  Fit the data with a normal model and find MLEs for mean and standard deviation.
+
+\vspace{5mm}
+
+Step 1.5: before choosing a model, look at the distribution
+
+#+BEGIN_SRC
+hist(data$x)
+#+END_SRC
+
+file:figures/week2/normalHistogram.png
+
+
+** Example 2
+
+The following command will load a data set into R, consisting of 1000 observations.  Fit the data with a normal model and find MLEs for mean and standard deviation.
+
+\vspace{5mm}
+
+Step 1.5: before choosing a model, look at the distribution
+
+#+BEGIN_SRC
+plot(density(data$x))
+#+END_SRC
+
+file:figures/week2/normalDensity.png
+
+
+** Example 2
+
+The following command will load a data set into R, consisting of 1000 observations.  Fit the data with a normal model and find MLEs for mean and standard deviation.
+
+\vspace{5mm}
+
+Step 2: choose a model
+  - assume a normal model
+
+\[
+x \sim \text{Normal}(\mu,\sigma)
+\]
+
+
+** Example 2
+
+The following command will load a data set into R, consisting of 1000 observations.  Fit the data with a normal model and find MLEs for mean and standard deviation.
+
+\vspace{5mm}
+
+Step 3: define likelihood function
+ 
+#+BEGIN_SRC
+nll.normal <- function(data,par){
+  return(-sum(log(dnorm(data, mean=par[1], sd=par[2]))))
+}
+#+END_SRC
+
+
+** Example 2
+
+The following command will load a data set into R, consisting of 1000 observations.  Fit the data with a normal model and find MLEs for mean and standard deviation.
+
+\vspace{5mm}
+
+Step 4: find parameters that maximize the likelihood function
+ 
+#+BEGIN_SRC
+optim(par=c(1,0.1), fn=nll.normal, data=data$x)
+#+END_SRC
+
+
+** Example 2
+
+The following command will load a data set into R, consisting of 1000 observations.  Fit the data with a normal model and find MLEs for mean and standard deviation.
+
+\vspace{5mm}
+
+file:figures/week2/normalOutput.png
+
+** Example 2
+
+As a check, we can see how well our model "fits" the data:
+
+#+BEGIN_SRC
+x=seq(-3,4,0.01)
+plot(density(data$x))
+lines(x,dnorm(x,mean=2.85, sd=0.12),lty=2)
+#+END_SRC
+
+file:figures/week2/normalFit.png
+
+** Example 3
+
+Step 1: collect data
+
+\vspace{5mm}
+
+Here is a data set of 1000 response times (RTs) in a mental arithmetic task, followed by a plot of the data.  
+
+#+BEGIN_SRC
+data <- read.csv("https://git.io/v58yI")
+plot(density(data$rt))
+#+END_SRC
+
+file:figures/week2/rtPlot.png
+
+
+
+** Example 3
+
+Step 2: choose a model
+  - distributions with long rightward tails can be modeled by an ex-Gaussian distribution, which is essentially a combination of the Gaussian (normal) distribution with an exponential distribution
+
+\vspace{3mm}
+
+file:figures/week2/exGpaper.png
+
+** Example 3
+
+Step 2: choose a model
+  - distributions with long rightward tails can be modeled by an ex-Gaussian distribution, which is essentially a combination of the Gaussian (normal) distribution with an exponential distribution
+
+\[
+rt \sim \text{exGaussian}(\mu, \sigma, \tau)
+\]
+
+  - $\mu$ = mean of normal component
+  - $\sigma$ = sd of normal component
+  - $\tau$ = rate of exponential component
+
+** Example 3
+
+Step 3: define likelihood function
+  - ExGaussian is not already a function in R.  So, we'll build it ourselves.
+  - note: just copy from the week2.R script!
+
+#+BEGIN_SRC
+dexg <- function(x, mu, sigma, tau){
+  return((1/tau)*exp((sigma^2/(2*tau^2)) -
+  (x-mu)/tau)*pnorm((x-mu)/sigma-(sigma/tau)))
+}
+#+END_SRC
+
+
+** Example 3
+
+Step 3: define likelihood function
+
+#+BEGIN_SRC
+nll.exg <- function(data,par){
+  return(-sum(log(dexg(data, 
+  mu=par[1], 
+  sigma=par[2], 
+  tau=par[3]))))
+}
+#+END_SRC
+
+
+** Example 3
+
+Step 4: find parameters that maximize likelihood function
+
+#+BEGIN_SRC
+optim(par=c(0,0.1,0.1), fn=nll.exg, data = data$rt)
+#+END_SRC
+
+file:figures/week2/exGoutput.png
+
+
+** Example 3
+
+As before, let's check our model fit
+
+#+BEGIN_SRC
+x=seq(0,4,0.1)
+plot(density(data$rt))
+lines(x,dexg(x,mu=0.715, sigma=0.336, tau=0.465),lty=2)
+#+END_SRC
+
+file:figures/week2/exGfit.png
