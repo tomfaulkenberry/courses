@@ -1,0 +1,60 @@
+\documentclass[10pt]{article}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\lhead{PSYC 5316}
+\chead{Homework 2}
+\cfoot{}
+\rhead{Fall 2017}
+
+\pagestyle{fancy}
+
+\begin{document}
+
+\begin{enumerate}
+
+\item Let $X$ denote the random variable that counts the number of times we observe ``heads'' out of 15 coin flips.  Let $\theta$ denote the probability of landing heads on any one of those coin flips.
+
+  \begin{enumerate}
+  \item Plot the probability function $p(x)$, given $\theta=0.3$.
+  \item Plot the likelihood function $f(\theta)$, given $x=7$.
+  \item Explain the differences between these two plots.
+    \item Find the maximum likelihood estimate for $\theta$ given that we've observed 7 successes.
+    \end{enumerate}
+
+
+  \item Like the binomial distribution, the {\it Poisson} distribution can be used to describe probabilities of certain events.  As a random variable, the Poisson distribution describes the number of rare events that occur within a certain timeframe.  For example, it can be used to model the number of car accidents during rush hour, the number of earthquakes in a year in a certain region, or the number of deer in an area of land.  The probability function for the Poisson random variable is given by
+
+    \[
+      p(x\mid \lambda) = \frac{\lambda^xe^{-\lambda}}{\lambda!}
+    \]
+
+ where $x=0,1,2,\dots$, and $\lambda$ is the ``rate'' parameter (that is, the expected number of occurrences for a given timeframe.
+
+ \begin{enumerate}
+ \item Plot the probability function for $\lambda=0.5$ with $x=0,1,\dots,10$.  You can use the \verb|dpois| function in R to do this.  Just type \verb|?dpois| in the console to see the help page.
+
+ \item Plot the probability function for $\lambda=10$ with $x=0,1,\dots,30$.
+
+ \item Plot the likelihood for $x=4$.  Hint: you'll need to make sure you have a suitable range for values of $\lambda$.  Use your previous two plots to get a feel for what $\lambda$ might be in this case.
+   \item Find the maximum likelihood estimate for $\lambda$, given $x=4$.  What do you notice?
+   \end{enumerate}
+
+ \item The command XXXX will load a set of 1000 observations into R.  Your task is to fit a normal model to this data.  Using the techniques demonstrated in the lecture notes, compute maximum likelihood estimates for $\mu$ and $\sigma$.  Then, plot the density curves for both the raw data (solid line) and the normal model (dashed line).  Does the model fit the data well?  Explain.
+
+   \begin{itemize}
+   \item Note: the initial parameter values we did in the lecture will NOT work with this data.  You'll have to play around with this a bit to make it work.
+   \end{itemize}
+
+
+ \item The command XXXXX will load a set of 1000 response times into R.  Your task in this problem is to fit the data two ways: first, with a normal model, then second, with an ex-Gaussian model.
+
+   \begin{enumerate}
+   \item Assume $RT \sim \text{Normal}(\mu,\sigma)$.  Compute maximum likelihood estimates for $\mu$ and $\sigma$.  Hint: use starting values of $\mu=2$ and $\sigma=0.1$.
+
+   \item Assume $RT \sim \text{ExGaussian}(\mu,\sigma,\tau)$.  Compute maximum likelihood estimates for $\mu$, $\sigma$, and $\tau$.  Hint: use starting values of $\mu=2$, $\sigma=0.1$, and $\tau=0.1$.
+
+     \item Plot both models along with the density curve of the RT data.  Which is the better fit?
+   \end{enumerate}
+  \end{enumerate}
+\end{document}
