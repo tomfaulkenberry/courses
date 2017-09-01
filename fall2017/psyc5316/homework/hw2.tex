@@ -40,14 +40,14 @@
    \item Find the maximum likelihood estimate for $\lambda$, given $x=4$.  What do you notice?
    \end{enumerate}
 
- \item The command XXXX will load a set of 1000 observations into R.  Your task is to fit a normal model to this data.  Using the techniques demonstrated in the lecture notes, compute maximum likelihood estimates for $\mu$ and $\sigma$.  Then, plot the density curves for both the raw data (solid line) and the normal model (dashed line).  Does the model fit the data well?  Explain.
+ \item The command \verb|data=read.csv("https://git.io/v5RO6")| will load a set of 1000 observations into R.  Your task is to fit a normal model to this data.  Using the techniques demonstrated in the lecture notes, compute maximum likelihood estimates for $\mu$ and $\sigma$.  Then, plot the density curves for both the raw data (solid line) and the normal model (dashed line).  Does the model fit the data well?  Explain.
 
    \begin{itemize}
    \item Note: the initial parameter values we did in the lecture will NOT work with this data.  You'll have to play around with this a bit to make it work.
    \end{itemize}
 
 
- \item The command XXXXX will load a set of 1000 response times into R.  Your task in this problem is to fit the data two ways: first, with a normal model, then second, with an ex-Gaussian model.
+ \item The command \verb|data=read.csv("https://git.io/v5ROF")| will load a set of 1000 response times into R.  Your task in this problem is to fit the data two ways: first, with a normal model, then second, with an ex-Gaussian model.
 
    \begin{enumerate}
    \item Assume $RT \sim \text{Normal}(\mu,\sigma)$.  Compute maximum likelihood estimates for $\mu$ and $\sigma$.  Hint: use starting values of $\mu=2$ and $\sigma=0.1$.

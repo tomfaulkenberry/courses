@@ -7,4 +7,5 @@
 
 - Homework
   - Week 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw1.pdf][pdf]])
+  - Week 2 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw2.pdf][pdf]])
 
