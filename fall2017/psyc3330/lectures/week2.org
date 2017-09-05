@@ -59,6 +59,7 @@ The mode is the score (or category, in the case of nominal measurements) that oc
   - use the /mode/ if:
     - data are on nominal scale
 
+
 * Variability
 Variability provides a quantitative measure of the degree to which the scores in a distribution are *spread out* or *clustered together*
   - in other words, variability = how much "differentness"
@@ -103,82 +104,5 @@ Example 2: $X=6,1,4,2,3,4,6,6$.  First, compute $M=4$.
 So variance = $\frac{SS}{N} = \frac{26}{8} = 3.25$.
 Thus, standard deviation = $\sqrt{3.25}=1.80$.
 
+
 * Measures of location: $z$-scores
-Consider the following situation.  You take the ACT and the SAT.  You get a 26 on the ACT and a 620 on the SAT.  The college that you apply to only needs one score.  Which do you send them?  In other words, which is better: the 26, or the 620?
-
-Suppose the distributions of ACT and SAT scores are as depicted below:
-
-file:figures/week2/act.png
-
-Where would each score land in its respective distribution?
-
-  - ACT: mean=18, sd=6.  A raw score of 26 is 8 points larger than the mean, which is 8/6=1.33 "standard deviations" above the mean
-
-  - SAT: mean=500, sd=100.  A raw score of 620 is 120 points larger than the mean, which is 120/100=1.2 standard deviations above the mean.
-
-  - hence, ACT score is better (relatively speaking).
-
-What we just did is computed *$z$-scores* for each raw score.
-
-Definition: a $z$-score specifies the precise location of a raw score $x$ within a distribution.
-  - the *sign* of the z-score (+ or -) signifies whether the score is above or below the mean, respectively
-  - the *numerical value* of the z-score specifies the distance from the mean by using standard deviation as the measurement unit (i.e., "how many standard deviations away from the mean?")
-
-** From raw score to $z$-score 
-
-\[
-z=\frac{x-M}{SD}
-\]
-
-Example:  on a measure of concern for the environment, the mean is 79 and the standard deviation is 12.  What are the z-scores for each of the following raw scores?
-
-  - 91: 
-\[
-z=\frac{x-M}{SD}=\frac{91-79}{12} = \frac{12}{12}=1
-\]
-
-  - 68: 
-\[
-z=\frac{x-M}{SD}=\frac{68-79}{12}=\frac{-11}{12}=-0.92
-\]
-
-  - 103: 
-\[
-z=\frac{x-M}{SD}=\frac{103-79}{12}=\frac{24}{12}=2
-\]
-
-
-** From $z$-score to raw score
-
-Using algebra, we can go the other way.  Solving the $z$-score equation above for $X$, we get:
-
-\[
-x=M+z\cdot SD
-\]
-
-Example: on a measure of peer influence among adolescents, the mean is 300 and the standard deviation is 20.  Give the raw scores for adolescents whose scores on this measure are:
-
-  - 2.4
-\[
-x=M+z\cdot SD = 300+2.4(20)=348
-\]
-
-  - 1.5
-\[
-x=M+z\cdot SD = 300+1.5(20)=330
-\]
-
-  - 0
-\[
-x=M+z\cdot SD = 300+0(20)=300
-\]
-
-  - -4.5
-\[
-x=M+z\cdot SD = 300-4.5(20)=210
-\]
- 
-
-
-  
-  
