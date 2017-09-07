@@ -30,7 +30,7 @@ Case 1: /odd/ number of scores
   - Step 1: put the scores in *order*
   - Step 2: find the middle score (there is only one!)
  
-Example: find the median of the following dataset: 32, 28, 24, 28, 31, 35, 28, 26
+Example: find the median of the following dataset: 28, 32, 28, 24, 28, 31, 35, 28, 26
   - put in order, then count down from ends until you reach the single middle score
     -  24 26 28 28 *28* 29 31 32 35
   
@@ -41,7 +41,7 @@ Case 2: /even/ number of scores
   - Step 3: find the average of the two middle scores
 
 Example: find the median -- 6, 1, 4, 2, 3, 4, 6, 6
-  - put in order, then count down from ends until you reach the /two/ iddle scores:
+  - put in order, then count down from ends until you reach the /two/ middle scores:
     - 1 2 3 *4 4* 6 6 6
     - the average of 4 and 4 is 4, so *median=4*
 
@@ -58,7 +58,6 @@ The mode is the score (or category, in the case of nominal measurements) that oc
 
   - use the /mode/ if:
     - data are on nominal scale
-
 
 * Variability
 Variability provides a quantitative measure of the degree to which the scores in a distribution are *spread out* or *clustered together*
@@ -103,6 +102,5 @@ Example 2: $X=6,1,4,2,3,4,6,6$.  First, compute $M=4$.
 
 So variance = $\frac{SS}{N} = \frac{26}{8} = 3.25$.
 Thus, standard deviation = $\sqrt{3.25}=1.80$.
-
 
 * Measures of location: $z$-scores

@@ -3,3 +3,4 @@
 - [[psyc3330-fall2017.org][Course syllabus]]
 - Lecture notes
   - Week 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week1.html][html]])
+  - Week 2 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week2.html][html]])
