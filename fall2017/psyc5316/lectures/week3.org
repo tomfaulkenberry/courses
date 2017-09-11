@@ -1,0 +1,67 @@
+#+TITLE: Week 3 lecture notes - PSYC 5316
+#+AUTHOR:
+#+DATE: September 11, 2017 
+#+OPTIONS: toc:nil num:nil
+
+In studies, our data amounts to a /sample/ of a population.  Based on our work in Week 2, we know that the *sample mean* $\overline{x}$ is the maximum likelihood estimator of the population mean $\mu$ (assuming a normal distribution as our model).  However, $\overline{x}$ is still an *estimate*, which means there is uncertainty in our measurement
+
+Goal: develop a method that will give us a *range* of values for $\mu$ based on the available data $\overline{x}$
+
+* Sampling distributions
+
+Definition: a *sampling distribution* for an estimator is the probability distribution for the values of that estimator.
+
+Example: this week we will work exclusively with the sampling distribution for the /sample mean/, denoted $\overline{X}$.
+  - Note: the notation can be confusing, so let's be very specific:
+    - $\overline{x}$ denotes the sample mean (an /estimator/)
+    - $\overline{X}$ denotes the sampling /distribution/
+
+
+- TODO: simulation of sampling distribution using R.  Show how sample size affects variance of $\overline{X}$
+
+Conclusion: when randomly sampling from a normal distribution, we have:
+  - the sampling distribution $\overline{X}$ is normal 
+  - $E(\overline{x})=\mu$
+  - $\sigma_{\overline{X}} = \frac{\sigma}{\sqrt{n}}$, where $n$ = sample size
+
+** computing probabilities of samples
+- TODO: example of how to compute probability based on sample (rat example on page 117 of wilcox)
+  - Method 1 - use pnorm with raw numbers
+  - Method 2 - use pnorm with z-score
+
+* Confidence interval of population mean
+
+** Case 1: assume population variance is known
+
+** Case 2: assume population variance is NOT known
+
+If $\sigma^2$ is NOT known, we will need an estimator for it.
+
+Recall that
+
+\[
+\sigma^2 = \frac{\sum (x-\mu)^2}{n}
+\]
+
+TODO: show this is a /biased/ estimator, motivate definition of $s^2$
+
+TODO: Define $T$ score, demonstrate the Student $t$ distribution in R
+
+TODO: use R =pt= to compute confidence intervals for $\mu$ using t-score
+
+* What happens when sampling from non-normal distribution?
+** Central limit theorem - if $n$ is large enough, $Z$ has standard normal distribution
+- how large must $n$ be?
+- demonstrate using R some sampling distributions from:
+  - uniform 
+  - exponential
+
+** demonstrate how $t$ is susceptible to influence
+Recall that confidence intervals based on $t$ scores assume normality.  How /robust/ is the $t$ distribution to violations of this assumption?
+
+- Case 1: heavy tailed distributions
+
+Let's simulate a /contaminated normal/ distribution.  This is a distribution where scores come from two different underlying normal distributions: one
+
+  - lognormal
+  - lognormal + heavy tails 
