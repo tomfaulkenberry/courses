@@ -4,13 +4,6 @@
 ########################################################################
 # sampling distribution for the sample mean
 
-# start with a simulated normal population
-x=rnorm(n=1e6, mean=50, sd=20)  
-plot(density(x))
-
-# how do we sample in R?
-sample(x, size=25)  
-
 # let's generate a sampling distribution for n=25
 # basic loop
 # 1. take sample of size 25
@@ -18,16 +11,17 @@ sample(x, size=25)
 # 3. store the mean in a vector
 # 4. do this a bunch of times
 
-N = 10000
+N = 5000
 Xbar=rep(0,N)
 for (i in 1:N){
-  Xsamp=sample(x, size=25)
+  Xsamp=rnorm(n=25, mean=50, sd=25)
   Xbar[i]=mean(Xsamp)
 }
 
 # let's plot the sampling distibution underneath the population
 par(mfrow=c(2,1))
-plot(density(x))
+x=seq(-50,150,0.1)
+plot(x,dnorm(x, mean=50, sd=25), type="l")
 plot(density(Xbar),xlim=c(-50,150))
 
 # compute mean and standard deviation of sampling distribution
@@ -38,7 +32,50 @@ sd(Xbar)
 #######################################################################
 # computing probabilities of samples
 
+# using raw scores
+pnorm(11, mean=14, sd=1.279)
 
+# using z-scores
+pnorm(-2.345)
+
+
+######################################################################
+# confidence intervals
+
+pnorm(1.645)-pnorm(-1.645)
+pnorm(1.96)-pnorm(-1.96)
+pnorm(2.58)-pnorm(-2.58)
+
+# computing quantiles
+
+qnorm(0.05)
+qnorm(0.95)
+
+
+#######################################################################
+# T distributions
+dev.off()
+x=seq(-3,3,0.01)
+plot(x,dnorm(x),type="l")
+lines(x,dt(x,df=5),lty=2)
+lines(x,dt(x,df=20),lty=3)
+legend(0,0.1,c("normal","df=5","df=20"),lty=1:3)
+
+
+# T quantiles for 90% CI
+qt(0.05, df=21)
+qt(0.95, df=21)
+
+# 95% CI for reading scores
+read=c(12,20,34,45,34,36,37,50,11,32,29)
+length(read) # easy way to compute sample size
+Xbar=mean(read)
+s=sd(read)
+
+c=qt(0.975,df=10) # compute 0.975 quantile
+
+Xbar-c*s/sqrt(10) # lower limit
+Xbar+c*s/sqrt(10) # upper limit
 
 #######################################################################
 # sampling from non-normal distributions
@@ -84,7 +121,7 @@ rcnorm <- function(n,mean,sd1,sd2,prob){
 }
 
 # draw 5000 samples of size 20 and compute t-scores
-
+dev.off()
 N=5000
 T=rep(0,N)
 for (i in 1:N){
@@ -106,7 +143,7 @@ sum(T>-2.09 & T<2.09)/5000
 # t-scores from lognormal distribution
 
 # some stuff that you need to make it work!
-m <- 50
+m <- 20
 s <- 10
 location <- log(m^2 / sqrt(s^2 + m^2))
 shape <- sqrt(log(1 + (s^2 / m^2)))
@@ -116,19 +153,30 @@ N=5000
 T=rep(0,N)
 for (i in 1:N){
   samp=rlnorm(n=20, meanlog=location, sdlog=shape)
-  T[i]=(mean(samp)-50)/(sd(samp)/sqrt(20))
+  T[i]=(mean(samp)-m)/(sd(samp)/sqrt(20))
 }
 
+par(mfrow=c(2,1))
+x=seq(0,50,0.01)
+plot(x,dlnorm(x,meanlog=location,sdlog=shape),type="l")
 plot(density(T))
+
 quantile(T,probs=c(0.025, 0.975))
+sum(T>-2.09 & T<2.09)/5000     
+
 
 # large sample: n=200
 N=5000
 T=rep(0,N)
 for (i in 1:N){
   samp=rlnorm(n=200, meanlog=location, sdlog=shape)
-  T[i]=(mean(samp)-50)/(sd(samp)/sqrt(200))
+  T[i]=(mean(samp)-m)/(sd(samp)/sqrt(200))
 }
 
+x=seq(0,50,0.01)
+plot(x,dlnorm(x,meanlog=location,sdlog=shape),type="l")
 plot(density(T))
+
+
 quantile(T, probs=c(0.025, 0.975))
+sum(T>-2.09 & T<2.09)/5000     
