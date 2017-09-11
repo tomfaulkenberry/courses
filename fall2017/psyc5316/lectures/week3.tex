@@ -1,4 +1,4 @@
-% Created 2017-09-11 Mon 11:24
+% Created 2017-09-11 Mon 12:58
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -158,7 +158,6 @@ z=\frac{\overline{x}-\mu_{\overline{X}}}{\sigma_{\overline{X}}}=\frac{\overline{
 \begin{verbatim}
 pnorm(-2.345)
 \end{verbatim}
-
 
 \section*{Confidence interval of population mean}
 \label{sec-2}
@@ -351,33 +350,179 @@ Xbar+c*s/sqrt(10) # upper limit
 
 We can see that our 95\% confidence interval is (22.2,39.6).  Since this interval contains 25, we are not confident that the new reading method increases reading scores.
 
-
 \section*{What happens when sampling from non-normal distribution?}
 \label{sec-3}
+Everything we've done so far \textbf{assumes} that the underlying distribution is normal.  However, this is surely not the case.  Thankfully, we have some powerful mathematical results at our disposal that should help to quell our fears!
 \subsection*{Central limit theorem - if $n$ is large enough, $Z$ has standard normal distribution}
 \label{sec-3-1}
-\begin{itemize}
-\item how large must $n$ be?
-\item demonstrate using R some sampling distributions from:
-\begin{itemize}
-\item uniform
-\item exponential
-\end{itemize}
-\end{itemize}
 
-\subsection*{demonstrate how $t$ is susceptible to influence}
+This does leave a pressing question: how large must $n$ be?
+
+There is no simple answer. Lets investigate:
+
+\textbf{Case 1 -- assume population comes from \emph{uniform} distribution}
+
+\begin{verbatim}
+N=5000
+Xbar=rep(0,N)
+for (i in 1:N){
+  Xsamp=runif(n=20, min=0, max=1)
+  Xbar[i]=mean(Xsamp)
+}
+
+par(mfrow=c(2,1))
+x=seq(0,1,0.01)
+plot(x, dunif(x, min=0, max=1), type="l")
+plot(density(Xbar))
+\end{verbatim}
+
+\includegraphics[width=.9\linewidth]{figures/week3/uniform.png}
+
+As you can see, the distribution of samples looks fairly normal
+
+\textbf{Case 2 -- assume population comes from \emph{exponential} distribution}
+
+\begin{verbatim}
+N=5000
+Xbar=rep(0,N)
+for (i in 1:N){
+  Xsamp=rexp(n=20, rate=1)
+  Xbar[i]=mean(Xsamp)
+}
+
+x=seq(0,1,0.01)
+plot(x, dexp(x, rate=1), type="l")
+plot(density(Xbar))
+\end{verbatim}
+
+\includegraphics[width=.9\linewidth]{figures/week3/exponential.png}
+
+Once again, the sampling distribution looks pretty normal, even with relatively small sample size ($n=20$)
+
+\subsection*{Is $T$ distribution robust?}
 \label{sec-3-2}
-Recall that confidence intervals based on $t$ scores assume normality.  How \emph{robust} is the $t$ distribution to violations of this assumption?
+
+Recall that confidence intervals based on $T$ scores assume normality.  How \emph{robust} is the $T$ distribution to violations of this assumption?
 
 \begin{itemize}
-\item Case 1: heavy tailed distributions
+\item \textbf{Case 1: heavy tailed distributions}
 \end{itemize}
 
-Let's simulate a \emph{contaminated normal} distribution.  This is a distribution where scores come from two different underlying normal distributions: one
+Let's simulate a \emph{contaminated normal} distribution.  This is a distribution where scores come from two different underlying normal distributions.  In this case, we'll model the case where both distributions have the same mean, but different standard deviations.
+
+First, we define a function in R to randomly generate scores from such a beast:
+
+\begin{verbatim}
+rcnorm <- function(n,mean,sd1,sd2,prob){
+  x0 = rnorm(n, mean, sd=sd1)
+  x1 = rnorm(n, mean, sd=sd2)
+  flag = rbinom(n, size=1, prob)
+  return(x0*(1-flag) + x1*flag)
+}
+\end{verbatim}
+
+Now, we will do as above and draw 5000 samples of size 20, computing the T-score each time and then plotting the resulting sampling distribution compared to a theoretical $T$ distribution.
+
+\begin{verbatim}
+dev.off()
+N=5000
+T=rep(0,N)
+for (i in 1:N){
+  samp=rcnorm(n=20, mean=50, sd1=3, sd2=10, prob=0.5)
+  T[i]=(mean(samp)-50)/(sd(samp)/sqrt(20))
+}
+
+x=seq(-4,4,0.01)
+plot(density(T))
+lines(x,dt(x,df=19),lty=2)
+\end{verbatim}
+
+\includegraphics[width=.9\linewidth]{figures/week3/contaminated.png}
+
+As you can see, our empirical distribution of $T$ scores (solid line) looks similar to the theoretical $T$ distribution that assumes normality (dashed line).  However, they are slightly different, as we can see with quantile calculations:
+
+\begin{verbatim}
+qt(c(0.025,0.975),df=19)
+\end{verbatim}
+
+In the theoretical $T$ distribution, 95\% of the $t$ scores are between -2.09 and 2.09.
+
+\begin{verbatim}
+sum(T>-2.09 & T<2.09)/5000
+\end{verbatim}
+
+However, in our empirical distribution, this same range accounts for almost 96\% of our $t$ scores.  The fact that they do not match may not bode well for more serious violations of normality.
 
 \begin{itemize}
-\item lognormal
-\item lognormal + heavy tails
+\item \textbf{Case 2: skewed distributions}
 \end{itemize}
+
+As a last demonstration, lets take the case where the underlying distribution has a skew.  One such distribution is the \emph{lognormal} distribution.
+
+First, let's try a small sample ($n=20$):
+
+\begin{verbatim}
+# some stuff that you need to make it work!
+m <- 20
+s <- 10
+location <- log(m^2 / sqrt(s^2 + m^2))
+shape <- sqrt(log(1 + (s^2 / m^2)))
+
+# small sample: n=20
+N=5000
+T=rep(0,N)
+for (i in 1:N){
+  samp=rlnorm(n=20, meanlog=location, sdlog=shape)
+  T[i]=(mean(samp)-m)/(sd(samp)/sqrt(20))
+}
+
+par(mfrow=c(2,1))
+x=seq(0,50,0.01)
+plot(x,dlnorm(x,meanlog=location,sdlog=shape),type="l")
+plot(density(T))
+\end{verbatim}
+
+\includegraphics[width=.9\linewidth]{figures/week3/lognormal.png}
+
+As you can see in the figure, the distribution of $T$ scores no longer appears symmetric about 0.  We can verify this fact with a quantile calculation for our empirical distribution:
+
+\begin{verbatim}
+quantile(T,probs=c(0.025, 0.975))
+\end{verbatim}
+
+In fact, if we use the \emph{usual} computation for a 95\% interval (i.e., (-2.09, 2.09), we only get about 93\% coverage (as verified in the following computation):
+
+\begin{verbatim}
+sum(T>-2.09 & T<2.09)/5000
+\end{verbatim}
+
+
+Does it get better with a large sample?  Lets find out with $n=200$:
+
+\begin{verbatim}
+N=5000
+T=rep(0,N)
+for (i in 1:N){
+  samp=rlnorm(n=200, meanlog=location, sdlog=shape)
+  T[i]=(mean(samp)-m)/(sd(samp)/sqrt(200))
+}
+
+x=seq(0,50,0.01)
+plot(x,dlnorm(x,meanlog=location,sdlog=shape),type="l")
+plot(density(T))
+\end{verbatim}
+
+\includegraphics[width=.9\linewidth]{figures/week3/lognormal2.png}
+
+Looks better.  Lets verify.
+
+\begin{verbatim}
+quantile(T, probs=c(0.025, 0.975))
+sum(T>-2.09 & T<2.09)/5000
+\end{verbatim}
+
+As you can see, though better, our empirical distribution of $T$ scores is not equivalent to the theoretical distribution.
+
+\textbf{Moral}: contrary to what you might hear, the $t$-score is NOT robust to violations of normality!
 % Emacs 25.2.1 (Org mode 8.2.10)
 \end{document}

@@ -117,7 +117,6 @@ z=\frac{\overline{x}-\mu_{\overline{X}}}{\sigma_{\overline{X}}}=\frac{\overline{
 pnorm(-2.345)
 #+END_SRC
 
-
 * Confidence interval of population mean
 For this section, we will assume that all parent distributions are normal.  We'll cover non-normality later.
 
@@ -301,10 +300,8 @@ Xbar+c*s/sqrt(10) # upper limit
 
 We can see that our 95% confidence interval is (22.2,39.6).  Since this interval contains 25, we are not confident that the new reading method increases reading scores.
 
-
 * What happens when sampling from non-normal distribution?
 Everything we've done so far *assumes* that the underlying distribution is normal.  However, this is surely not the case.  Thankfully, we have some powerful mathematical results at our disposal that should help to quell our fears!
-
 ** Central limit theorem - if $n$ is large enough, $Z$ has standard normal distribution
 
 This does leave a pressing question: how large must $n$ be?
@@ -349,7 +346,6 @@ plot(density(Xbar))
 file:figures/week3/exponential.png
 
 Once again, the sampling distribution looks pretty normal, even with relatively small sample size ($n=20$)
-
 
 ** Is $T$ distribution robust?
 
