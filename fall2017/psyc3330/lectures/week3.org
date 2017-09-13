@@ -110,6 +110,57 @@ r=\frac{\sum z_xz_y}{N} = \frac{1.52+1.64+0.88+0+0.37}{5} = \frac{4.41}{5} = 0.8
 
 * More examples
 
+** Example 1:
+|           x |           y | $x-M_x$ | $(x-M_x)^2$ | $y-M_y$ | $(y-M_y)^2$ |  $z_x$ |  $z_y$ | $z_xz_y$ |
+|-------------+-------------+---------+-------------+---------+-------------+--------+--------+----------|
+|           1 |           5 |      -2 |           4 |       2 |           4 | -1.418 |  1.418 |    -2.00 |
+|           2 |           2 |      -1 |           1 |      -1 |           1 | -0.709 | -0.709 |     0.50 |
+|           3 |           3 |       0 |           0 |       0 |           0 |      0 |      0 |        0 |
+|           4 |           4 |       1 |           1 |       1 |           1 |  0.709 |  0.709 |   0.50   |
+|           5 |           1 |       2 |           4 |      -2 |           4 |  1.418 | -1.418 |    -2    |
+|     $M_x=3$ |     $M_y=3$ |         |   $SS_x=10$ |         |   $SS_y=10$ |        |        |          |
+| $SD_x=1.41$ | $SD_y=1.41$ |         |             |         |             |        |        |          |
+
+So $r=\frac{\sum z_xz_y}{N}=-0.60$
+
+
+** Example 2:
+
+|           x |           y | $x-M_x$ | $(x-M_x)^2$ | $y-M_y$ | $(y-M_y)^2$ |  $z_x$ |  $z_y$ | $z_xz_y$ |
+|-------------+-------------+---------+-------------+---------+-------------+--------+--------+----------|
+|           1 |           5 |      -2 |           4 |       0 |           0 | -1.418 |      0 |        0 |
+|           2 |           7 |      -1 |           1 |       2 |           4 | -0.709 |  0.877 |   -0.622 |
+|           3 |           2 |       0 |           0 |      -3 |           9 |      0 | -1.316 |        0 |
+|           4 |           3 |       1 |           1 |      -2 |           4 |  0.709 | -0.877 |   -0.622 |
+|           5 |           8 |       2 |           4 |       3 |           9 |  1.418 |  1.316 |    1.866 |
+|     $M_x=3$ |     $M_y=5$ |         |   $SS_x=10$ |         |   $SS_y=26$ |        |        |          |
+| $SD_x=1.41$ | $SD_y=2.28$ |         |             |         |             |        |        |          |
+
+So $r=\frac{\sum z_xz_y}{N}=0.124$
+
+** Example 3
+Four young children were monitored closely over a period of several weeks to measure how much they watched violent TV programs and their amount of violent behavior toward their playmates.
+
+| TV (hours) | Violent acts |
+|------------+--------------|
+| 14         | 9            |
+| 8          | 6            |
+| 6          | 1            |
+| 12         | 8            | 
+
+Compute the correlation coefficient:
+
+|          $x$ |          $y$ | $x-M_x$ | $(x-M_x)^2$ | $y-M_y$ | $(y-M_y)^2$ |  $z_x$ |  $z_y$ | $z_xz_y$ |
+|--------------+--------------+---------+-------------+---------+-------------+--------+--------+----------|
+|           14 |            9 |       4 |          16 |       3 |           9 |  1.265 |  0.973 |     1.23 |
+|            8 |            6 |      -2 |           4 |       0 |           0 | -0.633 |      0 |        0 |
+|            6 |            1 |      -4 |          16 |      -5 |          25 | -1.265 | -1.622 |     2.05 |
+|           12 |            8 |       2 |           4 |       2 |           4 |  0.633 |  0.649 |     0.41 |
+|     $M_x=10$ |      $M_y=6$ |         |             |         |             |        |        |          |
+| $SD_x=3.162$ | $SD_y=3.082$ |         |             |         |             |        |        |          |
+
+So $r=\frac{\sum z_xz_y}{N} = \frac{3.69}{4}=0.92$
+  
 * Effect size
 
 One common way in which the correlation coefficient is used in psychological research is to index the /effect size/.  That is, it provides a way to judge the strength of a relationship numerically.
