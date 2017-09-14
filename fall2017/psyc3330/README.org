@@ -9,6 +9,3 @@
 - Exam reviews
   - Exam 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/exam1review.pdf][pdf]])
 
-- Note: all exams will require an Apperson/AccuScan scoring form.  Specifically, you need the one with "Essay/Work Space" on the back
-
-file:lectures/figures/apperson.png 
