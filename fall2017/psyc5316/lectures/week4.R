@@ -42,3 +42,48 @@ x=seq(-4,4,0.01)
 plot(x,dnorm(x),type="l",xlab="z-score")
 shadedTails(2.33, 4, dnorm)
 points(x=2.68, y=0.01, lwd=2)
+
+# example 3
+(54-50)/(12/sqrt(16))
+qnorm(0.975)
+
+x=seq(-4,4,0.01)
+plot(x,dnorm(x),type="l",xlab="z-score")
+shadedTails(-4, -1.96, dnorm)
+shadedTails(1.96, 4, dnorm)
+points(x=1.33, y=0.01, lwd=2)
+
+
+# p-values
+x=seq(-4,4,0.01)
+plot(x,dnorm(x),type="l",xlab="z-score")
+shadedTails(-4, -0.53, dnorm)
+
+pnorm(-0.53)
+
+# two-tailed example
+x=seq(-4,4,0.01)
+plot(x,dnorm(x),type="l",xlab="z-score")
+shadedTails(-4, -2.67, dnorm)
+shadedTails(2.67, 4, dnorm)
+
+pnorm(-2.67)+(1-pnorm(2.67))
+
+
+# illustrating power
+x=seq(-4,6,0.01)
+plot(x,dnorm(x),type="l",xlab="z-score")
+text(-2,0.2,"H0 true")
+shadedTails(1.645,6,dnorm)
+
+lines(x,dnorm(x,mean=2.74,sd=1),lty=2)
+text(5,0.2,"H0 false")
+
+# power with two-tailed test
+x=seq(-4,6,0.01)
+plot(x,dnorm(x),type="l",xlab="z-score")
+text(-2,0.2,"H0 true")
+shadedTails(-4,-1.96,dnorm)
+shadedTails(1.96,6,dnorm)
+lines(x,dnorm(x,mean=2.74,sd=1),lty=2)
+text(5,0.2,"H0 false")

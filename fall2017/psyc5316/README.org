@@ -5,8 +5,10 @@
   - Week 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week1.html][html]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week1.R][R script]])
   - Week 2 ([[https://youtu.be/0lf7n_NU6vs][video]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week2.pdf][pdf]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week2.R][R script]])
   - Week 3 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week3.html][html]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week3.R][R script]])
+  - Week 4 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week4.html][html]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week4.R][R script]])
 
 - Homework
   - Week 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw1.pdf][pdf]])
   - Week 2 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw2.pdf][pdf]])
   - Week 3 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw3.pdf][pdf]])
+  - Week 4 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw4.pdf][pdf]])

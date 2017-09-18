@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 4 lecture notes - PSYC 5316</title>
-<!-- 2017-09-15 Fri 10:29 -->
+<!-- 2017-09-18 Mon 18:11 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -306,13 +306,18 @@ z=\frac{\overline{x}-\mu_0}{\sigma / \sqrt{n}} = \frac{44.5-50}{12 / \sqrt{10}} 
 
 <pre class="example">
 qnorm(0.05)
-#+BEGIN_SRC
+</pre>
 
-  - Step 5 -- compare $z$ to $c=-1.645$.  Because $z=-1.45$ is greater than $c=-1.645$, we fail to reject $H_0$ and conclude that $\mu \geq 50$.
+<ul class="org-ul">
+<li>Step 5 &#x2013; compare \(z\) to \(c=-1.645\).  Because \(z=-1.45\) is greater than \(c=-1.645\), we fail to reject \(H_0\) and conclude that \(\mu \geq 50\).
+</li>
+</ul>
 
+<p>
 These steps are a little easier to digest if we can visualize how everything fits together graphically.  Fortunately, this is not too hard to accomplish in R.
+</p>
 
-#+BEGIN_SRC
+<pre class="example">
 shadedTails &lt;- function(from, to, density, ..., col="red"){
   y_seq = seq(from, to, length.out=500)
   d = c(0, density(y_seq, ...), 0)
@@ -338,8 +343,26 @@ The first bit of code defines a convenient function for us to use for the remain
 </div>
 
 <div id="outline-container-sec-1-3" class="outline-3">
-<h3 id="sec-1-3">Example 2</h3>
+<h3 id="sec-1-3">Variations</h3>
 <div class="outline-text-3" id="text-1-3">
+<p>
+There are two variations to the hypothesis testing procedure described above:
+</p>
+
+<ol class="org-ol">
+<li>testing \(H_0:\mu \leq \mu_0\) &#x2013; we reject \(H_0\) if \(Z\geq c\), where \(c\) is the \(1-\alpha\) quantile of a standard normal distribution
+</li>
+
+<li>testing \(H_0:\mu = \mu_0\) &#x2013; we reject \(H_0\) if \(Z\leq -c\) or \(Z\geq c\), where \(c\) is the \(1-\alpha/2\) quantile of a standard normal distribution.
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4">Example 2</h3>
+<div class="outline-text-3" id="text-1-4">
 <p>
 Suppose SAT math scores are normally distributed with \(\mu=580\) and \(\sigma=50\).  You have developed a new training course and want to empirically determine its efficacy.  Your sample of 20 students attains an average score of 610.  Is this a significant increase?
 </p>
@@ -391,11 +414,415 @@ points(x=2.68, y=0.01, lwd=2)
 </div>
 </div>
 </div>
+
+
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5">Example 3</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Scores on a memory test are normally distributed with \(\mu=50\) and \(\sigma=12\).  A sample of 16 participants is given an herbal supplement for 90 days.  Afterward, each participants takes the memory test.  The average score for the 16 participants was \(\overline{x}=54\).  Did the herbal supplement group score significantly different from the population?
+</p>
+
+<ul class="org-ul">
+<li>Step 1 - set \(H_0\):&mu;=50$
+</li>
+<li>Step 2 - set \(\alpha=0.05\)
+</li>
+<li>Step 3 - compute \(z\):
+</li>
+</ul>
+
+<p>
+\[
+z=\frac{\overline{x}-\mu}{\sigma/\sqrt{n}} =\frac{54-50}{12/\sqrt{16}} = \frac{4}{3} = 1.33
+\]
+</p>
+
+<ul class="org-ul">
+<li>Step 4 - compute \(c\) (the \(1-\alpha/2 = 0.975\) quantile)
+</li>
+</ul>
+
+<pre class="example">
+qnorm(0.975)
+</pre>
+
+<ul class="org-ul">
+<li>Step 5 &#x2013; compare \(z\) to \(c=\pm 1.96\).  Because \(z=1.33\) is not greater than \(c=1.96\) or less than \(c=-1.96\), we fail to reject \(H_0\), and conclude that \(\mu\) is not significantly different from 50.
+</li>
+</ul>
+
+<p>
+Again, we can visualize this as follows:
+</p>
+
+
+<div class="figure">
+<p><img src="figures/week4/example3.png" alt="example3.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Hypothesis Testing via \(p\)-values</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+An alternative method of hypothesis testing uses \(p\)-values.  This method probably first appeared in a book of Deming (1943). 
+</p>
+
+<p>
+<i>Definition: the \(p\) value is the probability of making a Type I error if we use the observed value of \(Z\) as our critical value.</i>
+</p>
+
+<p>
+We can integrate this idea with NP hypothesis testing by setting the following decision criterion:
+</p>
+
+<p>
+<i>Decision: we reject \(H_0\) if \(p<\alpha\)</i>
+</p>
+
+<p>
+Example: consider again our opening example of open-mindedness, where we were testing the null hypothesis \(H_0:\mu\geq 50\).  Suppose we got a sample of 10 scores for which \(\overline{x}=48\).  Suppose further that \(\sigma=12\).  Then
+</p>
+
+<p>
+\[
+z=\frac{43-50}{12/\sqrt{10}} = -0.53
+\]
+</p>
+
+<p>
+If we use this value of \(z\) as a critical value, we would get the following picture:
+</p>
+
+<pre class="example">
+x=seq(-4,4,0.01)
+plot(x,dnorm(x),type="l",xlab="z-score")
+shadedTails(-4, -0.53, dnorm)
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week4/pValue.png" alt="pValue.png" />
+</p>
+</div>
+
+<p>
+Suppose \(H_0\) is true.  From the figure, we can see that we would reject \(H_0\) (and thus make a Type I error) whenever our sample mean fell into the red region, which is the region for which \(z\leq -0.53\).  Thus, \(\alpha\) (the probability of making a Type I error) would be \(P(z\leq -0.53)\).  
+</p>
+
+<pre class="example">
+pnorm(-0.53)
+</pre>
+
+<p>
+As we can see, this probability is \(p=0.298\).  
+</p>
+
+<p>
+Further, we would NOT reject \(H_0\), since 0.298 is greater than 0.05.
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">Computing \(p\)-values</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Cases 1 and 2 are similar to what we just did above.
+</p>
+
+<p>
+Case 1 &#x2013; testing \(H_0:\mu\geq \mu_0\)
+</p>
+
+<p>
+\[
+p=P\Biggl(Z\leq \frac{\overline{x}-\mu_0}{\sigma/\sqrt{n}}\Biggr)
+\]
+</p>
+
+<p>
+Case 2 &#x2013; testing \(H_0:\mu\leq \mu_0\)
+</p>
+
+<p>
+\[
+p=P\Biggl(Z\geq \frac{\overline{x}-\mu_0}{\sigma/\sqrt{n}}\Biggr)
+\]
+</p>
+
+
+<p>
+Case 3 &#x2013; testing \(H_0:\mu=\mu_0\)
+In this case, you must take into account that the critical region consists of both tails:
+</p>
+
+<p>
+\[
+p=P\Biggl(Z\leq -\Biggl|\frac{\overline{x}-\mu_0}{\sigma/\sqrt{n}}\Biggr|\Biggr) + P\Biggl(Z\geq \Biggl|\frac{\overline{x}-\mu_0}{\sigma/\sqrt{n}}\Biggr|\Biggr)
+\]
+</p>
+
+<p>
+Example:  Suppose we are testing \(H_0:\mu=15\), and suppose \(\sigma=6\).  We take a sample of \(n=16\) and find \(\overline{x}=19\).  
+</p>
+
+<p>
+Then we can find
+\[
+z=\frac{19-15}{6/\sqrt{16}} = 2.67
+\]
+</p>
+
+<p>
+By above, the \(p\)-value for this \(z\)-score would be:
+</p>
+
+<p>
+\[
+p=P(Z\leq -2.67)+P(Z\geq 2.67)=0.0076
+\]
+</p>
+
+<pre class="example">
+x=seq(-4,4,0.01)
+plot(x,dnorm(x),type="l",xlab="z-score")
+shadedTails(-4, -2.67, dnorm)
+shadedTails(2.67, 4, dnorm)
+
+pnorm(-2.67)+(1-pnorm(2.67))
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week4/twoTailed.png" alt="twoTailed.png" />
+</p>
+</div>
+
+<p>
+<i>Decision: since \(p<0.05\), we would reject the null.</i>
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Statistical Power</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+NP hypothesis testing comes down to making a decision.  Thus, there are four possible outcomes:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">Reality</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Decision</td>
+<td class="left">\(H_0\) true</td>
+<td class="left">\(H_0\) false</td>
+</tr>
+
+<tr>
+<td class="left">accept \(H_0\)</td>
+<td class="left">correct decision</td>
+<td class="left"><b>Type II error</b> (probability \(\beta\))</td>
+</tr>
+
+<tr>
+<td class="left">reject \(H_0\)</td>
+<td class="left"><b>Type I error</b> (probability \(\alpha\))</td>
+<td class="left">correct decision</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+This brings up two very related definitions:
+</p>
+
+<ol class="org-ol">
+<li>A <i>Type II error</i> refers to failing to reject \(H_0\) when \(H_0\) is false.  The probability of making a Type II error is labeled \(\beta\).
+</li>
+
+<li><i>Power</i> is the probability of rejecting \(H_0\) when \(H_0\) is false.  The probability of this occurring is \(1-\beta\).
+</li>
+</ol>
+
+<p>
+Our goal is to maximize power!
+</p>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">computing power</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+This is actually quite difficult.  I'll illustrate the intuition with an example.  Suppose \(H_0: \mu\leq 50\), where \(\sigma=10\).  We take a sample of size \(n=30\).  Compute the power at \(\alpha=0.05\) if \(\overline{x}=55\).
+</p>
+
+<p>
+First, note that our sample \(z\) is 2.74.
+</p>
+
+<p>
+Consider the following:
+</p>
+
+<pre class="example">
+x=seq(-4,6,0.01)
+plot(x,dnorm(x),type="l",xlab="z-score")
+text(-2,0.2,"H0 true")
+shadedTails(1.645,6,dnorm)
+
+lines(x,dnorm(x,mean=2.74,sd=1),lty=2)
+text(5,0.2,"H0 false")
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week4/power1.png" alt="power1.png" />
+</p>
+</div>
+
+<p>
+As before, the red region refers to \(z\)-scores for which we would reject \(H_0\).  The dashed line represents the distribution we would see if \(H_0\) was false, and specifically \(\mu=55\) (our sample mean).  
+</p>
+
+<p>
+So, power can be computed as follows.  By definition, power is the probability of rejecting \(H_0\) if \(H_0\) is false.  Note that we reject \(H_0\) whenever our \(z\) score is 1.645 or greater (i.e., in the red region).   Note that this equates to a raw score of \(x=\mu+z\sigma = 50+1.645(10/\sqrt(30))=53.00\).  
+</p>
+
+<p>
+If we assume first that \(H_0\) is false, a score of 53 would equate to a \(z\) score of 
+</p>
+
+<p>
+\[
+z'=\frac{53-55}{10/\sqrt{30}}=-1.095
+\]
+</p>
+
+<p>
+Thus, 
+</p>
+
+\begin{align*}
+ \text{power} &= P(\text{rejecting }H_0 \mid H_0 \text{ is false})\\
+ & = P(Z>1.645 \mid H_0\text{ is false})\\
+ & = P(Z'>-1.095)\\
+ & = 0.86
+\end{align*}
+
+<p>
+The last of these equalities can be found using the usual <code>pnorm</code> computation.
+</p>
+
+
+<p>
+As a quick exercise, lets see how this would change if we used a <i>two-tailed</i> test instead of a one-tailed test.
+</p>
+
+<p>
+First, let's look at the picture:
+</p>
+
+<pre class="example">
+x=seq(-4,6,0.01)
+plot(x,dnorm(x),type="l",xlab="z-score")
+text(-2,0.2,"H0 true")
+shadedTails(-4,-1.96,dnorm)
+shadedTails(1.96,6,dnorm)
+lines(x,dnorm(x,mean=2.74,sd=1),lty=2)
+text(5,0.2,"H0 false")
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week4/twoTailed2.png" alt="twoTailed2.png" />
+</p>
+</div>
+
+<p>
+This time, to reject the null, our \(z\) score would be either greater than 1.96 or less than 1.96.  
+</p>
+
+<p>
+These would equate to raw scores of:
+</p>
+
+<p>
+\[
+z=\mu+z\sigma = 50+1.96(10/\sqrt{30})=53.58
+\]
+</p>
+
+<p>
+and
+</p>
+
+<p>
+\[
+z=\mu+z\sigma = 50-1.96(10/\sqrt{30})=46.42
+\]
+</p>
+
+<p>
+Assuming \(H_0\) is false with \(\mu=55\), these would equate to \(z\) scores of:
+</p>
+
+<p>
+\[
+z'=\frac{53.58-55}{10/\sqrt{30}} = -0.78
+\]
+</p>
+
+<p>
+and 
+</p>
+
+<p>
+\[
+z'=\frac{46.42-55}{10/\sqrt{30}} = -4.70
+\]
+</p>
+
+<p>
+So, the power would be found as 
+</p>
+
+\begin{align*}
+ \text{power} &= P(\text{rejecting }H_0 \mid H_0 \text{ is false})\\
+ & = P(Z>1.96 \text{ or } Z<-1.96 \mid H_0\text{ is false})\\
+ & = P(Z'>-0.78 \text{ or }Z'<-4.70)\\
+ & = P(Z'>-0.78) + P(Z'<-4.70)\\
+ & = 0.78
+\end{align*}
+
+<p>
+As we can see, the power is reduced!  
+</p>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: September 18, 2017</p>
-<p class="date">Created: 2017-09-15 Fri 10:29</p>
+<p class="date">Created: 2017-09-18 Mon 18:11</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
