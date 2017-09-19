@@ -9,3 +9,9 @@
 - Exam reviews
   - Exam 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/exam1review.pdf][pdf]])
 
+- Supplemental lecture videos
+  - /Note: these videos are for my online course, so the presentation of material may be slightly different from what was taught in your face-to-face course.  These videos are included for review only./
+  - [[https://youtu.be/nq6HB43e48w][Week 1]]
+  - [[https://youtu.be/DCLBf9tnfag][Week 2]]
+  - [[https://youtu.be/mW62k0GjOrg][Week 3]]
+
