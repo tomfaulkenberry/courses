@@ -79,18 +79,6 @@ data %>%
   ggplot(aes(x=condition, y=RT)) +
   geom_boxplot()
 
-# we can see outliers!
-# need to filter data
-
-data <- rawdata %>%
-  filter(error==0) %>%
-  filter(RT > 200 & RT < mean(RT)+3*sd(RT))
-
-# after outliers are removed, replot the figure
-data %>%
-  ggplot(aes(x=condition, y=RT)) +
-  geom_boxplot()
-
 # change orientation
 data %>%
   ggplot(aes(x=condition, y=RT)) +
@@ -101,12 +89,12 @@ data %>%
 # overlaid
 data %>%
   ggplot(aes(x=RT, group=condition)) +
-  geom_histogram(aes(fill=condition))
+  geom_density(aes(fill=condition))
 
 # faceted
 data %>%
   ggplot(aes(x=RT)) +
-  geom_histogram() +
+  geom_density() +
   facet_grid(condition~.)
 
 
@@ -119,7 +107,7 @@ data %>%
   group_by(condition) %>%
   summarize(meanRT=mean(RT)) %>%
   ggplot(aes(x=condition,y=meanRT)) +
-  geom_bar(stat="identity")
+  geom_bar(stat="identity", width=0.5)
 
 # line plot
 data %>%
@@ -134,16 +122,17 @@ data %>%
   group_by(distance) %>%
   summarize(meanRT=mean(RT)) %>%
   ggplot(aes(x=distance, y=meanRT)) +
-  geom_bar(stat="identity")
+  geom_bar(stat="identity", width=0.5)
 
 data %>%
   group_by(distance) %>%
   summarize(meanRT=mean(RT)) %>%
   ggplot(aes(x=distance, y=meanRT, group=1)) +
   geom_line() +
-  geom_point() 
+  geom_point() +
+  ylim(0,1500)
 
-# Case 2: condition x distance
+# Case 3: condition x distance
 data %>%
   group_by(condition, distance) %>%
   summarize(meanRT=mean(RT)) %>%
@@ -155,10 +144,22 @@ data %>%
   summarize(meanRT=mean(RT)) %>%
   ggplot(aes(x=distance, y=meanRT, linetype=condition)) +
   geom_line() +
-  geom_point()
+  geom_point() +
+  ylim(0,1500)
+
   
 ###############################################
 # analyzing data
+
+# how many subjects?
+length(unique(data$subject))
+
+# collapse RTs to mean by condition
+data %>%
+  group_by(subject, condition) %>%
+  summarize(meanRT=mean(RT)) %>%
+  print(n=82)
+
 
 # t-test: mean RTs by condition
 
@@ -174,7 +175,7 @@ incongruent <- data %>%
   filter(condition=="incongruent") %>%
   select(subject,meanRT)
 
-t.test(congruent$meanRT,incongruent$meanRT,paired=TRUE)
+t.test(incongruent$meanRT,congruent$meanRT,paired=TRUE)
 
 # ANOVA: mean RT by distance
 
@@ -183,7 +184,10 @@ dataByDistance <- data %>%
   summarize(meanRT=mean(RT)) %>%
   mutate(distance=as.factor(distance))
   
-distance.aov = aov(meanRT~distance + Error(as.factor(subject)/distance), data=dataByDistance)
+distance.aov = aov(meanRT~distance + 
+                   Error(as.factor(subject)/distance), 
+                   data=dataByDistance
+                   )
 summary(distance.aov)
 
 # factorial ANOVA: mean RT by condition x distance
@@ -193,5 +197,8 @@ dataFactorial <- data %>%
   summarize(meanRT = mean(RT)) %>%
   mutate(distance=as.factor(distance))
 
-factorial.aov = aov(meanRT ~ condition*distance + Error(as.factor(subject)/(condition*distance)), data=dataFactorial)
+factorial.aov = aov(meanRT ~ condition*distance + 
+                    Error(as.factor(subject)/(condition*distance)), 
+                    data=dataFactorial
+                    )
 summary(factorial.aov)

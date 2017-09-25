@@ -99,7 +99,7 @@ data <- rawdata %>%
   filter(error==0)
 #+END_SRC
 
-If you look in the "Environment" tab, you'll notice that the row dimension has reduced to 15,700.  This tells us that there were 44 errors across all participants and trials.
+If you look in the "Environment" tab, you'll notice that the row dimension has reduced to 15,686.  This tells us that there were 44 errors across all participants and trials.
 
 
 ** Mutate
@@ -146,3 +146,264 @@ data %>%
   group_by(condition, distance) %>%
   summarize(meanRT=mean(RT), sd=sd(RT))
 #+END_SRC
+
+* Visualizing data with =ggplot2=
+
+=ggplot2= is a plotting package that makes it simple to create complex plots from data in a data frame. It provides a more programmatic interface for specifying what variables to plot, how they are displayed, and general visual properties. Therefore, we only need minimal changes if the underlying data change
+or if we decide to change from a bar plot to a scatterplot. This helps in creating publication quality plots with minimal amounts of adjustments and tweaking.
+
+=ggplot= likes data in the 'long' format: i.e., a column for every variable, and a row for every observation. Well structured data will save you lots of time when making figures with =ggplot=.
+
+=ggplot= graphics are built step by step by adding new elements. Adding layers in this fashion allows for extensive flexibility and customization of plots.
+
+To build a =ggplot=, we need to:
+
+  - pipe our data to the =ggplot()= function
+  - define /aesthetics/ (=aes=) by selecting the variables to be plotted and the variables to define the presentation.
+  - add =geoms=, which are graphical representations in the plot (points, lines,bars).
+
+We will now construct some examples of what is possible using =ggplot=:
+
+#+BEGIN_SRC
+data %>%
+  ggplot(aes(x=condition, y=RT)) +
+  geom_boxplot()
+#+END_SRC
+
+This gives us a vertically oriented boxplot:
+
+file:figures/week5/boxplot.png
+
+We can switch the orientation to horizontal by adding the =coord_flip()= function.
+
+#+BEGIN_SRC
+data %>%
+  ggplot(aes(x=condition, y=RT)) +
+  geom_boxplot() +
+  coord_flip()
+#+END_SRC
+
+file:figures/week5/boxplotHorizontal.png
+
+Boxplots are fine, but they hide the /shape/ of the distribution.  Let's try plotting some histograms.
+
+#+BEGIN_SRC
+data %>%
+  ggplot(aes(x=RT, group=condition)) +
+  geom_histogram(aes(fill=condition))
+#+END_SRC
+
+file:figures/week5/histogram.png
+
+In this plot, the histograms are overlaid on the same plot.  We can split them up using /faceting/:
+
+#+BEGIN_SRC
+data %>%
+  ggplot(aes(x=RT)) +
+  geom_histogram() +
+  facet_grid(condition~.)
+#+END_SRC
+
+file:figures/week5/faceted.png
+
+Note: density plots can be made in the same way..just use =geom_density= instead of =geom_histogram=
+
+** plotting summaries
+
+Usually, we are interested in the differences between condition means.  We will demonstrate this using two types of plots: a bar plot, and a line plot.
+
+First, lets look at a bar plot that demonstrates the difference in condition means between incongruent and congruent trials.  Notice how we are using the "split-apply-combine" paradigm along with =ggplot= here:
+
+#+BEGIN_SRC
+data %>%
+  group_by(condition) %>%
+  summarize(meanRT=mean(RT)) %>%
+  ggplot(aes(x=condition,y=meanRT)) +
+  geom_bar(stat="identity", width=0.5)
+#+END_SRC
+
+file:figures/week5/barplot1.png
+
+Similarly, a small change can produce a line plot instead:
+
+#+BEGIN_SRC
+data %>%
+  group_by(condition) %>%
+  summarize(meanRT=mean(RT)) %>%
+  ggplot(aes(x=condition, y=meanRT, group=1)) +
+  geom_line() +
+  geom_point()
+#+END_SRC
+
+file:figures/week5/lineplot1.png
+
+Notice that this is a terrible plot, though, because the y-axis is truncated.  Adding a line with =ylim(0,1500)= will make the plot better (try it!)
+
+What if we were interested in the differences in mean RT by distance?  We can easily edit our code above to get bar plots and line plots for distance instead of condition:
+
+Bar plot:
+
+#+BEGIN_SRC
+data %>%
+  group_by(distance) %>%
+  summarize(meanRT=mean(RT)) %>%
+  ggplot(aes(x=distance, y=meanRT)) +
+  geom_bar(stat="identity", width=0.5)
+#+END_SRC
+
+file:figures/week5/barplot2.png
+
+Line plot:
+
+#+BEGIN_SRC
+data %>%
+  group_by(distance) %>%
+  summarize(meanRT=mean(RT)) %>%
+  ggplot(aes(x=distance, y=meanRT, group=1)) +
+  geom_line() +
+  geom_point() +
+  ylim(0,1500)
+#+END_SRC
+
+file:figures/week5/lineplot2.png
+
+Both plots indicate that numerical distance doesn't seem to have much effect on RTs.  
+
+However, a more interesting plot might reveal something different!  Lets see what happens when we plot BOTH condition and distance on the same plot:
+
+Bar plot:
+
+#+BEGIN_SRC
+data %>%
+  group_by(condition, distance) %>%
+  summarize(meanRT=mean(RT)) %>%
+  ggplot(aes(x=distance, y=meanRT, fill=condition)) +
+  geom_bar(stat="identity", position=position_dodge(), color="black")
+#+END_SRC
+
+file:figures/week5/barplot3.png
+
+Line plot:
+
+#+BEGIN_SRC
+data %>%
+  group_by(condition, distance) %>%
+  summarize(meanRT=mean(RT)) %>%
+  ggplot(aes(x=distance, y=meanRT, linetype=condition)) +
+  geom_line() +
+  geom_point() +
+  ylim(0,1500)
+#+END_SRC
+
+file:figures/week5/lineplot3.png
+
+It appears that the effect of condition may be increasing as numerical distance increases.  If so, this is called an /interaction/ effect.
+
+* Performing statistical tests
+
+In this section, we will back up our plots by performing statistical tests.  The tests will perform are the paired samples t-test and a couple of ANOVAs (analysis of variance).
+
+** t-test: comparing mean RTs by condition
+
+For our first case study, lets look at the effect of condition and see if we find a significant size-congruity effect.  That is, are response times on incongruent trials significantly longer than congruent trials?
+
+When participants complete multiple experimental trials, the first step is to collapse all trials into single summary stats (usually the mean).  We can use the "split-apply-combine" paradigm to see this.
+
+First, let's see how many participants we had:
+
+#+BEGIN_SRC
+length(unique(data$subject))
+#+END_SRC
+
+Now, split-apply-combine will give us a mean RT for each condition and subject.  That is, we should get 41x2=82 different mean RTs.  We'll add the =print(n=82)= to the end in order to see all 82 rows.
+
+#+BEGIN_SRC
+data %>%
+  group_by(subject, condition) %>%
+  summarize(meanRT=mean(RT)) %>%
+  print(n=82)
+#+END_SRC
+
+Since "condition" is a within-subjects manipulation (each participant completed both experimental conditions), we'll need to use a paired-samples t-test.  The =t.test= function in R requires two vectors as input.  We'll use our =tidyverse= verbs to construct both of these vectors; one for congruent trials, and one for incongruent trials:
+
+#+BEGIN_SRC
+congruent <- data %>%
+  group_by(subject, condition) %>%
+  summarize(meanRT=mean(RT)) %>%
+  filter(condition=="congruent") %>%
+  select(subject,meanRT)
+
+incongruent <- data %>%
+  group_by(subject, condition) %>%
+  summarize(meanRT=mean(RT)) %>%
+  filter(condition=="incongruent") %>%
+  select(subject,meanRT)
+#+END_SRC
+
+Now, to perform the t-test, we simply type the following:
+
+#+BEGIN_SRC
+t.test(incongruent$meanRT, congruent$meanRT, paired=TRUE)
+#+END_SRC
+
+From the output, we can see there is indeed a significant increase in RTs for incongruent trials, $t(40)=7.48$, $p<0.001$.  Also, we get a 95% confidence interval for the increase as (36.9, 64.3).
+
+** one-way ANOVA: comparing mean RTs by numerical distance
+
+Recall when we plotted mean RT against distance, there did not appear to be much of a difference.  Lets test this with a one-way ANOVA.
+
+The ANOVA procedures are a bit different than the t-test.  First, we collapse all the trials to a single mean RT for each subject x distance combination.  Note: we should expect 41x4=164 different mean RTs.
+
+#+BEGIN_SRC
+dataByDistance <- data %>%
+  group_by(subject, distance) %>%
+  summarize(meanRT=mean(RT)) %>%
+  mutate(distance=as.factor(distance))
+#+END_SRC
+
+Note: the last =mutate= command is necessary to make the ANOVA work correctly.  All independent variables in an ANOVA model *must* be "factors".  This command forces R to interpret the numbers 1,2,3,4 as levels of a single categorical factor instead of values of some continuous variable.
+
+Next, we define the ANOVA model:
+
+#+BEGIN_SRC
+distance.aov = aov(meanRT~distance + 
+                   Error(as.factor(subject)/distance), 
+                   data=dataByDistance
+                   )
+#+END_SRC
+
+Note again the =as.factor()= command; this time, it is used to force the =subject= variable to be read as categorical.  
+
+Finally, we can see the usual ANOVA table by using the =summary()= function:
+
+#+BEGIN_SRC
+summary(distance.aov)
+#+END_SRC
+
+The output confirms our suspicion.  There was no effect of distance on mean RTs, $F(3,120)=0.45$, $p=0.72$.
+
+** Factorial ANOVA: mean RT by condition and distance
+
+In one of our figures above, we saw that the difference in RTs between congruent and incongruent trials seemed to /increase/ as numerical distance increased.  If so, this would be an /interaction/ between condition and distance.  To test this, we use a factorial anova.
+
+#+BEGIN_SRC
+dataFactorial <- data %>%
+  group_by(subject, condition, distance) %>%
+  summarize(meanRT = mean(RT)) %>%
+  mutate(distance=as.factor(distance))
+
+factorial.aov = aov(meanRT ~ condition*distance + 
+                    Error(as.factor(subject)/(condition*distance)), 
+                    data=dataFactorial
+                    )
+summary(factorial.aov)
+#+END_SRC
+
+As we can see, the overall picture we've suspected is confirmed:
+
+  - there was a significant main effect of condition.  Mean RTs on incongruent trials were significantly longer than congruent trials, $F(1,40)=55.91$, $p<0.001$.
+  - there was no effect of distance, $F(3,120)=0.46$, $p=0.71$.
+  - however, there was a significant interaction between condition and distance, $F(3,120)=7.86$, $p<0.001$.  
+
+
+

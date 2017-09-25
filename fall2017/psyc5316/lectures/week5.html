@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 5 lecture notes - PSYC 5316</title>
-<!-- 2017-09-25 Mon 09:16 -->
+<!-- 2017-09-25 Mon 10:50 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -131,6 +131,48 @@ for the JavaScript code in this tag.
    if(elem.cacheClassTarget)
      target.className = elem.cacheClassTarget;
  }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
 /*]]>*///-->
 </script>
 </head>
@@ -370,13 +412,488 @@ If we wanted to create a new object of this smaller version of the data, we coul
 data &lt;- rawdata %&gt;%
   filter(error==0)
 </pre>
+
+<p>
+If you look in the "Environment" tab, you'll notice that the row dimension has reduced to 15,686.  This tells us that there were 44 errors across all participants and trials.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">Mutate</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+Frequently you will want to create new columns based on the values in existing columns.  For example, we might want to express response time (RT) in seconds rather than milliseconds.  For this, we'll use <code>mutate()</code>:
+</p>
+
+<pre class="example">
+data %&gt;%
+  mutate(RT_sec = RT/1000)
+</pre>
+
+<p>
+Another good use of <code>mutate()</code> is for recoding a variable.  For example, the column <code>distance</code> currently has 4 values: 1, 2, 3, and 4.  Suppose we want to recode this variable to have two values: close (distance=1 or 2) and far (distance=3 or 4).  We can use <code>mutate()</code> along with <code>ifelse()</code> to do this:
+</p>
+
+<pre class="example">
+data %&gt;%
+  mutate(dist = ifelse(distance==1 | distance==2, "close", "far"))
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4">Summarize</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+Many data analysis tasks can be approached using the <i>split-apply-combine</i> paradigm: split the data into groups, apply some analysis to each group, then combine the results.  <code>dplyr</code> makes this very easy using the functions <code>group_by()</code> and <code>summarize()</code>.
+</p>
+
+<p>
+The following code chunk illustrates this:
+</p>
+
+<pre class="example">
+data %&gt;%
+  group_by(condition) %&gt;%
+  summarize(meanRT = mean(RT))
+</pre>
+
+<p>
+<code>group_by()</code> takes as its argument the column name(s) that contain the categorical variables for which you want to calculate a summary statistic (e.g., mean).  In this example, we are interested in the mean RT by condition.  You'll notice that incongruent trials take slightly longer than congruent trials.  This is the <i>size-congruity</i> effect, first demonstrated by Henik and Tzelgov in 1982.
+</p>
+
+<p>
+Note that you can also group by multiple columns.  Suppose we were interested in the mean RT by condition AND distance.
+</p>
+
+<pre class="example">
+data %&gt;%
+  group_by(condition, distance) %&gt;%
+  summarize(meanRT = mean(RT))
+</pre>
+
+<p>
+Also, we can compute multiple statistics:
+</p>
+
+<pre class="example">
+data %&gt;%
+  group_by(condition, distance) %&gt;%
+  summarize(meanRT=mean(RT), sd=sd(RT))
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Visualizing data with <code>ggplot2</code></h2>
+<div class="outline-text-2" id="text-4">
+<p>
+<code>ggplot2</code> is a plotting package that makes it simple to create complex plots from data in a data frame. It provides a more programmatic interface for specifying what variables to plot, how they are displayed, and general visual properties. Therefore, we only need minimal changes if the underlying data change
+or if we decide to change from a bar plot to a scatterplot. This helps in creating publication quality plots with minimal amounts of adjustments and tweaking.
+</p>
+
+<p>
+<code>ggplot</code> likes data in the 'long' format: i.e., a column for every variable, and a row for every observation. Well structured data will save you lots of time when making figures with <code>ggplot</code>.
+</p>
+
+<p>
+<code>ggplot</code> graphics are built step by step by adding new elements. Adding layers in this fashion allows for extensive flexibility and customization of plots.
+</p>
+
+<p>
+To build a <code>ggplot</code>, we need to:
+</p>
+
+<ul class="org-ul">
+<li>pipe our data to the <code>ggplot()</code> function
+</li>
+<li>define <i>aesthetics</i> (<code>aes</code>) by selecting the variables to be plotted and the variables to define the presentation.
+</li>
+<li>add <code>geoms</code>, which are graphical representations in the plot (points, lines,bars).
+</li>
+</ul>
+
+<p>
+We will now construct some examples of what is possible using <code>ggplot</code>:
+</p>
+
+<pre class="example">
+data %&gt;%
+  ggplot(aes(x=condition, y=RT)) +
+  geom_boxplot()
+</pre>
+
+<p>
+This gives us a vertically oriented boxplot:
+</p>
+
+
+<div class="figure">
+<p><img src="figures/week5/boxplot.png" alt="boxplot.png" />
+</p>
+</div>
+
+<p>
+We can switch the orientation to horizontal by adding the <code>coord_flip()</code> function.
+</p>
+
+<pre class="example">
+data %&gt;%
+  ggplot(aes(x=condition, y=RT)) +
+  geom_boxplot() +
+  coord_flip()
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week5/boxplotHorizontal.png" alt="boxplotHorizontal.png" />
+</p>
+</div>
+
+<p>
+Boxplots are fine, but they hide the <i>shape</i> of the distribution.  Let's try plotting some histograms.
+</p>
+
+<pre class="example">
+data %&gt;%
+  ggplot(aes(x=RT, group=condition)) +
+  geom_histogram(aes(fill=condition))
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week5/histogram.png" alt="histogram.png" />
+</p>
+</div>
+
+<p>
+In this plot, the histograms are overlaid on the same plot.  We can split them up using <i>faceting</i>:
+</p>
+
+<pre class="example">
+data %&gt;%
+  ggplot(aes(x=RT)) +
+  geom_histogram() +
+  facet_grid(condition~.)
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week5/faceted.png" alt="faceted.png" />
+</p>
+</div>
+
+<p>
+Note: density plots can be made in the same way..just use <code>geom_density</code> instead of <code>geom_histogram</code>
+</p>
+</div>
+
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">plotting summaries</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Usually, we are interested in the differences between condition means.  We will demonstrate this using two types of plots: a bar plot, and a line plot.
+</p>
+
+<p>
+First, lets look at a bar plot that demonstrates the difference in condition means between incongruent and congruent trials.  Notice how we are using the "split-apply-combine" paradigm along with <code>ggplot</code> here:
+</p>
+
+<pre class="example">
+data %&gt;%
+  group_by(condition) %&gt;%
+  summarize(meanRT=mean(RT)) %&gt;%
+  ggplot(aes(x=condition,y=meanRT)) +
+  geom_bar(stat="identity", width=0.5)
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week5/barplot1.png" alt="barplot1.png" />
+</p>
+</div>
+
+<p>
+Similarly, a small change can produce a line plot instead:
+</p>
+
+<pre class="example">
+data %&gt;%
+  group_by(condition) %&gt;%
+  summarize(meanRT=mean(RT)) %&gt;%
+  ggplot(aes(x=condition, y=meanRT, group=1)) +
+  geom_line() +
+  geom_point()
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week5/lineplot1.png" alt="lineplot1.png" />
+</p>
+</div>
+
+<p>
+Notice that this is a terrible plot, though, because the y-axis is truncated.  Adding a line with <code>ylim(0,1500)</code> will make the plot better (try it!)
+</p>
+
+<p>
+What if we were interested in the differences in mean RT by distance?  We can easily edit our code above to get bar plots and line plots for distance instead of condition:
+</p>
+
+<p>
+Bar plot:
+</p>
+
+<pre class="example">
+data %&gt;%
+  group_by(distance) %&gt;%
+  summarize(meanRT=mean(RT)) %&gt;%
+  ggplot(aes(x=distance, y=meanRT)) +
+  geom_bar(stat="identity", width=0.5)
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week5/barplot2.png" alt="barplot2.png" />
+</p>
+</div>
+
+<p>
+Line plot:
+</p>
+
+<pre class="example">
+data %&gt;%
+  group_by(distance) %&gt;%
+  summarize(meanRT=mean(RT)) %&gt;%
+  ggplot(aes(x=distance, y=meanRT, group=1)) +
+  geom_line() +
+  geom_point() +
+  ylim(0,1500)
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week5/lineplot2.png" alt="lineplot2.png" />
+</p>
+</div>
+
+<p>
+Both plots indicate that numerical distance doesn't seem to have much effect on RTs.  
+</p>
+
+<p>
+However, a more interesting plot might reveal something different!  Lets see what happens when we plot BOTH condition and distance on the same plot:
+</p>
+
+<p>
+Bar plot:
+</p>
+
+<pre class="example">
+data %&gt;%
+  group_by(condition, distance) %&gt;%
+  summarize(meanRT=mean(RT)) %&gt;%
+  ggplot(aes(x=distance, y=meanRT, fill=condition)) +
+  geom_bar(stat="identity", position=position_dodge(), color="black")
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week5/barplot3.png" alt="barplot3.png" />
+</p>
+</div>
+
+<p>
+Line plot:
+</p>
+
+<pre class="example">
+data %&gt;%
+  group_by(condition, distance) %&gt;%
+  summarize(meanRT=mean(RT)) %&gt;%
+  ggplot(aes(x=distance, y=meanRT, linetype=condition)) +
+  geom_line() +
+  geom_point() +
+  ylim(0,1500)
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week5/lineplot3.png" alt="lineplot3.png" />
+</p>
+</div>
+
+<p>
+It appears that the effect of condition may be increasing as numerical distance increases.  If so, this is called an <i>interaction</i> effect.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Performing statistical tests</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+In this section, we will back up our plots by performing statistical tests.  The tests will perform are the paired samples t-test and a couple of ANOVAs (analysis of variance).
+</p>
+</div>
+
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1">t-test: comparing mean RTs by condition</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+For our first case study, lets look at the effect of condition and see if we find a significant size-congruity effect.  That is, are response times on incongruent trials significantly longer than congruent trials?
+</p>
+
+<p>
+When participants complete multiple experimental trials, the first step is to collapse all trials into single summary stats (usually the mean).  We can use the "split-apply-combine" paradigm to see this.
+</p>
+
+<p>
+First, let's see how many participants we had:
+</p>
+
+<pre class="example">
+length(unique(data$subject))
+</pre>
+
+<p>
+Now, split-apply-combine will give us a mean RT for each condition and subject.  That is, we should get 41x2=82 different mean RTs.  We'll add the <code>print(n=82)</code> to the end in order to see all 82 rows.
+</p>
+
+<pre class="example">
+data %&gt;%
+  group_by(subject, condition) %&gt;%
+  summarize(meanRT=mean(RT)) %&gt;%
+  print(n=82)
+</pre>
+
+<p>
+Since "condition" is a within-subjects manipulation (each participant completed both experimental conditions), we'll need to use a paired-samples t-test.  The <code>t.test</code> function in R requires two vectors as input.  We'll use our <code>tidyverse</code> verbs to construct both of these vectors; one for congruent trials, and one for incongruent trials:
+</p>
+
+<pre class="example">
+congruent &lt;- data %&gt;%
+  group_by(subject, condition) %&gt;%
+  summarize(meanRT=mean(RT)) %&gt;%
+  filter(condition=="congruent") %&gt;%
+  select(subject,meanRT)
+
+incongruent &lt;- data %&gt;%
+  group_by(subject, condition) %&gt;%
+  summarize(meanRT=mean(RT)) %&gt;%
+  filter(condition=="incongruent") %&gt;%
+  select(subject,meanRT)
+</pre>
+
+<p>
+Now, to perform the t-test, we simply type the following:
+</p>
+
+<pre class="example">
+t.test(incongruent$meanRT, congruent$meanRT, paired=TRUE)
+</pre>
+
+<p>
+From the output, we can see there is indeed a significant increase in RTs for incongruent trials, \(t(40)=7.48\), \(p<0.001\).  Also, we get a 95% confidence interval for the increase as (36.9, 64.3).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2">one-way ANOVA: comparing mean RTs by numerical distance</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+Recall when we plotted mean RT against distance, there did not appear to be much of a difference.  Lets test this with a one-way ANOVA.
+</p>
+
+<p>
+The ANOVA procedures are a bit different than the t-test.  First, we collapse all the trials to a single mean RT for each subject x distance combination.  Note: we should expect 41x4=164 different mean RTs.
+</p>
+
+<pre class="example">
+dataByDistance &lt;- data %&gt;%
+  group_by(subject, distance) %&gt;%
+  summarize(meanRT=mean(RT)) %&gt;%
+  mutate(distance=as.factor(distance))
+</pre>
+
+<p>
+Note: the last <code>mutate</code> command is necessary to make the ANOVA work correctly.  All independent variables in an ANOVA model <b>must</b> be "factors".  This command forces R to interpret the numbers 1,2,3,4 as levels of a single categorical factor instead of values of some continuous variable.
+</p>
+
+<p>
+Next, we define the ANOVA model:
+</p>
+
+<pre class="example">
+distance.aov = aov(meanRT~distance + 
+                   Error(as.factor(subject)/distance), 
+                   data=dataByDistance
+                   )
+</pre>
+
+<p>
+Note again the <code>as.factor()</code> command; this time, it is used to force the <code>subject</code> variable to be read as categorical.  
+</p>
+
+<p>
+Finally, we can see the usual ANOVA table by using the <code>summary()</code> function:
+</p>
+
+<pre class="example">
+summary(distance.aov)
+</pre>
+
+<p>
+The output confirms our suspicion.  There was no effect of distance on mean RTs, \(F(3,120)=0.45\), \(p=0.72\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-5-3" class="outline-3">
+<h3 id="sec-5-3">Factorial ANOVA: mean RT by condition and distance</h3>
+<div class="outline-text-3" id="text-5-3">
+<p>
+In one of our figures above, we saw that the difference in RTs between congruent and incongruent trials seemed to <i>increase</i> as numerical distance increased.  If so, this would be an <i>interaction</i> between condition and distance.  To test this, we use a factorial anova.
+</p>
+
+<pre class="example">
+dataFactorial &lt;- data %&gt;%
+  group_by(subject, condition, distance) %&gt;%
+  summarize(meanRT = mean(RT)) %&gt;%
+  mutate(distance=as.factor(distance))
+
+factorial.aov = aov(meanRT ~ condition*distance + 
+                    Error(as.factor(subject)/(condition*distance)), 
+                    data=dataFactorial
+                    )
+summary(factorial.aov)
+</pre>
+
+<p>
+As we can see, the overall picture we've suspected is confirmed:
+</p>
+
+<ul class="org-ul">
+<li>there was a significant main effect of condition.  Mean RTs on incongruent trials were significantly longer than congruent trials, \(F(1,40)=55.91\), \(p<0.001\).
+</li>
+<li>there was no effect of distance, \(F(3,120)=0.46\), \(p=0.71\).
+</li>
+<li>however, there was a significant interaction between condition and distance, \(F(3,120)=7.86\), \(p<0.001\).  
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: September 25, 2017</p>
-<p class="date">Created: 2017-09-25 Mon 09:16</p>
+<p class="date">Created: 2017-09-25 Mon 10:50</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

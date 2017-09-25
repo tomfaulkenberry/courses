@@ -29,9 +29,21 @@ Answer:
 p(\text{heart}) = \frac{\text{# hearts in a deck}}{\text{number of cards in the deck}} = \frac{13}{52} =\frac{1}{4} = 0.25
 \]
 
+* Probability distributions
+
 The more common way we will encounter probability is as part of a /probability distribution/.
 
 Example: Suppose we have 40 slips of paper, each labeled with one of the numbers 1,2,3,4,5.  Specifically, assume they are labeled with the following frequencies:
+
+| X |  f | 
+|---+----|
+| 5 |  2 | 
+| 4 | 10 |
+| 3 | 16 |
+| 2 |  8 |
+| 1 |  4 | 
+
+If we compute the /relative frequencies/ (as percentages of the total frequency), we get the following:
 
 | X |  f |    p |
 |---+----+------|
@@ -45,7 +57,7 @@ Visually, this distribution looks like the following graph:
 
 file:figures/week5/plot1.png
 
-Now, suppose our task is to randomly select a slip of paper.  We can then ask lots of questions, such as:
+This graph represents the /probability distribution/.  Essentially, it tells us everything we would want to know about this particular situation.  For example, suppose our task is to randomly select a slip of paper.  We can then ask lots of questions, such as:
 
   - What is the probability of selecting a 3?
     - Answer: $p(3) = 0.40$
@@ -68,3 +80,40 @@ file:figures/week5/plot3.png
     - Answer: $p(1 < x < 4) = 0.20 + 0.40 = 0.60$
 
 file:figures/week5/plot4.png  
+
+* The normal distribution
+
+The probability distribution that we will use quite a bit this semester is known as the /normal distribution/.  It is defined by the following equation:
+
+\[
+f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{\frac{-(x-\mu)^2}{2\sigma^2}}
+\]
+
+where $\mu$ is the mean and $\sigma$ is the standard deviation.
+
+More importantly for us, it looks like the following:
+
+file:figures/week5/normal.png
+
+Technically, this curve depends on $\mu$ and $\sigma$.  However, if we transform to $z$-scores, we can use ONE standardized distribution, known as the /standard normal distribution/.
+
+file:figures/week5/zCurve.png
+
+We know lots of things about the standard normal curve:
+  - it is unimodal and symmetric
+  - 68% of the distribution lies within one standard deviation of the mean
+file:figures/week5/oneSD.png
+
+  - 95% of the distribution lies within two standard deviations of the mean
+file:figures/week5/twoSD.png
+
+
+This is helpful.  For example, consider that IQ scores are normally distributed with mean $\mu=100$ and standard deviation $\sigma=15$.  Then we know the following:
+
+  - 68% of the population scores between 85 and 115
+  - 95% of the population scores between 70 and 130
+  - 2.5% of the population scores above 130
+  - 2.5% of the population scores below 70
+
+To make more exact computations, we will need to learn how to use the /unit normal table/.
+
