@@ -6,9 +6,16 @@ library("tidyverse")
 
 
 # load some data
-rawdata = read_csv("~/github/courses/fall2017/psyc5316/lectures/week5data.csv")
+rawdata = read_csv("https://git.io/vdkRH")
+
+# examine structure
 glimpse(rawdata)
+dim(rawdata)
+nrow(rawdata)
+ncol(rawdata)
 head(rawdata)
+tail(rawdata)
+names(rawdata)
 
 ################################################
 # Tidyverse "verbs" 
@@ -52,10 +59,10 @@ data %>%
   group_by(condition, distance) %>%
   summarize(meanRT = mean(RT))
 
-# tallying number of trials in each condition
+# multiple statistics
 data %>%
   group_by(condition, distance) %>%
-  tally
+  summarize(meanRT=mean(RT), sd=sd(RT))
 
 ###################################################
 # Visualizing data with ggplot

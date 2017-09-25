@@ -1,0 +1,148 @@
+#+TITLE: Week 5 lecture notes - PSYC 5316
+#+AUTHOR:
+#+DATE: September 25, 2017 
+#+OPTIONS: toc:nil num:nil
+#+LATEX_HEADER: \usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+#+LATEX_HEADER: \usepackage{amsmath}
+
+* Introduction
+In this lecture, we will learn how to work with large data sets.  Data sets are commonly represented as /data frames/.  To begin, we'll use the =read_csv= function to load a data frame.  First, load the =tidyverse= package, and then execute the =read_csv= commmand.
+
+#+BEGIN_SRC
+library(tidyverse)
+rawdata = read_csv("https://git.io/vdkRH")
+#+END_SRC
+
+(Note: if you haven't already installed =tidyverse=, you can do so by executing =install.packages("tidyverse")= at the console.
+
+This data set comes from Experiment 2 of Faulkenberry, Cruise, Lavro, and Shaki (2016).  In this experiment, we presented people with pairs of single-digit numbers written in two different font sizes. We asked them to use a computer mouse to click on the /physically larger/ of the pair.  This resulted in experimental conditions: /congruent/ trials, where the physically larger number was also numerically larger, and /incongruent/ trials, where the physically larger number was numerically smaller.  We measured RT in milliseconds.
+
+The data file is structured with the following columns:
+
+| column    | description                                                                                |
+|-----------+--------------------------------------------------------------------------------------------|
+| subject   | number representing subject identifier                                                     |
+| condition | size-congruity condition: either "congruent" or "incongruent"                              |
+| distance  | numerical distance between presented numbers (1,2,3, or 4)                                 |
+| error     | indicates whether error was made on trial: 0 = no error, 1=error                           |
+| RT        | response time in milliseconds                                                              |
+| side      | side of display on which the physically larger number was presented (either left or right) |
+|           |                                                                                            |
+* What are data frames?
+Data frames are the de facto data structure for most tabular data, and what we use for statistics and plotting.
+
+A data frame is the representation of data in the format of a table where the columns are vectors that all have the same length. Because the column are vectors, they all contain the same type of data (e.g., characters, integers, factors).
+
+We can see this when inspecting the structure of our data frame with the function =glimpse=:
+
+#+BEGIN_SRC
+glimpse(rawdata)
+#+END_SRC
+
+In addition to =glimpse=, there are some other functions that will help you to get a sense of the content/structure of your data:
+
+| Size    |                                                                                                                |
+| =dim=   | returns a vector with the number of rows in the first element, and the number of columns as the second element |
+| =nrow=  | returns the number of rows                                                                                     |
+| =ncol=  | returns the number of columns                                                                                  |
+| Content |                                                                                                                |
+| =head=  | shows the first 6 rows                                                                                         |
+| =tail=  | shows the last 6 rows                                                                                          |
+| =names= | returns the column names                                                                                       |
+
+
+* Data manipulation using =tidyr= and =dplyr=
+
+=dplyr= is a package for making tabular data manipulation easier. It pairs nicely with =tidyr= which enables you to swiftly convert between different data formats for plotting and analysis.
+
+The package =dplyr= provides easy tools for the most common data manipulation tasks. It is built to work directly with data frames, with many common tasks optimized by being written in a compiled language (C++). An additional feature is the ability to work directly with data stored in an external database. The benefits of doing this are that the data can be managed natively in a relational database, queries can be conducted on that database, and only the results of the query are returned.
+
+This addresses a common problem with R in that all operations are conducted in-memory and thus the amount of data you can work with is limited by available memory. The database connections essentially remove that limitation in that you can have a database of many 100s GB, conduct queries on it directly, and pull back into R only what you need for analysis.
+
+The package =tidyr= addresses the common problem of wanting to reshape your data for plotting and use by different R functions. Sometimes we want data sets where we have one row per measurement. Sometimes we want a data frame where each measurement type has its own column, and rows are instead more aggregated groups. Moving back and forth between these formats is nontrivial, and =tidyr= gives you tools for this and more sophisticated data manipulation.
+
+** Selecting columns and filtering rows
+
+We're going to learn some of the most common =dplyr= functions (also called *verbs*): =select()=, =filter()=, =mutate()=, =group_by()=, and =summarize()=. 
+
+To choose /columns/ of a data frame, use =select()=. The first argument to this function is the data frame (=rawdata=), and the subsequent arguments are the columns to keep.
+
+#+BEGIN_SRC
+select(rawdata, condition, error, RT)
+#+END_SRC
+
+To choose /rows/ based on specific criteria, use =filter()=
+
+#+BEGIN_SRC
+filter(rawdata, error==0)
+#+END_SRC 
+
+** Pipes
+But what if you wanted to select and filter at the same time?  There are many ways to do this, but the quickest and easiest is to use *pipes*.
+
+Pipes are a fairly recent addition to R. Pipes let you take the output of one function and send it directly to the next, which is useful when you need to do many things to the same dataset. Pipes in R look like =%>%= and are made available via the =magrittr= package, installed automatically with =dplyr=. 
+
+#+BEGIN_SRC
+rawdata %>%
+  filter(error==0) %>%
+  select(subject, condition, RT)
+#+END_SRC
+
+In the above code chunk, we use the pipe to send the =rawdata= dataset first through =filter()= to keep only the rows where =error=0=.  Then, we pass that output through the =select()= function to keep only the columns =subject=, =condition=, and =RT=.
+
+Note that using the pipe operator =%>%= removes the need to specify the dataset as the first argument to the =filter()= or =select()= functions.
+
+If we wanted to create a new object of this smaller version of the data, we could do so by using the assignment operator =<-=:
+
+#+BEGIN_SRC
+data <- rawdata %>%
+  filter(error==0)
+#+END_SRC
+
+If you look in the "Environment" tab, you'll notice that the row dimension has reduced to 15,700.  This tells us that there were 44 errors across all participants and trials.
+
+
+** Mutate
+Frequently you will want to create new columns based on the values in existing columns.  For example, we might want to express response time (RT) in seconds rather than milliseconds.  For this, we'll use =mutate()=:
+
+#+BEGIN_SRC
+data %>%
+  mutate(RT_sec = RT/1000)
+#+END_SRC
+
+Another good use of =mutate()= is for recoding a variable.  For example, the column =distance= currently has 4 values: 1, 2, 3, and 4.  Suppose we want to recode this variable to have two values: close (distance=1 or 2) and far (distance=3 or 4).  We can use =mutate()= along with =ifelse()= to do this:
+
+#+BEGIN_SRC
+data %>%
+  mutate(dist = ifelse(distance==1 | distance==2, "close", "far"))
+#+END_SRC
+
+** Summarize
+
+Many data analysis tasks can be approached using the /split-apply-combine/ paradigm: split the data into groups, apply some analysis to each group, then combine the results.  =dplyr= makes this very easy using the functions =group_by()= and =summarize()=.
+
+The following code chunk illustrates this:
+
+#+BEGIN_SRC
+data %>%
+  group_by(condition) %>%
+  summarize(meanRT = mean(RT))
+#+END_SRC
+
+=group_by()= takes as its argument the column name(s) that contain the categorical variables for which you want to calculate a summary statistic (e.g., mean).  In this example, we are interested in the mean RT by condition.  You'll notice that incongruent trials take slightly longer than congruent trials.  This is the /size-congruity/ effect, first demonstrated by Henik and Tzelgov in 1982.
+
+Note that you can also group by multiple columns.  Suppose we were interested in the mean RT by condition AND distance.
+
+#+BEGIN_SRC
+data %>%
+  group_by(condition, distance) %>%
+  summarize(meanRT = mean(RT))
+#+END_SRC
+
+Also, we can compute multiple statistics:
+
+#+BEGIN_SRC
+data %>%
+  group_by(condition, distance) %>%
+  summarize(meanRT=mean(RT), sd=sd(RT))
+#+END_SRC
