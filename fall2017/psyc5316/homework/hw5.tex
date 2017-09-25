@@ -22,7 +22,7 @@ In this assignment, you will use R to download a large data set, explore the dat
 For the questions below, compose your work in an R script, and submit your completed R script to me by email.  Please use comments to indicate the questions you are answering.
 
 \begin{enumerate}
-\item The data is available at the following URL:  Load the data set into a data frame called \verb|rawdata|.
+\item The data is available at the following URL (\verb|https://git.io/vdIkC|).  Load the data set into a data frame called \verb|rawdata|.
 
 \item As you will read in section 1.2.1 (page 116), we split response times into two components: initiation time (init), which is the time required to begin moving the computer mouse, and movement time (MT), which is the elapsed time of mouse movement.  Thus, $RT=init+MT$.  However, the computer software only recorded Init and RT for every trial.  Use \verb|mutate| to add the variable \verb|MT| to your dataset, and call this new data frame \verb|data|.
 
@@ -34,8 +34,10 @@ For the questions below, compose your work in an R script, and submit your compl
 
 \item Fit the ANOVA models for movement time reported in section 2.2.1 (Time analyses).  Note that I ran separate models for leftward and rightward trajectories.  Make sure your summaries match the ones reported (they should!).
 
-\item Fit ANOVA models for initiation time, separated by response side.  Are there any significant effects?  
+\item Fit ANOVA models for initiation time, separated by response side.  Are there any significant effects?
 
+\item Response times are often analyzed with medians instead of means.  Re-do the analyses above with median.  Specifically, I want you to reproduce Figures 3 and 4 using median MT instead of mean MT.  Also, fit ANOVA models to median MTs.  Does the overall patter of results change?  If so, how?
+  
   
 \end{enumerate}  
 \end{document}
