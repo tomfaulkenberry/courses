@@ -3,8 +3,6 @@
 
 library("tidyverse")
 
-
-
 # load some data
 rawdata = read_csv("https://git.io/vdkRH")
 
