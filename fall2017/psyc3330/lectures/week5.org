@@ -101,7 +101,7 @@ file:figures/week5/zCurve.png
 
 We know lots of things about the standard normal curve:
   - it is unimodal and symmetric
-  - 68% of the distribution lies within one standard deviation of the mean
+  - 34% of the distribution lies within one standard deviation of the mean
 file:figures/week5/oneSD.png
 
   - 95% of the distribution lies within two standard deviations of the mean
@@ -115,5 +115,68 @@ This is helpful.  For example, consider that IQ scores are normally distributed 
   - 2.5% of the population scores above 130
   - 2.5% of the population scores below 70
 
-To make more exact computations, we will need to learn how to use the /unit normal table/.
+
+In fact, we can modify this to have a nice "intuitive" rule for probabilities under the normal curve:
+
+** 50-34-14 rule:
+  - 50% of the curve is above the mean
+  - 34% of the curve is between the mean and 1 SD
+  - 14% of the curve is between 1 SD and 2 SD
+
+file:figures/week5/50-34-14.jpeg
+
+Examples:
+  - suppose a data set is normally distributed with $\mu=40$ and $\sigma=5$.  Use the 50-34-14 rule to approximate the percentage of that data that is:
+    - above 45
+    - above 30
+    - above 35
+    - below 40
+    - below 45
+    - below 30
+    - below 35
+
+  - suppose a data set is normally distributed with $\mu=45$ and $\sigma=6$.  Use the 50-34-14 rule to approximate the minimum score needed for a data point to be in the top:
+    - 2%
+    - 16%
+    - 50%
+
+
+To make more exact computations, we will need to learn how to use the /unit normal table/.  You can download one on our blackboard site, or use the one in the back of your textbook.
+
+* Using the unit normal table
+
+file:figures/week5/table.png
+
+  - Column A: the $z$ score
+  - Column B: probability of being LESS than $z$ (proportion in *body*)
+  - Column C: probability of being GREATER than $z$ (proportion in *tail*)
+
+Finding probabilities:
+
+1. sketch the normal distribution, showing the mean & standard deviation
+2. sketch the score in question, being sure to place it on the correct side of the mean and roughly the correct distance from the mean
+3. decide if you need the probability of getting a score GREATER or LESS. Shade this area on your sketch. 
+4. translate the X score into a Z-score
+5. Use the correct column (and sign) to find the probability in the unit normal table.
+
+Example:  Recall that IQ scores are normally distributed with $\mu=100$ and $\sigma = 15$. 
+  - What is the probability of having an IQ of 125 or above?
+  - What is the probability of having an IQ of 80 or less?
+
+
+Another type of problem: finding scores required for a certain probability:
+
+Example: what IQ score do you need in order to be in top 5% of population?
+
+Steps:
+1. sketch the normal distribution
+2. shade the region corresponding to the required probability
+3. locate the probability in the correct column of the table
+4. label the edge of the shaded region with the z-score from the table
+5. compute the corresponding raw score.
+
+For this example, note that the upper tail is needed.  So, we need to find p=0.05.  From the table, this tells us z=1.65.  So, $X=M+Z\cdot SD = 100 + 1.65(15)=124.75$.
+
+Final example: On a particular test, assume that $\mu=50$ and $\sigma=10$.  If a person is in the bottom 30% of the class on this test, what is the highest score the person could have scored?
+
 

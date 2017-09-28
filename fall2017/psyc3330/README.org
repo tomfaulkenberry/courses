@@ -5,6 +5,7 @@
   - Week 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week1.html][html]])
   - Week 2 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week2.html][html]])
   - Week 3 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week3.html][html]])
+  - Week 5 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week5.html][html]])
 
 - Exam reviews
   - Exam 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/exam1review.pdf][pdf]])
@@ -14,4 +15,6 @@
   - [[https://youtu.be/nq6HB43e48w][Week 1]]
   - [[https://youtu.be/DCLBf9tnfag][Week 2]]
   - [[https://youtu.be/mW62k0GjOrg][Week 3]]
+  - [[https://youtu.be/biFXM-rOBdg][Week 5]]
+
 
