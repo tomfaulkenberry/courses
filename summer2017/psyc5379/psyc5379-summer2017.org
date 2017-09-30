@@ -34,6 +34,29 @@ Psycholinguistics is an area of specialization within cognitive psychology that 
 7. Identify and explain problems in speech and language processes.
 8. Explain bilingualism and second language acquisition.
 
+** Texas Reading Specialist Standards
+For students enrolled in READ 5379, our course content will cover the following standards from TEA (Texas Education Agency) for EC-12 Reading Specialist certification.
+
+  - 1.1k: know and understand the basic linguistic patterns and structures of oral language, such as continuant and stop sounds and coarticulation of sounds
+  - 1.2k: know and understand relationships between oral language development and the development of reading skills, such as the expected stages and milestones in acquiring oral language; implications of individual variations in oral language development for reading; and ways to use the cultural, linguistic, and home backgrounds of students to develop and enhance students’ oral language 
+  - 1.4k: know and understand expected stages and patterns in the development of phonological and phonemic awareness, implications of individual variations in the development of phonological and phonemic awareness, and instructional sequences that develop and accelerate students’ phonological and phonemic awareness and are based on a convergence of research evidence
+  - 1.6k: know and understand the development of concepts of print (e.g., left-right progression, spaces between words)
+  - 1.7k: know and understand the relationship between concepts of print and other reading-related skills.
+  - 1.8k: know and understand the elements of the alphabetic principle, including letter names, graphophonemic knowledge, and the relationship of the letters in printed words to spoken language
+  - 1.9k: know and understand expected stages and patterns in students’ developing understanding of the alphabetic principle and implications of individual variations in the development of this understanding
+  - 1.10k: know and understand instructional strategies that develop and accelerate students’ application of the alphabetic principle to beginning decoding and that are based on a convergence of research evidence
+  - 1.14k: know and understand expected patterns of development in the use of word identification strategies, implications of individual variations in development in this area, and instructional strategies that develop and accelerate students’ skills in word identification and are based on a convergence of research evidence
+  - 1.17k: know and understand expected patterns of development in reading fluency (including developmental benchmarks), implications of individual variations in the development of fluency, and instructional strategies that develop students’ fluency and are based on a convergence of research evidence
+  - 1.19k: know and understand a variety of comprehension theories/models (e.g., transactional, interactive, metacognitive, socio-psycho linguistic, constructivist) and their impact on instructional strategies
+  - 1.29k: know and understand predictable stages in the development of written language and writing conventions, including the physical and/or cognitive processes involved in letter formation, word writing, sentence construction, spelling, punctuation, and grammatical expression, while recognizing that individual variations occur
+  - 2.17k: know and understand how differences in dialect or vocabulary development may affect a student’s acquisition of reading skills;
+  - 3.2k: know and understand issues and concepts related to the transfer of literacy competency from one language to another
+  - 3.3k: know and understand expected stages and patterns of first- and second-language learning
+  - 3.7k: know and understand characteristics and instructional implications of reading difficulties, dyslexia, and reading disabilities in relation to the development of reading competence
+  - 4.1k: know and understand the major theories of language acquisition, reading, cognition, and learning (e.g., behaviorism, cognitivism, constructivism, transactionalism);
+  - 4.7k: know and understand foundations of basic research design, methodology, and application
+  - 4.8k: know and understand methods and criteria for critically reviewing research on reading and selecting research for educational applications.
+
 ** Requirements and grading
 - Exam 1 (100 pts)
 - Exam 2 (100 pts)
