@@ -1166,7 +1166,6 @@ subj,correct,problemSize,format,truth,rt
 5,1,Large,Digits,FALSE,2091
 5,1,Large,Digits,FALSE,2044
 5,1,Large,Digits,FALSE,2208
-5,1,Large,Digits,FALSE,21604
 5,1,Large,Digits,FALSE,1703
 5,1,Large,Digits,FALSE,1381
 5,1,Large,Digits,FALSE,3819
@@ -1192,7 +1191,6 @@ subj,correct,problemSize,format,truth,rt
 5,1,Large,Digits,TRUE,1228
 5,1,Large,Digits,TRUE,1306
 5,1,Large,Digits,TRUE,1918
-5,1,Large,Digits,TRUE,10586
 5,1,Large,Digits,TRUE,2937
 5,1,Large,Digits,TRUE,2749
 5,1,Large,Digits,TRUE,945
