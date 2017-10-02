@@ -1,0 +1,6 @@
+#+TITLE: Week 6 lecture notes - PSYC 3330
+#+AUTHOR:
+#+DATE: Oct 2-6, 2017 
+#+OPTIONS: toc:nil num:nil
+
+Last week, we talked about the probability of finding a particular score (or set of scores) in the population.  This week
