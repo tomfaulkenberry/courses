@@ -3,4 +3,52 @@
 #+DATE: Oct 2-6, 2017 
 #+OPTIONS: toc:nil num:nil
 
-Last week, we talked about the probability of finding a particular score (or set of scores) in the population.  This week
+Last week, we talked about the probability of finding a particular score (or set of scores) in the population.  This week we will discuss probabilities of /sample means/.  In particular, we are interested in answering questions like the following:
+
+  - What is the probability of obtaining a sample mean greater than X?
+
+Also: 
+  - with inferential statistics, we try to infer a population mean from a sample mean.  
+  - since this is just an estimate, there is a certain amount of /sampling error/
+  - how do we measure this sampling error?
+
+* Distribution of sample means
+
+To motivate the next definition, lets think about how we do research.  We take a sample, then we compute the mean.  How does our sample mean relate to the collection of /all possible sample means/? 
+
+Definition: the /distribution of sample means/ is the collection of sample means for all the possible random samples of a particular size $n$ that can be obtained from a population.
+
+** Example:
+In a small box, place a bunch of slips of paper, each of which is labeled with 2, 4, 6, or 8.  Have each member of the class randomly select two slips of paper and write down the numbers, then return the slips of paper in the box.
+
+After everyone has recorded their "sample", ask each member of the class to compute the /sample mean/.  Write down the sample means on the board, then complete the probability distribution:
+
+| $\overline{X}$ | f | p |
+|----------------+---+---|
+| 2              |   |   |
+| 3              |   |   |
+| 4              |   |   |
+| 5              |   |   |
+| 6              |   |   |
+| 7              |   |   |
+| 8              |   |   |
+
+This is the /distribution of sample means/.  We can use it to ask questions like:
+
+  - What is the probability of obtaining a sample mean of 7 or greater?
+  - What is the probability of obtaining a sample mean less than 3?
+
+** Computer simulation
+The idea from our class activity can be visualized on a larger scale using a neat web applet:
+  - [[http://onlinestatbook.com/stat_sim/sampling_dist/]]
+ 
+
+* Central Limit Theorem
+
+From the applet demo in class, we can see the following properties of the distribution of sample means:
+1. it is *normally distributed*
+2. its mean (denoted $\mu_{\overline{x}}$) is the same as the population mean $\mu$
+3. its standard deviation (denoted $\sigma_{\overline{x}}$) is equal to $\displaystyle{\frac{\sigma}{\sqrt{n}}}$.  This is called the *standard error* 
+
+In fact, what this means is the following:  no matter what your population looks like (normally distributed or NOT), the distribution of sample means will be normally distributed with mean $\mu$ and standard deviation $\sigma/\sqrt{n}$.
+
