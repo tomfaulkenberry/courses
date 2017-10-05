@@ -42,7 +42,6 @@ This is the /distribution of sample means/.  We can use it to ask questions like
 The idea from our class activity can be visualized on a larger scale using a neat web applet:
   - [[http://onlinestatbook.com/stat_sim/sampling_dist/]]
  
-
 * Central Limit Theorem
 
 From the applet demo in class, we can see the following properties of the distribution of sample means:
@@ -52,3 +51,41 @@ From the applet demo in class, we can see the following properties of the distri
 
 In fact, what this means is the following:  no matter what your population looks like (normally distributed or NOT), the distribution of sample means will be normally distributed with mean $\mu$ and standard deviation $\sigma/\sqrt{n}$.
 
+* Some examples
+
+1. An instructor is interested in the IQ of her students.  She has 9 students in her class and thinks that they are, on average, really smart.  What is the probability that the group of students has a mean greater than or equal to 112?
+
+  - We can use the standard normal table as in the last unit.  However, since this is a /sample/, we need to compute a $z$ score on the /distribution of samples means/.  So we get:
+
+\[
+z = \frac{\overline{x}-\mu}{\sigma_{\overline{x}}} = \frac{\overline{x}-\mu}{\sigma/\sqrt{n}} = \frac{112-100}{15/\sqrt{9}} = 2.4
+\]
+
+From the table, we compute $P(z\geq 2.4) = 0.0082$
+
+2. A researcher is interested in whether people can identify emotions in other people when they are extremely tired.  It is known that accuracy ratings of people in the general population are normally distributed with $\mu=82$ and $\sigma=7$.  The researcher arranges to test 50 people who had no sleep the previous night.  The mean accuracy for these 50 people was 80.  What is the probability of having a sample mean no larger than 80?
+
+  - We compute the $z$ score on the distribution of means:
+
+\[
+z = \frac{\overline{x}-\mu}{\sigma_{\overline{x}}} = \frac{\overline{x}-\mu}{\sigma/\sqrt{n}} = \frac{80-82}{7/\sqrt{50}} = -2.02
+\]
+
+Thus, we compute $P(z\leq -2.02)=0.022$
+
+
+3. How high would a group of 25 have to score (on average) to be in the top 10% of IQ scores for groups of this size?
+
+  - Recall that we can solve the $z$-score formula for $\overline{x}$ to get:
+
+\[
+\overline{x} = \mu + z \cdot \sigma_{\overline{x}} = \mu + z\cdot \frac{\sigma}{\sqrt{n}}
+\]
+
+Looking at the table, we see that $z=1.28$ is required to be in top 10%.  So
+
+\[
+\overline{x} = \mu + z \cdot \sigma_{\overline{x}} = \mu + z\cdot \frac{\sigma}{\sqrt{n}} = 100 + 1.28 \frac{15}{\sqrt{25}} = 103.84
+\]
+
+ 

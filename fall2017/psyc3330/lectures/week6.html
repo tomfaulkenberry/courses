@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 6 lecture notes - PSYC 3330</title>
-<!-- 2017-10-03 Tue 07:47 -->
+<!-- 2017-10-04 Wed 19:48 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -312,7 +312,6 @@ The idea from our class activity can be visualized on a larger scale using a nea
 </div>
 </div>
 
-
 <div id="outline-container-sec-2" class="outline-2">
 <h2 id="sec-2">Central Limit Theorem</h2>
 <div class="outline-text-2" id="text-2">
@@ -333,10 +332,82 @@ In fact, what this means is the following:  no matter what your population looks
 </p>
 </div>
 </div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Some examples</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li>An instructor is interested in the IQ of her students.  She has 9 students in her class and thinks that they are, on average, really smart.  What is the probability that the group of students has a mean greater than or equal to 112?
+
+<ul class="org-ul">
+<li>We can use the standard normal table as in the last unit.  However, since this is a <i>sample</i>, we need to compute a \(z\) score on the <i>distribution of samples means</i>.  So we get:
+</li>
+</ul>
+</li>
+</ol>
+
+<p>
+\[
+z = \frac{\overline{x}-\mu}{\sigma_{\overline{x}}} = \frac{\overline{x}-\mu}{\sigma/\sqrt{n}} = \frac{112-100}{15/\sqrt{9}} = 2.4
+\]
+</p>
+
+<p>
+From the table, we compute \(P(z\geq 2.4) = 0.0082\)
+</p>
+
+<ol class="org-ol">
+<li>A researcher is interested in whether people can identify emotions in other people when they are extremely tired.  It is known that accuracy ratings of people in the general population are normally distributed with \(\mu=82\) and \(\sigma=7\).  The researcher arranges to test 50 people who had no sleep the previous night.  The mean accuracy for these 50 people was 80.  What is the probability of having a sample mean no larger than 80?
+
+<ul class="org-ul">
+<li>We compute the \(z\) score on the distribution of means:
+</li>
+</ul>
+</li>
+</ol>
+
+<p>
+\[
+z = \frac{\overline{x}-\mu}{\sigma_{\overline{x}}} = \frac{\overline{x}-\mu}{\sigma/\sqrt{n}} = \frac{80-82}{7/\sqrt{50}} = -2.02
+\]
+</p>
+
+<p>
+Thus, we compute \(P(z\leq -2.02)=0.022\)
+</p>
+
+
+<ol class="org-ol">
+<li>How high would a group of 25 have to score (on average) to be in the top 10% of IQ scores for groups of this size?
+
+<ul class="org-ul">
+<li>Recall that we can solve the \(z\)-score formula for \(\overline{x}\) to get:
+</li>
+</ul>
+</li>
+</ol>
+
+<p>
+\[
+\overline{x} = \mu + z \cdot \sigma_{\overline{x}} = \mu + z\cdot \frac{\sigma}{\sqrt{n}}
+\]
+</p>
+
+<p>
+Looking at the table, we see that \(z=1.28\) is required to be in top 10%.  So
+</p>
+
+<p>
+\[
+\overline{x} = \mu + z \cdot \sigma_{\overline{x}} = \mu + z\cdot \frac{\sigma}{\sqrt{n}} = 100 + 1.28 \frac{15}{\sqrt{25}} = 103.84
+\]
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: Oct 2-6, 2017</p>
-<p class="date">Created: 2017-10-03 Tue 07:47</p>
+<p class="date">Created: 2017-10-04 Wed 19:48</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
