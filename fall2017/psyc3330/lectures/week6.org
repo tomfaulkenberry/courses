@@ -65,7 +65,27 @@ From the table, we compute $P(z\geq 2.4) = 0.0082$
 
 *Example 2*. A random sample of $n=9$ scores is obtained from a normal distribution with $\mu=75$ and $\sigma=6$.  What is the probability that the sample mean is greater than $78$?
 
+  - As before, we compute the $z$ score on the distribution of sample means:
+
+\[
+z = \frac{\overline{x}-\mu}{\sigma_{\overline{x}}} = \frac{\overline{x}-\mu}{\sigma/\sqrt{n}} = \frac{78-75}{6/\sqrt{9}} = 1.5
+\]
+
+From the table, we compute $P(z\geq 1.5) = 0.067$
+
+
 *Example 3*. A random sample of $n=16$ scores is obtained from a normal distribution with $\mu=50$ and $\sigma=10$.  What is the probability that the sample mean will be between 48 and 52?
+
+  - As before, we compute the $z$ scores on the distribution of sample means:
+
+\[
+z = \frac{\overline{x}-\mu}{\sigma_{\overline{x}}} = \frac{\overline{x}-\mu}{\sigma/\sqrt{n}} = \frac{48-50}{10/\sqrt{16}} = -0.8
+\]
+
+and 
+
+
+
 
 *Example 4*. A researcher is interested in whether people can identify emotions in other people when they are extremely tired.  It is known that accuracy ratings of people in the general population are normally distributed with $\mu=82$ and $\sigma=7$.  The researcher arranges to test 50 people who had no sleep the previous night.  The mean accuracy for these 50 people was 80.  What is the probability of having a sample mean no larger than 80?
 
