@@ -53,7 +53,7 @@ In fact, what this means is the following:  no matter what your population looks
 
 * Some examples
 
-1. An instructor is interested in the IQ of her students.  She has 9 students in her class and thinks that they are, on average, really smart.  What is the probability that the group of students has a mean greater than or equal to 112?
+*Example 1*: An instructor is interested in the IQ of her students.  She has 9 students in her class and thinks that they are, on average, really smart.  What is the probability that the group of students has a mean greater than or equal to 112?
 
   - We can use the standard normal table as in the last unit.  However, since this is a /sample/, we need to compute a $z$ score on the /distribution of samples means/.  So we get:
 
@@ -63,7 +63,11 @@ z = \frac{\overline{x}-\mu}{\sigma_{\overline{x}}} = \frac{\overline{x}-\mu}{\si
 
 From the table, we compute $P(z\geq 2.4) = 0.0082$
 
-2. A researcher is interested in whether people can identify emotions in other people when they are extremely tired.  It is known that accuracy ratings of people in the general population are normally distributed with $\mu=82$ and $\sigma=7$.  The researcher arranges to test 50 people who had no sleep the previous night.  The mean accuracy for these 50 people was 80.  What is the probability of having a sample mean no larger than 80?
+*Example 2*. A random sample of $n=9$ scores is obtained from a normal distribution with $\mu=75$ and $\sigma=6$.  What is the probability that the sample mean is greater than $78$?
+
+*Example 3*. A random sample of $n=16$ scores is obtained from a normal distribution with $\mu=50$ and $\sigma=10$.  What is the probability that the sample mean will be between 48 and 52?
+
+*Example 4*. A researcher is interested in whether people can identify emotions in other people when they are extremely tired.  It is known that accuracy ratings of people in the general population are normally distributed with $\mu=82$ and $\sigma=7$.  The researcher arranges to test 50 people who had no sleep the previous night.  The mean accuracy for these 50 people was 80.  What is the probability of having a sample mean no larger than 80?
 
   - We compute the $z$ score on the distribution of means:
 
@@ -74,7 +78,7 @@ z = \frac{\overline{x}-\mu}{\sigma_{\overline{x}}} = \frac{\overline{x}-\mu}{\si
 Thus, we compute $P(z\leq -2.02)=0.022$
 
 
-3. How high would a group of 25 have to score (on average) to be in the top 10% of IQ scores for groups of this size?
+*Example 5*. How high would a group of 25 have to score (on average) to be in the top 10% of IQ scores for groups of this size?
 
   - Recall that we can solve the $z$-score formula for $\overline{x}$ to get:
 
