@@ -31,8 +31,6 @@
   \end{enumerate}
 
 
-\item   
-
 \item Consider the following data relating GPA to SAT score:
 \begin{table}[h!]
     \centering
@@ -44,14 +42,14 @@
     \end{tabular}
   \end{table}
   \begin{enumerate}
-  \item Assume a linear model $SAT \sim a+b\cdot GPA$, and compute maximum likelihood estimates for the parameters $a$ and $b$.
+  \item Assume a linear model $SAT = a+b\cdot GPA$, and compute maximum likelihood estimates for the parameters $a$ and $b$.
   \item Based on your model, what $SAT$ score would you predict for someone with a $GPA$ of 3.2?
   \item Construct 95\% confidence intervals for the parameters $a$ and $b$.
     \item Based on your 95\% CIs, can you conclude that $GPA$ is a significant predictor of $SAT$?  Explain.
   \end{enumerate}
   
 
-\item This exercise illustrates the importance of looking at your data before fitting a model.  Consider the following data:
+\item This exercise illustrates the importance of looking at your data before assuming that it is linear.  Consider the following data:
 
   \begin{table}[h!]
     \centering
@@ -71,6 +69,26 @@
       \item Construct residual plots for both models.  Based on these plots, which do you think is the better model?  Explain.
   \end{enumerate}
 
+\item This exercise illustrates a different method of linear model fit called ``least absolute value'' regression.  Consider the following data:
+
+  \begin{table}[h!]
+    \centering
+    \begin{tabular}{cccccc}
+      \hline
+      $x$ & 1 & 2 & 3 & 4 & 5\\
+      $y$ & 5.25 &  10.12 &  15.40 & 18.55 & 202.12\\
+      \hline
+    \end{tabular}
+  \end{table}
+
+  \begin{enumerate}
+  \item Construct a scatter plot of the data.  What do you notice?
+  \item Use \verb|lm| to fit a linear model $y=a+bx$.
+  \item Instead of minimizing the squared residuals (as \verb|lm| does), lets try minimizing the \textit{absolute value} of the residuals.  Modify the code on line 39 of \verb|week7.R| (the code from the lecture) to compute the {\it absolute value} of the residuals instead of the square of the residuals.
+  \item Using \verb|optim|, find the parameters $a$ and $b$ that minimize the absolute value of the residuals.
+  \item Using \verb|abline|, add both regression lines to your scatter plot.  Which is the better fit?
+    \item Based on this exercise, when do you think using ``least absolute value'' regression might be most useful?
+  \end{enumerate}
   
 \end{enumerate}  
 \end{document}
