@@ -20,7 +20,7 @@ abline(a=intercept, b=slope)
 plot(density(model1$residuals))
 
 # example with real data
-data = read.csv("XXX")
+data = read.csv("https://git.io/vd2w3")
 plot(data$education, data$income)
 
 # fit linear model

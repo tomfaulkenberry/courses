@@ -1,0 +1,76 @@
+\documentclass[10pt]{article}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\lhead{PSYC 5316}
+\chead{Homework 7}
+\cfoot{}
+\rhead{Fall 2017}
+
+\pagestyle{fancy}
+
+\begin{document}
+
+\begin{enumerate}
+
+\item Consider the data set given in the table below:
+
+  \begin{table}[h!]
+    \centering
+    \begin{tabular}{cccccc}
+      \hline
+      $x$ & 5 & 8 & 9 & 7 & 14\\
+      $y$ & 3 & 1 & 6 & 7 & 19\\
+      \hline
+    \end{tabular}
+  \end{table}
+  \begin{enumerate}
+  \item Use the \verb|lm| function in R to find the equation of the least-squares regression line $y=a+bx$
+  \item Plot the data and regression line together
+    \item Construct a density plot of the residuals.  Comment on the overall fit of the model.
+  \end{enumerate}
+
+
+\item   
+
+\item Consider the following data relating GPA to SAT score:
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ccccccccc}
+      \hline
+      SAT & 500 & 530 & 590 & 660 & 610 & 700 & 570 & 640\\
+      GPA & 2.3 & 3.1 & 2.6 & 3.0 & 2.4 & 3.3 & 2.6 & 3.5\\
+      \hline
+    \end{tabular}
+  \end{table}
+  \begin{enumerate}
+  \item Assume a linear model $SAT \sim a+b\cdot GPA$, and compute maximum likelihood estimates for the parameters $a$ and $b$.
+  \item Based on your model, what $SAT$ score would you predict for someone with a $GPA$ of 3.2?
+  \item Construct 95\% confidence intervals for the parameters $a$ and $b$.
+    \item Based on your 95\% CIs, can you conclude that $GPA$ is a significant predictor of $SAT$?  Explain.
+  \end{enumerate}
+  
+
+\item This exercise illustrates the importance of looking at your data before fitting a model.  Consider the following data:
+
+  \begin{table}[h!]
+    \centering
+    \begin{tabular}{cccccc}
+      \hline
+      $x$ & 1 & 2 & 3 & 4 & 5\\
+      $y$ & 0.74 & 2.22 & 6.04 & 16.20 & 44.55\\
+      \hline
+    \end{tabular}
+  \end{table}
+
+  \begin{enumerate}
+  \item Construct a scatter plot of the data.  Does it look linear?
+    \item Use \verb|lm| to fit a linear model $y = a+bx$.  
+    \item Construct a new scatter plot of $x$ versus $\log y$.  Describe the shape. (Hint: just type \verb|plot(x,log(y))| in the R console).  What do you notice?
+    \item Use \verb|lm| to fit a linear model for $\log(y) = a+bx$
+      \item Construct residual plots for both models.  Based on these plots, which do you think is the better model?  Explain.
+  \end{enumerate}
+
+  
+\end{enumerate}  
+\end{document}

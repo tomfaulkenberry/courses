@@ -42,6 +42,10 @@ Note the index $i$ represents the different measurements in our sample $x_i$ and
 
 Once we've defined the model, we need to find the *parameters* of the model: in other words, what are the values for intercept $a$ and slope $b$ that /best fit/ the data.  
 
+Thus, "fitting a linear model" equates to a "parameter search", where we find the "best fitting" parameters for a given set of data.  To see this in action, we will play around with a simple demo here https://www.geogebra.org/m/dlsxY1uX
+
+This demo starts with a set of 5 points and a line.  You can change the slope and intercept.  You can also see the residuals (and the squared residuals).  When playing around with this, you should think about what "best fit" would mean.  How do you find the "best fit"?  That is the subject for today's lecture.
+
 * Method 1: the "easy" way
 
 This is an old problem, and as such, there are well-established methods for solving it.  We will begin by using the base function =lm= in R to find the parameters that fit the data.
@@ -87,7 +91,7 @@ Notice that the residuals seem to be normally distributed, centered at 0.  This 
 The following data represents some properties of various professions.  We will be interested in the relationship between education and income.
 
 #+BEGIN_SRC
-data = read.csv("XXX")
+data = read.csv("https://git.io/vd2w3")
 plot(data$education, data$income)
 #+END_SRC
 
@@ -207,6 +211,42 @@ Notice that we get the same estimates for $a$ and $b$ as before.  This time, we 
 
 ** Confidence intervals on parameter estimates
 
-One of the advantages to the MLE approach is that we can easily compute confidence intervals for our estimates.  
+One of the advantages to the MLE approach is that there is a straightforward compute confidence intervals for our estimates.  We need an estimate for the *standard error* of our MLE.  This is given to us (quite indirectly) by the /Hessian/ matrix, which is an output option for =optim=.  
+
+Intuitively, the standard error of the estimate is given by:
+
+\[
+SE = \sqrt{\frac{1}{\text{Hessian}}}
+\]
+
+This is not /exactly/ true, since in most cases the Hessian will be a /matrix/, and square roots and reciprocals are not exactly obvious in matrix arithmetic.  However, if you are willing to assume some linear algebra "happens", the following R commands will give you a nice estimate for the standard error:
+
+#+BEGIN_SRC
+fit = optim(inits, reg.nll, data=dat, hessian = TRUE)
+hessian = fit$hessian
+inverse = solve(hessian)
+se = sqrt(diag(inverse))
+#+END_SRC
+
+Now, if we call =se= in the console, we'll see a vector with three numbers.  These are the standard error estimates for $a$, $b$, and $\sigma$, respectively.
+
+#+BEGIN_SRC
+> se
+[1] 0.21479319 0.38639248 0.07918032
+#+END_SRC
+
+Thus, we can construct 95% confidence intervals for the intercept $a$:
+
+\[
+\Bigl(2.87 - 1.96(0.21), 2.87+1.96(0.21)\Bigr) = (2.45, 3.29)
+\]
+
+as well as for the slope $b$:
+
+\[
+\Bigl(5.10 - 1.96(0.39), 5.10+1.96(0.39)\Bigr) = (4.34, 5.86)
+\]
+
+
 
 
