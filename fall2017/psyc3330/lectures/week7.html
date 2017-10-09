@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Week 7 lecture notes - PSYC 3330</title>
+<!-- 2017-10-09 Mon 10:29 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Week 7 lecture notes - PSYC 3330</h1>
+<p>
+This week, we will extend our work with samples to <b>hypothesis testing</b>.
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">An example</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Suppose we are interested in testing the effectiveness of a new memory treatment for patients with memory problems.
+</p>
+
+<p>
+Before marketing, we need to see if it works!
+</p>
+
+<p>
+Of course, the drug is designed to work on <b>all</b> memory patients (the <i>population</i>), but we can't test them all.
+</p>
+
+<p>
+So, we decide to do a clinical trial: we take a <b>sample</b> and conduct an experiment.
+</p>
+
+<p>
+Based on the results of the sample, we can then make an <b>inference</b> about the effectiveness of the drug for the population.
+</p>
+
+<p>
+Our experiment:
+</p>
+
+
+<div class="figure">
+<p><img src="figures/week7/memoryTest.jpg" alt="memoryTest.jpg" />
+</p>
+</div>
+
+<p>
+Notice the error difference of 5.  Is this:
+</p>
+<ul class="org-ul">
+<li>a "real" difference due to the effect of the treatment?
+</li>
+<li>or, is it just sampling/measurement error (i.e., noise)
+</li>
+</ul>
+
+<p>
+To answer this question, we will perform a <b>hypothesis test</b>, which is a procedure for <i>making decisions</i> about whether the results of a sample support a particular hypothesis about a population.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Core logic of hypothesis testing</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>"Double-negative" logic
+</li>
+<li>We first assume the treatment has <b>no effect</b> (the <i>null hypothesis</i>)
+</li>
+<li>We then compute the probability that our sample could have resulted from this assumption.
+</li>
+<li>If this probability is very small (e.g., less than 5%), we <b>reject the null hypothesis</b>
+</li>
+<li>That is, we say "there is NOT a null effect"..logically, this means the same thing as "there IS an effect"
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Five steps of hypothesis testing</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li>state your hypotheses
+<ul class="org-ul">
+<li>Null hypothesis \(H_0\)
+</li>
+<li>Alternative hypothesis \(H_1\)
+</li>
+</ul>
+</li>
+<li>set your decision criterion
+</li>
+<li>collect data
+</li>
+<li>compute test statistic
+</li>
+<li>make decision about your null hypothesis
+</li>
+</ol>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">Step 1: State your hypotheses</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+There are two hypotheses that we consider:
+</p>
+<ul class="org-ul">
+<li>the <b>null hypothesis</b>, denoted \(H_0\) &#x2013; there is NO effect of memory treatment
+</li>
+<li>the <b>alternative hypothesis</b>, denoted \(H_1\) &#x2013; there IS an effect of memory treatment
+</li>
+</ul>
+
+<p>
+Note: the hypothesis can take two forms:
+</p>
+<ul class="org-ul">
+<li><b>directional</b> &#x2013; we hypothesize that memory treatment should <b>reduce</b> the number of errors made
+</li>
+<li><b>nondirectional</b> &#x2013; we hypothesize that memory treatment should <b>change</b> the number of errors made
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">Step 2: Set decision criterion</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Our decision criterion is called our <b>alpha</b> (\(\alpha\)) level.  It is based on the probability of making certain types of errors, which we want to <i>minimize</i>.
+</p>
+</div>
+
+<div id="outline-container-sec-3-2-1" class="outline-4">
+<h4 id="sec-3-2-1">Aside: the types of errors we can make</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<p>
+In hypothesis testing, we are making a decision (either reject \(H_0\) or fail to reject \(H_0\)) about some hypothesis \(H_0\) (which is either correct or incorrect).  Hence, there are four possibilities &#x2013; in two of them, we are correct, but in the other two, we make an error.
+</p>
+
+
+<div class="figure">
+<p><img src="figures/week7/errors.jpeg" alt="errors.jpeg" />
+</p>
+</div>
+
+<p>
+Error types:
+</p>
+<ul class="org-ul">
+<li>Type I error &#x2013; rejecting \(H_0\) when it is true.  
+<ul class="org-ul">
+<li>e.g., finding an effect when there really isn't one
+</li>
+</ul>
+</li>
+<li>Type II error - failing to reject \(H_0\) when it is false
+<ul class="org-ul">
+<li>e.g., concluding NO effect when there really IS one
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+In hypothesis testing, we want to <b>minimize</b> these errors. 
+</p>
+<ul class="org-ul">
+<li>\(\alpha\) = probability of making Type I error
+</li>
+<li>set \(\alpha\) to be low (usually around 5%)
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3">Step 3 &#x2013; collect data</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+We'll talk about this more next semester.  In this course, we'll assume this step has already been done for us.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4">Step 4 &#x2013; Compute test statistic</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+Given a sample, we need a way to index the probability that our sample could have come from the null hypothesis.  One way to do this is to calculate the \(z\) score for the sample.
+</p>
+
+<p>
+\[
+z=\frac{\overline{x}-\mu}{\sigma/\sqrt{n}}
+\]
+</p>
+
+<p>
+This \(z\)-score, which we computed last week, is now called the \(z\)-statistic.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5">Step 5 &#x2013; Make a decision about null hypothesis</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>If the probability of obtaining our \(z\)-statistic is less than \(\alpha\), we <b>reject</b> the null hypothesis
+</li>
+<li>If not, we <b>fail to reject</b> the null hypothesis
+</li>
+</ul>
+
+<p>
+The way we do this in practice is compare our \(z\)-statistic to some <b>critical</b> value.  This tells us whether our \(z\)-statistic is "big enough".  So how big does it need to be?  That depends on your hypothesis.
+</p>
+</div>
+
+<div id="outline-container-sec-3-5-1" class="outline-4">
+<h4 id="sec-3-5-1">Directional hypothesis</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<p>
+If the hypothesis is directional, we use a "one-tailed test".  In this case, the "rejection region" consists of the upper or lower 5% contained in the right or left tail (respectively)
+</p>
+
+<ul class="org-ul">
+<li>if we hypothesize an <b>increase</b>, our rejection region is in the right tail
+</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="figures/week7/oneTailedRight.png" alt="oneTailedRight.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>if we hypothesize a <b>decrease</b>, our rejection region is in the left tail
+</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="figures/week7/oneTailedLeft.png" alt="oneTailedLeft.png" />
+</p>
+</div>
+
+<p>
+If the hypothesis is non-directional, we use a "two-tailed test".  In this case, the "rejection region" of 5% is split equally between the two tails (2.5% in each tail).
+</p>
+
+
+<div class="figure">
+<p><img src="figures/week7/twoTailed.png" alt="twoTailed.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-5-2" class="outline-4">
+<h4 id="sec-3-5-2">Critical values</h4>
+<div class="outline-text-4" id="text-3-5-2">
+<p>
+If we look at the standard normal table, we can find the \(z\)-scores that define where these rejection regions are.  They are summarized here:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">\(\alpha\)</th>
+<th scope="col" class="left">Type</th>
+<th scope="col" class="right">Critical value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">0.05</td>
+<td class="left">one-tailed, upper</td>
+<td class="right">+1.645</td>
+</tr>
+
+<tr>
+<td class="right">0.05</td>
+<td class="left">one-tailed, lower</td>
+<td class="right">-1.645</td>
+</tr>
+
+<tr>
+<td class="right">0.05</td>
+<td class="left">two-tailed</td>
+<td class="right">\(\pm 1.96\)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Example 1</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Lets put all of this together into an example.
+</p>
+
+<p>
+Suppose we give \(n=16\) memory patients a memory treatment that is supposed to reduce the number of errors they make on a standard memory test.  It is known that the population of memory patients who take this test make an average of \(\mu=60\) errors with \(\sigma=8\).  After treatment, our sample makes an average of \(\overline{x}=55\) errors.  Does the memory treatment result in a significant reduction of memory errors?
+</p>
+</div>
+
+<div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1">Step 1 &#x2013; state hypotheses</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>\(H_0\): no reduction in memory errors
+</li>
+<li>\(H_1\): there is a reduction in memory errors
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2">Step 2 &#x2013; set decision criterion</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+As is common in psychology, we set \(\alpha=0.05\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3">Step 3 &#x2013; collect data</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+This is given to us: \(\overline{x}=55\).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4">Step 4 &#x2013; compute test statistic</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+We compute our \(z\)-statistic:
+</p>
+
+<p>
+\[
+z=\frac{\overline{x}-\mu}{\sigma/\sqrt{n}} = \frac{55-60}{8/\sqrt{16}}=\frac{-5}{2} = -2.5
+\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-5" class="outline-3">
+<h3 id="sec-4-5">Step 5 &#x2013; make decision</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+With a one-tailed test where we predict a decrease, our <b>critical</b> value is \(z_{\text{crit}}=-1.645\).  Since \(z=-2.5\) exceeds \(z_{\text{crit}}=-1.645\) (see figure below), we <b>reject</b> the null and conclude that there IS a signficant reduction in memory errors after treatment.
+</p>
+
+
+<div class="figure">
+<p><img src="figures/week7/example1.png" alt="example1.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Oct 9-13, 2017</p>
+<p class="date">Created: 2017-10-09 Mon 10:29</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
