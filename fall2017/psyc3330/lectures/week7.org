@@ -120,7 +120,7 @@ If we look at the standard normal table, we can find the $z$-scores that define 
 |     0.05 | one-tailed, lower | -1.645         |
 |     0.05 | two-tailed        | $\pm 1.96$     |
 
-* Example 1
+* Example
 
 Lets put all of this together into an example.
 
