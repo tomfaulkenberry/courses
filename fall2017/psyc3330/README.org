@@ -7,10 +7,12 @@
   - Week 3 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week3.html][html]])
   - Week 5 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week5.html][html]])
   - Week 6 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week6.html][html]])
+  - Week 7 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week7.html][html]])
 
 
 - Exam reviews
   - Exam 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/exam1review.pdf][pdf]])
+  - Exam 2 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/exam2review.pdf][pdf]])
 
 - Supplemental lecture videos
   - /Note: these videos are for my online course, so the presentation of material may be slightly different from what was taught in your face-to-face course.  These videos are included for review only./
@@ -19,5 +21,6 @@
   - [[https://youtu.be/mW62k0GjOrg][Week 3]]
   - [[https://youtu.be/biFXM-rOBdg][Week 5]]
   - Week 6 (sorry, but I don't have a good video for Week 6)
+  - [[https://youtu.be/Ajp1yAwVjzk][Week 7]] (you can ignore stuff before 10:40 and after 19:00)
 
 
