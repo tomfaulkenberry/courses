@@ -1,75 +1,31 @@
 ## Week 8
 ## PSYC 5316
-## Bootstrap methods
+## intro to Bayesian modeling
 
-# bootstrap estimate for mu
+# grid approximation
+p_grid = seq(from=0, to=1, length.out=20)
+prior = rep(1, 20)
+likelihood = dbinom(x=6, size=9, prob=p_grid)
+posterior = likelihood * prior
+posterior = posterior/sum(posterior)
 
-x=c(1,4,2,19,4,12,29,4,9,16)
-xBar = mean(x)
-s=sd(x)
-n=length(x)
+# plot the posterior
+plot(p_grid, posterior, type="b")
+ 
+# different priors to try
+prior = ifelse(p_grid < 0.5, 0, 1)
+prior = exp(-5*abs(p_grid - 0.5))
 
-B=2000
+# sampling from posterior
 
-# efficient
-bootSamples = matrix(sample(x, size=length(x)*B, replace=TRUE), nrow=B)
-means = apply(bootSamples, 1, mean)
-means = sort(means)
+# grid approximation of posterior using 1000 grid points
+p_grid = seq(from=0, to=1, length.out=1000)
+prior = rep(1, 1000)
+likelihood = dbinom(x=6, size=9, prob=p_grid)
+posterior = likelihood * prior
+posterior = posterior/sum(posterior)
 
-lowerIndex = round(0.05/2*B)
-upperIndex = B-lower
-
-# confidence interval
-means[lowerIndex] # lower bound
-means[upperIndex] # upper bound
-
-
-
-
-
-
-
-
-# generate random linear data
-N = 100
-x = seq(1,10,length=100)
-y = 3 + 5*x + rnorm(N, mean=0, sd=5)
-plot(x, y, ylim=c(0,60))
-
-# using "lm" to fit linear model
-model1 = lm(y~x)
-summary(model1)
-
-# plot best fitting line
-intercept = model1$coefficients[1]
-slope = model1$coefficients[2]
-abline(a=intercept, b=slope)
-
-# plot residuals
-plot(model1$residuals)
-
-
-# generate random heteroskedastic data
-N = 100
-x = seq(1,10,length=100)
-y = 3 + 5*x + rnorm(N, mean=0, sd=ceiling(x))
-plot(x, y, ylim=c(0,60))
-
-# using "lm" to fit linear model
-model2 = lm(y~x)
-summary(model2)
-
-# plot best fitting line
-intercept = model2$coefficients[1]
-slope = model2$coefficients[2]
-abline(a=intercept, b=slope)
-
-# plot residuals
-plot(model2$residuals)
-
-
-# Bootstrap methods for estimating CIs
-
-
-
-
+# 10,000 samples from posterior
+samples = sample(p_grid, prob=posterior, size=10000, replace=TRUE)
+plot(samples)
+plot(density(samples))
