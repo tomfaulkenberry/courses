@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 8 lecture notes - PSYC 5316</title>
-<!-- 2017-10-15 Sun 15:02 -->
+<!-- 2017-10-15 Sun 16:27 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -697,11 +697,110 @@ plot(density(samples))
 </div>
 </div>
 </div>
+
+<div id="outline-container-sec-6-3" class="outline-3">
+<h3 id="sec-6-3">Computations with posterior samples</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+Once we have our posterior samples, the model's work is done.  But your work as a modeler has just begun.  The next step is to <i>summarize and interpret</i> the posterior distribution. Exactly how it is summarized depends upon your purpose. But common questions include:
+</p>
+
+<ul class="org-ul">
+<li>How much posterior probability lies below some parameter value?
+</li>
+<li>How much posterior probability lies between two parameter values?
+</li>
+<li>Which parameter value marks the lower 5% of the posterior probability?
+</li>
+<li>Which range of parameter values contains 90% of the posterior probability?
+</li>
+<li>Which parameter value has highest posterior probability?
+</li>
+</ul>
+
+<p>
+These simple questions can be usefully divided into questions about (1) intervals of defined boundaries, (2) questions about intervals of defined probability mass, and (3) questions about point estimates. We'll see how to approach these questions using samples from the posterior.
+</p>
+</div>
+
+<div id="outline-container-sec-6-3-1" class="outline-4">
+<h4 id="sec-6-3-1">Intervals of defined boundaries.</h4>
+<div class="outline-text-4" id="text-6-3-1">
+<p>
+Suppose I ask you for the posterior probability that the proportion of water is less than 0.5. Using the grid-approximate posterior, you can just add up all of the samples where the corresponding parameter value is less than 0.5:
+</p>
+
+<pre class="example">
+sum(samples&lt;0.5)/10000
+</pre>
+
+<p>
+We can also ask what proportion of the posterior distribution is between \(p=0.5\) and \(p=0.75\).
+</p>
+
+<pre class="example">
+sum(samples&gt;0.5 &amp; samples&lt;0.75)/10000
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-6-3-2" class="outline-4">
+<h4 id="sec-6-3-2">Intervals of defined probability mass</h4>
+<div class="outline-text-4" id="text-6-3-2">
+<p>
+Suppose instead I ask you for the 80th percentile of the posterior distribution:
+</p>
+
+<pre class="example">
+quantile(samples,0.8)
+</pre>
+
+<p>
+We can also do confidence intervals (usually called <i>credible intervals</i> in Bayesian modeling).  For example, we can compute a 90% confidence interval:
+</p>
+
+<pre class="example">
+quantile(samples, c(0.1,0.9))
+</pre>
+
+<p>
+In contrast to confidence intervals, the bounds of a 90% <i>credible interval</i> can be interpreted in terms of probability.  That is, there is a 90% probability that \(p\) is between 0.44 and 0.81.  This is not true for confidence intervals!
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-6-3-3" class="outline-4">
+<h4 id="sec-6-3-3">Point estimates</h4>
+<div class="outline-text-4" id="text-6-3-3">
+<p>
+We can also just compute a mean or median:
+</p>
+
+<pre class="example">
+mean(samples)
+median(samples)
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7">Summary</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Today, we have described Bayesian modeling in terms of beginning with a model (a "data story") and using Bayes theorem to "update" the model with data.  Next time, we'll talk about how to <b>evaluate</b> our model by simulating data that should be implied by our model (the so-called <b>posterior predictive distribution</b>).  Finally, we will learn how to construct more complicated models, then proceed to use them for a lot of different applied problems.
+</p>
+
+<p>
+For next time, you will need to install two pieces of software.  The first is JAGS, which can be found at <code>http://mcmc-jags.sourceforge.net/</code>.  Once you install this, you'll need to install the <code>R2jags</code> package in R by executing <code>install.packages("R2jags")</code>.
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: October 16, 2017</p>
-<p class="date">Created: 2017-10-15 Sun 15:02</p>
+<p class="date">Created: 2017-10-15 Sun 16:27</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

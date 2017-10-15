@@ -29,3 +29,13 @@ posterior = posterior/sum(posterior)
 samples = sample(p_grid, prob=posterior, size=10000, replace=TRUE)
 plot(samples)
 plot(density(samples))
+
+
+# computations with samples
+
+sum(samples<0.5)/10000
+sum(samples>0.5 & samples<0.75)/10000
+quantile(samples,0.8)
+quantile(samples,c(0.1,0.9))
+mean(samples)
+median(samples)

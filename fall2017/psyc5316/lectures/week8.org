@@ -262,3 +262,57 @@ plot(density(samples))
 
 file:figures/week8/density.png
 
+** Computations with posterior samples
+
+Once we have our posterior samples, the model's work is done.  But your work as a modeler has just begun.  The next step is to /summarize and interpret/ the posterior distribution. Exactly how it is summarized depends upon your purpose. But common questions include:
+
+  - How much posterior probability lies below some parameter value?
+  - How much posterior probability lies between two parameter values?
+  - Which parameter value marks the lower 5% of the posterior probability?
+  - Which range of parameter values contains 90% of the posterior probability?
+  - Which parameter value has highest posterior probability?
+
+These simple questions can be usefully divided into questions about (1) intervals of defined boundaries, (2) questions about intervals of defined probability mass, and (3) questions about point estimates. We'll see how to approach these questions using samples from the posterior.
+
+*** Intervals of defined boundaries.
+
+Suppose I ask you for the posterior probability that the proportion of water is less than 0.5. Using the grid-approximate posterior, you can just add up all of the samples where the corresponding parameter value is less than 0.5:
+
+#+BEGIN_SRC
+sum(samples<0.5)/10000
+#+END_SRC
+
+We can also ask what proportion of the posterior distribution is between $p=0.5$ and $p=0.75$.
+
+#+BEGIN_SRC 
+sum(samples>0.5 & samples<0.75)/10000
+#+END_SRC
+
+*** Intervals of defined probability mass
+
+Suppose instead I ask you for the 80th percentile of the posterior distribution:
+
+#+BEGIN_SRC
+quantile(samples,0.8)
+#+END_SRC
+
+We can also do confidence intervals (usually called /credible intervals/ in Bayesian modeling).  For example, we can compute a 90% confidence interval:
+
+#+BEGIN_SRC
+quantile(samples, c(0.1,0.9))
+#+END_SRC
+
+In contrast to confidence intervals, the bounds of a 90% /credible interval/ can be interpreted in terms of probability.  That is, there is a 90% probability that $p$ is between 0.44 and 0.81.  This is not true for confidence intervals!
+
+*** Point estimates
+We can also just compute a mean or median:
+
+#+BEGIN_SRC
+mean(samples)
+median(samples)
+#+END_SRC
+
+* Summary
+Today, we have described Bayesian modeling in terms of beginning with a model (a "data story") and using Bayes theorem to "update" the model with data.  Next time, we'll talk about how to *evaluate* our model by simulating data that should be implied by our model (the so-called *posterior predictive distribution*).  Finally, we will learn how to construct more complicated models, then proceed to use them for a lot of different applied problems.
+
+For next time, you will need to install two pieces of software.  The first is JAGS, which can be found at =http://mcmc-jags.sourceforge.net/=.  Once you install this, you'll need to install the =R2jags= package in R by executing =install.packages("R2jags")=.
