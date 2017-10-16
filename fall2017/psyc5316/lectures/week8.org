@@ -10,7 +10,7 @@
 Bayesian modeling represents a fundamentally different approach to inference.  Mathematically, it is based on something called *Bayes' Theorem*.  Today we will illustrate how Bayes Theorem relates to things we actually care about (probabilities!), and then we will begin using these concepts to construct *data models* to use for inference.
 
 * Logic of hypothesis testing
-Suppose you have a treatment that you suspect may alter performance on a certain task. You  nd that the experimental group signi cantly outperforms the control group, $t(18) = 2.7$, $p = 0.01$.
+Suppose you have a treatment that you suspect may alter performance on a certain task. You  find that the experimental group significantly outperforms the control group, $t(18) = 2.7$, $p = 0.01$.
 
 How many of the following are True statements?
 
@@ -226,7 +226,7 @@ prior = exp(-5*abs(p_grid - 0.5))
 
 ** Using sampling to approximate posterior
 
-The methods we'll use this semester rely on *sampling* from the posterior.  The idea is that once the model is built, we can do computations with the posterior by pulling LOTs of samples, and then using those samples to answer questions.
+In practice, most methods for computing posteriors rely on *sampling* from the posterior.  The idea is that once the model is built (i.e., once you've defined the prior and likelihood), we can estimate the posterior by pulling LOTs of samples, and then using those samples to answer questions that we care about.
 
 To see how this works, we'll illustrate with our globe tossing model.
 
@@ -296,13 +296,25 @@ Suppose instead I ask you for the 80th percentile of the posterior distribution:
 quantile(samples,0.8)
 #+END_SRC
 
-We can also do confidence intervals (usually called /credible intervals/ in Bayesian modeling).  For example, we can compute a 90% confidence interval:
+We can also do confidence intervals (usually called /credible intervals/ in Bayesian modeling).  For example, we can compute a 80% confidence interval:
 
 #+BEGIN_SRC
 quantile(samples, c(0.1,0.9))
 #+END_SRC
 
-In contrast to confidence intervals, the bounds of a 90% /credible interval/ can be interpreted in terms of probability.  That is, there is a 90% probability that $p$ is between 0.44 and 0.81.  This is not true for confidence intervals!
+In contrast to confidence intervals, the bounds of a 80% /credible interval/ can be interpreted in terms of probability.  That is, there is a 80% probability that $p$ is between 0.46 and 0.82.  This is not true for confidence intervals!
+
+There is another type of interval estimate that we can compute with posterior samples: the *highest posterior density interval (HPDI)*.  The HPDI is defined as the narrowest interval containing the specified probability mass.  It is usually different from the 80% credible interval, as we'll see in the following example.
+
+Note: the code below will look a little more complicated.  That is because base R cannot do the HPDI computation.  However, the =coda= package can.  Since it works with MCMC samples (more on this later), we first have to convert our posterior samples to an MCMC sample.  Then, we can use the =HPDinterval= function:
+
+#+BEGIN_SRC
+library(coda)
+sampMCMC = as.mcmc(samples)
+HPDinterval(sampMCMC, prob=0.80)
+#+END_SRC
+
+Compare the endpoints of the 80% HPDI with the endpoints of the 80% credible interval.
 
 *** Point estimates
 We can also just compute a mean or median:
@@ -310,6 +322,13 @@ We can also just compute a mean or median:
 #+BEGIN_SRC
 mean(samples)
 median(samples)
+#+END_SRC
+
+However, if the posterior distribution is skewed, a mode might be better.  The drawback is that it is a little harder.  The idea of the code below is to compute the density of the samples, then find the $x$ value (i.e., the parameter value) that produces the highest density (=which.max=).
+
+#+BEGIN_SRC
+dens = density(samples)
+dens$x[which.max(dens$y)]
 #+END_SRC
 
 * Summary

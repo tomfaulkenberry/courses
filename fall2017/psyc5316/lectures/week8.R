@@ -33,9 +33,24 @@ plot(density(samples))
 
 # computations with samples
 
+# intervals of defined boundary
 sum(samples<0.5)/10000
 sum(samples>0.5 & samples<0.75)/10000
+
+# intervals of defined probability mass
 quantile(samples,0.8)
 quantile(samples,c(0.1,0.9))
+
+# HPDI
+library(coda)
+sampMCMC = as.mcmc(samples)
+HPDinterval(sampMCMC, prob=0.80)
+
+# point estimates
+# posterior mean and median
 mean(samples)
 median(samples)
+
+# posterior mode - a little harder
+dens = density(samples)
+dens$x[which.max(dens$y)]

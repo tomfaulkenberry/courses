@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 8 lecture notes - PSYC 5316</title>
-<!-- 2017-10-15 Sun 16:27 -->
+<!-- 2017-10-16 Mon 13:34 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -193,7 +193,7 @@ Bayesian modeling represents a fundamentally different approach to inference.  M
 <h2 id="sec-2">Logic of hypothesis testing</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Suppose you have a treatment that you suspect may alter performance on a certain task. You  nd that the experimental group signi cantly outperforms the control group, \(t(18) = 2.7\), \(p = 0.01\).
+Suppose you have a treatment that you suspect may alter performance on a certain task. You  find that the experimental group significantly outperforms the control group, \(t(18) = 2.7\), \(p = 0.01\).
 </p>
 
 <p>
@@ -641,7 +641,7 @@ prior = exp(-5*abs(p_grid - 0.5))
 <h3 id="sec-6-2">Using sampling to approximate posterior</h3>
 <div class="outline-text-3" id="text-6-2">
 <p>
-The methods we'll use this semester rely on <b>sampling</b> from the posterior.  The idea is that once the model is built, we can do computations with the posterior by pulling LOTs of samples, and then using those samples to answer questions.
+In practice, most methods for computing posteriors rely on <b>sampling</b> from the posterior.  The idea is that once the model is built (i.e., once you've defined the prior and likelihood), we can estimate the posterior by pulling LOTs of samples, and then using those samples to answer questions that we care about.
 </p>
 
 <p>
@@ -756,7 +756,7 @@ quantile(samples,0.8)
 </pre>
 
 <p>
-We can also do confidence intervals (usually called <i>credible intervals</i> in Bayesian modeling).  For example, we can compute a 90% confidence interval:
+We can also do confidence intervals (usually called <i>credible intervals</i> in Bayesian modeling).  For example, we can compute a 80% confidence interval:
 </p>
 
 <pre class="example">
@@ -764,7 +764,25 @@ quantile(samples, c(0.1,0.9))
 </pre>
 
 <p>
-In contrast to confidence intervals, the bounds of a 90% <i>credible interval</i> can be interpreted in terms of probability.  That is, there is a 90% probability that \(p\) is between 0.44 and 0.81.  This is not true for confidence intervals!
+In contrast to confidence intervals, the bounds of a 80% <i>credible interval</i> can be interpreted in terms of probability.  That is, there is a 80% probability that \(p\) is between 0.46 and 0.82.  This is not true for confidence intervals!
+</p>
+
+<p>
+There is another type of interval estimate that we can compute with posterior samples: the <b>highest posterior density interval (HPDI)</b>.  The HPDI is defined as the narrowest interval containing the specified probability mass.  It is usually different from the 80% credible interval, as we'll see in the following example.
+</p>
+
+<p>
+Note: the code below will look a little more complicated.  That is because base R cannot do the HPDI computation.  However, the <code>coda</code> package can.  Since it works with MCMC samples (more on this later), we first have to convert our posterior samples to an MCMC sample.  Then, we can use the <code>HPDinterval</code> function:
+</p>
+
+<pre class="example">
+library(coda)
+sampMCMC = as.mcmc(samples)
+HPDinterval(sampMCMC, prob=0.80)
+</pre>
+
+<p>
+Compare the endpoints of the 80% HPDI with the endpoints of the 80% credible interval.
 </p>
 </div>
 </div>
@@ -779,6 +797,15 @@ We can also just compute a mean or median:
 <pre class="example">
 mean(samples)
 median(samples)
+</pre>
+
+<p>
+However, if the posterior distribution is skewed, a mode might be better.  The drawback is that it is a little harder.  The idea of the code below is to compute the density of the samples, then find the \(x\) value (i.e., the parameter value) that produces the highest density (<code>which.max</code>).
+</p>
+
+<pre class="example">
+dens = density(samples)
+dens$x[which.max(dens$y)]
 </pre>
 </div>
 </div>
@@ -800,7 +827,7 @@ For next time, you will need to install two pieces of software.  The first is JA
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: October 16, 2017</p>
-<p class="date">Created: 2017-10-15 Sun 16:27</p>
+<p class="date">Created: 2017-10-16 Mon 13:34</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
