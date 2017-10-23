@@ -44,7 +44,7 @@ curve(dbeta(x,a.prior,b.prior),
 )
 mtext(paste(l), 
       at=seq(from=0,to=1,length.out=length(l)), 
-      col=c(rep(col1,i), rep( "darkgray", length(l)-i)))
+      col=c(rep("black",i), rep( "darkgray", length(l)-i)))
 axis(1, at=c(0,0.5,1) , labels=c(0,0.5,1) )
 title(ylab="probability", mgp=c(1,1,0))
 text(0.15, 2.5, paste("n =", i))

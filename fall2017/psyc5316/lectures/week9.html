@@ -3,8 +3,8 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Week 8 lecture notes - PSYC 5316</title>
-<!-- 2017-10-16 Mon 18:06 -->
+<title>Week 9 lecture notes - PSYC 5316</title>
+<!-- 2017-10-23 Mon 09:47 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -178,250 +178,26 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Week 8 lecture notes - PSYC 5316</h1>
+<h1 class="title">Week 9 lecture notes - PSYC 5316</h1>
+<p>
+Last week, we introduced Bayes theorem, and began talking about Bayesian inference, using terms like <i>prior</i>, <i>posterior</i>, and <i>likelihood</i>.  Recall that Bayes theorem gives us the fundamental equation of <i>Bayesian updating</i>..that is:
+</p>
+
+<p>
+\[
+\text{posterior} \propto \text{likelihood} \times \text{prior}
+\]
+</p>
+
+<p>
+This wee, we will begin learning how to move beyond the <b>concept</b> of Bayesian updating to using it in a modeling context. 
+</p>
 
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">Introduction to Bayesian inference</h2>
+<h2 id="sec-1">Building Bayesian models</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Bayesian modeling represents a fundamentally different approach to inference.  Mathematically, it is based on something called <b>Bayes' Theorem</b>.  Today we will illustrate how Bayes Theorem relates to things we actually care about (probabilities!), and then we will begin using these concepts to construct <b>data models</b> to use for inference.
-</p>
-</div>
-</div>
-
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Logic of hypothesis testing</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-Suppose you have a treatment that you suspect may alter performance on a certain task. You  find that the experimental group significantly outperforms the control group, \(t(18) = 2.7\), \(p = 0.01\).
-</p>
-
-<p>
-How many of the following are True statements?
-</p>
-
-<ol class="org-ol">
-<li>The probability that the null hypothesis is true is 1%
-</li>
-<li>The probability that the research hypothesis is true is 99%
-</li>
-<li>If you reject the null, the probability that you are making the wrong decision is 1%
-</li>
-<li>If you repeated the experiment over and over, then you would get a significant result 99% of the time.
-</li>
-</ol>
-
-<p>
-Turns out they're all false!  So what does \(p=0.01\) mean, anyway?
-</p>
-
-<p>
-Recall that the <b>p-value</b> is the probability of obtaining a test statistic <i>at least as extreme</i> as the one that was observed, <b>given that the null hypothesis is true</b>.
-</p>
-
-<p>
-In symbols, this can be written \(P(D\mid \mathcal{H}_0)\)
-</p>
-
-<p>
-Thus, the core logic of frequentist hypothesis testing is:
-</p>
-<ul class="org-ul">
-<li>suppose the opposite of what you want
-</li>
-<li>show that this hypothesis is very unlikelly (i.e., low \(p\)-value)
-</li>
-</ul>
-
-<p>
-This is similar to the <b>modus tollens</b> syllogism from formal logic:
-</p>
-
-<ul class="org-ul">
-<li>Premise:  If A, then B;
-</li>
-<li>Premise:  not B;
-</li>
-<li>Conclusion: therefore, not A
-</li>
-</ul>
-
-<p>
-Example:
-</p>
-<ul class="org-ul">
-<li>If Kelsey is happy, then she is smiling
-</li>
-<li>Kelsey is not smiling.
-</li>
-<li>Therefore, Kelsey is not happy.
-</li>
-</ul>
-
-<p>
-This maps onto hypothesis testing in the following way (this is called Fisher's disjunction):
-</p>
-
-<ul class="org-ul">
-<li>If \(\mathcal{H}_0\), then we shouldn't observe \(D\)
-</li>
-<li>we observed \(D\)
-</li>
-<li>therefore, not \(\mathcal{H}_0\)
-</li>
-</ul>
-
-<p>
-However, hypothesis testing uses a <b>probabilistic</b> version of this:
-</p>
-
-<ul class="org-ul">
-<li>If \(\mathcal{H}_0\), then observing \(D\) is <i>very unlikely</i>
-</li>
-<li>we observed \(D\)
-</li>
-<li>therefore, \(\mathcal{H}_0\) is very unlikely
-</li>
-</ul>
-
-<p>
-The problem is that this is not a logically valid argument!
-</p>
-
-<p>
-Example:
-</p>
-<ul class="org-ul">
-<li>If an individual is a man, then he is unlikely to be Pope
-</li>
-<li>Francis is the pope
-</li>
-<li>therefore, Francis is probably not a man
-</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">Bayes' Theorem</h2>
-<div class="outline-text-2" id="text-3">
-<p>
-The previous discussion leaves us with the following question:
-</p>
-<ul class="org-ul">
-<li>If \(p(D\mid \mathcal{H}_0)\) is small,
-</li>
-<li>and we observe \(D\)
-</li>
-<li>what can we logically say about \(p(\mathcal{H}_0\mid D)\)?
-</li>
-</ul>
-
-<p>
-The answer comes from something called <i>Bayes' Theorem</i>:
-</p>
-
-<p>
-\[
-p(\mathcal{H}_0\mid D) = \frac{p(D\mid \mathcal{H}_0) \cdot p(\mathcal{H}_0)}{p(D)}
-\]
-</p>
-
-<p>
-We usually remember Bayes' theorem using the following words:
-</p>
-
-<p>
-\[
-\text{posterior} = \frac{\text{likelihood} \times \text{prior}}{\text{average likelihood}}
-\]
-</p>
-
-<p>
-Since the denominator is just a scaling factor (to make it all sum to 1; that is, an <i>actual</i> probability function), we usually just remember the following:
-</p>
-
-<p>
-\[
-\text{posterior} \propto \text{likelihood}\times \text{prior}
-\]
-</p>
-</div>
-</div>
-
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4">An example from Harry Potter</h2>
-<div class="outline-text-2" id="text-4">
-<p>
-At Hogwarts, Professor Pomona Sprout leads the Herbology Department. In the Department’s greenhouses, she cultivates crops of a magical plant called green codacle – a flowering plant that when consumed causes a witch or wizard to feel euphoric and relaxed. Professor Sybill Trelawney, the Professor of Divination, is an avid user of green codacle and frequently visits Professor Sprout’s laboratory to sample the latest harvest.
-</p>
-
-<p>
-However, it has turned out that one in a thousand codacle plants is a afflicted with a mutation that changes its effects – consuming one of those rare plants causes unpleasant side effects, such as paranoia, anxiety, and spontaneous levitation.
-</p>
-
-<p>
-In order to evaluate the quality of her crops, Professor Sprout has developed a mutation-detecting spell. The new spell has a 99% chance to accurately detect an existing mutation, but also has a 2% chance to falsely indicate that a healthy plant is a mutant.
-</p>
-
-<p>
-When Professor Sprout presents her results at a School colloquium, Trelawney, trying to discern how much trust to put in Sprout’s spell, asks "What is the probability that a codacle plant is a mutant, when your spell says that it is?"
-</p>
-
-<p>
-Let's think about what we know:
-</p>
-<ul class="org-ul">
-<li>Professor Sprout’s mutation spell has a 99% chance of correctly detecting that a given codacle plant is a mutant
-</li>
-<li>There is a 2% chance that the spell will falsely indicate that a healthy plant is a mutant.
-</li>
-<li>Mutations occur at a rate of 1 in a 1000
-</li>
-</ul>
-
-<p>
-Let's also define some notation to make our lives a bit easier:
-</p>
-
-<ul class="org-ul">
-<li>\(\mathcal{H}_0\): the hypothesis that the plant is NOT a mutant
-</li>
-<li>\(\mathcal{H}_1\): the hypothesis that the plant IS a mutant
-</li>
-<li>\(D\): an observation (data) that Sprout's spell detects "mutant"
-</li>
-<li>\(-D\): an observation (data) that Sprout's spell detects "not mutant"
-</li>
-</ul>
-
-
-<div class="figure">
-<p><img src="figures/week8/decisionTree.png" alt="decisionTree.png" />
-</p>
-</div>
-
-<p>
-Based on this tree, we can compute:
-</p>
-
-\begin{align*}
-p(\mathcal{H_1}\mid D) & = \frac{p(D\mid \mathcal{H}_1)\cdot p(\mathcal{H}_1)}{p(D)}\\
-&= \frac{0.99\cdot 0.001}{0.00099+0.01998}\\
-&= 0.047
-\end{align*}
-
-<p>
-Thus, even with VERY high accuracy, the very low prior probability of being a mutant makes it so that our posterior probability is only 4.7% 
-</p>
-</div>
-</div>
-
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5">Building Bayesian models</h2>
-<div class="outline-text-2" id="text-5">
-<p>
-Bayesian modeling uses the basic vocabulary of Bayes theorem.  Our goal is to quantify our <b>posterior beliefs</b> in a model.  We do this by <b>updating</b> our <b>prior beliefs</b> via Bayes theorem&#x2026;that is, posterior = prior x likelihood.
+Bayesian modeling uses the basic vocabulary of Bayes theorem that we developed last week.  Our goal is to quantify our <b>posterior beliefs</b> in a model.  We do this by <b>updating</b> our <b>prior beliefs</b> via Bayes theorem&#x2026;that is, posterior = prior x likelihood.
 </p>
 
 <p>
@@ -454,9 +230,9 @@ To construct a model, we need to make assumptions.  Designing a simple Bayesian 
 </ol>
 </div>
 
-<div id="outline-container-sec-5-1" class="outline-3">
-<h3 id="sec-5-1">The data story</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">The data story</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
 The "data story" amounts to explaining how each piece of data is born. This usually means describing aspects of the underlying reality as well as the sampling process. The data story in this case is simply a restatement of the sampling process:
 </p>
@@ -475,18 +251,18 @@ This is usually translated into a probability statement, called a <b>likelihood<
 
 <p>
 \[
-f(x,N,p) = \binom{N}{x}p^{x}(1-p)^{1-x}
+f(x,N,p) = {N\choose x}p^{x}(1-p)^{1-x}
 \]
 </p>
 </div>
 </div>
 
-<div id="outline-container-sec-5-2" class="outline-3">
-<h3 id="sec-5-2">Updating</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">Updating</h3>
+<div class="outline-text-3" id="text-1-2">
 
 <div class="figure">
-<p><img src="figures/week8/globeTossing.jpg" alt="globeTossing.jpg" />
+<p><img src="figures/week9/globeTossing.jpg" alt="globeTossing.jpg" />
 </p>
 </div>
 
@@ -524,9 +300,9 @@ Thus, all Bayesian models require a prior in order to function!
 </div>
 </div>
 
-<div id="outline-container-sec-5-3" class="outline-3">
-<h3 id="sec-5-3">Role of the prior?</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">Role of the prior?</h3>
+<div class="outline-text-3" id="text-1-3">
 <p>
 This is where Bayesian modeling gets its most criticism.  In theory, you can use ANY prior you want.  Ideally, the prior you use should reflect your prior state of knowledge about the model.  
 </p>
@@ -537,7 +313,7 @@ To see how the choice of prior can affect your posterior, consider the diagram b
 
 
 <div class="figure">
-<p><img src="figures/week8/priors.jpg" alt="priors.jpg" />
+<p><img src="figures/week9/priors.jpg" alt="priors.jpg" />
 </p>
 </div>
 
@@ -556,9 +332,9 @@ Finally, in the third row, the peaked prior shifts and distorts the posterior (r
 </div>
 </div>
 
-<div id="outline-container-sec-6" class="outline-2">
-<h2 id="sec-6">Computations with Bayesian models</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Computations with Bayesian models</h2>
+<div class="outline-text-2" id="text-2">
 <p>
 So far, we have concentrated on the conceptual side of Bayesian modeling.  That is, we've talked about what Bayesian models do (build posterior distributions based on priors and data).  We haven't actually talked about HOW to do these computations.  That's where we'll go next.
 </p>
@@ -572,9 +348,9 @@ Fortunately, we now have modern computing methods that can do really good approx
 </p>
 </div>
 
-<div id="outline-container-sec-6-1" class="outline-3">
-<h3 id="sec-6-1">Grid approximation</h3>
-<div class="outline-text-3" id="text-6-1">
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">Grid approximation</h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
 Grid approximation works on the basis of dividing the "parameter space" (that is, all the values of \(p\) we could consider) into a <i>finite set</i> of points.  Then, we can define our prior and likelihood on this finite set of points, after which the posterior can be computed using simple arithmetic.  
 </p>
@@ -618,7 +394,7 @@ plot(p_grid, posterior, type="b")
 
 
 <div class="figure">
-<p><img src="figures/week8/gridApproximation.png" alt="gridApproximation.png" />
+<p><img src="figures/week9/gridApproximation.png" alt="gridApproximation.png" />
 </p>
 </div>
 
@@ -637,9 +413,9 @@ prior = exp(-5*abs(p_grid - 0.5))
 </div>
 </div>
 
-<div id="outline-container-sec-6-2" class="outline-3">
-<h3 id="sec-6-2">Using sampling to approximate posterior</h3>
-<div class="outline-text-3" id="text-6-2">
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">Using sampling to approximate posterior</h3>
+<div class="outline-text-3" id="text-2-2">
 <p>
 In practice, most methods for computing posteriors rely on <b>sampling</b> from the posterior.  The idea is that once the model is built (i.e., once you've defined the prior and likelihood), we can estimate the posterior by pulling LOTs of samples, and then using those samples to answer questions that we care about.
 </p>
@@ -678,7 +454,7 @@ plot(samples)
 
 
 <div class="figure">
-<p><img src="figures/week8/samples.png" alt="samples.png" />
+<p><img src="figures/week9/samples.png" alt="samples.png" />
 </p>
 </div>
 
@@ -692,15 +468,15 @@ plot(density(samples))
 
 
 <div class="figure">
-<p><img src="figures/week8/density.png" alt="density.png" />
+<p><img src="figures/week9/density.png" alt="density.png" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-sec-6-3" class="outline-3">
-<h3 id="sec-6-3">Computations with posterior samples</h3>
-<div class="outline-text-3" id="text-6-3">
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3">Computations with posterior samples</h3>
+<div class="outline-text-3" id="text-2-3">
 <p>
 Once we have our posterior samples, the model's work is done.  But your work as a modeler has just begun.  The next step is to <i>summarize and interpret</i> the posterior distribution. Exactly how it is summarized depends upon your purpose. But common questions include:
 </p>
@@ -723,9 +499,9 @@ These simple questions can be usefully divided into questions about (1) interval
 </p>
 </div>
 
-<div id="outline-container-sec-6-3-1" class="outline-4">
-<h4 id="sec-6-3-1">Intervals of defined boundaries.</h4>
-<div class="outline-text-4" id="text-6-3-1">
+<div id="outline-container-sec-2-3-1" class="outline-4">
+<h4 id="sec-2-3-1">Intervals of defined boundaries.</h4>
+<div class="outline-text-4" id="text-2-3-1">
 <p>
 Suppose I ask you for the posterior probability that the proportion of water is less than 0.5. Using the grid-approximate posterior, you can just add up all of the samples where the corresponding parameter value is less than 0.5:
 </p>
@@ -744,9 +520,9 @@ sum(samples&gt;0.5 &amp; samples&lt;0.75)/10000
 </div>
 </div>
 
-<div id="outline-container-sec-6-3-2" class="outline-4">
-<h4 id="sec-6-3-2">Intervals of defined probability mass</h4>
-<div class="outline-text-4" id="text-6-3-2">
+<div id="outline-container-sec-2-3-2" class="outline-4">
+<h4 id="sec-2-3-2">Intervals of defined probability mass</h4>
+<div class="outline-text-4" id="text-2-3-2">
 <p>
 Suppose instead I ask you for the 80th percentile of the posterior distribution:
 </p>
@@ -787,9 +563,9 @@ Compare the endpoints of the 80% HPDI with the endpoints of the 80% credible int
 </div>
 </div>
 
-<div id="outline-container-sec-6-3-3" class="outline-4">
-<h4 id="sec-6-3-3">Point estimates</h4>
-<div class="outline-text-4" id="text-6-3-3">
+<div id="outline-container-sec-2-3-3" class="outline-4">
+<h4 id="sec-2-3-3">Point estimates</h4>
+<div class="outline-text-4" id="text-2-3-3">
 <p>
 We can also just compute a mean or median:
 </p>
@@ -812,22 +588,111 @@ dens$x[which.max(dens$y)]
 </div>
 </div>
 
-<div id="outline-container-sec-7" class="outline-2">
-<h2 id="sec-7">Summary</h2>
-<div class="outline-text-2" id="text-7">
+
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Evaluating Bayesian models</h2>
+<div class="outline-text-2" id="text-3">
 <p>
-Today, we have described Bayesian modeling in terms of beginning with a model (a "data story") and using Bayes theorem to "update" the model with data.  Next time, we'll talk about how to <b>evaluate</b> our model by simulating data that should be implied by our model (the so-called <b>posterior predictive distribution</b>).  Finally, we will learn how to construct more complicated models, then proceed to use them for a lot of different applied problems.
+At this point, our computations have given us information about the plausible values of \(p\) for our binomial model.  For example, we computed an 80% HPDI for \(p\) to be [0.47,0.83], which means that \(p\) lies between 0.47 and 0.83 with probability 0.80.  In fact, we estimate the entire posterior distribution (i.e., the probability values for <b>all</b> \(p\) between 0 and 1).
 </p>
 
 <p>
-For next time, you will need to install two pieces of software.  The first is JAGS, which can be found at <code>http://mcmc-jags.sourceforge.net/</code>.  Once you install this, you'll need to install the <code>R2jags</code> package in R by executing <code>install.packages("R2jags")</code>.
+We can now take this information and "go the other way".  That is, we can use the estimated parameter values \(p\) and estimate how likely a given data observation would be.  That is, our model is <i>generative</i> in the sense that we can generate predictions from the model.
+</p>
+
+<p>
+To illustrate, let's assume that \(p=0.7\).  The following R code will perform 1000 simulations of our experiment (as a reminder, remember that we started with the game of tossing a globe 9 times and recording W or L..the <code>rbinom</code> will count the number of "successes" as water landings). Then, we'll plot a very simple type of histogram to show the relative frequency of each possible number of outcomes (0-9).
+</p>
+
+<pre class="example">
+predictions = rbinom(1000, size=9, prob=0.7)
+plot(table(predictions), xlim=c(0,9))
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week9/predict1.jpeg" alt="predict1.jpeg" />
+</p>
+</div>
+
+<p>
+Note that with \(p=0.7\), we still get quite a large range of possible outcomes.  However, the outcomes \(x=6\) and \(x=7\) are still the most frequent (as we would expect, since 70% of 9 is 6.3).
+</p>
+
+<p>
+As an exercise, you should play around with different values of \(p\), ranging from small values (e.g., \(p=0.1\)) to larger values (e.g., \(p=0.9\)).  What changes about the distribution of predictions?  
+</p>
+
+<p>
+The R code below will show how the distribution of predictions changes for \(p\) from 0.1 to 0.9:
+</p>
+
+<pre class="example">
+par(mfrow=c(1,5))
+Ps = c(0.1,0.3,0.5,0.7,0.9)
+for (i in 1:5){
+  predictions = rbinom(1000, size=9, prob=Ps[i])
+  plot(table(predictions), xlim=c(0,9), ylab="", main=paste("p=",Ps[i]))
+}
+par(mfrow=c(1,1))
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week9/predictive.png" alt="predictive.png" />
+</p>
+</div>
+
+<p>
+However, our estimate for \(p\) is a <i>distribution</i> of values..not a single value.  Thus, we need to incorporate our uncertainty for \(p\) in our prediction as well.  The way to do this is through the <b>posterior predictive</b> distribution. 
+</p>
+
+<p>
+Basically, the idea is as follows.  From the figure above, we can see that as \(p\) increases from 0 to 1, the peak of the predictive distribution shifts from the low end \(x=1\) to the high end \(x=9\).  However, from our posterior distribution of \(p\), we know that the probability that \(p\) lies on either of these ends is very small.  Thus, we need to incorporate this knowledge into our predictive distribitution.  
+</p>
+
+<p>
+Essentially, we need to form a <i>weighted average</i> of predictions.  Predicted observations on the low end (\(x=0,1\)) come from small values of \(p\), which are not very common in our posterior distribution.  Similarly, predicted observations on the high end (\(x=8,9\)) come from large values of \(p\), which are also not very common in the posterior distribution.  When we weight the likelihood of the various observations by the relative posterior probabilities for \(p\), we get a result that we call the <b>posterior predictive distribution</b>.  The math can be complicated, but the R code is simple:
+</p>
+
+<pre class="example">
+predictions = rbinom(1000, size=9, prob=samples)
+plot(table(predictions), xlim=c(0,9))
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week9/postPredictive.png" alt="postPredictive.png" />
+</p>
+</div>
+
+<p>
+Notice how the only bit of code that we changed is the <code>prob</code> value.  In the above samples, we used a fixed value of \(p\).  In the posterior predictive distribution, we set \(p\) to be a random variable that is shaped like our posterior distribution for \(p\).  Since we approximated this distribution with <code>samples</code> earlier, we can simply set <code>prob=samples</code> to accomplish this.
+</p>
+
+<p>
+Notice how the posterior predictive distribution peaks around 6, which matches with our observed data (remember, we saw \(x=6\) water landings in our example).  Thus, we can conclude that the model is adequate in the sense that it predicts what we've already seen.  This predictive adequacy is a fundamental part of Bayesian modeling, and it is called a <b>posterior predictive check</b>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Summary</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+In this lecture, we have talked about how to construct a Bayesian model.  We begin with a <i>data story</i>; that is, we hypothesize a process by which our data might have arisen.  This results in a <i>likelihood</i> function.  We then decide on a prior, which represents our prior knowledge. Then, we use Bayes theorem to update our model by <i>feeding</i> it the data. Technically, this amounts to computing a <i>posterior</i> by multiplying the prior and the likelihood.  Computationally, we use <i>sampling</i> to accomplish this.  Once we estimate our posterior distribution, we check our model by generating a <i>posterior predictive distribution</i>, which incorporates both data uncertainty as well as parameter uncertainty into a single distribution.  We compare this posterior predictive distribution to our observed data; if the observed data match what we would <i>expect</i> from the model (based on the posterior predictive), we can conclude that our model does an adequate job of describing our data.
+</p>
+
+<p>
+Next time, we will focus on more modern method of posterior sampling known as <b>Markov chain Monte Carlo</b> sampling. 
 </p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Date: October 16, 2017</p>
-<p class="date">Created: 2017-10-16 Mon 18:06</p>
+<p class="date">Date: October 23, 2017</p>
+<p class="date">Created: 2017-10-23 Mon 09:47</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

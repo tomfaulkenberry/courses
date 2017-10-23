@@ -1,0 +1,47 @@
+\documentclass[10pt]{article}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\lhead{PSYC 5316}
+\chead{Homework 9}
+\cfoot{}
+\rhead{Fall 2017}
+
+\pagestyle{fancy}
+
+\begin{document}
+
+\begin{enumerate}
+  
+\item Recall the globe tossing model from the lecture.  Compute and plot the grid approximate posterior distribution for each of the following sets of observations.  In each case, assume a uniform prior for $p$, and use a grid of $n=30$ points.
+  \begin{enumerate}
+  \item W, W, W
+  \item W, W, W, L
+  \item L, W, W, L, W, W, W
+  \end{enumerate}
+
+\item Now assume a prior for $p$ that is equal to 0 when $p<0.5$ and is a positive constant when $p>0.5$.  Again, compute and plot the grid approximate posterior distribution for each of the sets of observations in the problem above.
+
+\item Suppose that the globe tossing data turned out to be 6 waters in 9 tosses (as in the lecture. Compute a grid approximate posterior for the binomial parameter $p$ using $n=1000$ points.  Use the same flat prior as before.  Then, draw 10,000 samples from the posterior and answer the following questions:
+  \begin{enumerate}
+  \item How much posterior probability lies below $p=0.2$?
+  \item How much posterior probability lies below $p=0.8$?
+  \item How much posterior probability lies between $p=0.2$ and $p=0.8$?
+  \item 20\% of the posterior probability lies below which value of $p$?
+  \item 20\% of the posterior probability lies above which value of $p$?
+    \item Which values of $p$ contain the \emph{narrowest} interval equal to 60\% of the posterior probability?
+    \end{enumerate}
+
+  \item Suppose the globe tossing data had turned out to be 8 waters in 15 tosses.
+
+    \begin{enumerate}
+    \item Construct a posterior distribution, using grid approximation with $n=1000$ points.  Use the same flat prior as before.  Then, draw 10,000 samples from the posterior distribution, compute the posterior mode, and compute a 90\% HPDI for $p$.  Interpret what these values mean.
+      \item Construct a posterior predictive check for this model and data. That is, simulate the distribution of samples, averaging over the posterior uncertainty in $p$.  What is the probability of observing 8 water in 15 tosses?
+
+    \end{enumerate}
+
+    
+
+    \item Repeat the previous problem, but now use a prior that is zero below $p=0.5$ and a constant above $p=0.5$.  This prior corresponds to our \emph{a priori} knowledge that a majority of the Earth's surface is water.  Compare the answers to these two problems.  How well does each compare to the true value of $p=0.7$?  What difference does a better prior make?  
+\end{enumerate}  
+\end{document}
