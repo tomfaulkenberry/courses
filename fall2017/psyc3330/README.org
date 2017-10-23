@@ -8,8 +8,9 @@
   - Week 5 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week5.html][html]])
   - Week 6 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week6.html][html]])
   - Week 7 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week7.html][html]])
-
-
+  - Week 9 (due to travel, I'm posting videos for this week.  See below)
+    - slides ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/week9.pdf][pdf]])
+  
 - Exam reviews
   - Exam 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/exam1review.pdf][pdf]])
   - Exam 2 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/exam2review.pdf][pdf]])
@@ -22,5 +23,6 @@
   - [[https://youtu.be/biFXM-rOBdg][Week 5]]
   - Week 6 (sorry, but I don't have a good video for Week 6)
   - [[https://youtu.be/Ajp1yAwVjzk][Week 7]] (you can ignore stuff before 10:40 and after 19:00)
-
-
+  - Week 9
+    - [[https://youtu.be/XpLJzU0T8y8][Video 1]] (ignore the SPSS stuff after 30:00)
+    - [[https://youtu.be/gpOTjcA-ipU][Video 2]] (these are practice problems)
