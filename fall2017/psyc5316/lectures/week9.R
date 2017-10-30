@@ -55,27 +55,3 @@ median(samples)
 dens = density(samples)
 dens$x[which.max(dens$y)]
 
-
-###############################
-# posterior prediction
-
-# simulate 9 tosses with p=0.7
-
-predictions = rbinom(1e5, size=9, prob=0.7)
-plot(table(predictions), xlim=c(0,9))
-
-# generate range of predictive distributions
-par(mfrow=c(1,5))
-Ps = c(0.1,0.3,0.5,0.7,0.9)
-for (i in 1:5){
-  predictions = rbinom(1e5, size=9, prob=Ps[i])
-  plot(table(predictions), xlim=c(0,9), ylab="", main=paste("p=",Ps[i]))
-}
-par(mfrow=c(1,1))
-
-# posterior predictive distribution
-# incorporates the uncertainty in p
-# from the sampled posterior distribution
-
-predictions = rbinom(1e5, size=9, prob=samples)
-plot(table(predictions), xlim=c(0,9))
