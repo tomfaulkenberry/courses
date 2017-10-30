@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Week 10 lecture notes - PSYC 3330</title>
+<!-- 2017-10-30 Mon 10:41 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Week 10 lecture notes - PSYC 3330</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Review from last week</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Last week, we developed the \(t\)-test, which is used to test hypotheses about single means when the population standard deviation \(\sigma\) is NOT known.
+</p>
+
+<p>
+The basic procedure is the same as the \(z\)-test from earlier, but there are some key differences:
+</p>
+
+<ul class="org-ul">
+<li>since we are not given the population standard deviation \(\sigma\), we have to estimate it.  The estimator that we use is:
+</li>
+</ul>
+
+<p>
+\[
+s = \sqrt{\frac{SS}{n-1}} = \sqrt{\frac{SS}{df}}
+\]
+</p>
+
+<ul class="org-ul">
+<li>since the distribution of sample means is not normal (it is a \(t\)-distribution that depends on sample size), we have a different critical value to use.
+</li>
+</ul>
+
+<p>
+Based on these changes, we did examples of two types of test:
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Single sample \(t\)-test</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Example: a random sample of \(n=25\) individuals is selected from a population with \(\mu=20\), and a treatment is administered to each individual in the sample. After the treatment, the sample mean is found to be \(\overline{x}=22.2\), with $SS=384.  Does the treatment have a significant effect?  Use a two-tailed test with \(\alpha=0.05\).
+</p>
+
+<p>
+First, we find our critical \(t\)-value.  Using our \(t\)-table and the fact that \(df=n-1=20-1=19\), we see that \(t_{\text{crit}}=\pm 2.09\).
+</p>
+
+<p>
+Next, we need to find our estimate \(s\).  Since we're given \(SS\), this is straightforward:
+</p>
+
+\begin{align*}
+s &=\sqrt{\frac{SS}{df}}\\
+  &=\sqrt{\frac{384}{19}}\\
+  &=4.50
+\end{align*}
+
+<p>
+Now we can compute our sample \(t\)-score:
+</p>
+
+\begin{align*}
+t_{\text{sample}} &= \frac{\overline{x}-\mu}{s/\sqrt{n}}\\
+ &= \frac{22.2-20}{4.50/\sqrt{20}}\\
+ &= 2.19\\
+\end{align*}
+
+<p>
+Since \(t(19)=2.19\) exceeds \(t_{\text{crit}}\), we can reject \(H_0\) and conclude that the treatment had a significant effect.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">dependent-means (repeated measures) \(t\)-test</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Example: The following data represent test scores for a group of \(n=6\) participants, observed both before AND after a treatment.  
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Participant</th>
+<th scope="col" class="right">Before</th>
+<th scope="col" class="right">After</th>
+<th scope="col" class="right">Difference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">A</td>
+<td class="right">7</td>
+<td class="right">8</td>
+<td class="right">1</td>
+</tr>
+
+<tr>
+<td class="left">B</td>
+<td class="right">2</td>
+<td class="right">9</td>
+<td class="right">7</td>
+</tr>
+
+<tr>
+<td class="left">C</td>
+<td class="right">4</td>
+<td class="right">6</td>
+<td class="right">2</td>
+</tr>
+
+<tr>
+<td class="left">D</td>
+<td class="right">5</td>
+<td class="right">7</td>
+<td class="right">2</td>
+</tr>
+
+<tr>
+<td class="left">E</td>
+<td class="right">5</td>
+<td class="right">6</td>
+<td class="right">1</td>
+</tr>
+
+<tr>
+<td class="left">F</td>
+<td class="right">3</td>
+<td class="right">8</td>
+<td class="right">5</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">\(M_D = 3\)</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+<td class="right">\(SS_D = 30\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Was there a signficant effect of the treatment?  Use a two-tailed test with \(\alpha=0.05\).
+</p>
+
+<p>
+As before, we first need to find our critical \(t\) value.  Using the table with \(df=6-1=5\), we see that \(t_crit=\pm 2.57\).
+</p>
+
+<p>
+We also need to compute \(s\):
+</p>
+
+\begin{align*}
+s &=\sqrt{\frac{SS}{df}}\\
+  &=\sqrt{\frac{30}{5}}\\
+  &=2.45\\
+\end{align*}
+
+<p>
+Now, we compute our \(t\) score for the sample:
+</p>
+
+\begin{align*}
+t_{\text{sample}} &= \frac{\overline{D}-\mu_D}{s/\sqrt{n}}\\
+&= \frac{3-0}{2.45/\sqrt{6}}\\
+&= 3.00\\
+\end{align*}
+
+<p>
+Since \(t(5)=3.00\) exceeds \(t_{\text{crit}}\), we reject \(H_0\) and conclude that the treatment had a significant effect.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Testing means of independent samples</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+How do we handle the case where we have <b>two independent sample means</b>?  Consider the following example:
+</p>
+
+<p>
+Dr. Mnemonic develops a new treatment for patients with a memory disorder. He isn't certain what impact, if any, it will have. To test it, he randomly assigns 8participants to participants to one of two samples.  He gives one sample the new treatment, but not the other.  Following the treatment period, he gives both groups a memory test.  Using the data below, decide whether the memory treatment had a significant effect. Use a two-tailed test with \(\alpha=0.05\).
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">Experimental group</th>
+<th scope="col" class="right">Control Group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">45</td>
+<td class="right">43</td>
+</tr>
+
+<tr>
+<td class="right">55</td>
+<td class="right">49</td>
+</tr>
+
+<tr>
+<td class="right">40</td>
+<td class="right">35</td>
+</tr>
+
+<tr>
+<td class="right">60</td>
+<td class="right">51</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="right">\(\overline{x}_{A}=50\)</td>
+<td class="right">\(\overline{x}_B=44.5\)</td>
+</tr>
+
+<tr>
+<td class="right">\(SS_A=250\)</td>
+<td class="right">\(SS_B=155\)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+To test, we will use an <b>independent samples \(t\)-test</b>. The mechanics of the test are as follows:
+</p>
+
+<ul class="org-ul">
+<li>the \(t\)-statistic is given by:
+</li>
+</ul>
+
+<p>
+\[
+t=\frac{\overline{x}_A-\overline{x}_B}{SE}
+\]
+</p>
+
+<ul class="org-ul">
+<li>\(SE\) is given by:
+</li>
+</ul>
+
+<p>
+\[
+SE=\sqrt{\frac{s_p^2}{n_A}+\frac{s_p^2}{n_B}}
+\]
+</p>
+
+<ul class="org-ul">
+<li>\(s_p^2\) is the <b>pooled variance</b>, and is given by:
+</li>
+</ul>
+
+<p>
+\[
+s_p^2=\frac{SS_A+SS_B}{df_A+df_B}
+\]
+</p>
+
+<ul class="org-ul">
+<li>the degrees of freedom are:
+<ul class="org-ul">
+<li>\(df_A=n_A-1\)
+</li>
+<li>\(df_B=n_B-1\)
+</li>
+<li>\(df = df_A+df_B\) (this is the one to use when looking up critical value)
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+So, to work our example, we do these things in reverse:
+</p>
+
+<ul class="org-ul">
+<li>first, we find the critical value for \(t\).  According to the table (with \(df=3+3=6\), \(t_{\text{crit}}=2.45\).
+</li>
+
+<li>next, we compute the <b>pooled variance</b>:
+</li>
+</ul>
+
+\begin{align*}
+s_p^2 &= \frac{SS_A+SS_B}{df_A+df_B}\\
+      &= \frac{250+155}{3+3}\\
+      &= 67.5\\
+\end{align*}
+
+<ul class="org-ul">
+<li>we use this to compute <b>standard error</b>:
+</li>
+</ul>
+
+\begin{align*}
+SE &= \sqrt{\frac{s_p^2}{n_A}+\frac{s_p^2}{n_B}}\\
+   &= \sqrt{\frac{67.5}{4}+\frac{67.5}{4}}\\
+   &= 5.81\\
+\end{align*}
+
+<ul class="org-ul">
+<li>we now compute our \(t\)-statistic:
+</li>
+</ul>
+
+\begin{align*}
+t &= \frac{\overline{x}_A-\overline{x}_B}{SE}\\
+  &= \frac{50-44.5}{5.81}\\
+  &= 0.95\\
+\end{align*}
+
+<p>
+Since \(t(6)=0.95\) does NOT exceed \(t_{\text{crit}}\), we fail to reject \(H_0\), and conclude that the memory treatment had NO effect on memory scores.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Oct 30-Nov 4, 2017</p>
+<p class="date">Created: 2017-10-30 Mon 10:41</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

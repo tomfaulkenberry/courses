@@ -1,0 +1,152 @@
+#+TITLE: Week 10 lecture notes - PSYC 3330
+#+AUTHOR:
+#+DATE: Oct 30-Nov 4, 2017 
+#+OPTIONS: toc:nil num:nil
+
+* Review from last week
+Last week, we developed the $t$-test, which is used to test hypotheses about single means when the population standard deviation $\sigma$ is NOT known.
+
+The basic procedure is the same as the $z$-test from earlier, but there are some key differences:
+
+- since we are not given the population standard deviation $\sigma$, we have to estimate it.  The estimator that we use is:
+
+\[
+s = \sqrt{\frac{SS}{n-1}} = \sqrt{\frac{SS}{df}}
+\]
+
+- since the distribution of sample means is not normal (it is a $t$-distribution that depends on sample size), we have a different critical value to use.
+
+Based on these changes, we did examples of two types of test:
+
+** Single sample $t$-test
+
+Example: a random sample of $n=25$ individuals is selected from a population with $\mu=20$, and a treatment is administered to each individual in the sample. After the treatment, the sample mean is found to be $\overline{x}=22.2$, with $SS=384.  Does the treatment have a significant effect?  Use a two-tailed test with $\alpha=0.05$.
+
+First, we find our critical $t$-value.  Using our $t$-table and the fact that $df=n-1=20-1=19$, we see that $t_{\text{crit}}=\pm 2.09$.
+
+Next, we need to find our estimate $s$.  Since we're given $SS$, this is straightforward:
+
+\begin{align*}
+s &=\sqrt{\frac{SS}{df}}\\
+  &=\sqrt{\frac{384}{19}}\\
+  &=4.50
+\end{align*}
+
+Now we can compute our sample $t$-score:
+
+\begin{align*}
+t_{\text{sample}} &= \frac{\overline{x}-\mu}{s/\sqrt{n}}\\
+ &= \frac{22.2-20}{4.50/\sqrt{20}}\\
+ &= 2.19\\
+\end{align*}
+
+Since $t(19)=2.19$ exceeds $t_{\text{crit}}$, we can reject $H_0$ and conclude that the treatment had a significant effect.
+
+** dependent-means (repeated measures) $t$-test
+
+Example: The following data represent test scores for a group of $n=6$ participants, observed both before AND after a treatment.  
+
+| Participant | Before | After |  Difference |
+|-------------+--------+-------+-------------|
+| A           |      7 |     8 |           1 |
+| B           |      2 |     9 |           7 |
+| C           |      4 |     6 |           2 |
+| D           |      5 |     7 |           2 |
+| E           |      5 |     6 |           1 |
+| F           |      3 |     8 |           5 |
+|-------------+--------+-------+-------------|
+|             |        |       |   $M_D = 3$ |
+|             |        |       | $SS_D = 30$ |
+
+Was there a signficant effect of the treatment?  Use a two-tailed test with $\alpha=0.05$.
+
+As before, we first need to find our critical $t$ value.  Using the table with $df=6-1=5$, we see that $t_crit=\pm 2.57$.
+
+We also need to compute $s$:
+
+\begin{align*}
+s &=\sqrt{\frac{SS}{df}}\\
+  &=\sqrt{\frac{30}{5}}\\
+  &=2.45\\
+\end{align*}
+
+Now, we compute our $t$ score for the sample:
+
+\begin{align*}
+t_{\text{sample}} &= \frac{\overline{D}-\mu_D}{s/\sqrt{n}}\\
+&= \frac{3-0}{2.45/\sqrt{6}}\\
+&= 3.00\\
+\end{align*}
+
+Since $t(5)=3.00$ exceeds $t_{\text{crit}}$, we reject $H_0$ and conclude that the treatment had a significant effect.
+
+* Testing means of independent samples
+
+How do we handle the case where we have *two independent sample means*?  Consider the following example:
+
+Dr. Mnemonic develops a new treatment for patients with a memory disorder. He isn't certain what impact, if any, it will have. To test it, he randomly assigns 8participants to participants to one of two samples.  He gives one sample the new treatment, but not the other.  Following the treatment period, he gives both groups a memory test.  Using the data below, decide whether the memory treatment had a significant effect. Use a two-tailed test with $\alpha=0.05$.
+
+|    Experimental group |         Control Group |
+|-----------------------+-----------------------|
+|                    45 |                    43 |
+|                    55 |                    49 |
+|                    40 |                    35 |
+|                    60 |                    51 |
+|-----------------------+-----------------------|
+| $\overline{x}_{A}=50$ | $\overline{x}_B=44.5$ |
+|            $SS_A=250$ | $SS_B=155$            |
+
+To test, we will use an *independent samples $t$-test*. The mechanics of the test are as follows:
+
+- the $t$-statistic is given by:
+
+\[
+t=\frac{\overline{x}_A-\overline{x}_B}{SE}
+\]
+
+- $SE$ is given by:
+
+\[
+SE=\sqrt{\frac{s_p^2}{n_A}+\frac{s_p^2}{n_B}}
+\]
+
+- $s_p^2$ is the *pooled variance*, and is given by:
+
+\[
+s_p^2=\frac{SS_A+SS_B}{df_A+df_B}
+\]
+
+- the degrees of freedom are:
+  - $df_A=n_A-1$
+  - $df_B=n_B-1$
+  - $df = df_A+df_B$ (this is the one to use when looking up critical value)
+
+So, to work our example, we do these things in reverse:
+
+- first, we find the critical value for $t$.  According to the table (with $df=3+3=6$, $t_{\text{crit}}=2.45$.
+
+- next, we compute the *pooled variance*:
+
+\begin{align*}
+s_p^2 &= \frac{SS_A+SS_B}{df_A+df_B}\\
+      &= \frac{250+155}{3+3}\\
+      &= 67.5\\
+\end{align*}
+
+- we use this to compute *standard error*:
+
+\begin{align*}
+SE &= \sqrt{\frac{s_p^2}{n_A}+\frac{s_p^2}{n_B}}\\
+   &= \sqrt{\frac{67.5}{4}+\frac{67.5}{4}}\\
+   &= 5.81\\
+\end{align*}
+
+- we now compute our $t$-statistic:
+
+\begin{align*}
+t &= \frac{\overline{x}_A-\overline{x}_B}{SE}\\
+  &= \frac{50-44.5}{5.81}\\
+  &= 0.95\\
+\end{align*}
+
+Since $t(6)=0.95$ does NOT exceed $t_{\text{crit}}$, we fail to reject $H_0$, and conclude that the memory treatment had NO effect on memory scores.
