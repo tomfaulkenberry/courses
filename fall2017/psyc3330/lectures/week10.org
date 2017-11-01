@@ -22,25 +22,25 @@ Based on these changes, we did examples of two types of test:
 
 Example: a random sample of $n=25$ individuals is selected from a population with $\mu=20$, and a treatment is administered to each individual in the sample. After the treatment, the sample mean is found to be $\overline{x}=22.2$, with $SS=384.  Does the treatment have a significant effect?  Use a two-tailed test with $\alpha=0.05$.
 
-First, we find our critical $t$-value.  Using our $t$-table and the fact that $df=n-1=20-1=19$, we see that $t_{\text{crit}}=\pm 2.09$.
+First, we find our critical $t$-value.  Using our $t$-table and the fact that $df=n-1=20-1=19$, we see that $t_{\text{crit}}=\pm 2.06$.
 
 Next, we need to find our estimate $s$.  Since we're given $SS$, this is straightforward:
 
 \begin{align*}
 s &=\sqrt{\frac{SS}{df}}\\
-  &=\sqrt{\frac{384}{19}}\\
-  &=4.50
+  &=\sqrt{\frac{384}{24}}\\
+  &=4
 \end{align*}
 
 Now we can compute our sample $t$-score:
 
 \begin{align*}
 t_{\text{sample}} &= \frac{\overline{x}-\mu}{s/\sqrt{n}}\\
- &= \frac{22.2-20}{4.50/\sqrt{20}}\\
- &= 2.19\\
+ &= \frac{22.2-20}{4/\sqrt{25}}\\
+ &= 2.75\\
 \end{align*}
 
-Since $t(19)=2.19$ exceeds $t_{\text{crit}}$, we can reject $H_0$ and conclude that the treatment had a significant effect.
+Since $t_{\text{sample}}=2.75$ exceeds $t_{\text{crit}}$, we can reject $H_0$ and conclude that the treatment had a significant effect.
 
 ** dependent-means (repeated measures) $t$-test
 
@@ -78,7 +78,7 @@ t_{\text{sample}} &= \frac{\overline{D}-\mu_D}{s/\sqrt{n}}\\
 &= 3.00\\
 \end{align*}
 
-Since $t(5)=3.00$ exceeds $t_{\text{crit}}$, we reject $H_0$ and conclude that the treatment had a significant effect.
+Since $t_{\text{sample}}=3.00$ exceeds $t_{\text{crit}}$, we reject $H_0$ and conclude that the treatment had a significant effect.
 
 * Testing means of independent samples
 
