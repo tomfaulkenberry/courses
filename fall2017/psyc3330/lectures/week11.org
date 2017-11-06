@@ -1,0 +1,105 @@
+#+TITLE: Week 11 lecture notes - PSYC 3330
+#+AUTHOR:
+#+DATE: Nov 6-10, 2017 
+#+OPTIONS: toc:nil num:nil
+
+* Comparing means from 3 or more groups
+
+Last week, we used an /independent samples $t$-test/ to compare means of TWO groups.  This week, we will see how to compare means from /3 or more groups/.
+
+As a motivating example, let's consider the following.  Suppose we want to know the effect of knowledge of prior behavior on jury decisions.  We randomly assign a group of "jurors" into three independent groups:
+
+  - Group 1: jurors are told that defendent has a *criminal record*
+  - Group 2: jurors are told that defendent has a *clean record*
+  - Group 3: jurors are given no prior information about defendent
+
+Jurors are then asked to rate the defendent's guilt on a scale of 1-10, where 10 = maximum guilt.
+
+The data are as follows:
+
+|      Criminal record |         Clean record |       No information |
+|----------------------+----------------------+----------------------|
+|                   10 |                    5 |                    4 |
+|                    7 |                    1 |                    6 |
+|                    5 |                    3 |                    9 |
+|                   10 |                    7 |                    3 |
+|                    8 |                    4 |                    3 |
+|----------------------+----------------------+----------------------|
+| $\overline{x}_A=8.0$ | $\overline{x}_B=4.0$ | $\overline{x}_C=5.0$ |
+|          $SS_A=18.0$ |         `$SS_B=20.0$ | $SS_C=26.0$          | 
+
+  
+Now, in general, we want to compute a *test statistic* that compares observed difference to the difference expected by chance.  However, since there are more than two groups, we can't just compute a single difference score.
+
+The solution is to use *variance* as a test statistic.  As a result, this technique is referred to as *analysis of variance*, or *ANOVA* for short.  The way we do this is to compute the following:
+
+\[
+F = \frac{\text{between-groups variance}}{\text{within-groups variance}}
+\]
+
+While this looks pretty simple, there are a lot of computations involved.  In order to compute $F$ (the ratio of between-groups to within-groups variance), we will compute an *ANOVA table*:
+
+| Source  | SS | df | MS | F |
+|---------+----+----+----+---|
+| Between |    |    |    |   |
+| Within  |    |    |    |   |
+| Total   |    |    |    |   |
+
+The relationships are as follows:
+
+- $F=\displaystyle{\frac{MS_{\text{between}}}{MS_{\text{within}}}}$
+- variances: $MS = \displaystyle{\frac{SS}{df}}$
+- total variance:
+  - $SS_{\text{total}}=\sum(X-GM)^2 = \sum X^2-\frac{(\sum X)^2}{N}$
+  - $df_{\text{total}}=N-1$
+
+- within-groups variance
+  - $SS_{\text{within}}=\sum SS_{\text{each group}}$
+  - $df_{\text{within}}=\sum df_{\text{each group}}$
+
+- between-groups variance
+  - $SS_{\text{between}}=\displaystyle{\Bigl(\sum \frac{T^2}{n}\Bigr)-\frac{G^2}{N}}$
+    - where $T$=total within any /one/ treatment group
+    - $n$ = number of scores within any /one/ treatment group
+    - $G$ = /grand/ total of /all/ measurements
+  - $df_{\text{between}}$ = # groups -1
+
+* How to compute ANOVA
+
+Let's use these formulas to compute an ANOVA for our example above.
+
+First, let's compute $SS_{\text{total}}$:
+
+\begin{align*}
+SS_{\text{total}} &= \sum X^2 - \frac{(\sum X)^2}{N}\\
+ &= 589 - \frac{85^2}{15}\\
+ &= 107.33\\
+\end{align*}
+
+Next, let's compute $SS_{\text{within}}$:
+
+\begin{align*}
+SS_{\text{within}} &= \sum SS_{\text{each group}}\\
+&= SS_A + SS_B + SS_B\\
+&= 18.0 + 20.0 + 26.0\\
+&= 64.0\\
+\end{align*}
+
+Finally, we compute $SS_{\text{between}}$:
+
+\begin{align*}
+$SS_{\text{between}} &= \Bigl(\sum \frac{T^2}{n}\Bigr)-\frac{G^2}{N}\\
+&= \Bigl( \frac{40^2}{5} + \frac{20^2}{5} + \frac{25^2}{5}\Bigr) - \frac{85^2}{15}\\
+&= 43.33\\
+\end{align*}
+
+Now, we can do everything in the table:
+
+| Source  |     SS | df |    MS |    F |
+|---------+--------+----+-------+------|
+| Between |  43.33 |  2 | 21.67 | 4.07 |
+| Within  |   64.0 | 12 |  5.33 |      |
+| Total   | 107.33 | 14 |       |      |
+
+From the table of critical values for the $F$ distribution, we see that $F_{\text{crit}}=3.89$ (based on numerator $df = 2$ and denominator $df=12$).  Hence, $F_{\text{sample}}$ is beyond $F_{\text{crit}}$, and so we reject $H_0$ and conclude that there is a significant difference among the groups.
+

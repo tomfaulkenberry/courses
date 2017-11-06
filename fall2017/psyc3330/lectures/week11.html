@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Week 11 lecture notes - PSYC 3330</title>
+<!-- 2017-11-06 Mon 13:01 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Week 11 lecture notes - PSYC 3330</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Comparing means from 3 or more groups</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Last week, we used an <i>independent samples \(t\)-test</i> to compare means of TWO groups.  This week, we will see how to compare means from <i>3 or more groups</i>.
+</p>
+
+<p>
+As a motivating example, let's consider the following.  Suppose we want to know the effect of knowledge of prior behavior on jury decisions.  We randomly assign a group of "jurors" into three independent groups:
+</p>
+
+<ul class="org-ul">
+<li>Group 1: jurors are told that defendent has a <b>criminal record</b>
+</li>
+<li>Group 2: jurors are told that defendent has a <b>clean record</b>
+</li>
+<li>Group 3: jurors are given no prior information about defendent
+</li>
+</ul>
+
+<p>
+Jurors are then asked to rate the defendent's guilt on a scale of 1-10, where 10 = maximum guilt.
+</p>
+
+<p>
+The data are as follows:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">Criminal record</th>
+<th scope="col" class="right">Clean record</th>
+<th scope="col" class="right">No information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">10</td>
+<td class="right">5</td>
+<td class="right">4</td>
+</tr>
+
+<tr>
+<td class="right">7</td>
+<td class="right">1</td>
+<td class="right">6</td>
+</tr>
+
+<tr>
+<td class="right">5</td>
+<td class="right">3</td>
+<td class="right">9</td>
+</tr>
+
+<tr>
+<td class="right">10</td>
+<td class="right">7</td>
+<td class="right">3</td>
+</tr>
+
+<tr>
+<td class="right">8</td>
+<td class="right">4</td>
+<td class="right">3</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="right">\(\overline{x}_A=8.0\)</td>
+<td class="right">\(\overline{x}_B=4.0\)</td>
+<td class="right">\(\overline{x}_C=5.0\)</td>
+</tr>
+
+<tr>
+<td class="right">\(SS_A=18.0\)</td>
+<td class="right">`\(SS_B=20.0\)</td>
+<td class="right">\(SS_C=26.0\)</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+Now, in general, we want to compute a <b>test statistic</b> that compares observed difference to the difference expected by chance.  However, since there are more than two groups, we can't just compute a single difference score.
+</p>
+
+<p>
+The solution is to use <b>variance</b> as a test statistic.  As a result, this technique is referred to as <b>analysis of variance</b>, or <b>ANOVA</b> for short.  The way we do this is to compute the following:
+</p>
+
+<p>
+\[
+F = \frac{\text{between-groups variance}}{\text{within-groups variance}}
+\]
+</p>
+
+<p>
+While this looks pretty simple, there are a lot of computations involved.  In order to compute \(F\) (the ratio of between-groups to within-groups variance), we will compute an <b>ANOVA table</b>:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Source</th>
+<th scope="col" class="left">SS</th>
+<th scope="col" class="left">df</th>
+<th scope="col" class="left">MS</th>
+<th scope="col" class="left">F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Between</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Within</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Total</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+The relationships are as follows:
+</p>
+
+<ul class="org-ul">
+<li>\(F=\displaystyle{\frac{MS_{\text{between}}}{MS_{\text{within}}}}\)
+</li>
+<li>variances: \(MS = \displaystyle{\frac{SS}{df}}\)
+</li>
+<li>total variance:
+<ul class="org-ul">
+<li>\(SS_{\text{total}}=\sum(X-GM)^2 = \sum X^2-\frac{(\sum X)^2}{N}\)
+</li>
+<li>\(df_{\text{total}}=N-1\)
+</li>
+</ul>
+</li>
+
+<li>within-groups variance
+<ul class="org-ul">
+<li>\(SS_{\text{within}}=\sum SS_{\text{each group}}\)
+</li>
+<li>\(df_{\text{within}}=\sum df_{\text{each group}}\)
+</li>
+</ul>
+</li>
+
+<li>between-groups variance
+<ul class="org-ul">
+<li>\(SS_{\text{between}}=\displaystyle{\Bigl(\sum \frac{T^2}{n}\Bigr)-\frac{G^2}{N}}\)
+<ul class="org-ul">
+<li>where $T$=total within any <i>one</i> treatment group
+</li>
+<li>\(n\) = number of scores within any <i>one</i> treatment group
+</li>
+<li>\(G\) = <i>grand</i> total of <i>all</i> measurements
+</li>
+</ul>
+</li>
+<li>\(df_{\text{between}}\) = # groups -1
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">How to compute ANOVA</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Let's use these formulas to compute an ANOVA for our example above.
+</p>
+
+<p>
+First, let's compute \(SS_{\text{total}}\):
+</p>
+
+\begin{align*}
+SS_{\text{total}} &= \sum X^2 - \frac{(\sum X)^2}{N}\\
+ &= 589 - \frac{85^2}{15}\\
+ &= 107.33\\
+\end{align*}
+
+<p>
+Next, let's compute \(SS_{\text{within}}\):
+</p>
+
+\begin{align*}
+SS_{\text{within}} &= \sum SS_{\text{each group}}\\
+&= SS_A + SS_B + SS_B\\
+&= 18.0 + 20.0 + 26.0\\
+&= 64.0\\
+\end{align*}
+
+<p>
+Finally, we compute \(SS_{\text{between}}\):
+</p>
+
+\begin{align*}
+$SS_{\text{between}} &= \Bigl(\sum \frac{T^2}{n}\Bigr)-\frac{G^2}{N}\\
+&= \Bigl( \frac{40^2}{5} + \frac{20^2}{5} + \frac{25^2}{5}\Bigr) - \frac{85^2}{15}\\
+&= 43.33\\
+\end{align*}
+
+<p>
+Now, we can do everything in the table:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Source</th>
+<th scope="col" class="right">SS</th>
+<th scope="col" class="right">df</th>
+<th scope="col" class="right">MS</th>
+<th scope="col" class="right">F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Between</td>
+<td class="right">43.33</td>
+<td class="right">2</td>
+<td class="right">21.67</td>
+<td class="right">4.07</td>
+</tr>
+
+<tr>
+<td class="left">Within</td>
+<td class="right">64.0</td>
+<td class="right">12</td>
+<td class="right">5.33</td>
+<td class="right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Total</td>
+<td class="right">107.33</td>
+<td class="right">14</td>
+<td class="right">&#xa0;</td>
+<td class="right">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+From the table of critical values for the \(F\) distribution, we see that \(F_{\text{crit}}=3.89\) (based on numerator \(df = 2\) and denominator \(df=12\)).  Hence, \(F_{\text{sample}}\) is beyond \(F_{\text{crit}}\), and so we reject \(H_0\) and conclude that there is a significant difference among the groups.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Nov 6-10, 2017</p>
+<p class="date">Created: 2017-11-06 Mon 13:01</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
