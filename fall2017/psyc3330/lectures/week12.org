@@ -1,0 +1,93 @@
+#+TITLE: Week 12 lecture notes - PSYC 3330
+#+AUTHOR:
+#+DATE: Nov 13-17, 2017 
+#+OPTIONS: toc:nil num:nil
+
+* The Chi-Square Test for Goodness of Fit
+
+This week, we will talk about hypothesis testing for situations where the dependent variable is a *count* or a *proportion*, neither of which can be described as as normal distribution.
+
+* Example 1
+A researcher presented $n=50$ participants with an abstract painting (with no obvious top/bottom) and asked each participant to hang the painting in the orientation that looked correct.  The data are below:
+
+| Top up | Bottom up | Left side up | Right side up |
+|--------+-----------+--------------+---------------|
+| 18     | 17        | 7            | 8             |
+
+Is there any preference among the four options?  That is, are any of the orientations selected more often than would be expected by chance alone?
+
+Step 1 - state null hypothesis
+
+If there were NO preference, the proportions in each category would be equivalent.  Thus the null hypothesis would be that the expected count in each category would be 1/4 (25%) of the sample (that is, a /uniform/ distribution of counts):
+
+| Top up | Bottom up | Left side up | Right side up |
+|--------+-----------+--------------+---------------|
+|    25% |       25% |          25% |           25% |
+|   12.5 |      12.5 |         12.5 |          12.5 |
+
+So, the technical definitions would be:
+
+- $H_0$: all options are selected equally often
+- $H_1$: some options are selected more often than others
+
+As usual, we will use $\alpha=0.05$.
+
+Step 2 - the Chi-Square statistic
+
+In developing a statistic, we need something that will index how far away our distribution of counts is from a uniform distribution of counts.  That statistic is the /Chi-square/ statistic:
+
+\[
+\chi^2 = \sum \frac{(f_o-f_e)^2}{f_e}
+\]
+
+where:
+  - f_o = observed count
+  - f_e = expected count
+
+As usual, this statistic has a table of critical values in the back of your textbook.  The table is based on $\alpha$ and $df$, which in this case represents the number of categories minus one.
+
+So, based on our null hypothesis (with $df=3$) and choosing $\alpha=0.05$, we have $\chi^2_{\text{crit}}=7.81$.
+
+Now, lets compute $\chi^2$:
+
+\begin{align*}
+\chi^2 &= \sum \frac{(f_o-f_e)^2}{f_e}\\
+&= \frac{(18-12.5)^2}{12.5} + \frac{(17-12.5)^2}{12.5} + \frac{(7-12.5)^2}{12.5} + \frac{(8-12.5)^2}{12.5}\\
+&= \frac{30.25}{12.5} + \frac{20.25}{12.5} + \frac{30.25}{12.5} + \frac{20.25}{12.5}\\
+&= 2.42 + 1.62 + 2.42 + 1.62\\
+&= 8.08
+\end{align*}
+
+Since $\chi^2_{\text{sample}} = 8.08$, which exceeds $\chi^2_{\text{crit}}$, we reject the null and conclude that some of the options are selected more frequently than others.
+
+* Example 2
+A researcher is interested in pizza preference. A sample of $n=45$ students is obtained and fresh pizza is ordered from each of 3 shops in town. Each student tastes all three pizzas and then selects a favorite. The observed frequencies are:
+
+| Shop A | Shop B | Shop C |
+|--------+--------+--------|
+|     13 |     24 |      8 |
+
+Is there a preference for one or more shops that exceeds chance?
+
+Step 1: define null hypothesis
+
+- $H_0$: each shop is chosen equally often
+- $H_1$: one or more shops is selected more often than the others
+
+If we choose $\alpha=0.05$, and we have $df=2$, we note from the table that $\chi^2_{\text{crit}}= 5.99$.
+
+Step 2: compute $\chi^2$ statistic
+
+Note that $f_e=15$ for each category.  Thus, we have 
+
+\begin{align*}
+\chi^2_{\text{samp}} &= \sum \frac{(f_o-f_e)^2}{f_e} \\
+&= \frac{(13-15)^2}{15} + \frac{(24-15)^2}{15} + \frac{(8-15)^2}{15}\\
+&= \frac{4}{15} + \frac{81}{15} + \frac{49}{15}\\
+&= 0.267 + 5.4 + 3.267\\
+&= 8.93\\
+\end{align*}
+
+Since $\chi^2_{\text{samp}}=8.93$ which exceeds $\chi^2_{\text{crit}}$, we reject $H_0$ and conclude that there is a preference among the three options.
+
+

@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 11 lecture notes - PSYC 3330</title>
-<!-- 2017-11-06 Mon 13:01 -->
+<!-- 2017-11-07 Tue 07:49 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -351,7 +351,7 @@ The relationships are as follows:
 </li>
 <li>total variance:
 <ul class="org-ul">
-<li>\(SS_{\text{total}}=\sum(X-GM)^2 = \sum X^2-\frac{(\sum X)^2}{N}\)
+<li>\(SS_{\text{total}}= \sum X^2-\frac{(\sum X)^2}{N}\)
 </li>
 <li>\(df_{\text{total}}=N-1\)
 </li>
@@ -371,7 +371,7 @@ The relationships are as follows:
 <ul class="org-ul">
 <li>\(SS_{\text{between}}=\displaystyle{\Bigl(\sum \frac{T^2}{n}\Bigr)-\frac{G^2}{N}}\)
 <ul class="org-ul">
-<li>where $T$=total within any <i>one</i> treatment group
+<li>\(T\) = total within any <i>one</i> treatment group
 </li>
 <li>\(n\) = number of scores within any <i>one</i> treatment group
 </li>
@@ -429,6 +429,172 @@ $SS_{\text{between}} &= \Bigl(\sum \frac{T^2}{n}\Bigr)-\frac{G^2}{N}\\
 Now, we can do everything in the table:
 </p>
 
+<p>
+Step 1 - transfer your SS values: 
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Source</th>
+<th scope="col" class="right">SS</th>
+<th scope="col" class="left">df</th>
+<th scope="col" class="left">MS</th>
+<th scope="col" class="left">F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Between</td>
+<td class="right">43.33</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Within</td>
+<td class="right">64.0</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Total</td>
+<td class="right">107.33</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Step 2 - compute \(df\) values.  Remember: \(df_{\text{between}}\) is the number of groups - 1, and \(df_{\text{within}}\) is the sum of the \(df\) for each group.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Source</th>
+<th scope="col" class="right">SS</th>
+<th scope="col" class="right">df</th>
+<th scope="col" class="left">MS</th>
+<th scope="col" class="left">F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Between</td>
+<td class="right">43.33</td>
+<td class="right">2</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Within</td>
+<td class="right">64.0</td>
+<td class="right">12</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Total</td>
+<td class="right">107.33</td>
+<td class="right">14</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Step 3 - compute \(MS\) values.  Remember that \(MS=SS/df\) for each type of variance (between and within):
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Source</th>
+<th scope="col" class="right">SS</th>
+<th scope="col" class="right">df</th>
+<th scope="col" class="right">MS</th>
+<th scope="col" class="left">F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Between</td>
+<td class="right">43.33</td>
+<td class="right">2</td>
+<td class="right">21.67</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Within</td>
+<td class="right">64.0</td>
+<td class="right">12</td>
+<td class="right">5.33</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">Total</td>
+<td class="right">107.33</td>
+<td class="right">14</td>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Step 4 - compute \(F\) statistic. Remember that \(F=MS_{\text{between}}/MS_{\text{within}}\).
+</p>
+
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -479,6 +645,7 @@ Now, we can do everything in the table:
 </tbody>
 </table>
 
+
 <p>
 From the table of critical values for the \(F\) distribution, we see that \(F_{\text{crit}}=3.89\) (based on numerator \(df = 2\) and denominator \(df=12\)).  Hence, \(F_{\text{sample}}\) is beyond \(F_{\text{crit}}\), and so we reject \(H_0\) and conclude that there is a significant difference among the groups.
 </p>
@@ -487,7 +654,7 @@ From the table of critical values for the \(F\) distribution, we see that \(F_{\
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: Nov 6-10, 2017</p>
-<p class="date">Created: 2017-11-06 Mon 13:01</p>
+<p class="date">Created: 2017-11-07 Tue 07:49</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>

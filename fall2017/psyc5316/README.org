@@ -10,6 +10,7 @@
   - Week 7 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week7.html][html]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week7.R][R script]])
   - Week 8 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week8.html][html]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week8.R][R script]])
   - Week 9 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week9.html][html]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week9.R][R script]])
+  - Week 10 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week10.html][html]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week10.R][R script]])
 
 - Homework
   - Week 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw1.pdf][pdf]])

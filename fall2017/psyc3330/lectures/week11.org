@@ -50,7 +50,7 @@ The relationships are as follows:
 - $F=\displaystyle{\frac{MS_{\text{between}}}{MS_{\text{within}}}}$
 - variances: $MS = \displaystyle{\frac{SS}{df}}$
 - total variance:
-  - $SS_{\text{total}}=\sum(X-GM)^2 = \sum X^2-\frac{(\sum X)^2}{N}$
+  - $SS_{\text{total}}= \sum X^2-\frac{(\sum X)^2}{N}$
   - $df_{\text{total}}=N-1$
 
 - within-groups variance
@@ -59,7 +59,7 @@ The relationships are as follows:
 
 - between-groups variance
   - $SS_{\text{between}}=\displaystyle{\Bigl(\sum \frac{T^2}{n}\Bigr)-\frac{G^2}{N}}$
-    - where $T$=total within any /one/ treatment group
+    - $T$ = total within any /one/ treatment group
     - $n$ = number of scores within any /one/ treatment group
     - $G$ = /grand/ total of /all/ measurements
   - $df_{\text{between}}$ = # groups -1
@@ -95,11 +95,38 @@ $SS_{\text{between}} &= \Bigl(\sum \frac{T^2}{n}\Bigr)-\frac{G^2}{N}\\
 
 Now, we can do everything in the table:
 
+Step 1 - transfer your SS values: 
+
+| Source  |     SS | df | MS | F |
+|---------+--------+----+----+---|
+| Between |  43.33 |    |    |   |
+| Within  |   64.0 |    |    |   |
+| Total   | 107.33 |    |    |   |
+
+Step 2 - compute $df$ values.  Remember: $df_{\text{between}}$ is the number of groups - 1, and $df_{\text{within}}$ is the sum of the $df$ for each group.
+
+| Source  |     SS | df | MS | F |
+|---------+--------+----+----+---|
+| Between |  43.33 |  2 |    |   |
+| Within  |   64.0 | 12 |    |   |
+| Total   | 107.33 | 14 |    |   |
+
+Step 3 - compute $MS$ values.  Remember that $MS=SS/df$ for each type of variance (between and within):
+
+| Source  |     SS | df |    MS | F |
+|---------+--------+----+-------+---|
+| Between |  43.33 |  2 | 21.67 |   |
+| Within  |   64.0 | 12 |  5.33 |   |
+| Total   | 107.33 | 14 |       |   |
+
+Step 4 - compute $F$ statistic. Remember that $F=MS_{\text{between}}/MS_{\text{within}}$.
+
 | Source  |     SS | df |    MS |    F |
 |---------+--------+----+-------+------|
 | Between |  43.33 |  2 | 21.67 | 4.07 |
 | Within  |   64.0 | 12 |  5.33 |      |
 | Total   | 107.33 | 14 |       |      |
+
 
 From the table of critical values for the $F$ distribution, we see that $F_{\text{crit}}=3.89$ (based on numerator $df = 2$ and denominator $df=12$).  Hence, $F_{\text{sample}}$ is beyond $F_{\text{crit}}$, and so we reject $H_0$ and conclude that there is a significant difference among the groups.
 
