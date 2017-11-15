@@ -7,7 +7,7 @@
 
 This week, we will talk about hypothesis testing for situations where the dependent variable is a *count* or a *proportion*, neither of which can be described as as normal distribution.
 
-* Example 1
+** Example 1
 A researcher presented $n=50$ participants with an abstract painting (with no obvious top/bottom) and asked each participant to hang the painting in the orientation that looked correct.  The data are below:
 
 | Top up | Bottom up | Left side up | Right side up |
@@ -60,7 +60,7 @@ Now, lets compute $\chi^2$:
 
 Since $\chi^2_{\text{sample}} = 8.08$, which exceeds $\chi^2_{\text{crit}}$, we reject the null and conclude that some of the options are selected more frequently than others.
 
-* Example 2
+** Example 2
 A researcher is interested in pizza preference. A sample of $n=45$ students is obtained and fresh pizza is ordered from each of 3 shops in town. Each student tastes all three pizzas and then selects a favorite. The observed frequencies are:
 
 | Shop A | Shop B | Shop C |
@@ -91,3 +91,63 @@ Note that $f_e=15$ for each category.  Thus, we have
 Since $\chi^2_{\text{samp}}=8.93$ which exceeds $\chi^2_{\text{crit}}$, we reject $H_0$ and conclude that there is a preference among the three options.
 
 
+
+* The Chi-Square Test for Independence
+The chi-square test can also be used to test for relationships between *two* variables.
+
+** Example 1
+Suppose $n=200$ students are grouped according to personality (introvert, extrovert) and color preference (red, yellow, green, or blue).  The data are below:
+
+|           | Red | Yellow | Green | Blue |
+|-----------+-----+--------+-------+------|
+| Introvert |  10 |      3 |    15 |   22 |
+| Extrovert |  90 |     17 |    25 |   18 |
+
+Are these data sufficient to conclude that there is a significant relationship between personality and color preference?
+
+To answer this question, we will use the /chi-square test for independence/.
+
+Step 1: define the null hypothesis
+
+There are two ways to define this null.  
+  - there is no relationship between color preference and personality
+  - the proportions of color preferences among introverts are no different from the proportions of color preferences among extroverts
+
+While longer, this second version is more useful!
+
+Step 2: compute chi-squared statistic.
+
+This step is no different from last time.  However, it may not immediately be clear HOW to define the /expected frequencies/.  To figure these out, let's consider our null hypothesis: there is no difference in proportions of color preferences between introverts and extroverts.
+
+Let's start with an empty table with same row and column totals as our data:
+
+|           | Red | Yellow | Green | Blue |     |
+|-----------+-----+--------+-------+------+-----|
+| Introvert |     |        |       |      |  50 |
+| Extrovert |     |        |       |      | 150 |
+|           | 100 |     20 |    40 |   40 | 200 |
+
+From these totals, we can see the following:
+- 100/200 = 50% prefer red
+- 20/200 = 10% prefer yellow
+- 40/200 = 20% prefer green
+- 40/200 = 20% prefer blue
+
+Now, we know that we have 50 introverts.  Based on these percentages, we know:
+- 50% of 50 = 25 prefer red
+- 10% of 50 = 5 prefer yellow
+- 20% of 50 = 10 prefer green
+- 20% of 50 = 10 prefer blue
+
+Similarly, since we have 150 extroverts, we would have:
+- 50% of 150 = 75 prefer red
+- 10% of 150 = 15 prefer yellow
+- 20% of 150 = 30 prefer green
+- 20% of 150 = 30 prefer blue
+
+Thus, the following table summarizes our findings (written as "observed/expected"):
+
+|           | Red   | Yellow | Green | Blue  |
+|-----------+-------+--------+-------+-------|
+| Introvert | 10/25 | 3/5    | 15/10 | 22/10 |
+| Extrovert | 90/75 | 17/15  | 25/30 | 18/30 |
