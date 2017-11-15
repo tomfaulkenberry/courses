@@ -91,7 +91,6 @@ Note that $f_e=15$ for each category.  Thus, we have
 Since $\chi^2_{\text{samp}}=8.93$ which exceeds $\chi^2_{\text{crit}}$, we reject $H_0$ and conclude that there is a preference among the three options.
 
 
-
 * The Chi-Square Test for Independence
 The chi-square test can also be used to test for relationships between *two* variables.
 
@@ -145,9 +144,95 @@ Similarly, since we have 150 extroverts, we would have:
 - 20% of 150 = 30 prefer green
 - 20% of 150 = 30 prefer blue
 
-Thus, the following table summarizes our findings (written as "observed/expected"):
+Thus, the following table summarizes our findings (written as "observed (expected)"):
 
-|           | Red   | Yellow | Green | Blue  |
-|-----------+-------+--------+-------+-------|
-| Introvert | 10/25 | 3/5    | 15/10 | 22/10 |
-| Extrovert | 90/75 | 17/15  | 25/30 | 18/30 |
+|           | Red     | Yellow  | Green   | Blue    |
+|-----------+---------+---------+---------+---------|
+| Introvert | 10 (25) | 3 (5)   | 15 (10) | 22 (10) |
+| Extrovert | 90 (75) | 17 (15) | 25 (30) | 18 (30) |
+
+We can now compute chi-squared:
+
+\begin{align*}
+\chi^2_{\text{samp}} &= \sum \frac{(f_o-f_e)^2}{f_e}\\
+&= \frac{(10-25)^2}{25} + \frac{(3-5)^2}{5} + \frac{(15-10)^2}{10} + \frac{(22-10)^2}{10} + \frac{(90-75)^2}{75} + \frac{(17-15)^2}{15} + \frac{(25-30)^2}{30} + \frac{(18-30)^2}{30}\\
+&= \frac{225}{25} + \frac{4}{5} + \frac{25}{10} + \frac{144}{10} + \frac{225}{75} + \frac{4}{15} + \frac{25}{30} + \frac{144}{30}\\
+&= 9 + 0.8 + 2.5 + 14.4 + 0.33 + 0.83 + 4.8\\
+&= 32.66\\
+\end{align*}
+
+Now, we need to know $\chi^2_{\text{crit}}$.  As before, we get this from the table, but how do we find $df$? 
+
+For the chi-squared test of independence, we find $df$ via the following:
+
+\[
+df = (\text{# rows - 1})\cdot (\text{# columns - 1})
+\]
+
+Thus, for our example, 
+
+\[
+df = (2-1)\cdot (4-1) = 1\cdot 3 = 3
+\]
+
+From the table, if we assume $\alpha=0.05$, we see $\chi^2_{\text{crit}}=7.81$.  Thus, since $\chi^2_{\text{samp}}=32.66$ exceeds $\chi^2_{\text{crit}}$, we reject $H_0$ and conclude that the groups are not independent.  That is, the proportion of color preferences depends on the personality group.
+
+** Example 2
+A manufacturer of watches takes a sample of 200 people.  Each person is
+classified by age and watch type preference (digital vs. analog).  The data are as follows:
+
+|          | Digital | Analog | No preference |
+|----------+---------+--------+---------------|
+| Under 30 | 90      | 40     | 10            |
+| Over 30  | 10      | 40     | 10            |
+
+Is there a relationship between age and watch preference?
+
+Step 1 - define the null
+
+We set $H_0$: the proportion of watch preferences for "under 30" group is the same as the proportion of watch preferences for the "over 30" group.
+
+As usual, we will use $\alpha=0.05$.  We compute $df=(3-1)(2-1)=2$, so we see that $\chi^2_{\text{crit}}=5.99$.
+
+Step 2 - compute chi-squared
+
+As before, we first need to compute expected frequencies.  Fortunately, there is an easy formula that we can use:
+
+\[
+f_e = \frac{f_{\text{column}}f_{\text{row}}}{n}
+\]
+
+It is fairly easy to show that this is an equivalent method to what we did above.
+
+So, we first need to compute the column and row totals:
+
+|          | Digital | Analog | No preference |     |
+|----------+---------+--------+---------------+-----|
+| Under 30 |      90 |     40 |            10 | 140 |
+| Over 30  |      10 |     40 |            10 |  60 |
+|          |     100 |     80 |            20 | 200 |
+
+Now, we can compute the expected frequencies.  For example, for the first entry (top left), we have:
+
+\[
+f_e = \frac{f_{\text{column}}f_{\text{row}}}{n} = \frac{100\cdot 140}{200} = 70
+\]
+
+Continuing in this manner, we can compute the expected frequencies for the table (shown in parentheses):
+
+|          | Digital | Analog  | No preference |
+|----------+---------+---------+---------------|
+| Under 30 | 90 (70) | 40 (56) | 10 (14)       |
+| Over 30  | 10 (30) | 40 (24) | 10 (6)        |
+
+Now we can compute chi-squared as before:
+
+\begin{align*}
+\chi^2_{\text{samp}} &= \sum \frac{(f_o-f_e)^2}{f_e}\\
+&= \frac{(90-70)^2}{70} + \frac{(40-56)^2}{56} + \frac{(10-14)^2}{14} + \frac{(10-30)^2}{30} + \frac{(40-24)^2}{24} + \frac{(10-6)^2}{6}\\
+&= \frac{400}{70} + \frac{256}{56} + \frac{16}{14} + \frac{400}{30} + \frac{256}{24} + \frac{16}{6}\\
+&= 5.71 + 4.57 + 1.14 + 13.33 + 10.67 + 2.67\\
+&= 38.09\\
+\end{align*}
+
+As before, since $\chi^2_{\text{samp}}$ exceeds $\chi^2_{\text{crit}}$, we reject $H_0$ and conclude that there is a relationship between age and watch preference..that is, age and watch preference are NOT independent.

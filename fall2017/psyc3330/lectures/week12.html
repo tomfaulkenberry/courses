@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Week 12 lecture notes - PSYC 3330</title>
-<!-- 2017-11-14 Tue 13:13 -->
+<!-- 2017-11-15 Wed 17:44 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -187,11 +187,10 @@ for the JavaScript code in this tag.
 This week, we will talk about hypothesis testing for situations where the dependent variable is a <b>count</b> or a <b>proportion</b>, neither of which can be described as as normal distribution.
 </p>
 </div>
-</div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Example 1</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">Example 1</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
 A researcher presented \(n=50\) participants with an abstract painting (with no obvious top/bottom) and asked each participant to hang the painting in the orientation that looked correct.  The data are below:
 </p>
@@ -340,9 +339,9 @@ Since \(\chi^2_{\text{sample}} = 8.08\), which exceeds \(\chi^2_{\text{crit}}\),
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">Example 2</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">Example 2</h3>
+<div class="outline-text-3" id="text-1-2">
 <p>
 A researcher is interested in pizza preference. A sample of \(n=45\) students is obtained and fresh pizza is ordered from each of 3 shops in town. Each student tastes all three pizzas and then selects a favorite. The observed frequencies are:
 </p>
@@ -414,10 +413,496 @@ Since \(\chi^2_{\text{samp}}=8.93\) which exceeds \(\chi^2_{\text{crit}}\), we r
 </div>
 </div>
 </div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">The Chi-Square Test for Independence</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+The chi-square test can also be used to test for relationships between <b>two</b> variables.
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">Example 1</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Suppose \(n=200\) students are grouped according to personality (introvert, extrovert) and color preference (red, yellow, green, or blue).  The data are below:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="right">Red</th>
+<th scope="col" class="right">Yellow</th>
+<th scope="col" class="right">Green</th>
+<th scope="col" class="right">Blue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Introvert</td>
+<td class="right">10</td>
+<td class="right">3</td>
+<td class="right">15</td>
+<td class="right">22</td>
+</tr>
+
+<tr>
+<td class="left">Extrovert</td>
+<td class="right">90</td>
+<td class="right">17</td>
+<td class="right">25</td>
+<td class="right">18</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Are these data sufficient to conclude that there is a significant relationship between personality and color preference?
+</p>
+
+<p>
+To answer this question, we will use the <i>chi-square test for independence</i>.
+</p>
+
+<p>
+Step 1: define the null hypothesis
+</p>
+
+<p>
+There are two ways to define this null.  
+</p>
+<ul class="org-ul">
+<li>there is no relationship between color preference and personality
+</li>
+<li>the proportions of color preferences among introverts are no different from the proportions of color preferences among extroverts
+</li>
+</ul>
+
+<p>
+While longer, this second version is more useful!
+</p>
+
+<p>
+Step 2: compute chi-squared statistic.
+</p>
+
+<p>
+This step is no different from last time.  However, it may not immediately be clear HOW to define the <i>expected frequencies</i>.  To figure these out, let's consider our null hypothesis: there is no difference in proportions of color preferences between introverts and extroverts.
+</p>
+
+<p>
+Let's start with an empty table with same row and column totals as our data:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">Red</th>
+<th scope="col" class="left">Yellow</th>
+<th scope="col" class="left">Green</th>
+<th scope="col" class="left">Blue</th>
+<th scope="col" class="right">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Introvert</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="right">50</td>
+</tr>
+
+<tr>
+<td class="left">Extrovert</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="right">150</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">100</td>
+<td class="left">20</td>
+<td class="left">40</td>
+<td class="left">40</td>
+<td class="right">200</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+From these totals, we can see the following:
+</p>
+<ul class="org-ul">
+<li>100/200 = 50% prefer red
+</li>
+<li>20/200 = 10% prefer yellow
+</li>
+<li>40/200 = 20% prefer green
+</li>
+<li>40/200 = 20% prefer blue
+</li>
+</ul>
+
+<p>
+Now, we know that we have 50 introverts.  Based on these percentages, we know:
+</p>
+<ul class="org-ul">
+<li>50% of 50 = 25 prefer red
+</li>
+<li>10% of 50 = 5 prefer yellow
+</li>
+<li>20% of 50 = 10 prefer green
+</li>
+<li>20% of 50 = 10 prefer blue
+</li>
+</ul>
+
+<p>
+Similarly, since we have 150 extroverts, we would have:
+</p>
+<ul class="org-ul">
+<li>50% of 150 = 75 prefer red
+</li>
+<li>10% of 150 = 15 prefer yellow
+</li>
+<li>20% of 150 = 30 prefer green
+</li>
+<li>20% of 150 = 30 prefer blue
+</li>
+</ul>
+
+<p>
+Thus, the following table summarizes our findings (written as "observed (expected)"):
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">Red</th>
+<th scope="col" class="left">Yellow</th>
+<th scope="col" class="left">Green</th>
+<th scope="col" class="left">Blue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Introvert</td>
+<td class="left">10 (25)</td>
+<td class="left">3 (5)</td>
+<td class="left">15 (10)</td>
+<td class="left">22 (10)</td>
+</tr>
+
+<tr>
+<td class="left">Extrovert</td>
+<td class="left">90 (75)</td>
+<td class="left">17 (15)</td>
+<td class="left">25 (30)</td>
+<td class="left">18 (30)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+We can now compute chi-squared:
+</p>
+
+\begin{align*}
+\chi^2_{\text{samp}} &= \sum \frac{(f_o-f_e)^2}{f_e}\\
+&= \frac{(10-25)^2}{25} + \frac{(3-5)^2}{5} + \frac{(15-10)^2}{10} + \frac{(22-10)^2}{10} + \frac{(90-75)^2}{75} + \frac{(17-15)^2}{15} + \frac{(25-30)^2}{30} + \frac{(18-30)^2}{30}\\
+&= \frac{225}{25} + \frac{4}{5} + \frac{25}{10} + \frac{144}{10} + \frac{225}{75} + \frac{4}{15} + \frac{25}{30} + \frac{144}{30}\\
+&= 9 + 0.8 + 2.5 + 14.4 + 0.33 + 0.83 + 4.8\\
+&= 32.66\\
+\end{align*}
+
+<p>
+Now, we need to know \(\chi^2_{\text{crit}}\).  As before, we get this from the table, but how do we find \(df\)? 
+</p>
+
+<p>
+For the chi-squared test of independence, we find \(df\) via the following:
+</p>
+
+<p>
+\[
+df = (\text{# rows - 1})\cdot (\text{# columns - 1})
+\]
+</p>
+
+<p>
+Thus, for our example, 
+</p>
+
+<p>
+\[
+df = (2-1)\cdot (4-1) = 1\cdot 3 = 3
+\]
+</p>
+
+<p>
+From the table, if we assume \(\alpha=0.05\), we see \(\chi^2_{\text{crit}}=7.81\).  Thus, since \(\chi^2_{\text{samp}}=32.66\) exceeds \(\chi^2_{\text{crit}}\), we reject \(H_0\) and conclude that the groups are not independent.  That is, the proportion of color preferences depends on the personality group.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">Example 2</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+A manufacturer of watches takes a sample of 200 people.  Each person is
+classified by age and watch type preference (digital vs. analog).  The data are as follows:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="right">Digital</th>
+<th scope="col" class="right">Analog</th>
+<th scope="col" class="right">No preference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Under 30</td>
+<td class="right">90</td>
+<td class="right">40</td>
+<td class="right">10</td>
+</tr>
+
+<tr>
+<td class="left">Over 30</td>
+<td class="right">10</td>
+<td class="right">40</td>
+<td class="right">10</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Is there a relationship between age and watch preference?
+</p>
+
+<p>
+Step 1 - define the null
+</p>
+
+<p>
+We set \(H_0\): the proportion of watch preferences for "under 30" group is the same as the proportion of watch preferences for the "over 30" group.
+</p>
+
+<p>
+As usual, we will use \(\alpha=0.05\).  We compute \(df=(3-1)(2-1)=2\), so we see that \(\chi^2_{\text{crit}}=5.99\).
+</p>
+
+<p>
+Step 2 - compute chi-squared
+</p>
+
+<p>
+As before, we first need to compute expected frequencies.  Fortunately, there is an easy formula that we can use:
+</p>
+
+<p>
+\[
+f_e = \frac{f_{\text{column}}f_{\text{row}}}{n}
+\]
+</p>
+
+<p>
+It is fairly easy to show that this is an equivalent method to what we did above.
+</p>
+
+<p>
+So, we first need to compute the column and row totals:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="right">Digital</th>
+<th scope="col" class="right">Analog</th>
+<th scope="col" class="right">No preference</th>
+<th scope="col" class="right">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Under 30</td>
+<td class="right">90</td>
+<td class="right">40</td>
+<td class="right">10</td>
+<td class="right">140</td>
+</tr>
+
+<tr>
+<td class="left">Over 30</td>
+<td class="right">10</td>
+<td class="right">40</td>
+<td class="right">10</td>
+<td class="right">60</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="right">100</td>
+<td class="right">80</td>
+<td class="right">20</td>
+<td class="right">200</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Now, we can compute the expected frequencies.  For example, for the first entry (top left), we have:
+</p>
+
+<p>
+\[
+f_e = \frac{f_{\text{column}}f_{\text{row}}}{n} = \frac{100\cdot 140}{200} = 70
+\]
+</p>
+
+<p>
+Continuing in this manner, we can compute the expected frequencies for the table (shown in parentheses):
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">Digital</th>
+<th scope="col" class="left">Analog</th>
+<th scope="col" class="left">No preference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Under 30</td>
+<td class="left">90 (70)</td>
+<td class="left">40 (56)</td>
+<td class="left">10 (14)</td>
+</tr>
+
+<tr>
+<td class="left">Over 30</td>
+<td class="left">10 (30)</td>
+<td class="left">40 (24)</td>
+<td class="left">10 (6)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Now we can compute chi-squared as before:
+</p>
+
+\begin{align*}
+\chi^2_{\text{samp}} &= \sum \frac{(f_o-f_e)^2}{f_e}\\
+&= \frac{(90-70)^2}{70} + \frac{(40-56)^2}{56} + \frac{(10-14)^2}{14} + \frac{(10-30)^2}{30} + \frac{(40-24)^2}{24} + \frac{(10-6)^2}{6}\\
+&= \frac{400}{70} + \frac{256}{56} + \frac{16}{14} + \frac{400}{30} + \frac{256}{24} + \frac{16}{6}\\
+&= 5.71 + 4.57 + 1.14 + 13.33 + 10.67 + 2.67\\
+&= 38.09\\
+\end{align*}
+
+<p>
+As before, since \(\chi^2_{\text{samp}}\) exceeds \(\chi^2_{\text{crit}}\), we reject \(H_0\) and conclude that there is a relationship between age and watch preference..that is, age and watch preference are NOT independent.
+</p>
+</div>
+</div>
+</div>
+</div>
 <div id="postamble" class="status">
 <p class="date">Date: Nov 13-17, 2017</p>
-<p class="date">Created: 2017-11-14 Tue 13:13</p>
-<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="date">Created: 2017-11-15 Wed 17:44</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
