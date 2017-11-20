@@ -17,6 +17,7 @@
 - Exam reviews
   - Exam 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/exam1review.pdf][pdf]])
   - Exam 2 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/exam2review.pdf][pdf]])
+  - Exam 3 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc3330/lectures/exam3review.pdf][pdf]])
 
 - Supplemental lecture videos
   - /Note: these videos are for my online course, so the presentation of material may be slightly different from what was taught in your face-to-face course.  These videos are included for review only./
