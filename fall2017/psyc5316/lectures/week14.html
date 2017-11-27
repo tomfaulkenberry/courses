@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Week 14 lecture notes - PSYC 5316</title>
+<!-- 2017-11-27 Mon 10:06 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Week 14 lecture notes - PSYC 5316</h1>
+<p>
+In our final lecture of the semester, we will discuss <i>Bayes factors</i>, an alternative to traditional null hypothesis testing.
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Definition</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+A natural consequence of Bayes Theorem provides a nice framework for testing hypotheses.  Let \(H_0\) denote the null hypothesis model, and let \(H_1\) denote the alternative model.  As a Bayesian, we are interested in knowing \(P(H_i\mid D)\), where \(D=\mathrm{data}\) and \(i=0,1\).
+</p>
+
+<p>
+From Bayes Theorem, we get the following:
+</p>
+
+<p>
+\[
+P(H_1\mid D) = \frac{P(D\mid H_1) \cdot P(H_1)}{P(D)}
+\]
+</p>
+
+<p>
+and
+</p>
+
+<p>
+\[
+P(H_0\mid D) = \frac{P(D\mid H_0) \cdot P(H_0)}{P(D)}.
+\]
+</p>
+
+<p>
+Taking the ratio, we then can write:
+</p>
+
+\begin{align*}
+\frac{P(H_1\mid D)}{P(H_0\mid D)} &= \frac{\frac{P(D\mid H_1) \cdot P(H_1)}{P(D)}}{\frac{P(D\mid H_0) \cdot P(H_0)}{P(D)}}\\
+&= \frac{P(D\mid H_1) \cdot P(H_1)}{P(D)} \cdot \frac{P(D)}{P(D\mid H_0)\cdot P(H_0)} \\
+&= \frac{P(D\mid H_1) \cdot P(H_1)}{P(D\mid H_0)\cdot P(H_0)}\\
+\end{align*}
+
+<p>
+We can rewrite this slightly more informatively as:
+</p>
+
+<p>
+\[
+\underbrace{\frac{p(H_1 \mid D)}{p(H_0\mid D)}}_{\text{posterior odds}} = \underbrace{\frac{p(D\mid H_1)}{p(D\mid H_0)}}_{\text{Bayes factor}} \cdot \underbrace{\frac{p(H_1)}{p(H_0)}}_{\text{prior odds}}
+\]
+</p>
+
+<p>
+The term in the middle, which Kass and Raftery (1995) called the <i>Bayes Factor</i>, tells us how much our observation of data updates the prior odds of \(H_1\) over \(H_0\).  In other words, it tells us how <i>informative</i> our data is.
+</p>
+
+<p>
+Jeffreys (1961) calls this <i>evidence</i>, and gives recommendations of how Bayes factors relate to evidence.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">BF</th>
+<th scope="col" class="left">evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">1</td>
+<td class="left">no evidence</td>
+</tr>
+
+<tr>
+<td class="right">1-3</td>
+<td class="left">anecdotal evidence</td>
+</tr>
+
+<tr>
+<td class="right">3-10</td>
+<td class="left">moderate evidence</td>
+</tr>
+
+<tr>
+<td class="right">10-30</td>
+<td class="left">strong evidence</td>
+</tr>
+
+<tr>
+<td class="right">30-100</td>
+<td class="left">very strong evidence</td>
+</tr>
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Bayesian t-tests</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Though Bayes factors have been around a while, they are pretty new to our field.  The first substantive work on applying Bayes factors to our basic inferential tools was by Jeff Rouder and Richard Morey, whose first paper on Bayesian t-tests came out in 2009!  Thankfully, Richard Morey has developed a very nice R package for computing Bayes factors in common designs (t-tests, ANOVAs, etc.).  We will demonstrate this package and how to interpret Bayes factors tonight.
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">paired samples t-test</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+To begin our work, we need to load two packages:
+</p>
+
+<pre class="example">
+library(BayesFactor)
+library(tidyverse)
+</pre>
+
+<p>
+Next, we will load a data set that is included in the <code>BayesFactor</code> package. This data set shows the effect of two soporific drugs on a sample of 10 patients.  The variable <code>extra</code> represents the "extra sleep" that each patient got after taking the drug.
+</p>
+
+<pre class="example">
+data(sleep)
+</pre>
+
+<p>
+Since each patient took two drugs (denoted by the variable <code>ID</code>), we might be interested in whether there is a difference in the amount of extra sleep gained between the two drugs.  This calls for a paired samples t-test.
+</p>
+
+<p>
+Remember that to perform a paired samples t-test, one first computes <i>difference scores</i>, and then tests these difference scores against a (null) hypothesized difference score of 0.
+</p>
+
+<p>
+First, let's do some data wrangling to compute our difference scores:
+</p>
+
+<pre class="example">
+drug1 = sleep %&gt;%
+  filter(group==1)
+drug2 = sleep %&gt;%
+  filter(group==2)
+
+change = drug2$extra = drug1$extra
+</pre>
+
+<p>
+Now <code>change</code> is a vector of 10 difference scores.  We can easily compute mean and standard deviation of these 10 difference scores, and from this we can get an estimate of the effect size:
+</p>
+
+<pre class="example">
+mean(change)
+sd(change)
+mean(change)/sd(change)
+</pre>
+
+<p>
+From this, we see that the mean difference score is 1.58, with a standard deviation of 1.23.  Thus, the overall (standardized) effect size is 1.58/1.23 = 1.28, which we consider a large effect.
+</p>
+
+<p>
+The traditional t-test proceeds as follows:
+</p>
+
+<pre class="example">
+t.test(change, mu=0)
+</pre>
+
+<p>
+From the output, we see that we reject the null and conclude that there is a significant difference between the two drugs, \(t(9)=4.06\), \(p=0.003\).
+</p>
+
+<p>
+For the Bayesian version of the t-test, we do the following:
+</p>
+
+<pre class="example">
+bf = ttestBF(x=change)
+bf
+</pre>
+
+<p>
+The output looks like this:
+</p>
+
+<pre class="example">
+Bayes factor analysis
+--------------
+[1] Alt., r=0.707 : 17.25888 ±0%
+
+Against denominator:
+  Null, mu = 0 
+---
+Bayes factor type: BFoneSample, JZS
+</pre>
+
+<p>
+There is a lot here, but first let's focus on the primary output.  The Bayes Factor is 17.3.  This means that after seeing the data, the alternative model (i.e., \(H_1\)) is 17.3 times more likely than the null model (\(H_0\)).  According to the recommendations of Jeffreys (1961), this is strong evidence in favor of the alternative.
+</p>
+
+<p>
+One of the nice things about Bayes factors is that they are simple mathematical objects that you can do things with, like taking reciprocals.
+</p>
+
+<pre class="example">
+1/bf
+</pre>
+
+<p>
+The output looks like this:
+</p>
+
+<pre class="example">
+Bayes factor analysis
+--------------
+[1] Null, mu=0 : 0.05794119 ±0%
+
+Against denominator:
+  Alternative, r = 0.707106781186548, mu =/= 0 
+---
+Bayes factor type: BFoneSample, JZS
+</pre>
+
+<p>
+This says that after seeing the data, the null is 0.06 times "more likely" than the alternative.  In other words, it is MUCH LESS LIKELY than the alternative.  However, this means that it is equally fine to measure evidence FOR the null as it is to measure evidence AGAINST the null.  This is a major limitation in null hypothesis testing that a Bayesian framework overcomes quite easily.
+</p>
+
+<p>
+Now, since the Bayes factor is inherently a Bayesian object, that means we can do all of the typical parameter estimation stuff we did earlier, like posterior sampling, etc.
+</p>
+
+<pre class="example">
+chains = posterior(bf, iterations=10000)
+summary(chains)
+</pre>
+
+<p>
+The output looks like this:
+</p>
+
+<pre class="example">
+Iterations = 1:10000
+Thinning interval = 1 
+Number of chains = 1 
+Sample size per chain = 10000 
+
+1. Empirical mean and standard deviation for each variable,
+   plus standard error of the mean:
+
+       Mean      SD Naive SE Time-series SE
+mu    1.409  0.4557 0.004557       0.005158
+sig2  2.043  1.2100 0.012100       0.015412
+delta 1.094  0.4414 0.004414       0.005725
+g     7.465 69.1904 0.691904       0.691904
+
+2. Quantiles for each variable:
+
+        2.5%    25%   50%   75%  97.5%
+mu    0.4751 1.1213 1.421 1.703  2.277
+sig2  0.7370 1.2771 1.743 2.436  5.170
+delta 0.2780 0.7868 1.084 1.387  1.997
+g     0.1625 0.5464 1.234 3.157 32.005
+</pre>
+
+<p>
+Notice that we get an array of estimates for several quantities, including <code>mu</code> (population mean), <code>sig2</code> (population variance), and <code>delta</code> (effect size).  Since this is Bayesian technique, we also get estimates of error in each of these quantities.  This is easily seen in the following plot:
+</p>
+
+<pre class="example">
+plot(chains[,1:3])
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week14/plot1.png" alt="plot1.png" />
+</p>
+</div>
+
+<p>
+On the left, we see the plot of 10000 posterior samples (notice they look like fat hairy caterpillars, which is a good thing!).  On the right, we get density plots for the posterior samples. Notice particuarly that the plots for mu and delta peak close to our original estimates of the mean difference score (1.58 and 1.28, respectively).
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">What is r?</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+<i>(Note: for this section, you need a command from the <code>polspline</code> package).  If you do not already have it installed, execute <code>install.packages("polspline")</code> from the console.</i>
+</p>
+
+<p>
+You may be wondering what the <code>r=0.707</code> in the output means?  This has to do with the <i>prior</i>, which you may notice we didn't mention anything about.  Well, this is a Bayesian computation, and there has to be a prior somewhere!
+</p>
+
+<p>
+The prior we use is based on the recommendations of Rouder et al. (2009). The way Rouder defines the Bayesian t-test is that we compute an estimate for the <i>effect size</i> \(\delta\).  The prior for the null model \(H_0\) is a Cauchy prior with <i>scale</i> \(r\).  The Cauchy distribution is similar to the normal distribution, but it is more peaked around 0.  That is, it places more prior probability on an effect size of 0 than the normal distribution.  You can see that here:
+</p>
+
+<pre class="example">
+x=seq(-3,3,0.01)
+plot(x, dcauchy(x, scale=0.707), type="l")
+lines(x, dnorm(x, mean=0, sd=1), lty=2)
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week14/cauchy.png" alt="cauchy.png" />
+</p>
+</div>
+
+<p>
+As you can see in the code, we used <code>scale=0.707</code> as an argument to plot the Cauchy density.  We could change this however we want.  However, Rouder et al. (2009) recommend using a scale of \(r=\sqrt{2}/2\), which is about \(r=0.707\).  I certainly invite you to play around with the plot as you use various values of <code>r</code>.
+</p>
+
+<p>
+Now lets have some fun.  We know our prior on effect size, which is <code>dcauchy(x, scale=0.707)</code>.  We also have a posterior density for effect size, which we can plot as follows:
+</p>
+
+<pre class="example">
+plot(density(chains[,3]), xlim=c(-3,3))
+lines(x,dcauchy(x, scale=.707), lty=2)
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week14/priorPosterior.png" alt="priorPosterior.png" />
+</p>
+</div>
+
+<p>
+Notice how <i>prior</i> to seeing data, we have a lot of mass on an effect size of 0.  However, <i>after</i> seeing data (i.e., posterior), that mass is shifted away from 0.  How much, you might ask?  Look at the following:
+</p>
+
+<pre class="example">
+library(polspline)
+fit.posterior = logspline(chains[,3])
+posterior = dlogspline(0, fit.posterior)
+prior = dcauchy(0, scale=0.707)
+
+points(0, posterior, pch=19)
+points(0, prior, pch=19)
+</pre>
+
+
+<div class="figure">
+<p><img src="figures/week14/savageDickey.png" alt="savageDickey.png" />
+</p>
+</div>
+
+<p>
+The ratio of the heights of these dots is exactly the Bayes factor!  Intuitively, it represents how our belief in a particular effect size (namely \(\delta=0\)) changes after seeing the data.  In this case, our belief in \(\delta=0\) decreases by a factor of approximately 18 (to see this, compute <code>prior/posterior</code> in the R console).
+</p>
+
+<p>
+By the way, this computation is called the <i>Savage-Dickey density ratio</i>, and there is a nice article by E.J. Wagenmakers in the Journal of Cognitive Psychology that explains its use in psychology.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: November 27, 2017</p>
+<p class="date">Created: 2017-11-27 Mon 10:06</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

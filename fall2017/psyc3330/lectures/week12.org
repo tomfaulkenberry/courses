@@ -90,7 +90,6 @@ Note that $f_e=15$ for each category.  Thus, we have
 
 Since $\chi^2_{\text{samp}}=8.93$ which exceeds $\chi^2_{\text{crit}}$, we reject $H_0$ and conclude that there is a preference among the three options.
 
-
 * The Chi-Square Test for Independence
 The chi-square test can also be used to test for relationships between *two* variables.
 
