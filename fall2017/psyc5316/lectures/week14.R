@@ -63,3 +63,18 @@ prior = dcauchy(0, scale=0.707)
 
 points(0, posterior, pch=19)
 points(0, prior, pch=19)
+
+prior/posterior
+
+
+
+
+
+
+
+
+
+
+
+
+

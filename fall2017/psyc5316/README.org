@@ -13,7 +13,7 @@
   - Week 10 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week10.html][html]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week10.R][R script]])
   - Week 14 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week14.html][html]] / [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/lectures/week14.R][R script]])
 
-- Homework
+- Homeworks
   - Week 1 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw1.pdf][pdf]])
   - Week 2 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw2.pdf][pdf]])
   - Week 3 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw3.pdf][pdf]])
@@ -21,3 +21,11 @@
   - Week 5 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw5.pdf][pdf]])
   - Week 7 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw7.pdf][pdf]])
   - Week 9 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw9.pdf][pdf]])
+
+- Final presentations
+  - Courtney Hendley - hierchical linear modeling ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/hendley.R][R script]] , [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/hendley.csv][csv]])
+  - Savannah Hines - logistic regression ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/hines.R][R script]])
+  - Kody Lamb - penalized regression ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/lamb.R][R script]])
+  - Baukje Talsma - Bayesian linear regression ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/talsma.R][R script]] , [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/talsma.pdf][pdf]])
+
+
