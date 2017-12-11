@@ -23,9 +23,12 @@
   - Week 9 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw9.pdf][pdf]])
 
 - Final presentations
-  - Courtney Hendley - hierchical linear modeling ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/hendley.R][R script]] , [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/surgerydataset.csv][csv]])
+  - Chelsea Bradley - signal detection theory ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/bradley.R][R script]], [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/bradley.pdf][pdf]])
+  - Courtney Hendley - hierchical linear modeling ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/hendley.R][R script]], [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/surgerydataset.csv][csv]])
+  - Kallie Herrygers - bootstrapping ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/herrygers.R][R script]])
   - Savannah Hines - logistic regression ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/hines.R][R script]])
   - Kody Lamb - penalized regression ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/lamb.R][R script]])
-  - Baukje Talsma - Bayesian linear regression ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/talsma.R][R script]] , [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/talsma.pdf][pdf]])
+  - Margaret Risher - model comparison ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/risherAIC.R][AIC.R]], [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/risherBIC.R][BIC.R]], [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/risher.pdf][pdf)]]
+  - Baukje Talsma - Bayesian linear regression ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/talsma.R][R script]], [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/talsma.pdf][pdf]])
 
 
