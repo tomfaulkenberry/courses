@@ -23,6 +23,7 @@
   - Week 9 ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/homework/hw9.pdf][pdf]])
 
 - Final presentations
+  - Kristen Bowman - linear mixed-effects modeling ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/bowman.R][R script]])
   - Chelsea Bradley - signal detection theory ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/bradley.R][R script]], [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/bradley.pdf][pdf]])
   - Courtney Hendley - hierchical linear modeling ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/hendley.R][R script]], [[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/surgerydataset.csv][csv]])
   - Kallie Herrygers - bootstrapping ([[http://rawgit.com/tomfaulkenberry/courses/master/fall2017/psyc5316/presentations/herrygers.R][R script]])
