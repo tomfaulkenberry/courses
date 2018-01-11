@@ -1,0 +1,5 @@
+#+TITLE: PSYC 3435 -- Principles of Research for the Behavioral Sciences
+
+- [[psyc3435-spring2018.org][Course syllabus]]
+- Lecture notes
+  - /coming soon!/
