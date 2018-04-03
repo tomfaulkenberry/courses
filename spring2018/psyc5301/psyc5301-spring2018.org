@@ -10,7 +10,7 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: MTWRF 1-3 pm
+- Office hours: MWF 1-3 pm, TR 9-11 am
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
