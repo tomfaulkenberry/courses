@@ -1,6 +1,6 @@
 #+TITLE: PSYC 3320: Psycholinguistics
 #+AUTHOR: 
-#+DATE: Summer 2017
+#+DATE: Summer 2018
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+LATEX_CLASS: article
@@ -10,7 +10,7 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: MWF 8-11 am /(or by appointment)/
+- Office hours: MTWRF 9-11 am (or by appointment)
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
@@ -23,7 +23,7 @@ Psycholinguistics is an area of specialization within cognitive psychology that 
 
 ** Course materials
 - /The Psychology of Language: From Data to Theory (4th ed.)/ by Harley [[https://www.amazon.com/Psychology-Language-Data-Theory/dp/1848720890][Amazon link]]
-
+  
 ** Student learning outcomes
 1. Define the basic vocabulary of psycholinguistics
 2. Discuss the biological bases of human communication.
@@ -53,10 +53,10 @@ be attempted once.
 
 Due dates:
 
-- Exam 1 (Wednesday, June 28 at 11:59 pm)
-- Exam 2 (Wednesday, July 12 at 11:59 pm)
-- Exam 3 (Wednesday, July 26 at 11:59 pm)
-- Final exam (Wednesday, August 9 at 11:59 pm)
+- Exam 1 (Wednesday, June 27 at 11:59 pm)
+- Exam 2 (Wednesday, July 11 at 11:59 pm)
+- Exam 3 (Wednesday, July 25 at 11:59 pm)
+- Final exam (Wednesday, August 8 at 11:59 pm)
   
 *** Unit quizzes (20% of grade)
 At the end of each unit, you will complete a quiz over the content of that 
@@ -65,7 +65,7 @@ unit. Each quiz will be graded as number correct out of 10 possible points.  You
 ** Course Communication
 
 Email is the primary means of communication for this course.  If you have questions about the course, always feel free to send me an email at faulkenberry@tarleton.edu.  I only ask that you adhere to two guidelines:
-  - please include the course number (PSYC 3320) in the subject line.  For example, one good way to do this is:  Subject: [PSYC 3320] Question about Exam 2
+  - please include the course number (PSYC 5379) in the subject line.  For example, one good way to do this is:  Subject: [PSYC 5379] Question about Exam 2
   - please use proper email etiquette.  Include a salutation (e.g., Dear Dr. Faulkenberry), complete sentences, and a closing (e.g., "Regards, Your Name").  You might be surprised how many times I get an email from a nondescript email address with no indication from WHOM the email was sent!
 
 Also, I will be sending periodic emails to each of you that update you on course progress, due dates, etc.  It is imperative that you check your /Tarleton email address/ regularly so that you don't miss any of these messages.
@@ -81,17 +81,11 @@ received.  For more information see the Tarleton Financial Aid website.
 
 ** Academic Honesty
 
-Tarleton State University expects its students to maintain high standards of
-personal and scholarly conduct. Students guilty of academic dishonesty are
-subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.  
+Cheating, plagiarism (submitting another person’s materials or ideas as one’s own without proper attribution), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
 
-In particular, any exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  The minimum sanction for violation of this policy is a grade of 0 on the affected exam.
+In particular, any quiz or exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  
 
-Each student’s honesty and integrity are taken for granted. However, if I find
-evidence of academic misconduct I will pursue the matter
-to the fullest extent permitted by the university. ACADEMIC MISCONDUCT OR
-DISHONESTY WILL RESULT IN A GRADE OF F FOR THE COURSE.  Students are
-strongly advised to avoid even the /appearance/ of academic misconduct. 
+The minimum sanction for /any/ act of academic dishonesty is a grade of 0 on the affected assignment; a grade of F for the course may be assigned in severe cases.
 
 ** Academic Affairs Core Value Statements
 
@@ -126,16 +120,17 @@ located in Math 201. More information can be found at www.tarleton.edu/sds or in
 
 | Unit               | Topic                                             | Book chapter(s) |
 |--------------------+---------------------------------------------------+-----------------|
-| 1 (June 14-20)     | The basics (cognitive psychology and linguistics) |             1,2 |
-| 2 (June 21-27)     | The foundations of language                       |               3 |
-|                    | *Exam 1 (due Wednesday, June 28)*                 |                 |
-| 3 (June 28-July 4) | Language development                              |               4 |
-| 4 (July 5-11)      | Perception of words (visual and spoken)           |             6,9 |
-|                    | *Exam 2 (due Wednesday, July 12)*                 |                 |
-| 5 (July 12-18)     | Reading                                           |             7,8 |
-| 6 (July 19-25)     | Understanding the structure of sentences          |              10 |
-|                    | *Exam 3 (due Wednesday, July 26)*                 |                 |
-| 7 (July 26-Aug 1)  | Word meaning                                      |              11 |
-| 8 (Aug 2-8)        | Language production                               |              13 |
-|                    | *Exam 4 (due Wednesday, Aug 9)*                   |                 |
+| 1 (June 13-19)     | The basics (cognitive psychology and linguistics) |             1,2 |
+| 2 (June 20-26)     | The foundations of language                       |               3 |
+|                    | *Exam 1 (due Wednesday, June 27)*                |                 |
+| 3 (June 27-July 3) | Language development                              |               4 |
+| 4 (July 4-10)      | Perception of words (visual and spoken)           |             6,9 |
+|                    | *Exam 2 (due Wednesday, July 11)*                 |                 |
+| 5 (July 11-17)     | Reading                                           |             7,8 |
+| 6 (July 18-24)     | Understanding the structure of sentences          |              10 |
+|                    | *Exam 3 (due Wednesday, July 25)*                 |                 |
+| 7 (July 25-31)     | Word meaning                                      |              11 |
+| 8 (Aug 1-7)        | Language production                               |              13 |
+|                    | *Exam 4 (due Wednesday, Aug 8)*                   |                 |
+
 
