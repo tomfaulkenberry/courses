@@ -1,0 +1,168 @@
+#+TITLE: PSYC 5379 / READ 5379: Advanced Psycholinguistics
+#+AUTHOR: 
+#+DATE: Summer 2017
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [10pt]
+#+LATEX_HEADER: \usepackage[left=1in,right=1in,bottom=1in,top=1in]{geometry}
+
+** Contact info
+- Professor: Thomas J. Faulkenberry, Ph.D
+- Office: Math 319
+- Office hours: MTWRF 9-11 am (or by appointment)
+- Email: faulkenberry@tarleton.edu
+- Website: [[http://tomfaulkenberry.github.io]]
+- Phone: 254-968-9816
+
+** Course description
+
+(from catalog) /The course emphasizes the study of language, understanding languages, producing language and speech, language development, and related topics such as reading, language and the brain, linguistic diversity, and universals./
+
+Psycholinguistics is an area of specialization within cognitive psychology that focuses on the psychological mechanisms of language processing.  This course provides an introduction to the field of psycholinguistics. Psycholinguistics is the field that studies the information processing mechanisms that govern the use of language in comprehension and production, acquisition, and representation.  A common misconception is that one learns about the specifics of particular languages in a course on psycholinguistics.  This is not the case.  Rather, like most of cognitive psychology, this course emphasizes the /commonalities/ that underlie human languages everywhere, and we will focus on what these commonalities tell us about the human ability to construct and understand language. 
+
+** Course materials
+- /The Psychology of Language: From Data to Theory (4th ed.)/ by Harley [[https://www.amazon.com/Psychology-Language-Data-Theory/dp/1848720890][Amazon link]]
+
+** Student learning outcomes
+1. Define the basic vocabulary of psycholinguistics
+2. Discuss the biological bases of human communication.
+3. Describe how humans perceive and produce speech.
+4. Describe how sentences and discourse are processed and comprehended. 
+5. Discuss the acquisition of language. 
+6. Describe the psychological processes involved in reading.
+7. Identify and explain problems in speech and language processes.
+8. Explain bilingualism and second language acquisition.
+
+** Texas Reading Specialist Standards
+For students enrolled in READ 5379, our course content will cover the following standards from TEA (Texas Education Agency) for EC-12 Reading Specialist certification.
+
+  - 1.1k: know and understand the basic linguistic patterns and structures of oral language, such as continuant and stop sounds and coarticulation of sounds
+  - 1.2k: know and understand relationships between oral language development and the development of reading skills, such as the expected stages and milestones in acquiring oral language; implications of individual variations in oral language development for reading; and ways to use the cultural, linguistic, and home backgrounds of students to develop and enhance students’ oral language 
+  - 1.4k: know and understand expected stages and patterns in the development of phonological and phonemic awareness, implications of individual variations in the development of phonological and phonemic awareness, and instructional sequences that develop and accelerate students’ phonological and phonemic awareness and are based on a convergence of research evidence
+  - 1.6k: know and understand the development of concepts of print (e.g., left-right progression, spaces between words)
+  - 1.7k: know and understand the relationship between concepts of print and other reading-related skills.
+  - 1.8k: know and understand the elements of the alphabetic principle, including letter names, graphophonemic knowledge, and the relationship of the letters in printed words to spoken language
+  - 1.9k: know and understand expected stages and patterns in students’ developing understanding of the alphabetic principle and implications of individual variations in the development of this understanding
+  - 1.10k: know and understand instructional strategies that develop and accelerate students’ application of the alphabetic principle to beginning decoding and that are based on a convergence of research evidence
+  - 1.14k: know and understand expected patterns of development in the use of word identification strategies, implications of individual variations in development in this area, and instructional strategies that develop and accelerate students’ skills in word identification and are based on a convergence of research evidence
+  - 1.17k: know and understand expected patterns of development in reading fluency (including developmental benchmarks), implications of individual variations in the development of fluency, and instructional strategies that develop students’ fluency and are based on a convergence of research evidence
+  - 1.19k: know and understand a variety of comprehension theories/models (e.g., transactional, interactive, metacognitive, socio-psycho linguistic, constructivist) and their impact on instructional strategies
+  - 1.29k: know and understand predictable stages in the development of written language and writing conventions, including the physical and/or cognitive processes involved in letter formation, word writing, sentence construction, spelling, punctuation, and grammatical expression, while recognizing that individual variations occur
+  - 2.17k: know and understand how differences in dialect or vocabulary development may affect a student’s acquisition of reading skills;
+  - 3.2k: know and understand issues and concepts related to the transfer of literacy competency from one language to another
+  - 3.3k: know and understand expected stages and patterns of first- and second-language learning
+  - 3.7k: know and understand characteristics and instructional implications of reading difficulties, dyslexia, and reading disabilities in relation to the development of reading competence
+  - 4.1k: know and understand the major theories of language acquisition, reading, cognition, and learning (e.g., behaviorism, cognitivism, constructivism, transactionalism);
+  - 4.7k: know and understand foundations of basic research design, methodology, and application
+  - 4.8k: know and understand methods and criteria for critically reviewing research on reading and selecting research for educational applications.
+
+** Requirements and grading
+- Exam 1 (100 pts)
+- Exam 2 (100 pts)
+- Exam 3 (100 pts)
+- Exam 4 (100 pts)
+- Unit quizzes (100 pts)
+- Review paper (100 pts)
+- /Total = 600 points/
+
+Grades will be assigned based on the percentage of points you accumulate out of these 500 points.  I will use the standard grading scale of A=90%, B=80%, etc.
+
+*** Exams (66.7% of grade)
+There will be four total exams throughout the semester, occurring 
+approximately once every 2  weeks.  They will cover material 
+from your reading, online lectures, and quizzes.  Exam questions will be a mix of multiple choice and short answer.  Exams are due by 11:59 pm on 
+the due date (see below).  Each exam will have a time limit and may only 
+be attempted once.
+
+Due dates:
+
+- Exam 1 (Wednesday, June 28 at 11:59 pm)
+- Exam 2 (Wednesday, July 12 at 11:59 pm)
+- Exam 3 (Wednesday, July 26 at 11:59 pm)
+- Final exam (Wednesday, August 9 at 11:59 pm)
+  
+*** Unit quizzes (16.6% of grade)
+At the end of each unit, you will complete a quiz over the content of that 
+unit. Each quiz will be graded as number correct out of 10 possible points.  Your total quiz grade will be computed by scaling your average quiz percentage up to a 100 point score.  For example, if you average 8.6/10 on your unit quizzes, your total quiz grade for the semester will be 86/100. 
+
+*** Review paper (16.7% of grade)
+This semester, you will select a topic from the course (or something in the textbook that we did not cover) that relates to your professional interests.  Then, you will write a 10 page review paper that summarizes some literature related to your chosen topic. The literature review should include at least 10 recent (2000 to the present) empirical research articles from peer-reviewed journals. The paper must be formatted in APA style (e.g., double-spaced, APA-style citations, etc.).  Note that the 10-page requirement includes the title page and references.  The paper is due on the last day of class.   
+** Course Communication
+
+Email is the primary means of communication for this course.  If you have questions about the course, always feel free to send me an email at faulkenberry@tarleton.edu.  I only ask that you adhere to two guidelines:
+  - please include the course number (PSYC 5379) in the subject line.  For example, one good way to do this is:  Subject: [PSYC 5379] Question about Exam 2
+  - please use proper email etiquette.  Include a salutation (e.g., Dear Dr. Faulkenberry), complete sentences, and a closing (e.g., "Regards, Your Name").  You might be surprised how many times I get an email from a nondescript email address with no indication from WHOM the email was sent!
+
+Also, I will be sending periodic emails to each of you that update you on course progress, due dates, etc.  It is imperative that you check your /Tarleton email address/ regularly so that you don't miss any of these messages.
+
+** University Policy on "F" Grades
+Beginning in Fall 2015, Tarleton will begin differentiating between a 
+failed grade in a class because a student never attended (F0 grade), 
+stopped attending at some point in the semester (FX grade), or because 
+the student did not pass the course (F) but attended the entire semester. 
+These grades will be noted on the official transcript. Stopping or never 
+attending class can result in the student having to return aid monies 
+received.  For more information see the Tarleton Financial Aid website.
+
+** Academic Honesty
+
+Tarleton State University expects its students to maintain high standards of
+personal and scholarly conduct. Students guilty of academic dishonesty are
+subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.  
+
+In particular, any exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  The minimum sanction for violation of this policy is a grade of 0 on the affected exam.
+
+Each student’s honesty and integrity are taken for granted. However, if I find
+evidence of academic misconduct I will pursue the matter
+to the fullest extent permitted by the university. ACADEMIC MISCONDUCT OR
+DISHONESTY WILL RESULT IN A GRADE OF F FOR THE COURSE.  Students are
+strongly advised to avoid even the /appearance/ of academic misconduct. 
+
+** Academic Affairs Core Value Statements
+
+*** Academic Integrity Statement
+Tarleton State University's core values are integrity, leadership, tradition, civility, excellence, and service.  Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct.  Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
+
+*** Academic Civility Statement 
+Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
+
+*** Academic Excellence Statement
+Tarleton holds high expectations for students to assume responsibility for their own individual learning. Students are also expected to achieve academic excellence by:
+- honoring Tarleton’s core values, upholding high standards of habit and behavior.
+- maintaining excellence through class attendance and punctuality, preparing for active participation in all learning experiences. 
+- putting forth their best individual effort.
+- continually improving as independent learners.
+- engaging in extracurricular opportunities that encourage personal and academic growth.
+- reflecting critically upon feedback and applying these lessons to meet future challenges.
+
+** Students with Disabilities Policy
+
+It is the policy of Tarleton State University to comply with the Americans
+with Disabilities Act and other applicable laws. If you are a student with a
+disability seeking accommodations for this course, please contact Trina
+Geye, Director of Student Disability Services, at 254.968.9400 or
+geye@tarleton.edu. Student Disability Services is
+located in Math 201. More information can be found at www.tarleton.edu/sds or in the University Catalog.
+
+
+**Note:  any changes to this syllabus will be communicated to you by the instructor!**
+ 
+** Semester Schedule
+
+| Unit               | Topic                                             | Book chapter(s) |
+|--------------------+---------------------------------------------------+-----------------|
+| 1 (June 14-20)     | The basics (cognitive psychology and linguistics) |             1,2 |
+| 2 (June 21-27)     | The foundations of language                       |               3 |
+|                    | *Exam 1 (due Wednesday, June 28)*                 |                 |
+| 3 (June 28-July 4) | Language development                              |               4 |
+| 4 (July 5-11)      | Perception of words (visual and spoken)           |             6,9 |
+|                    | *Exam 2 (due Wednesday, July 12)*                 |                 |
+| 5 (July 12-18)     | Reading                                           |             7,8 |
+| 6 (July 19-25)     | Understanding the structure of sentences          |              10 |
+|                    | *Exam 3 (due Wednesday, July 26)*                 |                 |
+| 7 (July 26-Aug 1)  | Word meaning                                      |              11 |
+| 8 (Aug 2-8)        | Language production                               |              13 |
+|                    | *Exam 4 (due Wednesday, Aug 9)*                   |                 |
+
+
