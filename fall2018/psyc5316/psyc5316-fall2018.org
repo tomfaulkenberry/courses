@@ -124,5 +124,5 @@ It is the policy of Tarleton State University to comply with the Americans with 
 |   11 | 11/5  | Stephenville | Discussion: stats background on factorial designs                  |
 |   12 | 11/12 | online       | Video lecture: analyzing mental arithmetic data in R               |
 |   13 | 11/19 | Stephenville | Discussion: results of mental arithmetic task & final manuscript   |
-|   14 | 11/26 | online       | No class: Thanksgiving                                             |
+|   14 | 11/26 | online       | TBA                                                                |
 |   15 | 12/3  | Stephenville | Wrap up                                                            |
