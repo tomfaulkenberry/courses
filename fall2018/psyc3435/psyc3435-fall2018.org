@@ -79,7 +79,7 @@ Lab Assignments and dates
 - Lab 3.1 – Independent groups design, data collection (10 points), due Friday, October 5
 - Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, October 19
 - Lab 4.1 – Factorial design, data collection (10 points), due Friday, October 26
-- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, November 19
+- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, November 9
 
 ** Course Communication
 
