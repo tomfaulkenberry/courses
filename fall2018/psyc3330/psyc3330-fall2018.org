@@ -62,10 +62,10 @@ Exam dates:
 - Final exam (Tuesday, December 11, 8-10:30 am)
   
 *** Weekly quizzes 
-Before each week's lectures, I will assign a short lecture video for you to watch on Blackboard that will help you to prepare for the content we will be covering. To assess your understanding of the material, I will administer a short in-class quiz at the beginning of class on Tuesday of each week (excluding exam weeks). Each quiz counts for 10 possible points.  Since there are 10 such quizzes, you will earn up to 100 points for your overall quiz grade.
+Before each lecture unit, I will assign a short video for you to watch on Blackboard that will help you to prepare for the content we will be covering. To assess your understanding of the material, I will administer a short in-class quiz at the beginning of class on Thursday of each week (excluding exam weeks). Each quiz counts for 10 possible points.  Since there are 10 such quizzes, you will earn up to 100 points for your overall quiz grade.
 
 *** Homework exercises 
-In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week.  A set of homework exercises (usually between 5 and 10 problems) will be provided to you on Tuesday of each week.  You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit).  Completed exercises should be handwritten neatly on clean paper.  Each homework assignment will be due at the beginning of class on Tuesday of the week after it is assigned.
+In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week.  A set of homework exercises (usually between 5 and 10 problems) will be provided to you on Thursday of each week.  You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit).  Completed exercises should be handwritten neatly on clean paper.  Each homework assignment will be due at the beginning of class on Thursday of the week after it is assigned.
 
 ** Course Communication
 
@@ -111,9 +111,9 @@ It is the policy of Tarleton State University to comply with the Americans with 
 ** Semester Schedule
 | Week | Dates        | Topic                                                        |
 |------+--------------+--------------------------------------------------------------|
-|    1 | Aug 27-31    | Displaying data                                              |
-|    2 | Sep 3-7      | Descriptives 1: central tendency, variation, and z-scores    |
-|    3 | Sep 10-14    | Descriptives 2: correlation                                  |
+|    1 | Aug 27-31    | Describing data: central tendency, variation, and z-scores   |
+|    2 | Sep 3-7      | Correlation                                                  |
+|    3 | Sep 10-14    | Linear regression                                            |
 |    4 | Sep 17-21    | *Exam 1*                                                     |
 |    5 | Sep 24-28    | The normal distribution: measuring likelihood                |
 |    6 | Oct 1-5      | The logic of hypothesis testing                              |
