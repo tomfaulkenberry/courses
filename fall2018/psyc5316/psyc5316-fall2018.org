@@ -34,6 +34,8 @@ There is no required textbook for the course. However, I recommend you have acce
 - RStudio (free download from [[http://www.rstudio.com][http://www.rstudio.com]])
 - OpenSesame (free download from http://osdoc.cogsci.nl/
 
+All readings/videos/etc. will be posted on Github: http://github.com/tomfaulkenberry/courses/
+
 ** Student learning outcomes
    
 1. perform and interpret basic techniques of statistical inference, both in a frequentist and Bayesian framework

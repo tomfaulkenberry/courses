@@ -5,7 +5,7 @@ for my courses at Tarleton State University.
 
 ** Fall 2018
 
-- [[Fall2018/psyc5316/README.org][PSYC 5316]]
+- [[fall2018/psyc5316/README.org][PSYC 5316]]
 
 ** Fall 2017
 
