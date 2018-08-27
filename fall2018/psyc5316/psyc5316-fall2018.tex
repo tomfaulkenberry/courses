@@ -1,37 +1,36 @@
-% Created 2018-08-17 Fri 11:54
-% Intended LaTeX compiler: pdflatex
+% Created 2018-08-27 Mon 10:59
 \documentclass[10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
 \usepackage{graphicx}
-\usepackage{grffile}
 \usepackage{longtable}
+\usepackage{float}
 \usepackage{wrapfig}
 \usepackage{rotating}
 \usepackage[normalem]{ulem}
 \usepackage{amsmath}
 \usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
 \usepackage{amssymb}
-\usepackage{capt-of}
 \usepackage{hyperref}
+\tolerance=1000
 \usepackage[left=1in,right=1in,bottom=1in,top=1in]{geometry}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{2mm}
 \date{Fall 2018}
 \title{PSYC 5316: Advanced Quantitative Methods \& Experimental Design}
 \hypersetup{
- pdfauthor={},
- pdftitle={PSYC 5316: Advanced Quantitative Methods \& Experimental Design},
- pdfkeywords={},
- pdfsubject={},
- pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
- pdflang={English}}
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.3.1 (Org mode 8.2.10)}}
 \begin{document}
 
 \maketitle
 
 \section*{Contact info}
-\label{sec:org7a9b773}
+\label{sec-1}
 \begin{itemize}
 \item Professor: Thomas J. Faulkenberry, Ph.D
 \item Office: Math 319
@@ -42,7 +41,7 @@
 \end{itemize}
 
 \section*{Course description}
-\label{sec:orgac5d60e}
+\label{sec-2}
 
 This course is designed to teach you the advanced quantitative methods and techniques of experimental design that are necessary to read and conduct modern empirical research in the psychological sciences. We will do this through replicating three classic experiments, each illustrating a unique experimental design and technique for data analysis.  Students taking this course are expected to have \textbf{previously} taken a graduate level course in statistics (or equivalent statistical training). 
 
@@ -54,18 +53,18 @@ Some of the specific skills you'll learn this semester are:
 \end{itemize}
 
 \section*{Course materials}
-\label{sec:org5651d29}
+\label{sec-3}
 
 There is no required textbook for the course. However, I recommend you have access to a good statistics text (e.g., Gravetter or Field are great ones to have).  In addition, you'll need to have access to a computer (laptop is best) on which you can install the following software packages:
 
 \begin{itemize}
-\item R statistical software (free download from \href{http://www.r-project.org}{http://www.r-project.org})
-\item RStudio (free download from \href{http://www.rstudio.com}{http://www.rstudio.com})
+\item R statistical software (free download from \href{http://www.r-project.org}{\url{http://www.r-project.org}})
+\item RStudio (free download from \href{http://www.rstudio.com}{\url{http://www.rstudio.com}})
 \item OpenSesame (free download from \url{http://osdoc.cogsci.nl/}
 \end{itemize}
 
 \section*{Student learning outcomes}
-\label{sec:org4bee167}
+\label{sec-4}
 
 \begin{enumerate}
 \item perform and interpret basic techniques of statistical inference, both in a frequentist and Bayesian framework
@@ -75,7 +74,7 @@ There is no required textbook for the course. However, I recommend you have acce
 \end{enumerate}
 
 \section*{Requirements and grading}
-\label{sec:org26dda6d}
+\label{sec-5}
 
 \begin{itemize}
 \item Lab 1 (100 pts)
@@ -88,7 +87,7 @@ There is no required textbook for the course. However, I recommend you have acce
 Grades will be assigned based on the percentage of points you accumulate out of these 400 points.  I will use the standard grading scale of A=90\%, B=80\%, etc.
 
 \subsection*{Labs (75\% of grade)}
-\label{sec:org21c1e0f}
+\label{sec-5-1}
 There will be three lab experiments conducted throughout the semester.  Each lab will take approximately four weeks to complete using the schedule below:
 
 \begin{itemize}
@@ -99,12 +98,12 @@ There will be three lab experiments conducted throughout the semester.  Each lab
 \end{itemize}
 
 \subsection*{In class participation (25\% of grade)}
-\label{sec:orgf3214b6}
+\label{sec-5-2}
 
 We meet face-to-face in Stephenville every other week this semester.  In total, there will be 8 meetings (see schedule below for specific dates).  It is \emph{imperative} that you attend these face-to-face sessions, because this is where we will discuss the material needed to successfully complete the labs that we will complete.  The participation will be assigned as a percent of the classes you attend. For example, if you attend 5 out of 8 classes, your attendance grade will be 62.5 points.
 
 \section*{Course Communication}
-\label{sec:org0126041}
+\label{sec-6}
 
 This course is designed to be an intensive, interactive seminar on modern statistical methods and experimental design.  That means that I will be available for one-on-one consultation most any time.  Just stop by my office or give me a call.
 
@@ -117,11 +116,11 @@ All official course communication (questions, setting up a meeting, etc.) will b
 Also, I will be sending periodic emails to each of you that update you on course progress, due dates, etc.  It is imperative that you check your \emph{Tarleton email address} regularly so that you don't miss any of these messages.
 
 \section*{University Policy on "F" Grades}
-\label{sec:org6e4f138}
+\label{sec-7}
 Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
 
 \section*{Academic Honesty}
-\label{sec:orgb9f11ff}
+\label{sec-8}
 
 Tarleton State University expects its students to maintain high standards of personal and scholarly conduct. Students guilty of academic dishonesty are subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
 
@@ -130,18 +129,18 @@ In particular, any exam taken online must be completed without the aid of any un
 Each student’s honesty and integrity are taken for granted. However, if I find evidence of academic misconduct I will pursue the matter to the fullest extent permitted by the university. ACADEMIC MISCONDUCT OR DISHONESTY WILL RESULT IN A GRADE OF F FOR THE COURSE.  Students are strongly advised to avoid even the \emph{appearance} of academic misconduct. 
 
 \section*{Academic Affairs Core Value Statements}
-\label{sec:org2db0909}
+\label{sec-9}
 
 \subsection*{Academic Integrity Statement}
-\label{sec:org234a870}
+\label{sec-9-1}
 Tarleton State University's core values are integrity, leadership, tradition, civility, excellence, and service.  Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct.  Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
 
 \subsection*{Academic Civility Statement}
-\label{sec:orgf359103}
+\label{sec-9-2}
 Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
 
 \subsection*{Academic Excellence Statement}
-\label{sec:orgeb28738}
+\label{sec-9-3}
 Tarleton holds high expectations for students to assume responsibility for their own individual learning. Students are also expected to achieve academic excellence by:
 \begin{itemize}
 \item honoring Tarleton’s core values, upholding high standards of habit and behavior.
@@ -153,25 +152,25 @@ Tarleton holds high expectations for students to assume responsibility for their
 \end{itemize}
 
 \section*{Students with Disabilities Policy}
-\label{sec:orgb6d9547}
+\label{sec-10}
 
 It is the policy of Tarleton State University to comply with the Americans with Disabilities  Act (www.ada.gov) and other applicable laws.  If you are a student with a disability seeking accommodations for this course, please contact the Center for Access and Academic Testing, at 254.968.9400 or caat@tarleton.edu. The office is located in Math 201. More information can be found at www.tarleton.edu/caat or in the University Catalog.​
 
 \textbf{Note:  any changes to this syllabus will be communicated to you by the instructor!}
 
-\section*{Schedule}
-\label{sec:org82acc57}
+\section*{Tentative schedule}
+\label{sec-11}
 
 \begin{center}
 \begin{tabular}{rlll}
 Week & Date & Location & Topic\\
 \hline
-1 & 8/27 & Stephenville & Install software, introduce Stroop experiment\\
-2 & 9/3 & online & Video lecture: programming Stroop task and collect data\\
+1 & 8/27 & Stephenville & Install software, introduce flanker task\\
+2 & 9/3 & online & Video lecture: programming flanker task and collect data\\
 3 & 9/10 & Stephenville & Discussion: stats background on repeated measures designs\\
-4 & 9/17 & online & Video lecture: analyzing Stroop data in R\\
-5 & 9/24 & Stephenville & Discussion: results of Stroop task \& final manuscript\\
-6 & 10/1 & online & Video lecture: programming Sternberg task and collect data\\
+4 & 9/17 & online & Video lecture: analyzing flanker task data in R\\
+5 & 9/24 & Stephenville & Discussion: results of flanker task \& final manuscript\\
+6 & 10/1 & online & Video lecture: programming Sternberg memory scanning task and collect data\\
 7 & 10/8 & Stephenville & Discussion: stats background on linear modeling\\
 8 & 10/15 & online & Video lecture: analyzing Sternberg data in R\\
 9 & 10/22 & Stephenville & Discussion: results of Sternberg task \& final manuscript\\
@@ -179,8 +178,9 @@ Week & Date & Location & Topic\\
 11 & 11/5 & Stephenville & Discussion: stats background on factorial designs\\
 12 & 11/12 & online & Video lecture: analyzing mental arithmetic data in R\\
 13 & 11/19 & Stephenville & Discussion: results of mental arithmetic task \& final manuscript\\
-14 & 11/26 & online & No class: Thanksgiving\\
+14 & 11/26 & online & TBA\\
 15 & 12/3 & Stephenville & Wrap up\\
 \end{tabular}
 \end{center}
+% Emacs 25.3.1 (Org mode 8.2.10)
 \end{document}
