@@ -56,8 +56,8 @@ There will be four total exams throughout the semester, occurring approximately 
 
 Exam dates:
 
-- Exam 1 (Thursday, September 20)
-- Exam 2 (Thursday, October 18)
+- Exam 1 (Tuesday, September 25)
+- Exam 2 (Tuesday, October 23)
 - Exam 3 (Thursday, November 29)
 - Final exam (Tuesday, December 11, 8-10:30 am)
   
@@ -109,21 +109,20 @@ It is the policy of Tarleton State University to comply with the Americans with 
 *Note:  any changes to this syllabus will be communicated to you by the instructor!*
  
 ** Semester Schedule
-| Week | Dates        | Topic                                                        |
-|------+--------------+--------------------------------------------------------------|
-|    1 | Aug 27-31    | Describing data: central tendency, variation, and z-scores   |
-|    2 | Sep 3-7      | Correlation                                                  |
-|    3 | Sep 10-14    | Linear regression                                            |
-|    4 | Sep 17-21    | *Exam 1*                                                     |
-|    5 | Sep 24-28    | The normal distribution: measuring likelihood                |
-|    6 | Oct 1-5      | The logic of hypothesis testing                              |
-|    7 | Oct 8-12     | Testing means of samples of *known* populations: \(z\)-tests |
-|    8 | Oct 15-19    | *Exam 2*                                                     |
-|    9 | Oct 22-26    | Testing means of samples of *unknown* populations: \(t\)-tests |
-|   10 | Oct 29-Nov 2 | More \(t\)-tests (independent samples, etc.)                 |
-|   11 | Nov 5-9      | Analysis of variance (ANOVA): one independent variable       |
-|   12 | Nov 12-16    | Nonparametric techniques: chi-square and binomial tests      |
-|   13 | Nov 19-23    | /No coursework during week of Thanksgiving holiday/          |
-|   14 | Nov 26-30    | *Exam 3*                                                     |
-|   15 | Dec 3-7      | Course review (no class on Thursday)                         |
-|   16 | Dec 10-14    | *Final exam on Tuesday, Dec 11, 8-10:30 am*                  |
+| Unit | Dates        | Topic                                                          |
+|------+--------------+----------------------------------------------------------------|
+|    1 | Aug 29-Sep 4 | Describing data: central tendency, variation, and z-scores     |
+|    2 | Sep 6-11     | Correlation                                                    |
+|    3 | Sep 13-18    | Linear regression                                              |
+|      | *Sep 25*     | *Exam 1*                                                       |
+|    4 | Sep 27-Oct 2 | The normal distribution: measuring likelihood                  |
+|    5 | Oct 4-9      | The logic of hypothesis testing                                |
+|    6 | Oct 11-16    | Testing means of samples of *known* populations: \(z\)-tests   |
+|      | *Oct 23*     | *Exam 2*                                                       |
+|    7 | Oct 25-30    | Testing means of samples of *unknown* populations: \(t\)-tests |
+|    8 | Nov 1-6      | More \(t\)-tests (independent samples, etc.)                   |
+|    9 | Nov 8-13     | Analysis of variance (ANOVA): one independent variable         |
+|   10 | Nov 15-20    | Nonparametric techniques: chi-square and binomial tests        |
+|      | *Nov 29*     | *Exam 3*                                                       |
+|      | Dec 3-7      | Course review (no class on Thursday)                           |
+|      | *Dec 11*     | *Final exam on Tuesday, Dec 11, 8-10:30 am*                    |
