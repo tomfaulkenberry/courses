@@ -2,5 +2,5 @@
 
 - [[psyc5316-fall2018.org][Course syllabus]]
 - Lectures
-  - /coming soon!/
+  - Week 1 ([[lectures/week1.pdf][pdf]])
 
