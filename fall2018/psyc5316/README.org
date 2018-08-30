@@ -1,6 +1,7 @@
 #+TITLE: PSYC 5316 -- Advanced Quantitative Methods
 
 - [[psyc5316-fall2018.org][Course syllabus]]
-- Lectures
-  - Week 1 ([[lectures/week1.pdf][pdf]])
+- Lecture notes and videos
+  - Week 1 - Intro to R ([[lectures/week1.pdf][pdf]])
+  - Week 2 - Building a flanker task in OpenSesame ([[https://youtu.be/4jkmex7Kz8Y][YouTube]])
 
