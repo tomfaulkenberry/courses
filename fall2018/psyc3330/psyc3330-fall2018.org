@@ -52,7 +52,7 @@ that we can apply to data, including t-tests and analysis of variance.
 Grades will be assigned based on the percentage of points you accumulate out of these 600 points.  I will use the standard grading scale of A=90%, B=80%, etc.
 
 *** Exams
-There will be four total exams throughout the semester, occurring approximately once every three to four weeks.  They will cover material from lectures, quizzes, and homework exercises.  Exam questions will be a mix of multiple choice and short answer.  Exams will be completed in class.
+There will be four total exams throughout the semester, occurring approximately once every three to four weeks.  They will cover material from lectures, quizzes, and homework exercises. Exams will be completed in class.
 
 Exam dates:
 
