@@ -8,6 +8,6 @@
   - Week 4 - Conditional accuracy functions ([[https://youtu.be/j9Uqkq88PwU][YouTube]]) ([[lectures/week3.pdf][pdf]])
   - Week 5 - Finishing up flanker task manuscript ([[lectures/week5.pdf][pdf]])
   - Week 6 - Building a Sternberg task in OpenSesame ([[lectures/week6.pdf][pdf]])
-    - [[lab2/pracTrials.csv][pracTrials.csv]]
-    - [[lab2/mainTrials.csv][mainTrials.csv]]
-    - note: you'll need to download and save these CSV files onto your computer to add them the OpenSesame file pool
+    - [[https://raw.githubusercontent.com/tomfaulkenberry/courses/master/fall2018/psyc5316/lab2/pracTrials.csv][pracTrials.csv]]
+    - [[https://raw.githubusercontent.com/tomfaulkenberry/courses/master/fall2018/psyc5316/lab2/mainTrials.csv][mainTrials.csv]]
+    - note: you'll need to right-click (or Ctrl+click) and download and save these CSV files onto your computer to add them the OpenSesame file pool.  
