@@ -3,5 +3,11 @@
 - [[psyc5316-fall2018.org][Course syllabus]]
 - Lecture notes and videos
   - Week 1 - Intro to R ([[lectures/week1.pdf][pdf]])
-  - Week 2 - Building a flanker task in OpenSesame ([[https://youtu.be/4jkmex7Kz8Y][YouTube]])
-
+  - Week 2 - Building a flanker task in OpenSesame ([[https://youtu.be/4jkmex7Kz8Y][YouTube]]) ([[lectures/week2.pdf][pdf]])
+  - Week 3 - Analyzing flanker data ([[lectures/week3.pdf][pdf]])
+  - Week 4 - Conditional accuracy functions ([[https://youtu.be/j9Uqkq88PwU][YouTube]]) ([[lectures/week3.pdf][pdf]])
+  - Week 5 - Finishing up flanker task manuscript ([[lectures/week5.pdf][pdf]])
+  - Week 6 - Building a Sternberg task in OpenSesame ([[lectures/week6.pdf][pdf]])
+    - [[lab2/pracTrials.csv][pracTrials.csv]]
+    - [[lab2/mainTrials.csv][mainTrials.csv]]
+    - note: you'll need to download and save these CSV files onto your computer to add them the OpenSesame file pool
