@@ -1,4 +1,4 @@
-#+TITLE: PSYC 3435: Principles of Research for the Behavorial Sciences (online)
+#+TITLE: PSYC 3435: Principles of Research for the Behavioral Sciences (online)
 #+AUTHOR: 
 #+DATE: Spring 2019
 #+OPTIONS: toc:nil
@@ -53,8 +53,8 @@ There will be three exams throughout the semester.  Exams are due by 11:59 pm on
 Exam dates:
 
 - Exam 1, due Sunday, Feb 24
-- Exam 2, due Sunday, Mar 31
-- Exam 3, due Sunday, Apr 21
+- Exam 2, due Sunday, Apr 7
+- Exam 3, due Sunday, Apr 28
 
 *** Unit quizzes (20% of grade)
 
@@ -128,8 +128,8 @@ It is the policy of Tarleton State University to comply with the Americans with 
 |      | *Exam 1*                                                     | *Sunday, Feb 24* |
 |    5 | Experiments: selecting and manipulating variables            | Sunday, Mar 3    |
 |    6 | Experiments: sampling methods                                | Sunday, Mar 10   |
-|    7 | Experiments: classic designs                                 | Sunday, Mar 24   |
-|      | *Exam 2*                                                     | *Sunday, Mar 31* |
-|    8 | Non-experiments: survey and correlational designs            | Sunday, Apr 7    |
-|    9 | Non-experiments: quasi-experiments and developmental designs | Sunday, Apr 14   |
-|      | *Exam 3*                                                     | *Sunday, Apr 21* |
+|    7 | Experiments: classic designs                                 | Sunday, Mar 31   |
+|      | *Exam 2*                                                     | *Sunday, Apr 7*  |
+|    8 | Non-experiments: survey and correlational designs            | Sunday, Apr 14   |
+|    9 | Non-experiments: quasi-experiments and developmental designs | Sunday, Apr 21   |
+|      | *Exam 3*                                                     | *Sunday, Apr 28* |

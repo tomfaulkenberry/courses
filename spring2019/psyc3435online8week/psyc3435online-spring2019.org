@@ -1,4 +1,4 @@
-#+TITLE: PSYC 3435: Principles of Research for the Behavorial Sciences (online 8-week course)
+#+TITLE: PSYC 3435: Principles of Research for the Behavioral Sciences (online 8-week course)
 #+AUTHOR: 
 #+DATE: Spring 2019
 #+OPTIONS: toc:nil
