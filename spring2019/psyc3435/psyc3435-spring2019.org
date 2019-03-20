@@ -72,10 +72,10 @@ Lab Assignments and dates
 - Lab 1 – APA formatting (10 points), due Friday, Feb 8
 - Lab 2.1 – Chi-squared design, data collection (10 points), due Friday, Feb 22
 - Lab 2.2 – Chi-squared design, analysis and report (20 points), due Friday, Mar 8
-- Lab 3.1 – Independent groups design, data collection (10 points), due Friday, Mar 22
-- Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, Apr 5
-- Lab 4.1 – Factorial design, data collection (10 points), due Friday, Apr 12
-- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, Apr 26 
+- Lab 3.1 – Independent groups design, data collection (10 points), due Friday, Mar 29
+- Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, Apr 12
+- Lab 4.1 – Factorial design, data collection (10 points), due Friday, Apr 19
+- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, May 3 
 
 *** Research participation (8% of grade)
 
