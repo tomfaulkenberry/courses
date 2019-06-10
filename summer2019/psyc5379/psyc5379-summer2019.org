@@ -1,6 +1,6 @@
 #+TITLE: PSYC 5379 / READ 5379: Advanced Psycholinguistics
 #+AUTHOR: 
-#+DATE: Summer 2018
+#+DATE: Summer 2019
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+LATEX_CLASS: article
@@ -77,10 +77,10 @@ be attempted once.
 
 Due dates:
 
-- Exam 1 (Wednesday, June 27 at 11:59 pm)
-- Exam 2 (Wednesday, July 11 at 11:59 pm)
-- Exam 3 (Wednesday, July 25 at 11:59 pm)
-- Final exam (Wednesday, August 8 at 11:59 pm)
+- Exam 1 (Wednesday, June 26 at 11:59 pm)
+- Exam 2 (Wednesday, July 10 at 11:59 pm)
+- Exam 3 (Wednesday, July 24 at 11:59 pm)
+- Final exam (Wednesday, August 7 at 11:59 pm)
   
 *** Unit quizzes (16.6% of grade)
 At the end of each unit, you will complete a quiz over the content of that 
@@ -146,17 +146,17 @@ located in Math 201. More information can be found at www.tarleton.edu/sds or in
 
 | Unit               | Topic                                             | Book chapter(s) |
 |--------------------+---------------------------------------------------+-----------------|
-| 1 (June 13-19)     | The basics (cognitive psychology and linguistics) |             1,2 |
-| 2 (June 20-26)     | The foundations of language                       |               3 |
-|                    | *Exam 1 (due Wednesday, June 27)*                |                 |
-| 3 (June 27-July 3) | Language development                              |               4 |
-| 4 (July 4-10)      | Perception of words (visual and spoken)           |             6,9 |
-|                    | *Exam 2 (due Wednesday, July 11)*                 |                 |
-| 5 (July 11-17)     | Reading                                           |             7,8 |
-| 6 (July 18-24)     | Understanding the structure of sentences          |              10 |
-|                    | *Exam 3 (due Wednesday, July 25)*                 |                 |
-| 7 (July 25-31)     | Word meaning                                      |              11 |
-| 8 (Aug 1-7)        | Language production                               |              13 |
-|                    | *Exam 4 (due Wednesday, Aug 8)*                   |                 |
+| 1 (June 12-18)     | The basics (cognitive psychology and linguistics) |             1,2 |
+| 2 (June 19-25)     | The foundations of language                       |               3 |
+|                    | *Exam 1 (due Wednesday, June 26)*                 |                 |
+| 3 (June 26-July 2) | Language development                              |               4 |
+| 4 (July 3-9)       | Perception of words (visual and spoken)           |             6,9 |
+|                    | *Exam 2 (due Wednesday, July 10)*                 |                 |
+| 5 (July 10-16)     | Reading                                           |             7,8 |
+| 6 (July 17-23)     | Understanding the structure of sentences          |              10 |
+|                    | *Exam 3 (due Wednesday, July 24)*                 |                 |
+| 7 (July 24-30)     | Word meaning                                      |              11 |
+| 8 (July 31-Aug 6)  | Language production                               |              13 |
+|                    | *Exam 4 (due Wednesday, Aug 7)*                   |                 |
 
 
