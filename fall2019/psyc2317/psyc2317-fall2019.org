@@ -97,6 +97,8 @@ It is the policy of Tarleton State University to comply with the Americans with 
  
 *Note:  any changes to this syllabus will be communicated to you by the instructor!*
  
+\newpage
+
 ** Semester Schedule
 | Unit | Dates        | Topic                                                      | Chapter |
 |------+--------------+------------------------------------------------------------+---------|
@@ -117,7 +119,8 @@ It is the policy of Tarleton State University to comply with the Americans with 
 |      | *Dec 11*     | *Final exam on Friday, Dec 6, 8-10:00 am*                  |         |
 
 ** Open Educational Resources
-The development of the textbook for this course was supported by an Open Educational Resources grant awarded to Dr. Tom Faulkenberry from the Tarleton State University Center for Instructional Innovation.
+The development of the textbook for this course was supported by an Open Educational Resources grant awarded to Dr. Tom Faulkenberry from the Tarleton State University Center for Instructional Innovation. Open educational resources (OER) are textbooks and learning materials that are available at no cost to students, accessible from mobile devices, and available from class day one. Research has shown that OER can improve student engagement and course outcomes. This course is part of Tarleton’s OER initiative, to encourage faculty adoption of free and low-cost instructional materials.
+
 
 #+ATTR_LATEX: :width 5cm
 file:oerLogo.png
