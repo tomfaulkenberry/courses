@@ -1,6 +1,6 @@
-#+TITLE: PSYC 3435: Principles of Research for the Behavorial Sciences (online)
+#+TITLE: PSYC 3435: Principles of Research for the Behavorial Sciences
 #+AUTHOR: 
-#+DATE: Fall 2018
+#+DATE: Fall 2019
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+LATEX_CLASS: article
@@ -10,27 +10,20 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: MWF 1-3pm; TR 9:30-11:30am; /(or by appointment)/
+- Office hours: MTWRF 1-3pm /(or by appointment)/
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
 
 ** Course description
 
-This laboratory course is designed to introduce students to the philosophy of 
-scientific inquiry with an emphasis on experimental methodology. This will be 
-accomplished via a combination of traditional lectures along with an application 
-of principles through laboratory experimentation and demonstration. Essentially, 
-we will cover the "nuts and bolts" of putting together and completing a research 
-project in psychology. To this end, we will cover all fourteen chapters of the 
-textbook. All students enrolled in this course are required to have 
-*previously taken* PSYC 3309 (Writing in Psychology) and PSYC 3330 (Statistics). 
+This laboratory course is designed to introduce students to the philosophy of scientific inquiry with an emphasis on experimental methodology. This will be accomplished via a combination of traditional lectures along with an application of principles through laboratory experimentation and demonstration. Essentially, we will cover the "nuts and bolts" of putting together and completing a research project in psychology. To this end, we will cover all fourteen chapters of the textbook. All students enrolled in this course are required to have *previously taken* PSYC 3309 (Writing in Psychology) and PSYC 3330 (Statistics). 
 
 ** Course materials
 
 - /The Process of Research in Psychology/ (3rd ed.) by McBride (2015) [[https://www.amazon.com/Process-Research-Psychology-Dawn-McBride/dp/1483347605/][Amazon link]]
 - /APA Publication Manual/ (6th ed.) [[http://www.amazon.com/Publication-Manual-American-Psychological-Association/dp/1433805618/][Amazon link]]
-- JASP statistical software (free download from [[http://jasp-stats.org][jasp-stats.org]]
+- JASP statistical software (free download from [[http://jasp-stats.org][jasp-stats.org]])
 
 ** Student learning outcomes
 
@@ -59,9 +52,9 @@ There will be three exams throughout the semester.  Exams are due by 11:59 pm on
 
 Exam dates:
 
-- Exam 1, due Sunday, October 7
-- Exam 2, due Sunday, November 4
-- Exam 3, due Sunday, December 2
+- Exam 1, due Sunday, October 6
+- Exam 2, due Sunday, November 3
+- Exam 3, due Sunday, November 24
 
 *** Unit quizzes (20% of grade)
 
@@ -73,13 +66,13 @@ There will be four lab assignments this semester.  Each assignment is designed t
 
 Lab Assignments and dates
 
-- Lab 1 – APA formatting (10 points), due Friday, September 7
-- Lab 2.1 – Correlational design, data collection (10 points), due Friday, September 14
-- Lab 2.2 – Correlational design, analysis and report (20 points), due Friday, September 28
-- Lab 3.1 – Independent groups design, data collection (10 points), due Friday, October 5
-- Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, October 19
-- Lab 4.1 – Factorial design, data collection (10 points), due Friday, October 26
-- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, November 9
+- Lab 1 – APA formatting (10 points), due Friday, September 6
+- Lab 2.1 – Correlational design, data collection (10 points), due Friday, September 13
+- Lab 2.2 – Correlational design, analysis and report (20 points), due Friday, September 27
+- Lab 3.1 – Independent groups design, data collection (10 points), due Friday, October 4
+- Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, October 18
+- Lab 4.1 – Factorial design, data collection (10 points), due Friday, October 25
+- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, November 8
 
 ** Course Communication
 
@@ -127,16 +120,16 @@ It is the policy of Tarleton State University to comply with the Americans with 
 
 | Unit | Topic                                                        | Due date         |
 |------+--------------------------------------------------------------+------------------|
-|    0 | Statistics review                                            | Sunday, Sep 2    |
-|    1 | Knowing in psychological science                             | Sunday, Sep 9    |
-|    2 | Reading the literature / APA style                           | Sunday, Sep 16   |
-|    3 | Basic research methods                                       | Sunday, Sep 23   |
-|    4 | Ethics in psychological science                              | Sunday, Sep 30   |
-|      | *Exam 1*                                                     | *Sunday, Oct 7*  |
-|    5 | Experiments: selecting and manipulating variables            | Sunday, Oct 14   |
-|    6 | Experiments: sampling methods                                | Sunday, Oct 21   |
-|    7 | Experiments: classic designs                                 | Sunday, Oct 28   |
-|      | *Exam 2*                                                     | *Sunday, Nov 4*  |
-|    8 | Non-experiments: survey and correlational designs            | Sunday, Nov 11   |
-|    9 | Non-experiments: quasi-experiments and developmental designs | Sunday, Nov 18   |
-|      | *Exam 3*                                                     | *Sunday, Dec 2*  |
+|    0 | Statistics review                                            | Sunday, Sep 1    |
+|    1 | Knowing in psychological science                             | Sunday, Sep 8    |
+|    2 | Reading the literature / APA style                           | Sunday, Sep 15   |
+|    3 | Basic research methods                                       | Sunday, Sep 22   |
+|    4 | Ethics in psychological science                              | Sunday, Sep 29   |
+|      | *Exam 1*                                                     | *Sunday, Oct 6*  |
+|    5 | Experiments: selecting and manipulating variables            | Sunday, Oct 13   |
+|    6 | Experiments: sampling methods                                | Sunday, Oct 20   |
+|    7 | Experiments: classic designs                                 | Sunday, Oct 27   |
+|      | *Exam 2*                                                     | *Sunday, Nov 3*  |
+|    8 | Non-experiments: survey and correlational designs            | Sunday, Nov 10   |
+|    9 | Non-experiments: quasi-experiments and developmental designs | Sunday, Nov 17   |
+|      | *Exam 3*                                                     | *Sunday, Nov 24* |

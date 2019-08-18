@@ -10,7 +10,7 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: MWF 1-3 pm, TR 9-11 am (/or by appointment/)
+- Office hours: MTWRF 1-3pm (/or by appointment/)
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
@@ -51,7 +51,7 @@ Exam dates:
 - Final exam (Friday, December 6, 8-10:00 am)
   
 *** Weekly quizzes 
-Before each lecture unit, I will assign a reading from our textbook to help you to prepare for the content we will be covering. To encourage your preparation and assess your preliminary understanding of the material, I will administer a short in-class quiz at the beginning of class on Tuesday of each week (excluding exam weeks). Each quiz counts for 10 possible points.  Since there are 10 such quizzes, you will earn up to 100 points for your overall quiz grade.
+I will administer a short in-class quiz at the beginning of class on Tuesday of each week (excluding exam weeks). The quiz will cover content from the previous week's lecture and homework exercises. Each quiz counts for 10 possible points.  There will be 10 of these quizzes, so you will earn up to 100 points for your overall quiz grade.
 
 *** Homework exercises 
 In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week.  A set of homework exercises (usually between 5 and 10 problems) will be provided to you each week.  You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit).  Completed exercises should be handwritten neatly on clean paper.  Each homework assignment will be due at the beginning of class on Tuesday of the week after it is assigned.

@@ -12,7 +12,7 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: MWF 1-3 pm, TR 9-11 am (/or by appointment/)
+- Office hours: MTWRF 1-3pm (/or by appointment/)
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
@@ -43,7 +43,7 @@ There is no required textbook for the course. However, I recommend you have acce
 
 ** Requirements and grading
 
-You will complete four lab activities throughout the semester. With the exception of the first lab (how to use R), the labs will each take four weeks, following the same basic schedule:
+You will complete four lab activities throughout the semester. With the exception of the first lab on how to use R, the labs will each take four weeks, following the same basic schedule:
 
 - first week: you will watch a video lecture describing to build the experiment in OpenSesame, then build your own version and submit it to me for a grade (10 points)
 - second week: you will ask four friends to participate in your experiment, collect their data, and submit it to me for a grade (20 points)
@@ -58,7 +58,6 @@ The labs I've planned for this semester are as follows:
 - Lab 4 - addition verification task (an experiment on mathematical cognition)
 
 Each lab will be worth 100 points. Grades will be assigned based on the percentage of points you accumulate out of a total possible 400 points.  I will use the standard grading scale of A=90%, B=80%, etc.
-
 
 ** Course Communication
 
