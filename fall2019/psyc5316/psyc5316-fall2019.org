@@ -57,7 +57,7 @@ The labs I've planned for this semester are as follows:
 - Lab 3 - Sternberg memory scanning task (an experiment on short term memory)
 - Lab 4 - addition verification task (an experiment on mathematical cognition)
 
-Each lab will be worth 100 points. Grades will be assigned based on the percentage of points you accumulate out of a total possible 400 points.  I will use the standard grading scale of A=90%, B=80%, etc.
+Lab 1 is worth 50 points, and Labs 2-4 are each worth 100 points. Grades will be assigned based on the percentage of points you accumulate out of a total possible 350 points.  I will use the standard grading scale of A=90%, B=80%, etc.
 
 ** Course Communication
 
