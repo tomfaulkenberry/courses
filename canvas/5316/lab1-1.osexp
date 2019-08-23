@@ -1,0 +1,55 @@
+---
+API: 2.1
+OpenSesame: 3.2.6
+Platform: posix
+---
+set width 1024
+set uniform_coordinates yes
+set title "Lab 1-1"
+set subject_parity even
+set subject_nr 0
+set start experiment
+set sound_sample_size -16
+set sound_freq 48000
+set sound_channels 2
+set sound_buf_size 1024
+set sampler_backend legacy
+set round_decimals 2
+set mouse_backend legacy
+set keyboard_backend legacy
+set height 768
+set fullscreen no
+set form_clicks no
+set foreground white
+set font_underline no
+set font_size 18
+set font_italic no
+set font_family mono
+set font_bold no
+set disable_garbage_collection yes
+set description "The main experiment item"
+set coordinates uniform
+set compensation 0
+set color_backend legacy
+set clock_backend legacy
+set canvas_backend legacy
+set background black
+
+define sequence experiment
+	set flush_keyboard yes
+	set description "Runs a number of items in sequence"
+	run slide1 always
+	run slide2 always
+
+define sketchpad slide1
+	set start_response_interval no
+	set reset_variables no
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=sans font_italic=no font_size=32 html=yes show_if=always text="Welcome to PSYC 5316!<br /><br />Please press any key to continue." x=0 y=0 z_index=0
+
+define sketchpad slide2
+	set duration keypress
+	set description "Displays stimuli"
+	draw textline center=1 color=white font_bold=no font_family=sans font_italic=no font_size=32 html=yes show_if=always text="Congratulations!<br /><br />Now that you have shown you can open and run<br />an OpenSesame experiment, the next <br />step will be to do some work in R.<br /><br />But first, you'll need to copy down a number  that<br />you will use when you open the Lab 1-1 R script.<br /><br />That number is 2542.<br /><br />Please write down this number, then press any key." x=0 y=0 z_index=0
+
