@@ -3,7 +3,7 @@
 #
 # Instructions: on line 9, change the value of "studentID" to your own Tarleton ID.
 # On line 10, change the value of "openSesameNum" to the number you got from OpenSesame
-# Then execute the code on lines 12-14.  The answer will be a number that will
+# Then execute the code on lines 9-14.  The answer will be a number that will
 # appear in the console.  Submit that number in Canvas.
 
 studentID = 000111222
