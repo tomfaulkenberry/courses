@@ -51,7 +51,7 @@ Exam dates:
 - Final exam (Friday, December 6, 8-10:00 am)
   
 *** Weekly quizzes 
-I will administer a short in-class quiz at the beginning of class on Tuesday of each week (excluding exam weeks). The quiz will cover content from the previous week's lecture and homework exercises. Each quiz counts for 10 possible points.  There will be 10 of these quizzes, so you will earn up to 100 points for your overall quiz grade.
+I will administer a short in-class quiz at the beginning of class on Tuesday of each week (excluding Tuesdays immediately following exam weeks). The quiz will cover content from the previous week's lecture and homework exercises. Each quiz counts for 10 possible points.  There will be 10 of these quizzes, so you will earn up to 100 points for your overall quiz grade.
 
 *** Homework exercises 
 In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week.  A set of homework exercises (usually between 5 and 10 problems) will be provided to you each week.  You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit).  Completed exercises should be handwritten neatly on clean paper.  Each homework assignment will be due at the beginning of class on Tuesday of the week after it is assigned.
