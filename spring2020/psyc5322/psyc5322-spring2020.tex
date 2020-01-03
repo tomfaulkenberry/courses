@@ -1,0 +1,184 @@
+% Created 2020-01-03 Fri 07:48
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[left=1in,right=1in,bottom=1in,top=1in]{geometry}
+\date{Spring 2020}
+\title{PSYC 5322: Psychometrics}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={PSYC 5322: Psychometrics},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section*{Contact info}
+\label{sec:org42ff4ba}
+\begin{itemize}
+\item Professor: Thomas J. Faulkenberry, Ph.D
+\item Office: Math 319
+\item Office hours: MF 9-11 am; MWF 1-3pm (\emph{or by appointment})
+\item Email: faulkenberry@tarleton.edu
+\item Website: \url{http://tomfaulkenberry.github.io}
+\item Phone: 254-968-9816
+\end{itemize}
+
+\section*{Course description}
+\label{sec:orgafbc962}
+
+This course will provide students with an introduction to the fundamental concepts of psychological measurement (psychometrics). It is roughly divided into three parts. In Part 1, we introduce the basic theoretical concepts underlying classical psychometrics, including psychological scaling, covariance/correlation, and dimensionality. In Part 2, we take a hands-on approach and learn how to estimate reliability and validity. Finally, in Part 3, we cover some advanced topics in more psychometrics, including confirmatory factor analysis, generalizability theory, and item response theory. All students are expected to have some background in applied statistics (PSYC 5300 or equivalent). 
+
+\section*{Course materials}
+\label{sec:orgb25bfb3}
+\begin{itemize}
+\item \emph{Textbook}: There are a lot of very good textbooks in psychometrics and measurement theory. However, I do not lecture directly from any specific textbook. I do recommend the following as a good reference to follow this semester, as it does a good job of bridging the theory of psychometrics with hands-on, practical examples.
+\begin{itemize}
+\item \emph{Psychometrics} (3rd edition) by Furr (\href{https://www.amazon.com/gp/product/1506339867/}{Amazon link})
+\end{itemize}
+
+\item \emph{Calculator}: you will need a basic scientific calculator to perform various calculations on homework and exams. I use a TI-84 (mine is over 20 years old and still works!), but any calculator with square roots and logarithms will suffice.
+
+\item \emph{JASP statistical software}: some of the exercises we do this semester will be done on the computer. One software package that we can do a lot with is JASP, which is freely downloadable from \href{http://www.jasp-stats.com}{www.jasp-stats.com}. JASP should be installed on all campus computers, but if you have a personal computer/laptop, go ahead and install it there\ldots{}it is free, so why not?
+
+\item \emph{R / RStudio}: for more advanced computational models (i.e., confirmatory factor analysis, Rasch models, etc.) we will need to use R (and RStudio). Both are free and work together; first, download and install R from \href{http://www.r-project.org}{www.r-project.org}, then download and install RStudio from \href{http://www.rstudio.com}{www.rstudio.com}.
+\end{itemize}
+
+\section*{Student learning outcomes}
+\label{sec:orge5a54c6}
+\begin{enumerate}
+\item Understand the basic concepts of psychological scaling, covariance, and test dimensionality
+\item Apply classical test theory to various methods of estimating reliability
+\item Understand the differences among content validity, criterion-related validity, and construct validity.
+\item Know the basics of test construction, including item analysis and scoring.
+\end{enumerate}
+
+\section*{Requirements and grading}
+\label{sec:orgdc3f998}
+\begin{itemize}
+\item Exam 1 (100 pts)
+\item Exam 2 (100 pts)
+\item Final exam (100 pts)
+\item Homework exercises (100 pts)
+\item \emph{Total = 400 points}
+\end{itemize}
+
+Grades will be assigned based on the percentage of points you accumulate out of these 400 points.  I will use the standard grading scale of A=90\%, B=80\%, etc.
+
+\subsection*{Exams}
+\label{sec:orgbfa722b}
+There will be 3 exams throughout the semester, occurring approximately once every four weeks.  They will cover material from lectures and homework exercises. Exams will be completed in class.
+
+Exam dates:
+
+\begin{itemize}
+\item Exam 1 (Tuesday, February 11)
+\item Exam 2 (Tuesday, March 31)
+\item Final exam (Tuesday, May 5)
+\end{itemize}
+
+\subsection*{Homework exercises}
+\label{sec:org058f6a8}
+In order to practice the concepts you learn this semester, you will complete a short homework assignment every week. A brief set of homework exercises will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit). Completed exercises should be handwritten neatly on clean paper. Each homework assignment will be due at the beginning of class on Tuesday of the week after it is assigned.
+
+\section*{Course Communication}
+\label{sec:org6335d55}
+
+Email is the primary means of official communication for this course.  If you have questions about the course, always feel free to send me an email at faulkenberry@tarleton.edu.  I only ask that you adhere to two guidelines:
+\begin{itemize}
+\item please include the course number (PSYC 5322) in the subject line.  For example, one good way to do this is:  Subject: [PSYC 5322] Question about Exam 2
+\item please use proper email etiquette.  Include a salutation (e.g., Dear Dr. Faulkenberry), complete sentences, and a closing (e.g., "Regards, Your Name").  You might be surprised how many times I get an email from a nondescript email address with no indication from WHOM the email was sent!
+\end{itemize}
+
+Also, I will send periodic class announcements via email.  Thus, it is imperative that you check your \emph{Tarleton email address} regularly so that you don't miss any of these messages.
+
+\section*{University Policy on "F" Grades}
+\label{sec:org0e3d6ee}
+Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
+
+\section*{Academic Honesty}
+\label{sec:org26f4f3c}
+
+Tarleton State University expects its students to maintain high standards of personal and scholarly conduct. Students guilty of academic dishonesty are subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
+
+In particular, any exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  The minimum sanction for violation of this policy is a grade of 0 on the affected exam.
+
+Each student’s honesty and integrity are taken for granted. However, if I find evidence of academic misconduct I will pursue the matter to the fullest extent permitted by the university. ACADEMIC MISCONDUCT OR DISHONESTY WILL RESULT IN A GRADE OF F FOR THE COURSE.  Students are strongly advised to avoid even the \emph{appearance} of academic misconduct. 
+
+\section*{Academic Affairs Core Value Statements}
+\label{sec:org7cdf52a}
+\subsection*{Academic Integrity Statement}
+\label{sec:org28ec869}
+Tarleton State University's core values are integrity, leadership, tradition, civility, excellence, and service.  Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct.  Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
+
+\subsection*{Academic Civility Statement}
+\label{sec:orgdbd2c93}
+Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
+
+\subsection*{Academic Excellence Statement}
+\label{sec:org8499486}
+Tarleton holds high expectations for students to assume responsibility for their own individual learning. Students are also expected to achieve academic excellence by:
+\begin{itemize}
+\item honoring Tarleton’s core values, upholding high standards of habit and behavior.
+\item maintaining excellence through class attendance and punctuality, preparing for active participation in all learning experiences.
+\item putting forth their best individual effort.
+\item continually improving as independent learners.
+\item engaging in extracurricular opportunities that encourage personal and academic growth.
+\item reflecting critically upon feedback and applying these lessons to meet future challenges.
+\end{itemize}
+
+\section*{Students with Disabilities Policy}
+\label{sec:org714da85}
+
+It is the policy of Tarleton State University to comply with the Americans with Disabilities  Act (www.ada.gov) and other applicable laws.  If you are a student with a disability seeking accommodations for this course, please contact the Center for Access and Academic Testing, at 254.968.9400 or caat@tarleton.edu. The office is located in Math 201. More information can be found at www.tarleton.edu/caat or in the University Catalog.​
+
+\textbf{Note:  any changes to this syllabus will be communicated to you by the instructor!}
+
+\newpage
+
+\section*{Semester Schedule}
+\label{sec:org4c2cd54}
+\begin{center}
+\begin{tabular}{rll}
+Unit & Dates & Topic\\
+\hline
+ & Jan 14 & (no class -- I will be at Joint Mathematics Meetings)\\
+ &  & \emph{Part 1 - Basic concepts in psychological measurement}\\
+1 & Jan 21 & Psychological scaling\\
+2 & Jan 28 & Individual differences and covariance/correlation\\
+3 & Feb 4 & Dimensionality and factor analysis\\
+ & \textbf{Feb 11} & \textbf{Exam 1}\\
+\hline
+ &  & \emph{Part 2 -- Estimating reliability and validity}\\
+4 & Feb 25 & Classical test theory\\
+5 & Mar 3 & Estimating reliability\\
+ & Mar 10 & (no class -- Spring Break)\\
+6 & Mar 17 & Estimating validity - part 1\\
+7 & Mar 24 & Estimating validity - part 2\\
+ & \textbf{Mar 31} & \textbf{Exam 2}\\
+\hline
+ &  & \emph{Part 3 -- Advanced psychometric theory}\\
+8 & Apr 7 & Confirmatory factor analysis\\
+9 & Apr 14 & Generalizability theory\\
+10 & Apr 21 & Item response theory\\
+ & Apr 28 & course review\\
+ & \textbf{May 5} & \textbf{Final exam}\\
+\hline
+\end{tabular}
+\end{center}
+\end{document}
