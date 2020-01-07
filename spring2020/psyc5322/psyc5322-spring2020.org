@@ -38,19 +38,21 @@ This course will provide students with an introduction to the fundamental concep
 ** Requirements and grading
 - Exam 1 (100 pts)
 - Exam 2 (100 pts)
+- Exam 3 (100 pts)
 - Final exam (100 pts)
 - Homework exercises (100 pts)
-- /Total = 400 points/
+- /Total = 500 points/
 
-Grades will be assigned based on the percentage of points you accumulate out of these 400 points.  I will use the standard grading scale of A=90%, B=80%, etc.
+Grades will be assigned based on the percentage of points you accumulate out of these 500 points.  I will use the standard grading scale of A=90%, B=80%, etc.
 
 *** Exams
-There will be 3 exams throughout the semester, occurring approximately once every four weeks.  They will cover material from lectures and homework exercises. Exams will be completed in class.
+There will be 4 exams throughout the semester, occurring approximately once every four weeks.  They will cover material from lectures and homework exercises. Exams will be completed in class.
 
 Exam dates:
 
 - Exam 1 (Tuesday, February 11)
-- Exam 2 (Tuesday, March 31)
+- Exam 2 (Tuesday, March 24)
+- Exam 3 (Tuesday, April 21)
 - Final exam (Tuesday, May 5)
   
 *** Homework exercises 
@@ -96,8 +98,6 @@ Tarleton holds high expectations for students to assume responsibility for their
 It is the policy of Tarleton State University to comply with the Americans with Disabilities  Act (www.ada.gov) and other applicable laws.  If you are a student with a disability seeking accommodations for this course, please contact the Center for Access and Academic Testing, at 254.968.9400 or caat@tarleton.edu. The office is located in Math 201. More information can be found at www.tarleton.edu/caat or in the University Catalog.​
  
 *Note:  any changes to this syllabus will be communicated to you by the instructor!*
- 
-\newpage
 
 ** Semester Schedule
 | Unit | Dates    | Topic                                                  |
@@ -110,17 +110,18 @@ It is the policy of Tarleton State University to comply with the Americans with 
 |      | *Feb 11* | *Exam 1*                                               |
 |------+----------+--------------------------------------------------------|
 |      |          | /Part 2 -- Estimating reliability and validity/        |
-|    4 | Feb 25   | Classical test theory                                  |
-|    5 | Mar 3    | Estimating reliability                                 |
+|    4 | Feb 18   | Classical test theory                                  |
+|    5 | Feb 25   | Estimating reliability                                 |
+|    6 | Mar 3    | Estimating validity - part 1                           |
 |      | Mar 10   | (no class -- Spring Break)                             |
-|    6 | Mar 17   | Estimating validity - part 1                           |
-|    7 | Mar 24   | Estimating validity - part 2                           |
-|      | *Mar 31* | *Exam 2*                                               |
+|    7 | Mar 17   | Estimating validity - part 2                           |
+|      | *Mar 24* | *Exam 2*                                               |
 |------+----------+--------------------------------------------------------|
 |      |          | /Part 3 -- Advanced psychometric theory/               |
-|    8 | Apr 7    | Confirmatory factor analysis                           |
-|    9 | Apr 14   | Generalizability theory                                |
-|   10 | Apr 21   | Item response theory                                   |
+|    8 | Mar 31   | Confirmatory factor analysis                           |
+|    9 | Apr 7    | Generalizability theory                                |
+|   10 | Apr 14   | Item response theory                                   |
+|      | *Apr 21* | *Exam 3*                                               |
 |      | Apr 28   | course review                                          |
 |      | *May 5*  | *Final exam*                                           |
 |------+----------+--------------------------------------------------------|
