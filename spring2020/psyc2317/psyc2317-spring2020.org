@@ -37,29 +37,27 @@ Statistical methods are the primary tool for research in psychology. They are wh
 ** Requirements and grading
 - Exam 1 (100 pts)
 - Exam 2 (100 pts)
-- Exam 3 (100 pts)
 - Final exam (100 pts)
 - Weekly quizzes (100 pts)
 - Homework exercises (100 pts)
-- /Total = 600 points/
+- /Total = 500 points/
 
-Grades will be assigned based on the percentage of points you accumulate out of these 600 points. I will use the standard grading scale of A=90%, B=80%, etc.
+Grades will be assigned based on the percentage of points you accumulate out of these 500 points. I will use the standard grading scale of A=90%, B=80%, etc.
 
 *** Exams
-There will be four total exams throughout the semester, occurring approximately once every three to four weeks.  They will cover material from lectures, quizzes, and homework exercises. Exams are closed book with short answer questions (you'll a Bluebook for each exam) and will be completed in class.
+There will be three total exams throughout the semester, occurring approximately once every three to four weeks.  They will cover material from lectures, quizzes, and homework exercises. Exams are closed book with short answer questions (you'll a Bluebook for each exam) and will be completed in class. /Note: after March 23, exams will be given online in Canvas in "take-home" format/.
 
 Exam dates:
 
 - Exam 1 (Thursday, February 20)
-- Exam 2 (Thursday, March 26)
-- Exam 3 (Thursday, April 23)
-- Final exam (Friday, May 1, 8-10:00 am)
+- Exam 2 (due Sunday, April 5, 11:59 pm)
+- Final exam (due Sunday, April 29, 11:59 pm)
   
 *** Weekly quizzes 
-I will administer a short in-class multiple choice quiz at the beginning of class on Tuesday of each week (excluding Tuesdays immediately following exam weeks). The quiz will cover content from the previous week's lecture and homework exercises. Each quiz counts for 10 possible points.  There will be 10 of these quizzes, so you will earn up to 100 points for your overall quiz grade.
+I will administer a short in-class multiple choice quiz at the beginning of class on Tuesday of each week (excluding Tuesdays immediately following exam weeks). The quiz will cover content from the previous week's lecture and homework exercises. Each quiz counts for 10 possible points.  There will be 10 of these quizzes, so you will earn up to 100 points for your overall quiz grade. /Note: after March 23, weekly quizzes will no longer be given./
 
 *** Homework exercises 
-In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week. A set of homework exercises (usually between 5 and 10 problems) will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit). Completed exercises should be handwritten neatly on clean paper. Each homework assignment will be due at the beginning of class on Tuesday of the week after it is assigned.
+In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week. A set of homework exercises (usually between 5 and 10 problems) will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit). Completed exercises should be handwritten neatly on clean paper. Each homework assignment will be due at the beginning of class on Tuesday of the week after it is assigned. /Note: after March 23, homework will be submitted online via Canvas/.
 
 ** Course Communication
 
@@ -106,23 +104,22 @@ It is the policy of Tarleton State University to comply with the Americans with 
 *Note:  any changes to this syllabus will be communicated to you by the instructor!*
 
 ** Semester Schedule
-| Unit | Dates          | Topic                                                 |
-|------+----------------+-------------------------------------------------------|
-|      | Jan 13-17      | (no class -- I will be at Joint Mathematics Meetings) |
-|    1 | Jan 20-24      | Measures of central tendency                          |
-|    2 | Jan 27-31      | Measures of variability                               |
-|    3 | Feb 3-7        | The normal distribution                               |
-|    4 | Feb 10-14      | Distributions of sample means                         |
-|      | *Feb 17-21*    | *Exam 1*                                              |
-|    5 | Feb 24-28      | Estimating with confidence intervals                  |
-|    6 | Mar 2-6        | Testing hypotheses                                    |
-|      | Mar 9-13       | (no class -- Spring Break)                            |
-|    7 | Mar 16-20      | Introduction to the \( t \)-test                      |
-|      | *Mar 23-27*    | *Exam 2*                                              |
-|    8 | Mar 30 - Apr 3 | \( t \)-tests for independent samples                 |
-|    9 | Apr 6-10       | Confidence intervals for \( t \)-tests                |
-|   10 | Apr 13-17      | Analysis of variance                                  |
-|      | *Apr 20-24*    | *Exam 3*                                              |
-|      | Apr 28         | Course review                                         |
-|      | *May 1*        | *Final exam - Friday, May 1, 8-10 am*                 |
+| Unit | Dates            | Topic                                                 |
+|------+------------------+-------------------------------------------------------|
+|      | Jan 13-17        | (no class -- I will be at Joint Mathematics Meetings) |
+|    1 | Jan 20-24        | Measures of central tendency                          |
+|    2 | Jan 27-31        | Measures of variability                               |
+|    3 | Feb 3-7          | The normal distribution                               |
+|    4 | Feb 10-14        | Distributions of sample means                         |
+|      | *Feb 17-21*      | *Exam 1*                                              |
+|    5 | Feb 24-28        | Estimation and hypothesis testing                     |
+|    6 | Mar 2-6          | Introduction to the \( t \)-test                      |
+|      | Mar 9-13         | (no class -- Spring Break)                            |
+|      | Mar 16-20        | (no class -- extended break due to COVID-19)          |
+|    7 | Mar 23-27        | \( t \)-tests for independent samples                 |
+|      | *Mar 30 - Apr 3* | *Exam 2* due Sunday, 4/5, 11:59 pm                    |
+|    8 | Apr 6-10         | Confidence intervals for \( t \)-tests                |
+|    9 | Apr 13-17        | Analysis of variance                                  |
+|      | *Apr 20-24*      | *Final exam* due Sunday, 4/26, 11:59 pm               |
 
+/Note: Beginning March 23, all course activities are shifted to online format on Canvas. See course Canvas page for detailed instructions./

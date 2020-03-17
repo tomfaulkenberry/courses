@@ -52,8 +52,6 @@ Exam dates:
 - Exam 2 (Thursday, March 26)
 - Exam 3 (Thursday, April 23)
 - Final exam (Tuesday, May 5, 1-3 pm)
-
-/Note: after March 23, all activities shifted to online.  All assessment will be done with "take-home" homework exercises. There will be no in-class exams for the remaining of the semester./
   
 *** Homework exercises 
 In order to practice the concepts you learn this semester, you will complete a short homework assignment every week. A brief set of homework exercises will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit). Completed exercises should be handwritten neatly on clean paper. Each homework assignment will be due at the beginning of class on Tuesday of the week after it is assigned.
@@ -116,16 +114,17 @@ It is the policy of Tarleton State University to comply with the Americans with 
 |      |              | /Part 2 -- Estimating reliability and validity/        |
 |    4 | Feb 17-21    | Classical test theory                                  |
 |    5 | Feb 24-28    | Estimating reliability                                 |
-|    6 | Mar 2-6      | Estimating criterion-related validity                  |
+|    6 | Mar 2-6      | Estimating validity - part 1                           |
 |      | Mar 9-13     | (no class -- Spring Break)                             |
-|      | Mar 16-20    | (no class -- extended break due to COVID-19)           |
-|    7 | Mar 23-27    | Estimating construct validity                          |
+|    7 | Mar 16-20    | Estimating validity - part 2                           |
+|      | *Mar 23-27 * | *Exam 2*                                               |
 |------+--------------+--------------------------------------------------------|
 |      |              | /Part 3 -- Practical issues in testing/measurement/    |
-|    8 | Mar 30-Apr 3 | Exploratory factor analysis in JASP                    |
+|    8 | Mar 30-Apr 3 | Test construction                                      |
 |    9 | Apr 6-10     | Item analysis                                          |
-|   10 | Apr 13-17    | Item response theory                                   |
-|   11 | Apr 20-24    | Confirmatory factor analysis                           |
+|   10 | Apr 13-17    | Scoring                                                |
+|      | *Apr 20-24*  | *Exam 3*                                               |
+|      | Apr 27-May 1 | course review                                          |
+|      | *May 5*      | *Final exam on Tuesday, May 5, 1:00-3:00 pm*           |
 |------+--------------+--------------------------------------------------------|
 
-/Note: beginning March 23, all activities are shifted to online. See Canvas page for more details./
