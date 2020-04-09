@@ -1,0 +1,101 @@
+gender,height,shoesize,smoker,handed,mothand,fathhand,hairappt,cds,greq,gpa,exercise,polview,tv,coffee,sleep,drinks,pepsicok,haircol,eyecolor,distance,books,studyhrs,mostint,leastint
+female,63,7.5,no,right,right,right,8,100,600,4,3,middle,15,0,8,1,can tell difference,brown,other,6,3,25,6,11
+female,63,7,no,right,right,right,20,30,650,4,3,conservative,5,0,6,1,can tell difference,brown,other,67,1,10,6,2
+female,61,8,no,right,left,left,25,100,780,4,3,middle,5,2,8,1,cannot tell difference,black,brown,0.5,2,50,16,15
+male,71,8,no,right,right,right,0,100,720,4,2,very conservative,0,5,6,0,cannot tell difference,black,brown,105,2,15,8,5
+male,72,11,no,right,right,right,25,15,510,3,5,liberal,8,0,8,0,can tell difference,brown,brown,3,1,20,16,2
+male,73,11.5,no,right,right,right,0,20,640,4,4,middle,4,0,4.5,0,can tell difference,brown,brown,0,1,5,7,21
+female,78,9,no,right,right,right,30,50,700,3.36,5,middle,12,0,5,2,can tell difference,brown,green,0.5,1,6,6,13
+female,70,9,no,right,right,right,20,25,450,3.6,4,middle,8,0,6,5,can tell difference,brown,blue,80,1,4,6,3
+male,62,8.5,no,right,right,right,75,0,500,3.4,1,very liberal,6,0,5,0,can tell difference,black,black,69,0,6,8,16
+male,67.5,9,yes,left,left,right,170,20,600,4,2,very liberal,14,5,7,1,can tell difference,blonde,blue,110,12,10,11,16
+female,64,9,no,right,right,right,16,8,540,4,2,middle,2,0,7,0,can tell difference,brown,other,2,2,12,16,7
+female,68,11,no,right,right,right,53,300,650,4,0,very liberal,35,0,9,0,can tell difference,brown,brown,2,0,35,6,9
+female,62,7.5,no,right,right,right,25,25,510,3.5,6,very conservative,5,0,6.5,0,can tell difference,brown,blue,0.5,1,5,16,21
+female,70,8,no,right,right,right,50,5,590,3.4,8,middle,20,0,4,0,can tell difference,black,brown,6,5,7,11,15
+female,67,9,no,right,right,right,85,20,400,4,4,middle,20,0,6,0,can tell difference,brown,blue,125,4,5,16,4
+male,65,9,no,right,right,right,80,20,670,4,0,very liberal,4,1,5,2,can tell difference,red,green,60,1,20,6,8
+female,62,7,no,right,right,right,115,45,580,3.75,5,middle,10,0,10,2,can tell difference,blonde,blue,0.5,0,5,16,11
+female,64,8.5,no,right,right,right,200,250,460,4,7,liberal,10,0,7,0,can tell difference,brown,blue,5,9,11,20,15
+female,63,9,no,right,left,right,25,25,550,3.667,1,middle,20,0,4,2,can tell difference,black,brown,1,0,5,12,17
+male,60,12,no,right,right,right,10,100,610,3.5,6,middle,5,1,8,0,can tell difference,brown,blue,3.5,0,5,16,1
+male,73,10,no,left,right,right,20,40,790,4,3,middle,10,0,6,0,can tell difference,brown,green,60,1,15,5,15
+male,67,9.5,no,right,right,right,13,20,480,4,3,conservative,6,0,9,0.5,can tell difference,brown,brown,1,0,3,16,8
+female,62,9,no,right,right,right,24,25,750,4,3,middle,7,1,6.5,4,cannot tell difference,other,other,7,6,60,16,2
+male,73,13,no,right,right,right,10,10,650,3,6,liberal,15,0,6,0,cannot tell difference,black,brown,60,0,3,10,13
+male,71,8,no,left,left,left,100,75,730,4,5,very liberal,10,0,7,2,can tell difference,red,green,2,5,20,17,4
+female,63,7.5,no,right,right,right,8,100,550,4,3,middle,15,0,8,1,can tell difference,brown,other,6,3,25,6,11
+female,63,7,no,right,right,right,20,30,650,4,3,conservative,5,0,6,1,can tell difference,brown,other,67,1,10,6,2
+female,61,8,no,right,left,left,25,100,780,4,3,middle,5,2,8,1,cannot tell difference,black,brown,0.5,2,50,16,15
+male,71,8,no,right,right,right,0,100,720,4,2,very conservative,0,5,6,0,cannot tell difference,black,brown,105,2,15,8,5
+male,72,11,no,right,right,right,25,15,510,3,5,liberal,8,0,8,0,can tell difference,brown,brown,3,1,20,16,2
+male,73,11.5,no,right,right,right,0,20,640,4,4,middle,4,0,4.5,0,can tell difference,brown,brown,0,1,5,7,21
+female,78,9,no,right,right,right,30,50,700,3.36,5,middle,12,0,5,2,can tell difference,brown,green,0.5,1,6,6,13
+female,70,9,no,right,right,right,20,25,450,3.6,4,middle,8,0,6,5,can tell difference,brown,blue,80,1,4,6,3
+male,62,8.5,no,right,right,right,75,0,500,3.4,1,very liberal,6,0,5,0,can tell difference,black,black,69,0,6,8,16
+male,67.5,9,yes,left,left,right,170,20,600,4,2,very liberal,14,5,7,1,can tell difference,blonde,blue,110,12,10,11,16
+female,64,9,no,right,right,right,16,8,540,4,2,middle,2,0,7,0,can tell difference,brown,other,2,2,12,16,7
+female,68,11,no,right,right,right,53,300,650,4,0,very liberal,35,0,9,0,can tell difference,brown,brown,2,0,35,6,9
+female,62,7.5,no,right,right,right,25,25,510,3.5,6,very conservative,5,0,6.5,0,can tell difference,brown,blue,0.5,1,5,16,21
+female,70,8,no,right,right,right,50,5,590,3.4,8,middle,20,0,4,0,can tell difference,black,brown,6,5,7,11,15
+female,67,9,no,right,right,right,85,20,400,4,4,middle,20,0,6,0,can tell difference,brown,blue,125,4,5,16,4
+male,65,9,no,right,right,right,80,20,670,4,0,very liberal,4,1,5,2,can tell difference,red,green,60,1,20,6,8
+female,62,7,no,right,right,right,115,45,580,3.75,5,middle,10,0,10,2,can tell difference,blonde,blue,0.5,0,5,16,11
+female,64,8.5,no,right,right,right,200,250,460,4,7,liberal,10,0,7,0,can tell difference,brown,blue,5,9,11,20,15
+female,63,9,no,right,left,right,25,25,550,3.667,1,middle,20,0,4,2,can tell difference,black,brown,1,0,5,12,17
+male,60,12,no,right,right,right,10,100,610,3.5,6,middle,5,1,8,0,can tell difference,brown,blue,3.5,0,5,16,1
+male,73,10,no,left,right,right,20,40,790,4,3,middle,10,0,6,0,can tell difference,brown,green,60,1,15,5,15
+male,67,9.5,no,right,right,right,13,20,480,4,3,conservative,6,0,9,0.5,can tell difference,brown,brown,1,0,3,16,8
+female,62,9,no,right,right,right,24,25,750,4,3,middle,7,1,6.5,4,cannot tell difference,other,other,7,6,60,16,2
+male,73,13,no,right,right,right,10,10,650,3,6,liberal,15,0,6,0,cannot tell difference,black,brown,60,0,3,10,13
+male,71,8,no,left,left,left,100,75,730,4,5,very liberal,10,0,7,2,can tell difference,red,green,2,5,20,17,4
+female,63,7.5,no,right,right,right,8,100,600,4,3,middle,15,0,8,1,can tell difference,brown,other,6,3,25,6,11
+female,63,7,no,right,right,right,20,30,650,4,3,conservative,5,0,6,1,can tell difference,brown,other,67,1,10,6,2
+female,61,8,no,right,left,left,25,100,780,4,3,middle,5,2,8,1,cannot tell difference,black,brown,0.5,2,50,16,15
+male,71,8,no,right,right,right,0,100,720,4,2,very conservative,0,5,6,0,cannot tell difference,black,brown,105,2,15,8,5
+male,72,11,no,right,right,right,25,15,510,3,5,liberal,8,0,8,0,can tell difference,brown,brown,3,1,20,16,2
+male,73,11.5,no,right,right,right,0,20,640,4,4,middle,4,0,4.5,0,can tell difference,brown,brown,0,1,5,7,21
+female,78,9,no,right,right,right,30,50,700,3.36,5,middle,12,0,5,2,can tell difference,brown,green,0.5,1,6,6,13
+female,70,9,no,right,right,right,20,25,450,3.6,4,middle,8,0,6,5,can tell difference,brown,blue,80,1,4,6,3
+female,62,8.5,no,right,right,right,75,0,500,3.4,1,very liberal,6,0,5,0,can tell difference,black,black,69,0,6,8,16
+female,67.5,9,yes,left,left,right,170,20,600,4,2,very liberal,14,5,7,1,can tell difference,blonde,blue,110,12,10,11,16
+female,64,9,no,right,right,right,16,8,540,4,2,middle,2,0,7,0,can tell difference,brown,other,2,2,12,16,7
+female,68,11,no,right,right,right,53,300,650,4,0,very liberal,35,0,9,0,can tell difference,brown,brown,2,0,35,6,9
+female,62,7.5,no,right,right,right,25,25,510,3.5,6,very conservative,5,0,6.5,0,can tell difference,brown,blue,0.5,1,5,16,21
+female,70,8,no,right,right,right,50,5,590,3.4,8,middle,20,0,4,0,can tell difference,black,brown,6,5,7,11,15
+female,67,9,no,right,right,right,85,20,400,4,4,middle,20,0,6,0,can tell difference,brown,blue,125,4,5,16,4
+female,65,9,no,right,right,right,80,20,670,4,0,very liberal,4,1,5,2,can tell difference,red,green,60,1,20,6,8
+female,62,7,no,right,right,right,115,45,580,3.75,5,middle,10,0,10,2,can tell difference,blonde,blue,0.5,0,5,16,11
+female,64,8.5,no,right,right,right,200,250,460,4,7,liberal,10,0,7,0,can tell difference,brown,blue,5,9,11,20,15
+female,63,9,no,right,left,right,25,25,550,3.667,1,middle,20,0,4,2,can tell difference,black,brown,1,0,5,12,17
+male,60,12,no,right,right,right,10,100,610,3.5,6,middle,5,1,8,0,can tell difference,brown,blue,3.5,0,5,16,1
+male,73,10,no,left,right,right,20,40,790,4,3,middle,10,0,6,0,can tell difference,brown,green,60,1,15,5,15
+male,67,9.5,no,right,right,right,13,20,480,4,3,conservative,6,0,9,0.5,can tell difference,brown,brown,1,0,3,16,8
+female,62,9,no,right,right,right,24,25,750,4,3,middle,7,1,6.5,4,cannot tell difference,other,other,7,6,60,16,2
+male,73,13,no,right,right,right,10,10,650,3,6,liberal,15,0,6,0,cannot tell difference,black,brown,60,0,3,10,13
+female,71,8,no,left,left,left,100,75,730,4,5,very liberal,10,0,7,2,can tell difference,red,green,2,5,20,17,4
+female,63,7.5,no,right,right,right,8,100,600,4,3,middle,15,0,8,1,can tell difference,brown,other,6,3,25,6,11
+female,63,7,no,right,right,right,20,30,650,4,3,conservative,5,0,6,1,can tell difference,brown,other,67,1,10,6,2
+female,61,8,no,right,left,left,25,100,780,4,3,middle,5,2,8,1,cannot tell difference,black,brown,0.5,2,50,16,15
+male,71,8,no,right,right,right,0,100,720,4,2,very conservative,0,5,6,0,cannot tell difference,black,brown,105,2,15,8,5
+male,72,11,no,right,right,right,25,15,510,3,5,liberal,8,0,8,0,can tell difference,brown,brown,3,1,20,16,2
+male,73,11.5,no,right,right,right,0,20,640,4,4,middle,4,0,4.5,0,can tell difference,brown,brown,0,1,5,7,21
+female,78,9,no,right,right,right,30,50,700,3.36,5,middle,12,0,5,2,can tell difference,brown,green,0.5,1,6,6,13
+female,70,9,no,right,right,right,20,25,450,3.6,4,middle,8,0,6,5,can tell difference,brown,blue,80,1,4,6,3
+female,62,8.5,no,right,right,right,75,0,500,3.4,1,very liberal,6,0,5,0,can tell difference,black,black,69,0,6,8,16
+female,67.5,9,yes,left,left,right,170,20,600,4,2,very liberal,14,5,7,1,can tell difference,blonde,blue,110,12,10,11,16
+female,64,9,no,right,right,right,16,8,540,4,2,middle,2,0,7,0,can tell difference,brown,other,2,2,12,16,7
+female,68,11,no,right,right,right,53,300,650,4,0,very liberal,35,0,9,0,can tell difference,brown,brown,2,0,35,6,9
+female,62,7.5,no,right,right,right,25,25,510,3.5,6,very conservative,5,0,6.5,0,can tell difference,brown,blue,0.5,1,5,16,21
+female,70,8,no,right,right,right,50,5,590,3.4,8,middle,20,0,4,0,can tell difference,black,brown,6,5,7,11,15
+female,67,9,no,right,right,right,85,20,400,4,4,middle,20,0,6,0,can tell difference,brown,blue,125,4,5,16,4
+female,65,9,no,right,right,right,80,20,670,4,0,very liberal,4,1,5,2,can tell difference,red,green,60,1,20,6,8
+female,62,7,no,right,right,right,115,45,580,3.75,5,middle,10,0,10,2,can tell difference,blonde,blue,0.5,0,5,16,11
+female,64,8.5,no,right,right,right,200,250,460,4,7,liberal,10,0,7,0,can tell difference,brown,blue,5,9,11,20,15
+female,63,9,no,right,left,right,25,25,550,3.667,1,middle,20,0,4,2,can tell difference,black,brown,1,0,5,12,17
+male,60,12,no,right,right,right,10,100,610,3.5,6,middle,5,1,8,0,can tell difference,brown,blue,3.5,0,5,16,1
+male,73,10,no,left,right,right,20,40,790,4,3,middle,10,0,6,0,can tell difference,brown,green,60,1,15,5,15
+male,67,9.5,no,right,right,right,13,20,480,4,3,conservative,6,0,9,0.5,can tell difference,brown,brown,1,0,3,16,8
+female,62,9,no,right,right,right,24,25,750,4,3,middle,7,1,6.5,4,cannot tell difference,other,other,7,6,60,16,2
+male,73,13,no,right,right,right,10,10,650,3,6,liberal,15,0,6,0,cannot tell difference,black,brown,60,0,3,10,13
+female,71,8,no,left,left,left,100,75,730,4,5,very liberal,10,0,7,2,can tell difference,red,green,2,5,20,17,4
