@@ -1,0 +1,138 @@
+#+TITLE: PSYC 3435: Principles of Research for the Behavorial Sciences
+#+AUTHOR: 
+#+DATE: Fall 2020
+#+OPTIONS: toc:nil
+#+OPTIONS: num:nil
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [10pt]
+#+LATEX_HEADER: \usepackage[left=1in,right=1in,bottom=1in,top=1in]{geometry}
+
+** Contact info
+- Professor: Thomas J. Faulkenberry, Ph.D
+- Office: Math 319
+- Office hours: /TBA/
+- Email: faulkenberry@tarleton.edu
+- Website: [[http://tomfaulkenberry.github.io]]
+- Phone: 254-968-9816
+
+** Course description
+
+This laboratory course is designed to introduce students to the philosophy of scientific inquiry with an emphasis on experimental methodology. This will be accomplished via a combination of traditional lectures along with an application of principles through laboratory experimentation and demonstration. Essentially, we will cover the "nuts and bolts" of putting together and completing a research project in psychology. To this end, we will cover all fourteen chapters of the textbook. All students enrolled in this course are required to have *previously taken* PSYC 3309 (Writing in Psychology) and PSYC 2317 (Statistical Methods in Psychology). 
+
+** Course materials
+
+- /The Process of Research in Psychology/ (3rd ed.) by McBride (2015) [[https://www.amazon.com/Process-Research-Psychology-Dawn-McBride/dp/1483347605/][Amazon link]]
+- /APA Publication Manual/ (6th ed.) [[https://www.amazon.com/Publication-Manual-American-Psychological-Association/dp/143383216X][Amazon link]]
+- JASP statistical software (free download from [[http://jasp-stats.org][jasp-stats.org]])
+
+** Student learning outcomes
+
+1. Describe advantages of the scientific method compared to other approaches
+2. Identify various research designs and uses of each
+3. Conduct library research
+4. Paraphrase and cite material from primary sources 
+5. Develop a research question and write hypotheses appropriate for it
+6. Design and conduct a research project to test hypotheses
+7. Analyze data collected from research using computer software
+8. Communicate the findings of research as a complete APA style manuscript
+
+** Requirements and grading
+
+- Exam 1 (100 pts)
+- Exam 2 (100 pts)
+- Exam 3 (100 pts)
+- Unit quizzes (100 pts)
+- Lab assignments (100 pts)
+- /Total = 500 points/
+
+Grades will be assigned based on the percentage of points you accumulate out of these 500 points.  I will use the standard grading scale of A=90%, B=80%, etc.
+
+*** Exams (60% of grade)
+There will be three exams throughout the semester.  Exams are due by 11:59 pm on the due date.  Each exam will have a time limit and may only be attempted once.  Note that the final exam (Exam 3) is comprehensive.
+
+Exam dates:
+
+- Exam 1, due Sunday, October 4
+- Exam 2, due Sunday, November 1
+- Exam 3, due Sunday, November 22
+
+*** Unit quizzes (20% of grade)
+
+At the completion of each unit, there will be a short quiz covering the main content.  Each quiz is worth 10 points (for a total of 100 possible quiz points for the semester).  Each quiz will be timed and may only be attempted once, and is due by 11:59 pm on the due date.
+
+*** Lab assignments (20% of grade)
+
+There will be four lab assignments this semester.  Each assignment is designed to give you first hand experience with essential research skills, such as conducting an experiment, collecting data, and writing up an APA manuscript.  Except for Lab 1 (an APA exercise), each of you will administer a short experiment, collect some data, analyze the collected data for the class, and compose an APA manuscript based on the experiment and the results. 
+
+Lab Assignments and dates
+
+- Lab 1 – APA formatting (10 points), due Friday, September 4
+- Lab 2.1 – Correlational design, data collection (10 points), due Friday, September 11
+- Lab 2.2 – Correlational design, analysis and report (20 points), due Friday, September 25
+- Lab 3.1 – Independent groups design, data collection (10 points), due Friday, October 2
+- Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, October 16
+- Lab 4.1 – Factorial design, data collection (10 points), due Friday, October 23
+- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, November 6
+
+** Course Communication
+
+Email is the primary means of communication for this course.  If you have questions about the course, always feel free to send me an email at faulkenberry@tarleton.edu.  I only ask that you adhere to two guidelines:
+  - please include the course number (PSYC 3435) in the subject line.  For example, one good way to do this is:  Subject: [PSYC 3435] Question about Lab 2
+  - please use proper email etiquette.  Include a salutation (e.g., Dear Dr. Faulkenberry), complete sentences, and a closing (e.g., "Regards, Your Name").  You might be surprised how many times I get an email from a nondescript email address with no indication from WHOM the email was sent!
+
+Also, I will be sending periodic emails to each of you that update you on course progress, due dates, etc.  It is imperative that you check your /Tarleton email address/ regularly so that you don't miss any of these messages.
+
+** CV Points for Psychology Majors
+Beginning Fall 2019, all Tarleton psychology majors are required to accumulate a certain number of "CV points" as a requirement for graduation. CV is an acronym for "curriculum vitae", which is the traditional name of an academic resume.  No graduating psychology major will receive a diploma without completion/verification of the required 15 CV points. Some classes may build in CV point assignments, but ultimately it is the students’ responsibility to monitor their participation and acquire points during their time at Tarleton.  More information on pre-approved CV points, submission, and tracking of these points can be found in the CV Point Canvas site, as well in the video at the following link: https://bit.ly/2L52r21. Please note that submissions are graded, and may not be approved for points if they do not meet the CV standard.  If a student has a question about CV points, they should send an email to psychcvpointga@tarleton.edu.
+
+** University Policy on "F" Grades
+Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
+
+** Academic Honesty
+
+Cheating, plagiarism (submitting another person’s materials or ideas as one’s own without proper attribution), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
+
+In particular, any quiz or exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  
+
+The minimum sanction for /any/ act of academic dishonesty is a grade of 0 on the affected assignment; a grade of F for the course may be assigned in severe cases.
+
+** Academic Affairs Core Value Statements
+
+*** Academic Integrity Statement
+Tarleton State University's core values are integrity, leadership, tradition, civility, excellence, and service.  Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct.  Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
+
+*** Academic Civility Statement 
+Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
+
+*** Academic Excellence Statement
+Tarleton holds high expectations for students to assume responsibility for their own individual learning. Students are also expected to achieve academic excellence by:
+- honoring Tarleton’s core values, upholding high standards of habit and behavior.
+- maintaining excellence through class attendance and punctuality, preparing for active participation in all learning experiences. 
+- putting forth their best individual effort.
+- continually improving as independent learners.
+- engaging in extracurricular opportunities that encourage personal and academic growth.
+- reflecting critically upon feedback and applying these lessons to meet future challenges.
+
+** Students with Disabilities Policy
+
+It is the policy of Tarleton State University to comply with the Americans with Disabilities  Act (www.ada.gov) and other applicable laws.  If you are a student with a disability seeking accommodations for this course, please contact the Center for Access and Academic Testing, at 254.968.9400 or caat@tarleton.edu. The office is located in Math 201. More information can be found at www.tarleton.edu/caat or in the University Catalog.​
+ 
+*Note:  any changes to this syllabus will be communicated to you by the instructor!*
+ 
+** Semester schedule
+
+| Unit | Topic                                                        | Due date         |
+|------+--------------------------------------------------------------+------------------|
+|    0 | Statistics review                                            | Sunday, Aug 30   |
+|    1 | Knowing in psychological science                             | Sunday, Sep 6    |
+|    2 | Reading the literature / APA style                           | Sunday, Sep 13   |
+|    3 | Basic research methods                                       | Sunday, Sep 20   |
+|    4 | Ethics in psychological science                              | Sunday, Sep 27   |
+|      | *Exam 1*                                                     | *Sunday, Oct 4*  |
+|    5 | Experiments: selecting and manipulating variables            | Sunday, Oct 11   |
+|    6 | Experiments: sampling methods                                | Sunday, Oct 18   |
+|    7 | Experiments: classic designs                                 | Sunday, Oct 25   |
+|      | *Exam 2*                                                     | *Sunday, Nov 1*  |
+|    8 | Non-experiments: survey and correlational designs            | Sunday, Nov 8    |
+|    9 | Non-experiments: quasi-experiments and developmental designs | Sunday, Nov 15   |
+|      | *Exam 3*                                                     | *Sunday, Nov 22* |
