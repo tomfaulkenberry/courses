@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-08-10 Mon 09:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PSYC 2317: Statistical Methods for Psychology</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">PSYC 2317: Statistical Methods for Psychology</h1>
+
+<div id="outline-container-orgd4bcd11" class="outline-2">
+<h2 id="orgd4bcd11">Contact info</h2>
+<div class="outline-text-2" id="text-orgd4bcd11">
+<ul class="org-ul">
+<li>Professor: Thomas J. Faulkenberry, Ph.D</li>
+<li>Office: Math 319</li>
+<li>Office hours: TBA</li>
+<li>Email: faulkenberry@tarleton.edu</li>
+<li>Website: <a href="http://tomfaulkenberry.github.io">http://tomfaulkenberry.github.io</a></li>
+<li>Phone: 254-968-9816</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2583d68" class="outline-2">
+<h2 id="org2583d68">Course description</h2>
+<div class="outline-text-2" id="text-org2583d68">
+<p>
+Statistical methods are the primary tool for research in psychology. They are what allow us as researchers to make consistent, data-driven decisions.  As such, this is an extremely important course and one that I take very seriously as your professor. The topics we will cover this semester will include descriptive statistics (how we describe data) and inferential statistics (how we make decisions about data).  Specifically, this includes central tendency, variability, the distinction between populations and samples, hypothesis testing, and a variety of inferential tests that we can apply to data, including t-tests, linear regression, and analysis of variance.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad18b7a" class="outline-2">
+<h2 id="orgad18b7a">Course materials</h2>
+<div class="outline-text-2" id="text-orgad18b7a">
+<ul class="org-ul">
+<li><i>Learning Statistics with JASP: A Tutorial for Psychology Students and Other Beginners</i>, by Navarro, Foxcroft, and Faulkenberry (2019). 
+<ul class="org-ul">
+<li>This is a free textbook which can be downloaded from <a href="http://learnstatswithjasp.com">www.learnstatswithjasp.com</a></li>
+</ul></li>
+<li>JASP statistical software, freely downloadable from <a href="http://www.jasp-stats.com">www.jasp-stats.com</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5efc1fc" class="outline-2">
+<h2 id="org5efc1fc">Student learning outcomes</h2>
+<div class="outline-text-2" id="text-org5efc1fc">
+<ol class="org-ol">
+<li>Identify variables under study (including independent and dependent variables)</li>
+<li>Choose appropriate measures of descriptive statistics</li>
+<li>Select and perform appropriate inferential statistics</li>
+<li>Draw appropriate statistical conclusions from results of analyses</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orga8c7f49" class="outline-2">
+<h2 id="orga8c7f49">Requirements and grading</h2>
+<div class="outline-text-2" id="text-orga8c7f49">
+<ul class="org-ul">
+<li>Exam 1 (100 pts)</li>
+<li>Exam 2 (100 pts)</li>
+<li>Exam 3 (100 pts)</li>
+<li>Weekly quizzes (100 pts)</li>
+<li>Homework exercises (100 pts)</li>
+<li><i>Total = 500 points</i></li>
+</ul>
+
+<p>
+Grades will be assigned based on the percentage of points you accumulate out of these 500 points.  I will use the standard grading scale of A=90%, B=80%, etc.
+</p>
+</div>
+
+<div id="outline-container-org9fc20a2" class="outline-3">
+<h3 id="org9fc20a2">Exams</h3>
+<div class="outline-text-3" id="text-org9fc20a2">
+<p>
+There will be three exams throughout the semester, occurring approximately once every four to five weeks.  They will cover material from lectures, quizzes, and homework exercises. Exams will be "take-home", primarily consisting of short-answer questions.
+</p>
+
+<p>
+Tentative exam dates:
+</p>
+
+<ul class="org-ul">
+<li>Exam 1 (Thursday, September 26)</li>
+<li>Exam 2 (Thursday, October 24)</li>
+<li>Exam 3 (Thursday, November 21)</li>
+<li>Final exam (Friday, December 6, 8-10:00 am)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org89d1e21" class="outline-3">
+<h3 id="org89d1e21">Weekly quizzes</h3>
+<div class="outline-text-3" id="text-org89d1e21">
+<p>
+To prepare for each week's lectures, you will watch a short (10-20 minute) video posted on Canvas where I introduce the week's concepts. After watching this video, you will complete an online multiple-choice quiz, the aim of which is to check for understanding of the concepts presented. Each quiz counts for 10 possible points. There will be 10 of these quizzes, so you will earn up to 100 points for your overall quiz grade.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3bfea42" class="outline-3">
+<h3 id="org3bfea42">Homework exercises</h3>
+<div class="outline-text-3" id="text-org3bfea42">
+<p>
+In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week. A set of homework exercises (usually around 4-5 problems) will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit). Homework will be submitted online on Canvas &#x2013; in my experience, it is probably easiest to hand-write your solutions neatly on clean paper and either scan or take a photo of the completed work to submit.  Each homework assignment will be due at 11:59 pm on Sunday immediately following the week it was assigned.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1fa0f96" class="outline-2">
+<h2 id="org1fa0f96">Fall 2020 Safety Measures</h2>
+<div class="outline-text-2" id="text-org1fa0f96">
+<p>
+Tarleton State University has adopted policies and practices for the Fall 2020 term to limit transmission of the novel coronavirus. Students are required to observe the following practices while participating in face-to-face courses and course-related activities (office hours, moving between classes, study spaces, academic services, etc.):
+</p>
+
+<ul class="org-ul">
+<li>Self-monitoring – Students should follow CDC recommendations for self-monitoring. Students who exhibit symptoms of COVID-19 (with or without fever) should participate in class remotely and should not participate in face-to-face instruction. See <a href="https://www.tarleton.edu/roadmap/personal-responsibilities/">https://www.tarleton.edu/roadmap/personal-responsibilities/</a> for more information. Students who test positive for COVID-19 or experience symptoms consistent with COVID-19 are required to self-report to Tarleton State University via this <a href="https://cm.maxient.com/reportingform.php?TarletonStateUniv&amp;layout_id=6.">form</a>.</li>
+
+<li>Face coverings – All students must properly wear face coverings in all public spaces on campus, including classrooms.  If a student refuses to wear a face covering, the instructor will ask the student to leave and join the class remotely. Any student refusing to comply will be reported  to the Dean of Students Administrative Office via the <a href="https://cm.maxient.com/reportingform.php?TarletonStateUniv&amp;layout_id=0">Student Affairs Incident Reporting Form</a>. Additionally, the faculty member may choose to teach that day’s class remotely for all students.</li>
+
+<li>Physical Distancing – Physical distancing must be maintained between students, instructors, and others in course and course-related activities.</li>
+
+<li>Classroom Entrance and Exit – Students should leave classrooms promptly after class activities have concluded each day. Students should not congregate in hallways or other areas and should maintain a safe physical distance when waiting to enter classrooms and other instructional areas.</li>
+</ul>
+</div>
+
+
+<div id="outline-container-org66f4925" class="outline-3">
+<h3 id="org66f4925">Personal Illness and Quarantine/Isolation</h3>
+<div class="outline-text-3" id="text-org66f4925">
+<p>
+Students who are required to quarantine (see <a href="https://www.tarleton.edu/roadmap/isolation-v-quarantine/">https://www.tarleton.edu/roadmap/isolation-v-quarantine/</a>) must participate in course and course-related activities remotely and must not attend face-to-face course activities. Students in quarantine are expected to participate in courses and course activities/assignments unless they have symptoms too severe to participate. Students placed in isolation should contact the instructor about individual participation in relation to severity of illness. Students who test positive for COVID-19 or who are experiencing symptoms consistent with COVID-19 are required to self-report to the Dean of Students Administrative Office through the <a href="https://cm.maxient.com/reportingform.php?TarletonStateUniv&amp;layout_id=6">COVID-19</a> Report Form.  For any questions or concerns, please contact the Dean of Students Administrative Office at 254-968-9080. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6003282" class="outline-3">
+<h3 id="org6003282">Blended Hybrid-HyFlex Course Delivery</h3>
+<div class="outline-text-3" id="text-org6003282">
+<p>
+Blended Hybrid-HyFlex courses are designed so that students can choose to attend courses face-to-face (with the potential for rotation to maintain a safe physical distance), at the same time as the face-to-face class meetings but from a different location (remote synchronous), or remotely at a later time by viewing the recorded course meeting (remote asynchronous). All courses will appear in the Canvas Learning Management System (LMS) to maximize access to course materials and other important course related activities. Students can choose to attend via any of the three modalities at any time.
+</p>
+
+<p>
+Note, however, that programs governed by licensure and/or accreditation/certification requirements may require students to attend face-to-face laboratories, simulations, and clinical experiences to progress through the program and successfully graduate with eligibility for the licensure or certification examination.
+</p>
+
+<p>
+To make course meetings accessible asynchronously, class meetings will be recorded and shared. The class recordings will be shared with students only in the individual section in which it was recorded to avoid violations of the Family Educational Rights and Privacy Act (FERPA).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf0d44cf" class="outline-2">
+<h2 id="orgf0d44cf">Course Communication</h2>
+<div class="outline-text-2" id="text-orgf0d44cf">
+<p>
+Email is the primary means of official communication for this course.  If you have questions about the course, always feel free to send me an email at faulkenberry@tarleton.edu.  I only ask that you adhere to two guidelines:
+</p>
+<ul class="org-ul">
+<li>please include the course number (PSYC 2317) in the subject line.  For example, one good way to do this is:  Subject: [PSYC 2317] Question about Exam 2</li>
+<li>please use proper email etiquette.  Include a salutation (e.g., Dear Dr. Faulkenberry), complete sentences, and a closing (e.g., "Regards, Your Name").  You might be surprised how many times I get an email from a nondescript email address with no indication from WHOM the email was sent!</li>
+</ul>
+
+<p>
+Also, I will send periodic class announcements via email.  Thus, it is imperative that you check your <i>Tarleton email address</i> regularly so that you don't miss any of these messages.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4600447" class="outline-2">
+<h2 id="org4600447">CV Points for Psychology Majors</h2>
+<div class="outline-text-2" id="text-org4600447">
+<p>
+Beginning Fall 2019, all Tarleton psychology majors are required to accumulate a certain number of "CV points" as a requirement for graduation. CV is an acronym for "curriculum vitae", which is the traditional name of an academic resume.  No graduating psychology major will receive a diploma without completion/verification of the required 15 CV points. Some classes may build in CV point assignments, but ultimately it is the students’ responsibility to monitor their participation and acquire points during their time at Tarleton.  More information on pre-approved CV points, submission, and tracking of these points can be found in the CV Point Canvas site. Please note that submissions are graded, and may not be approved for points if they do not meet the CV standard.  If a student has a question about CV points, they should send an email to psychcvpointga@tarleton.edu.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4308d4c" class="outline-2">
+<h2 id="org4308d4c">University Policy on "F" Grades</h2>
+<div class="outline-text-2" id="text-org4308d4c">
+<p>
+Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
+</p>
+</div>
+</div>
+<div id="outline-container-orga4495e3" class="outline-2">
+<h2 id="orga4495e3">Academic Honesty</h2>
+<div class="outline-text-2" id="text-orga4495e3">
+<p>
+Tarleton State University expects its students to maintain high standards of personal and scholarly conduct. Students guilty of academic dishonesty are subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
+</p>
+
+<p>
+In particular, any exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  The minimum sanction for violation of this policy is a grade of 0 on the affected exam.
+</p>
+
+<p>
+Each student’s honesty and integrity are taken for granted. However, if I find evidence of academic misconduct I will pursue the matter to the fullest extent permitted by the university. ACADEMIC MISCONDUCT OR DISHONESTY WILL RESULT IN A GRADE OF F FOR THE COURSE.  Students are strongly advised to avoid even the <i>appearance</i> of academic misconduct. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9469688" class="outline-2">
+<h2 id="org9469688">Academic Affairs Core Value Statements</h2>
+<div class="outline-text-2" id="text-org9469688">
+</div>
+<div id="outline-container-org7cc8a9d" class="outline-3">
+<h3 id="org7cc8a9d">Academic Integrity Statement</h3>
+<div class="outline-text-3" id="text-org7cc8a9d">
+<p>
+Tarleton State University's core values are integrity, leadership, tradition, civility, excellence, and service.  Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct.  Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcbf4282" class="outline-3">
+<h3 id="orgcbf4282">Academic Civility Statement</h3>
+<div class="outline-text-3" id="text-orgcbf4282">
+<p>
+Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbeed95c" class="outline-3">
+<h3 id="orgbeed95c">Academic Excellence Statement</h3>
+<div class="outline-text-3" id="text-orgbeed95c">
+<p>
+Tarleton holds high expectations for students to assume responsibility for their own individual learning. Students are also expected to achieve academic excellence by:
+</p>
+<ul class="org-ul">
+<li>honoring Tarleton’s core values, upholding high standards of habit and behavior.</li>
+<li>maintaining excellence through class attendance and punctuality, preparing for active participation in all learning experiences.</li>
+<li>putting forth their best individual effort.</li>
+<li>continually improving as independent learners.</li>
+<li>engaging in extracurricular opportunities that encourage personal and academic growth.</li>
+<li>reflecting critically upon feedback and applying these lessons to meet future challenges.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcdeb328" class="outline-2">
+<h2 id="orgcdeb328">Students with Disabilities Policy</h2>
+<div class="outline-text-2" id="text-orgcdeb328">
+<p>
+It is the policy of Tarleton State University to comply with the Americans with Disabilities  Act (www.ada.gov) and other applicable laws.  If you are a student with a disability seeking accommodations for this course, please contact the Center for Access and Academic Testing, at 254.968.9400 or caat@tarleton.edu. The office is located in Math 201. More information can be found at www.tarleton.edu/caat or in the University Catalog.​
+</p>
+
+<p>
+<b>Note:  any changes to this syllabus will be communicated to you by the instructor!</b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org36c7c71" class="outline-2">
+<h2 id="org36c7c71">Semester Schedule</h2>
+<div class="outline-text-2" id="text-org36c7c71">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Dates</th>
+<th scope="col" class="org-left">Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Aug 20-21</td>
+<td class="org-left">Course introduction</td>
+</tr>
+
+<tr>
+<td class="org-left">Aug 24-28</td>
+<td class="org-left">Measures of central tendency</td>
+</tr>
+
+<tr>
+<td class="org-left">Aug 31-Sep 4</td>
+<td class="org-left">Measures of variability</td>
+</tr>
+
+<tr>
+<td class="org-left">Sep 7-11</td>
+<td class="org-left">The normal distribution</td>
+</tr>
+
+<tr>
+<td class="org-left">Sep 14-18</td>
+<td class="org-left">Distributions of sample means</td>
+</tr>
+
+<tr>
+<td class="org-left">Sep 21-25</td>
+<td class="org-left"><b>Exam 1</b></td>
+</tr>
+
+<tr>
+<td class="org-left">Sep 28-Oct 2</td>
+<td class="org-left">Estimation and hypothesis testing</td>
+</tr>
+
+<tr>
+<td class="org-left">Oct 5-9</td>
+<td class="org-left">Introduction to the \( t \)-test</td>
+</tr>
+
+<tr>
+<td class="org-left">Oct 12-16</td>
+<td class="org-left">\( t \)-tests for independent samples</td>
+</tr>
+
+<tr>
+<td class="org-left">Oct 19-23</td>
+<td class="org-left">Confidence intervals for \( t \)-tests</td>
+</tr>
+
+<tr>
+<td class="org-left">Oct 26-30</td>
+<td class="org-left"><b>Exam 2</b> due Sunday, 11/1, at 11:59 pm</td>
+</tr>
+
+<tr>
+<td class="org-left">Nov 2-6</td>
+<td class="org-left">Analysis of variance</td>
+</tr>
+
+<tr>
+<td class="org-left">Nov 9-13</td>
+<td class="org-left">Introduction to Bayesian methods</td>
+</tr>
+
+<tr>
+<td class="org-left">Nov 16-20</td>
+<td class="org-left">Bayesian tests in JASP</td>
+</tr>
+
+<tr>
+<td class="org-left">Nov 23-27</td>
+<td class="org-left"><i>no class due to Thanksgiving</i></td>
+</tr>
+
+<tr>
+<td class="org-left">Nov 30-Dec 4</td>
+<td class="org-left"><b>Exam 3</b> due Sunday, Dec 6, at 11:59 am</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Fall 2020</p>
+<p class="date">Created: 2020-08-10 Mon 09:46</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
