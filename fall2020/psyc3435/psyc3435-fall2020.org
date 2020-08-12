@@ -10,7 +10,9 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: /TBA/
+- Office hours: 
+  - face-to-face: Monday/Friday 9:00am - 12:00pm
+  - virtual/Zoom: Tuesday/Thursday 1:00 - 3:00pm
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
@@ -22,7 +24,7 @@ This laboratory course is designed to introduce students to the philosophy of sc
 ** Course materials
 
 - /The Process of Research in Psychology/ (3rd ed.) by McBride (2015) [[https://www.amazon.com/Process-Research-Psychology-Dawn-McBride/dp/1483347605/][Amazon link]]
-- /APA Publication Manual/ (6th ed.) [[https://www.amazon.com/Publication-Manual-American-Psychological-Association/dp/143383216X][Amazon link]]
+- /APA Publication Manual/ (7th ed.) [[https://www.amazon.com/Publication-Manual-American-Psychological-Association/dp/143383216X][Amazon link]]
 - JASP statistical software (free download from [[http://jasp-stats.org][jasp-stats.org]])
 
 ** Student learning outcomes

@@ -10,7 +10,9 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: TBA
+- Office hours: 
+  - face-to-face: Monday/Friday 9:00am - 12:00pm
+  - virtual/Zoom: Tuesday/Thursday 1:00 - 3:00pm
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
@@ -20,15 +22,29 @@
 Statistical methods are the primary tool for research in psychology. They are what allow us as researchers to make consistent, data-driven decisions.  As such, this is an extremely important course and one that I take very seriously as your professor. The topics we will cover this semester will include descriptive statistics (how we describe data) and inferential statistics (how we make decisions about data).  Specifically, this includes central tendency, variability, the distinction between populations and samples, hypothesis testing, and a variety of inferential tests that we can apply to data, including t-tests, linear regression, and analysis of variance.
 
 ** Course materials
-- /Learning Statistics with JASP: A Tutorial for Psychology Students and Other Beginners/, by Navarro, Foxcroft, and Faulkenberry (2019). 
-  - This is a free textbook which can be downloaded from [[http://learnstatswithjasp.com][www.learnstatswithjasp.com]]
-- JASP statistical software, freely downloadable from [[http://www.jasp-stats.com][www.jasp-stats.com]]
+There are many excellent statistics books, but I do not teach from any specific one. For reference, I recommend our book /Learning Statistics with JASP: A Tutorial for Psychology Students and Other Beginners/, by Navarro, Foxcroft, and Faulkenberry (2019), which is a free textbook that can be downloaded from [[http://learnstatswithjasp.com][www.learnstatswithjasp.com]].
+
+We will also begin to use the JASP statistical software package later in the course; this can be freely downloaded from [[http://www.jasp-stats.com][www.jasp-stats.com]]
 
 ** Student learning outcomes
 1. Identify variables under study (including independent and dependent variables)
 2. Choose appropriate measures of descriptive statistics
 3. Select and perform appropriate inferential statistics
 4. Draw appropriate statistical conclusions from results of analyses
+
+** Course format
+
+This course will be delivered in a hybrid-flexible ("HyFlex") format, giving you the option of attending the course face-to-face and/or online. The basic structure of each week is as follows:
+
+- early in the week, you will watch an online video lecture (given by me) explaining the week's topic and take a short quiz to assess your understanding.
+
+- you can then attend ONE face-to-face course meeting (either Tuesday or Thursday, but not both). The purpose of this course meeting is for me to demonstrate examples of homework problems that are assigned for the given week and give you the opportunity to ask questions. Half the class will be able to attend on Tuesday, and the other half will be able to attend on Thursday. Your specific day of the week will be assigned and communicated to you in Canvas and by email. In this way, each student will have the opportunity to attend class face-to-face once each week.
+
+Note that you are not /required/ to attend the face-to-face class meetings at all! You may certainly wish to attend face-to-face, and I encourage all who can to do so. However, there are other ways to attend the weekly problem sessions:
+  - You may attend either session virtually by Zoom (that is, you can watch the problem session /live/ on your computer during class time).
+  - You may choose to simply watch the recorded problem sessions at a convenient time later in the week. All class recordings will be posted on Canvas.
+
+It does not matter which mode of attendance you choose -- that is the point of our "Hybrid-Flexible" course format. And, you can change your mind each week. The only thing that is /required/ is that you complete the quizzes, homeworks, and exams, which I'll describe in the next section.
 
 ** Requirements and grading
 - Exam 1 (100 pts)
@@ -41,21 +57,20 @@ Statistical methods are the primary tool for research in psychology. They are wh
 Grades will be assigned based on the percentage of points you accumulate out of these 500 points.  I will use the standard grading scale of A=90%, B=80%, etc.
 
 *** Exams
-There will be three exams throughout the semester, occurring approximately once every four to five weeks.  They will cover material from lectures, quizzes, and homework exercises. Exams will be "take-home", primarily consisting of short-answer questions.
+There will be three exams throughout the semester, occurring approximately once every four to five weeks.  They will cover material from lectures, quizzes, and homework exercises. Exams will be "take-home", primarily consisting of short-answer questions. Exams (and homework; see below) will be submitted online on Canvas -- in my experience, it is probably easiest to hand-write your solutions neatly on clean paper and either scan or take a photo of the completed work to submit. 
 
 Tentative exam dates:
 
-- Exam 1 (Thursday, September 26)
-- Exam 2 (Thursday, October 24)
-- Exam 3 (Thursday, November 21)
-- Final exam (Friday, December 6, 8-10:00 am)
+- Exam 1 (due Sunday, September 27 at 11:59 pm)
+- Exam 2 (due Sunday, November 1 at 11:59 pm)
+- Exam 3 (due Sunday, December 6 at 11:59 pm)
   
 *** Weekly quizzes 
 
-To prepare for each week's lectures, you will watch a short (10-20 minute) video posted on Canvas where I introduce the week's concepts. After watching this video, you will complete an online multiple-choice quiz, the aim of which is to check for understanding of the concepts presented. Each quiz counts for 10 possible points. There will be 10 of these quizzes, so you will earn up to 100 points for your overall quiz grade.
+At the beginning of each non-exam week, you will watch a video posted on Canvas where I introduce the week's concepts. After watching this video, you will complete an online multiple-choice quiz, the aim of which is to check for understanding of the concepts presented. Each quiz counts for 10 possible points. There will be at least 10 of these quizzes, so your 10 highest quiz scores will earn you up to 100 points for your overall quiz grade.
 
 *** Homework exercises 
-In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week. A set of homework exercises (usually around 4-5 problems) will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit). Homework will be submitted online on Canvas -- in my experience, it is probably easiest to hand-write your solutions neatly on clean paper and either scan or take a photo of the completed work to submit.  Each homework assignment will be due at 11:59 pm on Sunday immediately following the week it was assigned.
+In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week. A set of homework exercises (usually around 4-5 problems) will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit).  Each homework assignment will be due at 11:59 pm on Sunday immediately following the week it was assigned.
 
 ** Fall 2020 Safety Measures
 Tarleton State University has adopted policies and practices for the Fall 2020 term to limit transmission of the novel coronavirus. Students are required to observe the following practices while participating in face-to-face courses and course-related activities (office hours, moving between classes, study spaces, academic services, etc.):
@@ -68,7 +83,6 @@ Tarleton State University has adopted policies and practices for the Fall 2020 t
 
   - Classroom Entrance and Exit – Students should leave classrooms promptly after class activities have concluded each day. Students should not congregate in hallways or other areas and should maintain a safe physical distance when waiting to enter classrooms and other instructional areas.
 
- 
 *** Personal Illness and Quarantine/Isolation
 Students who are required to quarantine (see https://www.tarleton.edu/roadmap/isolation-v-quarantine/) must participate in course and course-related activities remotely and must not attend face-to-face course activities. Students in quarantine are expected to participate in courses and course activities/assignments unless they have symptoms too severe to participate. Students placed in isolation should contact the instructor about individual participation in relation to severity of illness. Students who test positive for COVID-19 or who are experiencing symptoms consistent with COVID-19 are required to self-report to the Dean of Students Administrative Office through the [[https://cm.maxient.com/reportingform.php?TarletonStateUniv&layout_id=6][COVID-19]] Report Form.  For any questions or concerns, please contact the Dean of Students Administrative Office at 254-968-9080. 
  
@@ -124,22 +138,22 @@ It is the policy of Tarleton State University to comply with the Americans with 
 
 ** Semester Schedule
 
-| Dates        | Topic                                   |
-|--------------+-----------------------------------------|
-| Aug 20-21    | Course introduction                     |
-| Aug 24-28    | Measures of central tendency            |
-| Aug 31-Sep 4 | Measures of variability                 |
-| Sep 7-11     | The normal distribution                 |
-| Sep 14-18    | Distributions of sample means           |
-| Sep 21-25    | *Exam 1*                                |
-| Sep 28-Oct 2 | Estimation and hypothesis testing       |
-| Oct 5-9      | Introduction to the \( t \)-test        |
-| Oct 12-16    | \( t \)-tests for independent samples   |
-| Oct 19-23    | Confidence intervals for \( t \)-tests  |
-| Oct 26-30    | *Exam 2* due Sunday, 11/1, at 11:59 pm  |
-| Nov 2-6      | Analysis of variance                    |
-| Nov 9-13     | Introduction to Bayesian methods        |
-| Nov 16-20    | Bayesian tests in JASP                  |
-| Nov 23-27    | /no class due to Thanksgiving/          |
-| Nov 30-Dec 4 | *Exam 3* due Sunday, Dec 6, at 11:59 am |
+| Dates        | Topic                                        |
+|--------------+----------------------------------------------|
+| Aug 20-21    | Course introduction - no homework assignment |
+| Aug 24-28    | Measures of central tendency and variability |
+| Aug 31-Sep 4 | Transformations of scores / standardization  |
+| Sep 7-11     | The normal distribution                      |
+| Sep 14-18    | Distributions of sample means                |
+| Sep 21-25    | *Exam 1* due Sunday, 9/27, at 11:59 pm       |
+| Sep 28-Oct 2 | Estimation and hypothesis testing            |
+| Oct 5-9      | Introduction to the \( t \)-test             |
+| Oct 12-16    | \( t \)-tests for independent samples        |
+| Oct 19-23    | Confidence intervals for \( t \)-tests       |
+| Oct 26-30    | *Exam 2* due Sunday, 11/1, at 11:59 pm       |
+| Nov 2-6      | Analysis of variance                         |
+| Nov 9-13     | Introduction to Bayesian statistics          |
+| Nov 16-20    | Bayesian tests in JASP                       |
+| Nov 23-27    | /no class due to Thanksgiving/               |
+| Nov 30-Dec 4 | *Exam 3* due Sunday, Dec 6, at 11:59 am      |
 
