@@ -138,22 +138,22 @@ It is the policy of Tarleton State University to comply with the Americans with 
 
 ** Semester Schedule
 
-| Dates        | Topic                                        |
-|--------------+----------------------------------------------|
-| Aug 20-21    | Course introduction - no homework assignment |
-| Aug 24-28    | Measures of central tendency and variability |
-| Aug 31-Sep 4 | Transformations of scores / standardization  |
-| Sep 7-11     | The normal distribution                      |
-| Sep 14-18    | Distributions of sample means                |
-| Sep 21-25    | *Exam 1* due Sunday, 9/27, at 11:59 pm       |
-| Sep 28-Oct 2 | Estimation and hypothesis testing            |
-| Oct 5-9      | Introduction to the \( t \)-test             |
-| Oct 12-16    | \( t \)-tests for independent samples        |
-| Oct 19-23    | Confidence intervals for \( t \)-tests       |
-| Oct 26-30    | *Exam 2* due Sunday, 11/1, at 11:59 pm       |
-| Nov 2-6      | Analysis of variance                         |
-| Nov 9-13     | Introduction to Bayesian statistics          |
-| Nov 16-20    | Bayesian tests in JASP                       |
-| Nov 23-27    | /no class due to Thanksgiving/               |
-| Nov 30-Dec 4 | *Exam 3* due Sunday, Dec 6, at 11:59 am      |
+| Dates        | Topic                                                 |
+|--------------+-------------------------------------------------------|
+| Aug 20-21    | Course introduction - no homework assignment          |
+| Aug 24-28    | Unit 1 - Measures of central tendency and variability |
+| Aug 31-Sep 4 | Unit 2 - Transformations of scores / standardization  |
+| Sep 7-11     | Unit 3 - The normal distribution                      |
+| Sep 14-18    | Unit 4 - Distributions of sample means                |
+| Sep 21-25    | *Exam 1* due Sunday, 9/27, at 11:59 pm                |
+| Sep 28-Oct 2 | Unit 5 - Estimation and hypothesis testing            |
+| Oct 5-9      | Unit 6.1 - Introduction to the \( t \)-test           |
+| Oct 12-16    | Unit 6.2 - \( t \)-tests for independent samples      |
+| Oct 19-23    | Unit 7 - Confidence intervals for \( t \)-tests       |
+| Oct 26-30    | *Exam 2* due Sunday, 11/1, at 11:59 pm                |
+| Nov 2-6      | Unit 8 - Analysis of variance                         |
+| Nov 9-13     | Unit 9 - Introduction to Bayesian statistics          |
+| Nov 16-20    | Unit 10 - Bayesian tests in JASP                      |
+| Nov 23-27    | /no class due to Thanksgiving/                        |
+| Nov 30-Dec 4 | *Exam 3* due Sunday, Dec 6, at 11:59 am               |
 
