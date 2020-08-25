@@ -32,9 +32,9 @@ Some of the specific skills you'll learn this semester are:
 
 There is no required textbook for the course. However, I recommend you have access to a good statistics text (e.g., Gravetter, Field, or even my [[https://learnstatswithjasp.com][free textbook]]).  In addition, you'll need to have access to a computer (laptop is best) on which you can install the following software packages:
 
-- R statistical software (free download from [[http://www.r-project.org][http://www.r-project.org]])
-- RStudio (free download from [[http://www.rstudio.com][http://www.rstudio.com]])
-- OpenSesame (free download from http://osdoc.cogsci.nl/
+- R statistical software (free download from [[http://www.r-project.org][https://www.r-project.org]])
+- RStudio (free download from [[http://www.rstudio.com][https://www.rstudio.com]])
+- OpenSesame (free download from https://osdoc.cogsci.nl/
 
 ** Student learning outcomes
    

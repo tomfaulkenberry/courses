@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-08-12 Wed 13:57 -->
+<!-- 2020-08-25 Tue 10:34 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>PSYC 5316: Advanced Quantitative Methods &amp; Experimental Design</title>
@@ -160,6 +160,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -184,7 +197,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -230,9 +243,9 @@ for the JavaScript code in this tag.
 <div id="content">
 <h1 class="title">PSYC 5316: Advanced Quantitative Methods &amp; Experimental Design</h1>
 
-<div id="outline-container-orge9c441c" class="outline-2">
-<h2 id="orge9c441c">Contact info</h2>
-<div class="outline-text-2" id="text-orge9c441c">
+<div id="outline-container-org68b9c5c" class="outline-2">
+<h2 id="org68b9c5c">Contact info</h2>
+<div class="outline-text-2" id="text-org68b9c5c">
 <ul class="org-ul">
 <li>Professor: Thomas J. Faulkenberry, Ph.D</li>
 <li>Office: Math 319</li>
@@ -248,9 +261,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgf82ea34" class="outline-2">
-<h2 id="orgf82ea34">Course description</h2>
-<div class="outline-text-2" id="text-orgf82ea34">
+<div id="outline-container-org36a83b9" class="outline-2">
+<h2 id="org36a83b9">Course description</h2>
+<div class="outline-text-2" id="text-org36a83b9">
 <p>
 This course is designed to teach you the advanced quantitative methods and techniques of experimental design that are necessary to read and conduct modern empirical research in the psychological sciences. We will do this through replicating three classic experiments, each illustrating a unique experimental design and technique for data analysis.  Students taking this course are expected to have <b>previously</b> taken a graduate level course in statistics (or equivalent statistical training). 
 </p>
@@ -266,24 +279,24 @@ Some of the specific skills you'll learn this semester are:
 </div>
 </div>
 
-<div id="outline-container-org07aa175" class="outline-2">
-<h2 id="org07aa175">Course materials</h2>
-<div class="outline-text-2" id="text-org07aa175">
+<div id="outline-container-orgb16a2af" class="outline-2">
+<h2 id="orgb16a2af">Course materials</h2>
+<div class="outline-text-2" id="text-orgb16a2af">
 <p>
 There is no required textbook for the course. However, I recommend you have access to a good statistics text (e.g., Gravetter, Field, or even my <a href="https://learnstatswithjasp.com">free textbook</a>).  In addition, you'll need to have access to a computer (laptop is best) on which you can install the following software packages:
 </p>
 
 <ul class="org-ul">
-<li>R statistical software (free download from <a href="http://www.r-project.org">http://www.r-project.org</a>)</li>
-<li>RStudio (free download from <a href="http://www.rstudio.com">http://www.rstudio.com</a>)</li>
-<li>OpenSesame (free download from <a href="http://osdoc.cogsci.nl/">http://osdoc.cogsci.nl/</a></li>
+<li>R statistical software (free download from <a href="http://www.r-project.org">https://www.r-project.org</a>)</li>
+<li>RStudio (free download from <a href="http://www.rstudio.com">https://www.rstudio.com</a>)</li>
+<li>OpenSesame (free download from <a href="https://osdoc.cogsci.nl/">https://osdoc.cogsci.nl/</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgcdc947c" class="outline-2">
-<h2 id="orgcdc947c">Student learning outcomes</h2>
-<div class="outline-text-2" id="text-orgcdc947c">
+<div id="outline-container-org23c6b07" class="outline-2">
+<h2 id="org23c6b07">Student learning outcomes</h2>
+<div class="outline-text-2" id="text-org23c6b07">
 <ol class="org-ol">
 <li>perform and interpret basic techniques of statistical inference, both in a frequentist and Bayesian framework</li>
 <li>program and administer behavioral experiments using computer software</li>
@@ -293,9 +306,9 @@ There is no required textbook for the course. However, I recommend you have acce
 </div>
 </div>
 
-<div id="outline-container-orgb64a6be" class="outline-2">
-<h2 id="orgb64a6be">Requirements and grading</h2>
-<div class="outline-text-2" id="text-orgb64a6be">
+<div id="outline-container-orga85ef3f" class="outline-2">
+<h2 id="orga85ef3f">Requirements and grading</h2>
+<div class="outline-text-2" id="text-orga85ef3f">
 <p>
 You will complete four lab activities throughout the semester. With the exception of the first lab on how to use R, the labs will each take four weeks, following the same basic schedule:
 </p>
@@ -324,9 +337,9 @@ Lab 1 is worth 50 points, and Labs 2-4 are each worth 100 points. Grades will be
 </div>
 </div>
 
-<div id="outline-container-orgb07339a" class="outline-2">
-<h2 id="orgb07339a">Course Communication</h2>
-<div class="outline-text-2" id="text-orgb07339a">
+<div id="outline-container-org6e3bc86" class="outline-2">
+<h2 id="org6e3bc86">Course Communication</h2>
+<div class="outline-text-2" id="text-org6e3bc86">
 <p>
 This course is designed to be an intensive, interactive seminar on modern statistical methods and experimental design.  That means that I will be available for one-on-one consultation most any time.  Just stop by my office or give me a call.
 </p>
@@ -345,18 +358,18 @@ Also, I will be sending periodic emails to each of you that update you on course
 </div>
 </div>
 
-<div id="outline-container-orgf15800e" class="outline-2">
-<h2 id="orgf15800e">University Policy on "F" Grades</h2>
-<div class="outline-text-2" id="text-orgf15800e">
+<div id="outline-container-orga069465" class="outline-2">
+<h2 id="orga069465">University Policy on "F" Grades</h2>
+<div class="outline-text-2" id="text-orga069465">
 <p>
 Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org0067bae" class="outline-2">
-<h2 id="org0067bae">Academic Honesty</h2>
-<div class="outline-text-2" id="text-org0067bae">
+<div id="outline-container-org41ce342" class="outline-2">
+<h2 id="org41ce342">Academic Honesty</h2>
+<div class="outline-text-2" id="text-org41ce342">
 <p>
 Tarleton State University expects its students to maintain high standards of personal and scholarly conduct. Students guilty of academic dishonesty are subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
 </p>
@@ -371,31 +384,31 @@ Each student’s honesty and integrity are taken for granted. However, if I find
 </div>
 </div>
 
-<div id="outline-container-orgd2be811" class="outline-2">
-<h2 id="orgd2be811">Academic Affairs Core Value Statements</h2>
-<div class="outline-text-2" id="text-orgd2be811">
+<div id="outline-container-org88f14dd" class="outline-2">
+<h2 id="org88f14dd">Academic Affairs Core Value Statements</h2>
+<div class="outline-text-2" id="text-org88f14dd">
 </div>
-<div id="outline-container-org3a55ec8" class="outline-3">
-<h3 id="org3a55ec8">Academic Integrity Statement</h3>
-<div class="outline-text-3" id="text-org3a55ec8">
+<div id="outline-container-org303119f" class="outline-3">
+<h3 id="org303119f">Academic Integrity Statement</h3>
+<div class="outline-text-3" id="text-org303119f">
 <p>
 Tarleton State University's core values are integrity, leadership, tradition, civility, excellence, and service.  Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct.  Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4bfe169" class="outline-3">
-<h3 id="org4bfe169">Academic Civility Statement</h3>
-<div class="outline-text-3" id="text-org4bfe169">
+<div id="outline-container-org13f42ed" class="outline-3">
+<h3 id="org13f42ed">Academic Civility Statement</h3>
+<div class="outline-text-3" id="text-org13f42ed">
 <p>
 Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga622651" class="outline-3">
-<h3 id="orga622651">Academic Excellence Statement</h3>
-<div class="outline-text-3" id="text-orga622651">
+<div id="outline-container-orgdce5c21" class="outline-3">
+<h3 id="orgdce5c21">Academic Excellence Statement</h3>
+<div class="outline-text-3" id="text-orgdce5c21">
 <p>
 Tarleton holds high expectations for students to assume responsibility for their own individual learning. Students are also expected to achieve academic excellence by:
 </p>
@@ -411,9 +424,9 @@ Tarleton holds high expectations for students to assume responsibility for their
 </div>
 </div>
 
-<div id="outline-container-orgb94f537" class="outline-2">
-<h2 id="orgb94f537">Students with Disabilities Policy</h2>
-<div class="outline-text-2" id="text-orgb94f537">
+<div id="outline-container-orgc80cab9" class="outline-2">
+<h2 id="orgc80cab9">Students with Disabilities Policy</h2>
+<div class="outline-text-2" id="text-orgc80cab9">
 <p>
 It is the policy of Tarleton State University to comply with the Americans with Disabilities  Act (www.ada.gov) and other applicable laws.  If you are a student with a disability seeking accommodations for this course, please contact the Center for Access and Academic Testing, at 254.968.9400 or caat@tarleton.edu. The office is located in Math 201. More information can be found at www.tarleton.edu/caat or in the University Catalog.​
 </p>
@@ -424,9 +437,9 @@ It is the policy of Tarleton State University to comply with the Americans with 
 </div>
 </div>
 
-<div id="outline-container-orgd2c20a8" class="outline-2">
-<h2 id="orgd2c20a8">Tentative schedule</h2>
-<div class="outline-text-2" id="text-orgd2c20a8">
+<div id="outline-container-org10e1f6c" class="outline-2">
+<h2 id="org10e1f6c">Tentative schedule</h2>
+<div class="outline-text-2" id="text-org10e1f6c">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -523,7 +536,7 @@ It is the policy of Tarleton State University to comply with the Americans with 
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: Fall 2020</p>
-<p class="date">Created: 2020-08-12 Wed 13:57</p>
+<p class="date">Created: 2020-08-25 Tue 10:34</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
