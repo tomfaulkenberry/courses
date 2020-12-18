@@ -17,45 +17,60 @@
 
 ** Course description
 
-This course will provide students with an introduction to the fundamental concepts of psychological testing and measurement. It is roughly divided into three parts. In Part 1, we introduce the basic theoretical concepts underlying psychological measurement, including psychological scaling, covariance/correlation. In Part 2, we take a hands-on approach and learn how to estimate reliability and validity. Finally, in Part 3, we cover some practical issues with test development and evaluation, including factor analysis and structural equation modeling. All students are expected to have some background in basic statistical methods (PSYC 2317 or equivalent). 
+This course will provide students with an introduction to the fundamental concepts of psychological testing and measurement. It is roughly divided into three parts. In Part 1, we introduce the basic statistical concepts underlying psychological measurement, including score transformations, composite scores, and issues with dichotomous scales. In Part 2, we learn how to estimate reliability and validity of tests. Finally, in Part 3, we dive into construct validity and learn the modern techniques of factor analysis and structural equation modeling. All students are expected to have some background in basic statistical methods (PSYC 2317 or equivalent). 
 
 ** Course materials
-- /Textbook/: There are a lot of very good textbooks in psychological testing and measurement theory. However, I do not lecture directly from any specific textbook. I do recommend the following as a good reference to follow this semester, as it does a good job of bridging the theory of psychometrics with hands-on, practical examples.
-  - /Measurement Theory in Action/ (2nd edition) by Shultz, Whitney, and Zickar ([[https://www.amazon.com/Measurement-Theory-Action-Studies-Exercises/dp/0415644798][Amazon link]])
-
-- /Calculator/: you will need a basic scientific calculator to perform various calculations on homework and exams. I use a TI-84 (mine is over 20 years old and still works!), but any calculator with square roots and logarithms will suffice.
-
-- /JASP statistical software/: some of the exercises we do this semester will be done on the computer, and we will use JASP, which is freely downloadable from [[http://www.jasp-stats.com][www.jasp-stats.com]]. JASP should be installed on all campus computers, but if you have a personal computer/laptop, go ahead and install it there...it is free, so why not?
+- Textbook
+  - there is no specific textbook for this course. I will provide you with detailed lecture notes and some readings from primary sources (i.e., journal articles). All materials will be available on Canvas. If you need a review of basic statistics, I would recommend the free textbook /Learning Statistics with JASP/ by Navarro, Foxcroft, and Faulkenberry, which you can download from https://www.learnstatswithjasp.com.
+- Software
+  - we will regularly use JASP, which is a free software package for doing both conventional and Bayesian statistics. You can download it for free from https://jasp-stats.org (you must have a computer running MacOS, Windows, or Linux -- it does not work well on "thin client" systems such as Chromebooks or tablets).   
+- Calculator
+  - you should have a standalone calculator that is capable of performing the most basic scientific computations (exponents, square roots, logarithms, etc.). A graphing calculator is /not/ required, though I will be using one (TI-84) when I demonstrate calculations. Find a calculator you like using!
 
 ** Student learning outcomes
-1. Understand the basic concepts of psychological scaling, covariance, and test dimensionality
+1. Understand the basic statistical concepts that underly psychological measurement, including transformations, variance of composite scores, and how to deal with dichotomous scales
 2. Apply classical test theory to various methods of estimating reliability
 3. Understand the differences among content validity, criterion-related validity, and construct validity.
-4. Know the basics of test construction, including item analysis and scoring.
+4. Apply methods of factor analysis and structural equation modeling to uncover latent structure of psychological constructs.
+
+** Course format
+
+This course will be delivered in a hybrid-flexible ("HyFlex") format, giving you the option of attending the course face-to-face and/or online. The basic structure of each week is as follows:
+
+- early in the week, you will watch an online video lecture (given by me) explaining the week's topic and take a short quiz to assess your understanding.
+
+- you can then attend ONE in-person course meeting (either Tuesday or Thursday, but not both). The purpose of this course meeting is for me to demonstrate examples of homework problems that are assigned for the given week and give you the opportunity to ask questions. Half the class will be able to attend on Tuesday, and the other half will be able to attend on Thursday. Your specific day of the week will be assigned and communicated to you in Canvas and by email. In this way, each student will have the opportunity to attend class in-person once each week.
+
+Note that you are not /required/ to attend the face-class meetings at all! You may certainly wish to attend face-to-face, and I encourage all who can to do so. However, there are other ways to attend the weekly problem sessions:
+  - You may attend either session virtually by Zoom (that is, you can watch the problem session /live/ on your computer during class time).
+  - You may choose to simply watch the recorded problem sessions at a convenient time later in the week. All class recordings will be posted on Canvas.
+
+It does not matter which mode of attendance you choose -- that is the point of our "Hybrid-Flexible" course format. And, you can change your mind each week. The only thing that is /required/ is that you complete the quizzes, homeworks, and exams, which I'll describe in the next section.
 
 ** Requirements and grading
-- Exam 1 (100 pts)
-- Exam 2 (100 pts)
-- Exam 3 (100 pts)
-- Final exam (100 pts)
-- Homework exercises (100 pts)
+- Exam 1 (100 points)
+- Exam 2 (100 points)
+- Exam 3 (100 points)
+- Homework exercises (100 points)
+- Weekly quizzes (100 points)
 - /Total = 500 points/
 
 Grades will be assigned based on the percentage of points you accumulate out of these 500 points.  I will use the standard grading scale of A=90%, B=80%, etc.
 
-*** Exams
-There will be 3 exams throughout the semester, occurring approximately once every four weeks.  They will cover material from lectures and homework exercises. Exams will be completed in class.
+*** Exams (60% of grade)
+There will be three exams throughout the semester, occurring approximately once every four to five weeks.  They will cover material from lectures, quizzes, and homework exercises. Exams will be "take-home", primarily consisting of short-answer questions. Exams (and homework; see below) will be submitted online on Canvas -- in my experience, it is probably easiest to hand-write your solutions neatly on clean paper and either scan or take a photo of the completed work to submit. 
 
 Exam dates:
 
-- Exam 1 (Thursday, February 13)
-- Exam 2 (Thursday, March 26)
-- Exam 3 (Thursday, April 23)
-- Final exam (Tuesday, May 5, 1-3 pm)
+- Exam 1 (due Sunday, February 21 at 11:59 pm)
+- Exam 2 (due Sunday, April 4 at 11:59 pm)
+- Exam 3 (due Sunday, May 2 at 11:59 pm)
 
-/Note: after March 23, all activities shifted to online.  All assessment will be done with "take-home" homework exercises. There will be no in-class exams for the remaining of the semester./
+*** Weekly quizzes (20% of grade)
+
+At the beginning of each non-exam week, you will watch a video posted on Canvas where I introduce the week's concepts. After watching this video, you will complete an online multiple-choice quiz, the aim of which is to check for understanding of the concepts presented. Each quiz counts for 10 possible points. There will be at least 10 of these quizzes, so your 10 highest quiz scores will earn you up to 100 points for your overall quiz grade.
   
-*** Homework exercises 
+*** Homework exercises (20% of grade) 
 In order to practice the concepts you learn this semester, you will complete a short homework assignment every week. A brief set of homework exercises will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit). Completed exercises should be handwritten neatly on clean paper. Each homework assignment will be due at the beginning of class on Tuesday of the week after it is assigned.
 
 ** Course Communication
@@ -102,30 +117,24 @@ It is the policy of Tarleton State University to comply with the Americans with 
  
 *Note:  any changes to this syllabus will be communicated to you by the instructor!*
 
+** Schedule of class meetings
 
-** Semester Schedule
-| Unit | Dates        | Topic                                                  |
-|------+--------------+--------------------------------------------------------|
-|      | Jan 13-17    | (no class -- I will be at Joint Mathematics Meetings)  |
-|      |              | /Part 1 - Basic concepts in psychological measurement/ |
-|    1 | Jan 20-24    | Psychological scaling                                  |
-|    2 | Jan 27-31    | Individual differences and covariance/correlation      |
-|    3 | Feb 3-7      | Dimensionality and factor analysis                     |
-|      | *Feb 10-14*  | *Exam 1*                                               |
-|------+--------------+--------------------------------------------------------|
-|      |              | /Part 2 -- Estimating reliability and validity/        |
-|    4 | Feb 17-21    | Classical test theory                                  |
-|    5 | Feb 24-28    | Estimating reliability                                 |
-|    6 | Mar 2-6      | Estimating criterion-related validity                  |
-|      | Mar 9-13     | (no class -- Spring Break)                             |
-|      | Mar 16-20    | (no class -- extended break due to COVID-19)           |
-|    7 | Mar 23-27    | Estimating construct validity                          |
-|------+--------------+--------------------------------------------------------|
-|      |              | /Part 3 -- Practical issues in testing/measurement/    |
-|    8 | Mar 30-Apr 3 | Exploratory factor analysis in JASP                    |
-|    9 | Apr 6-10     | Item analysis                                          |
-|   10 | Apr 13-17    | Item response theory                                   |
-|   11 | Apr 20-24    | Confirmatory factor analysis                           |
-|------+--------------+--------------------------------------------------------|
+ | Week | Dates        | Topic                                      |
+ |------+--------------+--------------------------------------------|
+ |    1 | Jan 19,21    | Introduction to the course                 |
+ |    2 | Jan 26,28    | Transformations of test scores             |
+ |    3 | Feb 2,4      | Statistical properties of composite scores |
+ |    4 | Feb 9,11     | Issues with dichotomous scales             |
+ |    5 | Feb 16,18    | No class meetings - complete *Exam 1*      |
+ |    6 | Feb 23,25    | Classical test theory                      |
+ |    7 | Mar 2,4      | Estimating reliability of tests            |
+ |    8 | Mar 9,11     | Criterion-related validity                 |
+ |    9 | Mar 16,18    | /No class meeting -- Spring Break/         |
+ |   10 | Mar 23,25    | Introduction to construct validity         |
+ |   11 | Mar 30,Apr 1 | No class meeting - complete *Exam 2*       |
+ |   12 | Apr 6,8      | Exploratory factor analysis                |
+ |   13 | Apr 13,15    | Confirmatory factor analysis               |
+ |   14 | Apr 20,22    | Structural equation modeling               |
+ |   15 | Apr 27,29    | No class meeting - complete *Exam 3*       |
+ 
 
-/Note: beginning March 23, all activities are shifted to online. See Canvas page for more details./
