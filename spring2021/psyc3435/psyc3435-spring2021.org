@@ -52,9 +52,9 @@ There will be three exams throughout the semester.  Exams are due by 11:59 pm on
 
 Exam dates:
 
-- Exam 1, due Wednesday, March 31
-- Exam 2, due Wednesday, April 21
-- Exam 3, due Tuesday, May 4
+- Exam 1, due Thursday, April 8
+- Exam 2, due Thursday, April 22
+- Exam 3, due Monday, May 3
 
 *** Unit quizzes (20% of grade)
 
@@ -66,13 +66,13 @@ There will be four lab assignments this semester.  Each assignment is designed t
 
 Lab Assignments and dates
 
-- Lab 1 – APA formatting (10 points), due Friday, March 19
-- Lab 2.1 – Correlational design, data collection (10 points), due Friday, March 26
-- Lab 2.2 – Correlational design, analysis and report (20 points), due Friday, April 2
-- Lab 3.1 – Independent groups design, data collection (10 points), due Friday, April 9
-- Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, April 16
-- Lab 4.1 – Factorial design, data collection (10 points), due Friday, April 23
-- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, April 30
+- Lab 1 – APA formatting (10 points), due Friday, March 26
+- Lab 2.1 – Correlational design, data collection (10 points), due Friday, April 2
+- Lab 2.2 – Correlational design, analysis and report (20 points), due Friday, April 9
+- Lab 3.1 – Independent groups design, data collection (10 points), due Friday, April 16
+- Lab 3.2 – Independent groups design, analysis and report (20 points), due Friday, April 23
+- Lab 4.1 – Factorial design, data collection (10 points), due Friday, April 30
+- Lab 4.2 – Factorial design, analysis and report (20 points), due Friday, May 7
 
 ** Course Communication
 
@@ -118,18 +118,18 @@ It is the policy of Tarleton State University to comply with the Americans with 
 
 ** Semester schedule
 
-| Unit | Topic                                                        | Due date              |
-|------+--------------------------------------------------------------+-----------------------|
-|    0 | Statistics review                                            | Tuesday, Mar 9        |
-|    1 | Knowing in psychological science                             | Monday, Mar 15        |
-|    2 | Reading the literature / APA style                           | Thursday, Mar 18      |
-|    3 | Basic research methods                                       | Tuesday, Mar 23       |
-|    4 | Ethics in psychological science                              | Friday, Mar 26        |
-|      | *Exam 1*                                                     | *Wednesday, Mar 31*   |
-|    5 | Experiments: selecting and manipulating variables            | Thursday, Apr 8     |
-|    6 | Experiments: sampling methods                                | Tuesday, Apr 13       |
-|    7 | Experiments: classic designs                                 | Friday, Apr 16        |
-|      | *Exam 2*                                                     | *Wednesday, Apr 21*   |
-|    8 | Non-experiments: survey and correlational designs            | Monday, Apr 26        |
-|    9 | Non-experiments: quasi-experiments and developmental designs | Thursday, Apr 29      |
-|      | *Exam 3*                                                     | *Tuesday, May 4*     |
+| Unit | Topic                                                        | Due date           |
+|------+--------------------------------------------------------------+--------------------|
+|    0 | Statistics review                                            | Monday, Mar 22     |
+|    1 | Knowing in psychological science                             | Thursday, Mar 25   |
+|    2 | Reading the literature / APA style                           | Monday, Mar 29     |
+|    3 | Basic research methods                                       | Thursday, Apr 1    |
+|    4 | Ethics in psychological science                              | Tuesday, Apr 6     |
+|      | *Exam 1*                                                     | *Thursday, Apr 8*  |
+|    5 | Experiments: selecting and manipulating variables            | Monday, Apr 12     |
+|    6 | Experiments: sampling methods                                | Thursday, Apr 15   |
+|    7 | Experiments: classic designs                                 | Monday, Apr 19     |
+|      | *Exam 2*                                                     | *Thursday, Apr 22* |
+|    8 | Non-experiments: survey and correlational designs            | Monday, Apr 26     |
+|    9 | Non-experiments: quasi-experiments and developmental designs | Thursday, Apr 29   |
+|      | *Exam 3*                                                     | *Monday, May 3*    |

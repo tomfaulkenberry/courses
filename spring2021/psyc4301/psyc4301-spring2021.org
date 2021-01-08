@@ -123,13 +123,13 @@ It is the policy of Tarleton State University to comply with the Americans with 
  |------+--------------+--------------------------------------------|
  |    1 | Jan 19,21    | Introduction to the course                 |
  |    2 | Jan 26,28    | Transformations of test scores             |
- |    3 | Feb 2,4      | Statistical properties of composite scores |
- |    4 | Feb 9,11     | Issues with dichotomous scales             |
+ |    4 | Feb 2,4      | Measures of variation and association      |
+ |    3 | Feb 9,11     | Statistical properties of composite scores |
  |    5 | Feb 16,18    | No class meetings - complete *Exam 1*      |
  |    6 | Feb 23,25    | Classical test theory                      |
  |    7 | Mar 2,4      | Estimating reliability of tests            |
- |    8 | Mar 9,11     | Criterion-related validity                 |
- |    9 | Mar 16,18    | /No class meeting -- Spring Break/         |
+ |    9 | Mar 9,11     | /No class meeting -- Spring Break/         |
+ |    8 | Mar 16,18    | Criterion-related validity                 |
  |   10 | Mar 23,25    | Introduction to construct validity         |
  |   11 | Mar 30,Apr 1 | No class meeting - complete *Exam 2*       |
  |   12 | Apr 6,8      | Exploratory factor analysis                |

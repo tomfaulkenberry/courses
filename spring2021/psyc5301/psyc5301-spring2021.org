@@ -124,8 +124,8 @@ It is the policy of Tarleton State University to comply with the Americans with 
  |    5 | Feb 16 | No class meeting - complete *Exam 1*  |
  |    6 | Feb 23 | Repeated-measures designs             |
  |    7 | Mar 2  | Two-factor designs                    |
- |    8 | Mar 9  | Covariate designs                     |
- |    9 | Mar 16 | /No class meeting -- Spring Break/    |
+ |    9 | Mar 9  | /No class meeting -- Spring Break/    |
+ |    8 | Mar 16 | Covariate designs                     |
  |   10 | Mar 23 | Contrasts and comparisons among means |
  |   11 | Mar 30 | No class meeting - complete *Exam 2*  |
  |   12 | Apr 6  | Regression models                     |
