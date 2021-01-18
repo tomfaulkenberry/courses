@@ -73,6 +73,30 @@ At the beginning of each non-exam week, you will watch a video posted on Canvas 
 *** Homework exercises (20% of grade) 
 In order to practice the concepts you learn this semester, you will complete a short homework assignment every week. A brief set of homework exercises will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit). Completed exercises should be handwritten neatly on clean paper. Each homework assignment will be due at the beginning of class on Tuesday of the week after it is assigned.
 
+** Spring 2021 Safety Measures
+   Tarleton State University has adopted policies and practices for the Spring 2021 term to limit transmission of COVID-19. Students are required to observe the following practices while participating in face-to-face courses and course-related activities (office hours, moving between classes, study spaces, academic services, etc.):
+
+   - Self-monitoring – Students should follow CDC recommendations for self-monitoring. Students who exhibit symptoms of COVID-19 (with or without fever) should participate in class remotely and should not participate in face-to-face instruction. See https://www.tarleton.edu/roadmap/personal-responsibilities/ for more information. Students who test positive for COVID-19 or experience symptoms consistent with COVID-19 are required to self-report to Tarleton State University via this [[https://cm.maxient.com/reportingform.php?TarletonStateUniv&layout_id=6.][form]].
+
+   - Face coverings – All students must properly wear face coverings in all public spaces on campus, including classrooms.  If a student refuses to wear a face covering, the instructor will ask the student to leave and join the class remotely. Any student refusing to comply will be reported  to the Dean of Students Administrative Office via the [[https://cm.maxient.com/reportingform.php?TarletonStateUniv&layout_id=0][Student Affairs Incident Reporting Form]]. Additionally, the faculty member may choose to teach that day’s class remotely for all students.
+
+   - Physical Distancing – Physical distancing must be maintained between students, instructors, and others in course and course-related activities.
+
+   - Classroom Entrance and Exit – Students should leave classrooms promptly after class activities have concluded each day. Students should not congregate in hallways or other areas and should maintain a safe physical distance when waiting to enter classrooms and other instructional areas.
+
+*** Personal Illness and Quarantine/Isolation
+    Students who are required to quarantine (see https://www.tarleton.edu/roadmap/isolation-v-quarantine/) must participate in course and course-related activities remotely and must not attend face-to-face course activities. Students in quarantine are expected to participate in courses and course activities/assignments unless they have symptoms too severe to participate. Students placed in isolation should contact the instructor about individual participation in relation to severity of illness. Students who test positive for COVID-19 or who are experiencing symptoms consistent with COVID-19 are required to self-report to the Dean of Students Administrative Office through the [[https://cm.maxient.com/reportingform.php?TarletonStateUniv&layout_id=6][COVID-19]] Report Form.  For any questions or concerns, please contact the Dean of Students Administrative Office at 254-968-9080. 
+ 
+*** Blended Hybrid-HyFlex Course Delivery
+    Blended Hybrid-HyFlex courses are designed so that students can choose to attend courses face-to-face (with the potential for rotation to maintain a safe physical distance), at the same time as the face-to-face class meetings but from a different location (remote synchronous), or remotely at a later time by viewing the recorded course meeting (remote asynchronous). All courses will appear in the Canvas Learning Management System (LMS) to maximize access to course materials and other important course related activities. Students can choose to attend via any of the three modalities at any time.
+
+    Note, however, that programs governed by licensure and/or accreditation/certification requirements may require students to attend face-to-face laboratories, simulations, and clinical experiences to progress through the program and successfully graduate with eligibility for the licensure or certification examination.
+ 
+    To make course meetings accessible asynchronously, class meetings will be recorded and shared. The class recordings will be shared with students only in the individual section in which it was recorded to avoid violations of the Family Educational Rights and Privacy Act (FERPA).
+
+** Service Learning Day 
+Service Learning Day is /Thursday, March 25, 2021/.  On Service Learning Day, academic classes scheduled between 8:00am and 5:00pm are replaced with service learning experiences related to your field of study. Students will engage in service learning opportunities hosted by classes, departments, and/or colleges. To adhere to COVID-19 safety guidelines, experiences in Spring 2021 will be virtual, contactless, or meet the same social distancing requirements of face-to-face instruction. See Tarleton's Roadmap for Spring 2021 (https://web.tarleton.edu/roadmap/) for up-to-date requirements. Student sign-ups for service learning opportunities will open in TexanSync’s Service Portal on Monday, February 15, 2021. Instructions on how to identify and register for these opportunities will be shared in February. For additional information contact the Center for Educational Excellence at CEE@tarleton.edu.
+
 ** Course Communication
 
 Email is the primary means of official communication for this course.  If you have questions about the course, always feel free to send me an email at faulkenberry@tarleton.edu.  I only ask that you adhere to two guidelines:
