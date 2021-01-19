@@ -1,0 +1,83 @@
+\usepackage{amsmath}%
+\usepackage{amsfonts}%
+\usepackage{amssymb}%
+\usepackage{amsthm}%
+
+%\textwidth = 6.5 in
+%\textheight = 8 in
+%\oddsidemargin = 0.0 in
+%\evensidemargin = 0.0 in
+%\topmargin = 0.0 in
+%\headheight = 0.0 in
+%\headsep = 0.0 in
+\parskip = 0.1in
+\parindent = 0.0in
+
+\usepackage[left=1in,right=1in, top=1in, bottom=0.5in]{geometry}
+
+\usepackage{fancyhdr,ifthen}
+\pagestyle{fancy}
+\lfoot{}  % no footers (in pagestyle fancy)
+\cfoot{}
+% running left heading
+\lhead{\bfseries\Large\em \noindent{}\hspace{-.2em}\thiscourse{}\\[1mm]}
+% running right heading
+%\newcommand{\spc}{1.31em}
+\newcommand{\spc}{1em}
+
+\rhead{\em \sf Tarleton State University \hfill \sf \thisdocument{}}
+
+\setlength{\headheight}{3ex}
+\newcommand{\mainhead}[1]{\begin{center}{\Large \bf #1}\end{center}}
+\newcommand{\head}[1]{\vspace{1.5ex}\par\noindent{\large \bf #1}\par\noindent}
+\newcommand{\subhead}[1]{\vspace{2ex}\par\noindent{\sl #1}\vspace{1ex}\par\noindent{}}
+\newcommand{\ptitle}{\sl}
+
+\newcommand{\hra}{\hookrightarrow}
+
+
+%%%% Theoremstyles
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{goal}[theorem]{Goal}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{remarks}[theorem]{Remarks}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+
+
+\DeclareMathOperator{\SO}{SO}%
+\DeclareMathOperator{\Sp}{Sp}%
+\DeclareMathOperator{\SL}{SL}%
+\DeclareMathOperator{\End}{End}%
+\DeclareMathOperator{\Tr}{Tr}%
+\DeclareMathOperator{\Res}{Res}%
+\DeclareMathOperator{\res}{res}%
+\DeclareMathOperator{\BSD}{BSD}%
+\DeclareMathOperator{\Gal}{Gal}%
+\DeclareMathOperator{\GL}{GL}%
+\DeclareMathOperator{\Aut}{Aut}%
+\DeclareMathOperator{\Reg}{Reg}%
+\DeclareMathOperator{\Vis}{Vis}%
+\DeclareMathOperator{\Ker}{Ker}%
+\DeclareMathOperator{\Coker}{Coker}%
+\DeclareMathOperator{\Sel}{Sel}%
+\DeclareMathOperator{\ord}{ord}%
+\DeclareMathOperator{\new}{new}%
+\DeclareMathOperator{\an}{an}%
+
+\newcommand{\abcd}[4]{\left(
+        \begin{smallmatrix}#1&#2\\#3&#4\end{smallmatrix}\right)}
