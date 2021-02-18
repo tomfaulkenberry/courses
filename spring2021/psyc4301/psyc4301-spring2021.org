@@ -10,7 +10,7 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: /to be announced/
+- Office hours: MTR 8-11 am (by Zoom)
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
@@ -62,7 +62,7 @@ There will be three exams throughout the semester, occurring approximately once 
 
 Exam dates:
 
-- Exam 1 (due Sunday, February 21 at 11:59 pm)
+- Exam 1 (due Sunday, February 28 at 11:59 pm)
 - Exam 2 (due Sunday, April 4 at 11:59 pm)
 - Exam 3 (due Sunday, May 2 at 11:59 pm)
 
@@ -147,14 +147,14 @@ It is the policy of Tarleton State University to comply with the Americans with 
  |------+--------------+--------------------------------------------|
  |    1 | Jan 19,21    | Introduction to the course                 |
  |    2 | Jan 26,28    | Transformations of test scores             |
- |    4 | Feb 2,4      | Measures of variation and association      |
- |    3 | Feb 9,11     | Statistical properties of composite scores |
- |    5 | Feb 16,18    | No class meetings - complete *Exam 1*      |
- |    6 | Feb 23,25    | Classical test theory                      |
- |    7 | Mar 2,4      | Estimating reliability of tests            |
- |    9 | Mar 9,11     | /No class meeting -- Spring Break/         |
- |    8 | Mar 16,18    | Criterion-related validity                 |
- |   10 | Mar 23,25    | Introduction to construct validity         |
+ |    3 | Feb 2,4      | Measures of variation and association      |
+ |    4 | Feb 9,11     | Statistical properties of composite scores |
+ |    5 | Feb 16,18    | /unexpected cold weather closing!/         |
+ |    6 | Feb 23,25    | No class meetings - complete *Exam 1*      |
+ |    7 | Mar 2,4      | Classical test theory                      |
+ |    9 | Mar 9,11     | No class meetings - Spring Break           |
+ |    8 | Mar 16,18    | Estimating reliability of tests            |
+ |   10 | Mar 23,25    | Estimating validity of tests               |
  |   11 | Mar 30,Apr 1 | No class meeting - complete *Exam 2*       |
  |   12 | Apr 6,8      | Exploratory factor analysis                |
  |   13 | Apr 13,15    | Confirmatory factor analysis               |

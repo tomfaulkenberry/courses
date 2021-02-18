@@ -10,7 +10,7 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 319
-- Office hours: /to be announced/
+- Office hours: MTR 8-11 am (by Zoom)
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
@@ -62,7 +62,7 @@ There will be three exams throughout the semester, occurring approximately once 
 
 Tentative exam dates:
 
-- Exam 1 (due Sunday, February 21 at 11:59 pm)
+- Exam 1 (due Sunday, February 28 at 11:59 pm)
 - Exam 2 (due Sunday, April 4 at 11:59 pm)
 - Exam 3 (due Sunday, May 2 at 11:59 pm)
 
@@ -138,21 +138,21 @@ It is the policy of Tarleton State University to comply with the Americans with 
  
 ** Schedule of class meetings
 
- | Week | Date   | Topic                                 |
- |------+--------+---------------------------------------|
- |    1 | Jan 19 | Introduction to the course            |
- |    2 | Jan 26 | Review of classical inference         |
- |    3 | Feb 2  | Introduction to Bayesian inference    |
- |    4 | Feb 9  | Single-factor designs                 |
- |    5 | Feb 16 | No class meeting - complete *Exam 1*  |
- |    6 | Feb 23 | Repeated-measures designs             |
- |    7 | Mar 2  | Two-factor designs                    |
- |    9 | Mar 9  | /No class meeting -- Spring Break/    |
- |    8 | Mar 16 | Covariate designs                     |
- |   10 | Mar 23 | Contrasts and comparisons among means |
- |   11 | Mar 30 | No class meeting - complete *Exam 2*  |
- |   12 | Apr 6  | Regression models                     |
- |   13 | Apr 13 | Classical model selection techniques  |
- |   14 | Apr 20 | Bayesian model selection              |
- |   15 | Apr 27 | No class meeting - complete *Exam 3*  |
+ | Week | Date   | Topic                                |
+ |------+--------+--------------------------------------|
+ |    1 | Jan 19 | Introduction to the course           |
+ |    2 | Jan 26 | Review of classical inference        |
+ |    3 | Feb 2  | Introduction to Bayesian inference   |
+ |    4 | Feb 9  | Single-factor designs                |
+ |    5 | Feb 16 | /Unexpected cold weather closing/    |
+ |    6 | Feb 23 | No class meeting - complete *Exam 1* |
+ |    7 | Mar 2  | Repeated-measures designs            |
+ |    9 | Mar 9  | /No class meeting -- Spring Break/   |
+ |    8 | Mar 16 | Two-factor designs                   |
+ |   10 | Mar 23 | Covariate designs                    |
+ |   11 | Mar 30 | No class meeting - complete *Exam 2* |
+ |   12 | Apr 6  | Regression models                    |
+ |   13 | Apr 13 | Classical model selection techniques |
+ |   14 | Apr 20 | Bayesian model selection             |
+ |   15 | Apr 27 | No class meeting - complete *Exam 3* |
  
