@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-06-12 Fri 05:34 -->
+<!-- 2021-04-29 Thu 12:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>PSYC / READ 5379: Advanced Psycholinguistics</title>
@@ -39,7 +39,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -51,7 +51,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -160,6 +160,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -180,59 +193,35 @@
   /*]]>*/-->
 </style>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
 <div id="content">
 <h1 class="title">PSYC / READ 5379: Advanced Psycholinguistics</h1>
 
-<div id="outline-container-org7b6065e" class="outline-2">
-<h2 id="org7b6065e">Contact info</h2>
-<div class="outline-text-2" id="text-org7b6065e">
+<div id="outline-container-orgf0ceb4a" class="outline-2">
+<h2 id="orgf0ceb4a">Contact info</h2>
+<div class="outline-text-2" id="text-orgf0ceb4a">
 <ul class="org-ul">
 <li>Professor: Thomas J. Faulkenberry, Ph.D</li>
 <li>Office: Math 319</li>
@@ -244,9 +233,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org5eed235" class="outline-2">
-<h2 id="org5eed235">Course description</h2>
-<div class="outline-text-2" id="text-org5eed235">
+<div id="outline-container-orgafef254" class="outline-2">
+<h2 id="orgafef254">Course description</h2>
+<div class="outline-text-2" id="text-orgafef254">
 <p>
 (from catalog) <i>The course emphasizes the study of language, understanding languages, producing language and speech, language development, and related topics such as reading, language and the brain, linguistic diversity, and universals.</i>
 </p>
@@ -257,18 +246,18 @@ Psycholinguistics is an area of specialization within cognitive psychology that 
 </div>
 </div>
 
-<div id="outline-container-org8198948" class="outline-2">
-<h2 id="org8198948">Course materials</h2>
-<div class="outline-text-2" id="text-org8198948">
+<div id="outline-container-org4ec0c3f" class="outline-2">
+<h2 id="org4ec0c3f">Course materials</h2>
+<div class="outline-text-2" id="text-org4ec0c3f">
 <ul class="org-ul">
 <li><i>The Psychology of Language: From Data to Theory (4th ed.)</i> by Harley <a href="https://www.amazon.com/Psychology-Language-Data-Theory/dp/1848720890">Amazon link</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org14b0332" class="outline-2">
-<h2 id="org14b0332">Student learning outcomes</h2>
-<div class="outline-text-2" id="text-org14b0332">
+<div id="outline-container-orga518a64" class="outline-2">
+<h2 id="orga518a64">Student learning outcomes</h2>
+<div class="outline-text-2" id="text-orga518a64">
 <ol class="org-ol">
 <li>Define the basic vocabulary of psycholinguistics</li>
 <li>Discuss the biological bases of human communication.</li>
@@ -282,9 +271,9 @@ Psycholinguistics is an area of specialization within cognitive psychology that 
 </div>
 </div>
 
-<div id="outline-container-orgb5062bc" class="outline-2">
-<h2 id="orgb5062bc">Texas Reading Specialist Standards</h2>
-<div class="outline-text-2" id="text-orgb5062bc">
+<div id="outline-container-org403cfbc" class="outline-2">
+<h2 id="org403cfbc">Texas Reading Specialist Standards</h2>
+<div class="outline-text-2" id="text-org403cfbc">
 <p>
 For students enrolled in READ 5379, our course content will cover the following standards from TEA (Texas Education Agency) for EC-12 Reading Specialist certification.
 </p>
@@ -313,9 +302,9 @@ For students enrolled in READ 5379, our course content will cover the following 
 </div>
 </div>
 
-<div id="outline-container-org226be79" class="outline-2">
-<h2 id="org226be79">Requirements and grading</h2>
-<div class="outline-text-2" id="text-org226be79">
+<div id="outline-container-orga387287" class="outline-2">
+<h2 id="orga387287">Requirements and grading</h2>
+<div class="outline-text-2" id="text-orga387287">
 <ul class="org-ul">
 <li>Exam 1 (100 pts)</li>
 <li>Exam 2 (100 pts)</li>
@@ -331,9 +320,9 @@ Grades will be assigned based on the percentage of points you accumulate out of 
 </p>
 </div>
 
-<div id="outline-container-org3e41fb8" class="outline-3">
-<h3 id="org3e41fb8">Exams (66.7% of grade)</h3>
-<div class="outline-text-3" id="text-org3e41fb8">
+<div id="outline-container-org9ceb336" class="outline-3">
+<h3 id="org9ceb336">Exams (66.7% of grade)</h3>
+<div class="outline-text-3" id="text-org9ceb336">
 <p>
 There will be four total exams throughout the semester, occurring approximately once every 2 weeks.  They will cover material from your reading, online lectures, and quizzes.  Exam questions will be a mix of multiple choice and short answer.  Exams are due by 11:59 pm on the due date (see below).  Each exam will have a time limit and may only be attempted once.
 </p>
@@ -343,26 +332,26 @@ Due dates:
 </p>
 
 <ul class="org-ul">
-<li>Exam 1 (Friday, June 26 at 11:59 pm)</li>
-<li>Exam 2 (Friday, July 10 at 11:59 pm)</li>
-<li>Exam 3 (Friday, July 24 at 11:59 pm)</li>
-<li>Exam 4 (Friday, August 7 at 11:59 pm)</li>
+<li>Exam 1 (Friday, June 25 at 11:59 pm)</li>
+<li>Exam 2 (Friday, July 9 at 11:59 pm)</li>
+<li>Exam 3 (Friday, July 23 at 11:59 pm)</li>
+<li>Exam 4 (Friday, August 6 at 11:59 pm)</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgd4442b0" class="outline-3">
-<h3 id="orgd4442b0">Unit quizzes (16.6% of grade)</h3>
-<div class="outline-text-3" id="text-orgd4442b0">
+<div id="outline-container-orgaaffdf1" class="outline-3">
+<h3 id="orgaaffdf1">Unit quizzes (16.6% of grade)</h3>
+<div class="outline-text-3" id="text-orgaaffdf1">
 <p>
 At the end of each unit, you will complete a quiz over the content of that  unit. Each quiz will be graded as number correct out of 10 possible points.  Your total quiz grade will be computed by scaling your average quiz percentage up to a 100 point score.  For example, if you average 8.6/10 on your unit quizzes, your total quiz grade for the semester will be 86/100. 
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgef2dad6" class="outline-3">
-<h3 id="orgef2dad6">Review paper (16.7% of grade)</h3>
-<div class="outline-text-3" id="text-orgef2dad6">
+<div id="outline-container-orga564a0a" class="outline-3">
+<h3 id="orga564a0a">Review paper (16.7% of grade)</h3>
+<div class="outline-text-3" id="text-orga564a0a">
 <p>
 This semester, you will select a topic from the course (or something in the textbook that we did not cover) that relates to your professional interests.  Then, you will write a 10 page review paper that summarizes some literature related to your chosen topic. The literature review should include at least 10 recent (2000 to the present) empirical research articles from peer-reviewed journals. The paper must be formatted in APA style (e.g., double-spaced, APA-style citations, etc.).  Note that the 10-page requirement includes the title page and references.  The paper is due on the last day of class.   
 </p>
@@ -370,9 +359,9 @@ This semester, you will select a topic from the course (or something in the text
 </div>
 </div>
 
-<div id="outline-container-org36086f7" class="outline-2">
-<h2 id="org36086f7">Course Communication</h2>
-<div class="outline-text-2" id="text-org36086f7">
+<div id="outline-container-orgb5c65f6" class="outline-2">
+<h2 id="orgb5c65f6">Course Communication</h2>
+<div class="outline-text-2" id="text-orgb5c65f6">
 <p>
 Email is the primary means of communication for this course.  If you have questions about the course, always feel free to send me an email at faulkenberry@tarleton.edu.  I only ask that you adhere to two guidelines:
 </p>
@@ -387,18 +376,18 @@ Also, I will be sending periodic emails to each of you that update you on course
 </div>
 </div>
 
-<div id="outline-container-orgdce6579" class="outline-2">
-<h2 id="orgdce6579">University Policy on "F" Grades</h2>
-<div class="outline-text-2" id="text-orgdce6579">
+<div id="outline-container-org7a9d1fb" class="outline-2">
+<h2 id="org7a9d1fb">University Policy on "F" Grades</h2>
+<div class="outline-text-2" id="text-org7a9d1fb">
 <p>
 Beginning in Fall 2015, Tarleton began differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4370ff9" class="outline-2">
-<h2 id="org4370ff9">Academic Honesty</h2>
-<div class="outline-text-2" id="text-org4370ff9">
+<div id="outline-container-orga13699a" class="outline-2">
+<h2 id="orga13699a">Academic Honesty</h2>
+<div class="outline-text-2" id="text-orga13699a">
 <p>
 Cheating, plagiarism (submitting another person’s materials or ideas as one’s own without proper attribution), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
 </p>
@@ -413,31 +402,31 @@ The minimum sanction for <i>any</i> act of academic dishonesty is a grade of 0 o
 </div>
 </div>
 
-<div id="outline-container-orga3224a6" class="outline-2">
-<h2 id="orga3224a6">Academic Affairs Core Value Statements</h2>
-<div class="outline-text-2" id="text-orga3224a6">
+<div id="outline-container-org47eed99" class="outline-2">
+<h2 id="org47eed99">Academic Affairs Core Value Statements</h2>
+<div class="outline-text-2" id="text-org47eed99">
 </div>
-<div id="outline-container-org15ef0ee" class="outline-3">
-<h3 id="org15ef0ee">Academic Integrity Statement</h3>
-<div class="outline-text-3" id="text-org15ef0ee">
+<div id="outline-container-org027fcfd" class="outline-3">
+<h3 id="org027fcfd">Academic Integrity Statement</h3>
+<div class="outline-text-3" id="text-org027fcfd">
 <p>
 Tarleton State University's core values are integrity, leadership, tradition, civility, excellence, and service.  Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct.  Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org3e79205" class="outline-3">
-<h3 id="org3e79205">Academic Civility Statement</h3>
-<div class="outline-text-3" id="text-org3e79205">
+<div id="outline-container-org67490ef" class="outline-3">
+<h3 id="org67490ef">Academic Civility Statement</h3>
+<div class="outline-text-3" id="text-org67490ef">
 <p>
 Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org230fd37" class="outline-3">
-<h3 id="org230fd37">Academic Excellence Statement</h3>
-<div class="outline-text-3" id="text-org230fd37">
+<div id="outline-container-org5935180" class="outline-3">
+<h3 id="org5935180">Academic Excellence Statement</h3>
+<div class="outline-text-3" id="text-org5935180">
 <p>
 Tarleton holds high expectations for students to assume responsibility for their own individual learning. Students are also expected to achieve academic excellence by:
 </p>
@@ -453,9 +442,9 @@ Tarleton holds high expectations for students to assume responsibility for their
 </div>
 </div>
 
-<div id="outline-container-org290e05a" class="outline-2">
-<h2 id="org290e05a">Students with Disabilities Policy</h2>
-<div class="outline-text-2" id="text-org290e05a">
+<div id="outline-container-org0942d08" class="outline-2">
+<h2 id="org0942d08">Students with Disabilities Policy</h2>
+<div class="outline-text-2" id="text-org0942d08">
 <p>
 It is the policy of Tarleton State University to comply with the Americans with Disabilities Act and other applicable laws. If you are a student with a disability seeking accommodations for this course, please contact Center for Access and Academic Testing at 254.968.9400 or caat@tarleton.edu or stop by Math 201. More information can be found at www.tarleton.edu/caat or in the University Catalog. 
 </p>
@@ -466,9 +455,9 @@ It is the policy of Tarleton State University to comply with the Americans with 
 </div>
 </div>
 
-<div id="outline-container-org52e5297" class="outline-2">
-<h2 id="org52e5297">Semester Schedule</h2>
-<div class="outline-text-2" id="text-org52e5297">
+<div id="outline-container-orgd5c31d9" class="outline-2">
+<h2 id="orgd5c31d9">Semester Schedule</h2>
+<div class="outline-text-2" id="text-orgd5c31d9">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -488,74 +477,74 @@ It is the policy of Tarleton State University to comply with the Americans with 
 </thead>
 <tbody>
 <tr>
-<td class="org-left">1 (June 15-19)</td>
+<td class="org-left">1 (June 14-18)</td>
 <td class="org-left">The basics (cognitive psychology and linguistics)</td>
 <td class="org-right">1,2</td>
 </tr>
 
 <tr>
-<td class="org-left">2 (June 22-26)</td>
+<td class="org-left">2 (June 21-25)</td>
 <td class="org-left">The foundations of language</td>
 <td class="org-right">3</td>
 </tr>
 
 <tr>
 <td class="org-left">&#xa0;</td>
-<td class="org-left"><b>Exam 1 (due Friday, June 26)</b></td>
+<td class="org-left"><b>Exam 1 (due Friday, June 25)</b></td>
 <td class="org-right">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">3 (June 29-July 3)</td>
+<td class="org-left">3 (June 28-July 2)</td>
 <td class="org-left">Language development</td>
 <td class="org-right">4</td>
 </tr>
 
 <tr>
-<td class="org-left">4 (July 6-10)</td>
+<td class="org-left">4 (July 5-9)</td>
 <td class="org-left">Perception of words (visual and spoken)</td>
 <td class="org-right">6,9</td>
 </tr>
 
 <tr>
 <td class="org-left">&#xa0;</td>
-<td class="org-left"><b>Exam 2 (due Friday, July 10)</b></td>
+<td class="org-left"><b>Exam 2 (due Friday, July 9)</b></td>
 <td class="org-right">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">5 (July 13-17)</td>
+<td class="org-left">5 (July 12-16)</td>
 <td class="org-left">Reading</td>
 <td class="org-right">7,8</td>
 </tr>
 
 <tr>
-<td class="org-left">6 (July 20-24)</td>
+<td class="org-left">6 (July 19-23)</td>
 <td class="org-left">Understanding the structure of sentences</td>
 <td class="org-right">10</td>
 </tr>
 
 <tr>
 <td class="org-left">&#xa0;</td>
-<td class="org-left"><b>Exam 3 (due Friday, July 24)</b></td>
+<td class="org-left"><b>Exam 3 (due Friday, July 23)</b></td>
 <td class="org-right">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="org-left">7 (July 27-31)</td>
+<td class="org-left">7 (July 26-30)</td>
 <td class="org-left">Word meaning</td>
 <td class="org-right">11</td>
 </tr>
 
 <tr>
-<td class="org-left">8 (August 3-7)</td>
+<td class="org-left">8 (August 2-6)</td>
 <td class="org-left">Language production</td>
 <td class="org-right">13</td>
 </tr>
 
 <tr>
 <td class="org-left">&#xa0;</td>
-<td class="org-left"><b>Exam 4 (due Friday, August 7)</b></td>
+<td class="org-left"><b>Exam 4 (due Friday, August 6)</b></td>
 <td class="org-right">&#xa0;</td>
 </tr>
 </tbody>
@@ -564,9 +553,9 @@ It is the policy of Tarleton State University to comply with the Americans with 
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Date: Summer 2020</p>
-<p class="date">Created: 2020-06-12 Fri 05:34</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Date: Summer 2021</p>
+<p class="date">Created: 2021-04-29 Thu 12:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

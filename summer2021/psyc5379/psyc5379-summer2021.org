@@ -1,6 +1,6 @@
 #+TITLE: PSYC / READ 5379: Advanced Psycholinguistics
 #+AUTHOR: 
-#+DATE: Summer 2020
+#+DATE: Summer 2021
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+LATEX_CLASS: article
@@ -73,10 +73,10 @@ There will be four total exams throughout the semester, occurring approximately 
 
 Due dates:
 
-- Exam 1 (Friday, June 26 at 11:59 pm)
-- Exam 2 (Friday, July 10 at 11:59 pm)
-- Exam 3 (Friday, July 24 at 11:59 pm)
-- Exam 4 (Friday, August 7 at 11:59 pm)
+- Exam 1 (Friday, June 25 at 11:59 pm)
+- Exam 2 (Friday, July 9 at 11:59 pm)
+- Exam 3 (Friday, July 23 at 11:59 pm)
+- Exam 4 (Friday, August 60 at 11:59 pm)
   
 *** Unit quizzes (16.6% of grade)
 At the end of each unit, you will complete a quiz over the content of that  unit. Each quiz will be graded as number correct out of 10 possible points.  Your total quiz grade will be computed by scaling your average quiz percentage up to a 100 point score.  For example, if you average 8.6/10 on your unit quizzes, your total quiz grade for the semester will be 86/100. 
@@ -129,17 +129,17 @@ It is the policy of Tarleton State University to comply with the Americans with 
 
 | Unit               | Topic                                             | Book chapter(s) |
 |--------------------+---------------------------------------------------+-----------------|
-| 1 (June 15-19)     | The basics (cognitive psychology and linguistics) |             1,2 |
-| 2 (June 22-26)     | The foundations of language                       |               3 |
-|                    | *Exam 1 (due Friday, June 26)*                   |                 |
-| 3 (June 29-July 3) | Language development                              |               4 |
-| 4 (July 6-10)      | Perception of words (visual and spoken)           |             6,9 |
-|                    | *Exam 2 (due Friday, July 10)*                    |                 |
-| 5 (July 13-17)     | Reading                                           |             7,8 |
-| 6 (July 20-24)     | Understanding the structure of sentences          |              10 |
-|                    | *Exam 3 (due Friday, July 24)*                    |                 |
-| 7 (July 27-31)     | Word meaning                                      |              11 |
-| 8 (August 3-7)     | Language production                               |              13 |
-|                    | *Exam 4 (due Friday, August 7)*                   |                 |
+| 1 (June 14-18)     | The basics (cognitive psychology and linguistics) |             1,2 |
+| 2 (June 21-25)     | The foundations of language                       |               3 |
+|                    | *Exam 1 (due Friday, June 25)*                  |                 |
+| 3 (June 28-July 2) | Language development                              |               4 |
+| 4 (July 5-9)       | Perception of words (visual and spoken)           |             6,9 |
+|                    | *Exam 2 (due Friday, July 9)*                     |                 |
+| 5 (July 12-16)     | Reading                                           |             7,8 |
+| 6 (July 19-23)     | Understanding the structure of sentences          |              10 |
+|                    | *Exam 3 (due Friday, July 23)*                   |                 |
+| 7 (July 26-30)     | Word meaning                                      |              11 |
+| 8 (August 2-6)     | Language production                               |              13 |
+|                    | *Exam 4 (due Friday, August 6)*                  |                 |
 
 
