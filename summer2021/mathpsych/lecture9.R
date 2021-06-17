@@ -10,7 +10,7 @@ X_incongruent = subset(X, congruity=="incongruent")
 
 # plot histograms of RTs
 hist(X_congruent$response_time, breaks=30)
-hist(X_incongruent$response_time, breaks=30, col="blue", add=T)
+hist(X_incongruent$response_time, breaks=30, col = "green", add=T)
 
 # extract summary statistics for each condition
 mRT_congruent = mean(X_congruent$response_time)
@@ -36,12 +36,12 @@ x = L*(Pc^2*L - Pc*L + Pc - .5)/varRT
 driftRate1 = 0.1*sign(Pc-0.5)*x^(1/4)
 
 # calculate threshold
-a = 0.01*log(Pc/(1-Pc))/driftRate
+a = 0.01*log(Pc/(1-Pc))/driftRate1
 threshold1 = a/2
 
 # calculate nondecision time
-y = -100*driftRate*a
-MDT = a/(2*driftRate) * (1-exp(y))/(1+exp(y))
+y = -100*driftRate1*a
+MDT = a/(2*driftRate1) * (1-exp(y))/(1+exp(y))
 nondecisionTime1 = mRT - MDT
 
 # second, fit incongruent trials
@@ -55,12 +55,12 @@ x = L*(Pc^2*L - Pc*L + Pc - .5)/varRT
 driftRate2 = 0.1*sign(Pc-0.5)*x^(1/4)
 
 # calculate threshold
-a = 0.01*log(Pc/(1-Pc))/driftRate
+a = 0.01*log(Pc/(1-Pc))/driftRate2
 threshold2 = a/2
 
 # calculate nondecision time
-y = -100*driftRate*a
-MDT = a/(2*driftRate) * (1-exp(y))/(1+exp(y))
+y = -100*driftRate2*a
+MDT = a/(2*driftRate2) * (1-exp(y))/(1+exp(y))
 nondecisionTime2 = mRT - MDT
 
 
