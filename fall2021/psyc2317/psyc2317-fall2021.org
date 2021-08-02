@@ -1,6 +1,6 @@
 #+TITLE: PSYC 2317: Statistical Methods for Psychology
 #+AUTHOR: 
-#+DATE: Fall 2020
+#+DATE: Fall 2021
 #+OPTIONS: toc:nil
 #+OPTIONS: num:nil
 #+LATEX_CLASS: article
@@ -9,10 +9,8 @@
 
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
-- Office: Math 319
-- Office hours: 
-  - face-to-face: Monday/Friday 9:00am - 12:00pm
-  - virtual/Zoom: Tuesday/Thursday 1:00 - 3:00pm
+- Office: Math 301
+- Office hours: /TBA/
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
