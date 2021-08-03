@@ -17,12 +17,17 @@
 
 ** Course description
 
-Statistical methods are the primary tool for research in psychology. They are what allow us as researchers to make consistent, data-driven decisions.  As such, this is an extremely important course and one that I take very seriously as your professor. The topics we will cover this semester will include descriptive statistics (how we describe data) and inferential statistics (how we make decisions about data).  Specifically, this includes central tendency, variability, the distinction between populations and samples, hypothesis testing, and a variety of inferential tests that we can apply to data, including t-tests, linear regression, and analysis of variance.
+Statistical methods are the primary tool for research in psychology. They are what allow us as researchers to make consistent, data-driven decisions.  As such, this is an extremely important course and one that I take very seriously as your professor. The topics we will cover this semester will include descriptive statistics (how we describe data) and inferential statistics (how we make decisions about data).  Specifically, this includes central tendency, variability, the distinction between populations and samples, parameter estimation, and hypothesis testing (both classical and Bayesian).
 
 ** Course materials
-There are many excellent statistics books, but I do not teach from any specific one. For reference, I recommend our book /Learning Statistics with JASP: A Tutorial for Psychology Students and Other Beginners/, by Navarro, Foxcroft, and Faulkenberry (2019), which is a free textbook that can be downloaded from [[http://learnstatswithjasp.com][www.learnstatswithjasp.com]].
+- Primary textbook: Faulkenberry, T. J. (2022). /Psychological Statistics: The Basics/. Forthcoming book to be published by Routledge / Taylor & Francis.
+  - I am currently under contract to deliver this book to the publisher by December 1, 2021. Throughout the course, I will be providing you with draft chapters (for free!) for download on Canvas. I hope you will help me by reading the chapters carefully, spotting errors, and generally letting me know how to make it better. Thanks!
 
-We will also begin to use the JASP statistical software package later in the course; this can be freely downloaded from [[http://www.jasp-stats.com][www.jasp-stats.com]]
+- Optional reference book: For reference, I recommend our book /Learning Statistics with JASP: A Tutorial for Psychology Students and Other Beginners/ by Navarro, Foxcroft, and Faulkenberry (2019), which is a textbook that can be downloaded (for free!) from [[http://learnstatswithjasp.com][www.learnstatswithjasp.com]].
+
+- Online statistical calculator: throughout the semester, we will use the /PsyStat/ calculator developed over the past few years by me and my student Keelyn Brennan. The calculator can be accessed (for free!) on any computer or mobile device at https://tomfaulkenberry.shinyapps.io/psystat
+   
+- Statistical software: Later in the course, we will also learn to use the JASP statistical software package; this can be downloaded (you guessed it -- for free!) from [[http://www.jasp-stats.com][www.jasp-stats.com]]
 
 ** Student learning outcomes
 1. Identify variables under study (including independent and dependent variables)
@@ -32,17 +37,19 @@ We will also begin to use the JASP statistical software package later in the cou
 
 ** Course format
 
-This course will be delivered in a hybrid-flexible ("HyFlex") format, giving you the option of attending the course face-to-face and/or online. The basic structure of each week is as follows:
+This course will be delivered in a hybrid-flexible format, giving you the option of attending the course face-to-face and/or online in whatever way makes the most sense for you. The basic structure of each week is as follows:
 
-- early in the week, you will watch an online video lecture (given by me) explaining the week's topic and take a short quiz to assess your understanding.
+- early in the week (i.e., Monday), you will watch an online video lecture (given by me) explaining the week's topic and take a short quiz to assess your understanding. This quiz will always be due on Monday night at 11:59 pm.
 
-- you can then attend ONE face-to-face course meeting (either Tuesday or Thursday, but not both). The purpose of this course meeting is for me to demonstrate examples of homework problems that are assigned for the given week and give you the opportunity to ask questions. Half the class will be able to attend on Tuesday, and the other half will be able to attend on Thursday. Your specific day of the week will be assigned and communicated to you in Canvas and by email. In this way, each student will have the opportunity to attend class face-to-face once each week.
+- on Tuesday, I will use our class time to briefly review the week's topic and work through examples of homework problems that are assigned for the given week. I will refer to this as the /Tuesday problem session/.
 
-Note that you are not /required/ to attend the face-to-face class meetings at all! You may certainly wish to attend face-to-face, and I encourage all who can to do so. However, there are other ways to attend the weekly problem sessions:
-  - You may attend either session virtually by Zoom (that is, you can watch the problem session /live/ on your computer during class time).
-  - You may choose to simply watch the recorded problem sessions at a convenient time later in the week. All class recordings will be posted on Canvas.
+- on Thursday, I will finish up anything that I was not able to cover on Tuesday, and the rest of the time will be yours to ask questions. These questions can be related to the homework, or they can be completely unrelated...for example, you can ask questions about psychological research or graduate school; whatever piques your interest! The time is yours to do with as you please. Please note that questions about the course content will always be given priority. I will refer to this as the /Thursday review session/.
+  
+Note that you are not /required/ to attend any face-to-face class meetings at all! You may certainly wish to attend face-to-face, and I encourage all who can to do so. However, there are other ways to "attend" class:
+  - You may attend virtually by Zoom (that is, you can participate in the class meeting /live/ on your computer during class time).
+  - You may choose to simply watch the recorded Tuesday problem sessions at a convenient time later in the week. These recordings will be posted on Canvas.
 
-It does not matter which mode of attendance you choose -- that is the point of our "Hybrid-Flexible" course format. And, you can change your mind each week. The only thing that is /required/ is that you complete the quizzes, homeworks, and exams, which I'll describe in the next section.
+It does not matter which mode of attendance you choose -- that is the point of our "hybrid-flexible" course format. And, you can change the way you attend each week. The only thing that is /required/ is that you complete the quizzes, homeworks, and exams, which I'll describe in the next section.
 
 ** Requirements and grading
 - Exam 1 (100 pts)
@@ -59,37 +66,16 @@ There will be three exams throughout the semester, occurring approximately once 
 
 Tentative exam dates:
 
-- Exam 1 (due Sunday, September 27 at 11:59 pm)
-- Exam 2 (due Sunday, November 1 at 11:59 pm)
-- Exam 3 (due Sunday, December 6 at 11:59 pm)
+- Exam 1 (due Sunday, September 26 at 11:59 pm)
+- Exam 2 (due Sunday, October 31 at 11:59 pm)
+- Exam 3 (due Sunday, December 5 at 11:59 pm)
   
 *** Weekly quizzes 
 
-At the beginning of each non-exam week, you will watch a video posted on Canvas where I introduce the week's concepts. After watching this video, you will complete an online multiple-choice quiz, the aim of which is to check for understanding of the concepts presented. Each quiz counts for 10 possible points. There will be at least 10 of these quizzes, so your 10 highest quiz scores will earn you up to 100 points for your overall quiz grade.
+At the beginning of each non-exam week, you will watch a video posted on Canvas where I introduce the week's concepts. After watching this video, you will complete an online multiple-choice quiz, the aim of which is to check for understanding of the concepts presented. Each quiz counts for 10 possible points. There will 10 of these quizzes, and these quiz scores will earn you up to 100 points for your overall quiz grade.
 
 *** Homework exercises 
 In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week. A set of homework exercises (usually around 4-5 problems) will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit).  Each homework assignment will be due at 11:59 pm on Sunday immediately following the week it was assigned.
-
-** Fall 2020 Safety Measures
-Tarleton State University has adopted policies and practices for the Fall 2020 term to limit transmission of the novel coronavirus. Students are required to observe the following practices while participating in face-to-face courses and course-related activities (office hours, moving between classes, study spaces, academic services, etc.):
-
-  - Self-monitoring – Students should follow CDC recommendations for self-monitoring. Students who exhibit symptoms of COVID-19 (with or without fever) should participate in class remotely and should not participate in face-to-face instruction. See https://www.tarleton.edu/roadmap/personal-responsibilities/ for more information. Students who test positive for COVID-19 or experience symptoms consistent with COVID-19 are required to self-report to Tarleton State University via this [[https://cm.maxient.com/reportingform.php?TarletonStateUniv&layout_id=6.][form]].
-
-  - Face coverings – All students must properly wear face coverings in all public spaces on campus, including classrooms.  If a student refuses to wear a face covering, the instructor will ask the student to leave and join the class remotely. Any student refusing to comply will be reported  to the Dean of Students Administrative Office via the [[https://cm.maxient.com/reportingform.php?TarletonStateUniv&layout_id=0][Student Affairs Incident Reporting Form]]. Additionally, the faculty member may choose to teach that day’s class remotely for all students.
-
-  - Physical Distancing – Physical distancing must be maintained between students, instructors, and others in course and course-related activities.
-
-  - Classroom Entrance and Exit – Students should leave classrooms promptly after class activities have concluded each day. Students should not congregate in hallways or other areas and should maintain a safe physical distance when waiting to enter classrooms and other instructional areas.
-
-*** Personal Illness and Quarantine/Isolation
-Students who are required to quarantine (see https://www.tarleton.edu/roadmap/isolation-v-quarantine/) must participate in course and course-related activities remotely and must not attend face-to-face course activities. Students in quarantine are expected to participate in courses and course activities/assignments unless they have symptoms too severe to participate. Students placed in isolation should contact the instructor about individual participation in relation to severity of illness. Students who test positive for COVID-19 or who are experiencing symptoms consistent with COVID-19 are required to self-report to the Dean of Students Administrative Office through the [[https://cm.maxient.com/reportingform.php?TarletonStateUniv&layout_id=6][COVID-19]] Report Form.  For any questions or concerns, please contact the Dean of Students Administrative Office at 254-968-9080. 
- 
-*** Blended Hybrid-HyFlex Course Delivery
-Blended Hybrid-HyFlex courses are designed so that students can choose to attend courses face-to-face (with the potential for rotation to maintain a safe physical distance), at the same time as the face-to-face class meetings but from a different location (remote synchronous), or remotely at a later time by viewing the recorded course meeting (remote asynchronous). All courses will appear in the Canvas Learning Management System (LMS) to maximize access to course materials and other important course related activities. Students can choose to attend via any of the three modalities at any time.
-
-Note, however, that programs governed by licensure and/or accreditation/certification requirements may require students to attend face-to-face laboratories, simulations, and clinical experiences to progress through the program and successfully graduate with eligibility for the licensure or certification examination.
- 
-To make course meetings accessible asynchronously, class meetings will be recorded and shared. The class recordings will be shared with students only in the individual section in which it was recorded to avoid violations of the Family Educational Rights and Privacy Act (FERPA).
 
 ** Course Communication
 
@@ -98,9 +84,6 @@ Email is the primary means of official communication for this course.  If you ha
   - please use proper email etiquette.  Include a salutation (e.g., Dear Dr. Faulkenberry), complete sentences, and a closing (e.g., "Regards, Your Name").  You might be surprised how many times I get an email from a nondescript email address with no indication from WHOM the email was sent!
 
 Also, I will send periodic class announcements via email.  Thus, it is imperative that you check your /Tarleton email address/ regularly so that you don't miss any of these messages.
-
-** CV Points for Psychology Majors
-Beginning Fall 2019, all Tarleton psychology majors are required to accumulate a certain number of "CV points" as a requirement for graduation. CV is an acronym for "curriculum vitae", which is the traditional name of an academic resume.  No graduating psychology major will receive a diploma without completion/verification of the required 15 CV points. Some classes may build in CV point assignments, but ultimately it is the students’ responsibility to monitor their participation and acquire points during their time at Tarleton.  More information on pre-approved CV points, submission, and tracking of these points can be found in the CV Point Canvas site. Please note that submissions are graded, and may not be approved for points if they do not meet the CV standard.  If a student has a question about CV points, they should send an email to psychcvpointga@tarleton.edu.
 
 ** University Policy on "F" Grades
 Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
@@ -136,28 +119,23 @@ It is the policy of Tarleton State University to comply with the Americans with 
 
 ** Semester Schedule
 
-| Dates        | Topic                                                 |
-|--------------+-------------------------------------------------------|
-| Aug 20-21    | Course introduction - no homework assignment          |
-| Aug 24-28    | Unit 1 - Measures of central tendency and variability |
-| Aug 31-Sep 4 | Unit 2 - Transformations of scores / standardization  |
-| Sep 7-11     | Unit 3 - The normal distribution                      |
-| Sep 14-18    | Unit 4 - Distributions of sample means                |
-| Sep 21-25    | *Exam 1* due Sunday, 9/27, at 11:59 pm                |
-| Sep 28-Oct 2 | Unit 5 - Estimation and hypothesis testing            |
-| Oct 5-9      | Unit 6.1 - Introduction to the \( t \)-test           |
-| Oct 12-16    | Unit 6.2 - \( t \)-tests for independent samples      |
-| Oct 19-23    | Unit 7 - Confidence intervals for \( t \)-tests       |
-| Oct 26-30    | *Exam 2* due Sunday, 11/1, at 11:59 pm                |
-| Nov 2-6      | Unit 8 - Analysis of variance                         |
-| Nov 9-13     | Unit 9 - Introduction to Bayesian statistics          |
-| Nov 16-20    | Unit 10 - Bayesian tests in JASP                      |
-| Nov 23-27    | /no class due to Thanksgiving/                        |
-| Nov 30-Dec 4 | *Exam 3* due Sunday, Dec 6, at 11:59 am               |
+| Week beginning | Topic                                                 |
+|----------------+-------------------------------------------------------|
+| Aug 19         | Course introduction - no homework assignment          |
+| Aug 23         | Unit 1 - Measures of central tendency and variability |
+| Aug 30         | Unit 2 - Transformations of scores / standardization  |
+| Sep 6          | Unit 3 - The normal distribution                      |
+| Sep 13         | Unit 4 - Distributions of sample means                |
+| Sep 20         | *Exam 1* due Sunday, 9/26, at 11:59 pm                |
+| Sep 27         | Unit 5 - Estimation and hypothesis testing            |
+| Oct 4          | Unit 6 - Introduction to the \( t \)-test             |
+| Oct 11         | Unit 7 - \( t \)-tests for independent samples        |
+| Oct 18         | Unit 8 - Confidence intervals for \( t \)-tests       |
+| Oct 25         | *Exam 2* due Sunday, 10/31, at 11:59 pm               |
+| Nov 1          | Unit 9 - JASP / analysis of variance                  |
+| Nov 8          | Unit 10 - Bayesian hypothesis testing                 |
+| Nov 15         | Topic TBA -- depends on time and interest             |
+| Nov 22         | /no class due to Thanksgiving/                        |
+| Nov 29         | *Exam 3* due Sunday, Dec 5, at 11:59 pm               |
 
 
-| header A | header B | header C                       |
-|----------+----------+--------------------------------|
-| cell 1   | cell 2   | cell 3                         |
-| cell 4   | cell 5   | cell 6 (this is parenthetical) |
-|          |          |                                |
