@@ -75,7 +75,7 @@ Tentative exam dates:
 At the beginning of each non-exam week, you will watch a video posted on Canvas where I introduce the week's concepts. After watching this video, you will complete an online multiple-choice quiz, the aim of which is to check for understanding of the concepts presented. Each quiz counts for 10 possible points. There will 10 of these quizzes, and these quiz scores will earn you up to 100 points for your overall quiz grade.
 
 *** Homework exercises 
-In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week. A set of homework exercises (usually around 4-5 problems) will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit).  Each homework assignment will be due at 11:59 pm on Sunday immediately following the week it was assigned.
+In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week. A set of homework exercises (usually around 4-5 problems) will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit). /Please note that all work must be shown on computational problems in order to receive full credit./ Each homework assignment will be due at 11:59 pm on Sunday immediately following the week it was assigned.
 
 ** Course Communication
 
