@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-06-03 Fri 09:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PSYC 5303: Theories of Learning</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">PSYC 5303: Theories of Learning</h1>
+
+<div id="outline-container-orgdd2c430" class="outline-2">
+<h2 id="orgdd2c430">Contact info</h2>
+<div class="outline-text-2" id="text-orgdd2c430">
+<ul class="org-ul">
+<li>Professor: Thomas J. Faulkenberry, Ph.D</li>
+<li>Office: Math 301</li>
+<li>Office hours: <i>TBA</i></li>
+<li>Email: faulkenberry@tarleton.edu</li>
+<li>Website: <a href="http://tomfaulkenberry.github.io">http://tomfaulkenberry.github.io</a></li>
+<li>Phone: 254-968-9816</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc4aeee3" class="outline-2">
+<h2 id="orgc4aeee3">Course description</h2>
+<div class="outline-text-2" id="text-orgc4aeee3">
+<p>
+In this introductory level graduate course, we will survey a wide range of persepectives (both historical and current) on the theoretical principles of learning and memory.  To accomplish this, you will read a variety of book chapters and journal articles that are chosen to help you develop a deep knowledge base of the theories, empirical methods, and applications of human learning and memory.  As this course is foundational to your future study in the MS in Applied Psychology, a portion of the course will be devoted to helping you develop a quantitative research proposal in which you will design an experiment involving some topic from our course in either a theoretical or applied context.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1aec0f8" class="outline-2">
+<h2 id="org1aec0f8">Course materials</h2>
+<div class="outline-text-2" id="text-org1aec0f8">
+<p>
+There are several relevant textbooks for this course, but some are hard to find and/or expensive.  Hence, I will be providing copies of selected chapters as we need them.  However, you are welcome to find your own copies of these books, as they are very good.
+</p>
+
+<ul class="org-ul">
+<li>Bower, G. H., &amp; Hilgard, E. R. (1981). <b>Theories of Learning</b> (5th ed.). Englewood Cliffs, NJ: Prentice-Hall, Inc.</li>
+<li>Eichenbaum, H. (2008). <b>Learning &amp; Memory</b>. New York: W. W. Norton Company.</li>
+<li>Neath, I., &amp; Surprenant, A. M. (2003). <b>Human memory</b> (2nd ed.). Belmont, CA: Wadsworth.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbedffae" class="outline-2">
+<h2 id="orgbedffae">Student learning outcomes</h2>
+<div class="outline-text-2" id="text-orgbedffae">
+<ol class="org-ol">
+<li>Discuss the experimental procedures used to study human learning and memory.</li>
+<li>Demonstrate an understanding of both contemporary and historically important conceptual frameworks in the study of human learning and memory.</li>
+<li>Discuss the theoretical arguments that have motivated research on human learning and memory.</li>
+<li>Develop, write, and present a proposal to experimentally investigate some theoretical or applied aspect of human learning and memory.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd16cfad" class="outline-2">
+<h2 id="orgd16cfad">Requirements and grading</h2>
+<div class="outline-text-2" id="text-orgd16cfad">
+<p>
+Regular attendance and full participation in each weekly class session are essential requirements. You must carefully, thoroughly, and thoughtfully complete all reading and writing assignments <b>prior</b> to each class.  
+</p>
+
+<p>
+Each week, you will turn in a one-page article summary about <b>one</b> of the assigned student readings (see schedule).  Your summary must contain the following:
+</p>
+
+<ul class="org-ul">
+<li>describe the motivation for the experiment (i.e., what problem was the paper attempting to solve?)</li>
+<li>a brief description of the method, particularly describing the key dependent variables (what was measured) and independent variables (what was manipulated)</li>
+<li>a conceptual description of the results (don't list the statistical results, just tell me the "big picture")</li>
+</ul>
+
+<p>
+In addition, two students will serve as discussion leaders each week.  This means they will have carefully read their assigned paper, read additional material, and prepared an oral presentation (with appropriate slides and/or handouts).  Class presentations should be short and to the point (no more than fifteen minutes for the assigned paper and an additional ten-fifteen minutes for discussion, giving a total of 30 minutes for each presenter).
+</p>
+
+<p>
+In addition to the weekly contributions during class, there will be two in-class exams (one during our Week 8 meeting and one during our Week 14 meeting).  The week prior to each exam you will be given a set of 10-15 potential essay questions.  Each student is expected to work INDEPENDENTLY when preparing for the exam.  Answers should include sufficient empirical evidence (not just anecdotes), giving descriptions of specific experiments that lead to your conclusions.  Five questions will be selected for the exam, and you will be asked to answer 4 out of the 5 essay questions. The questions will be based on material covered in lecture, assigned readings, and class discussions.  The exams will be given in class, and you will not be able to consult any external materials.  In other words, you will have to retrieve from your memory your responses to the practice exam.  Violations will result in a grade of ZERO on the exam.
+</p>
+
+<p>
+Finally, you will be asked to put together an empirical proposal to investigate some theoretical or applied issue in human learning and memory.  The ideal proposal will be one which you could potentially implement as your thesis or applied project.  We will develop these proposals in three components.  First, on Week 7 you will turn in a brief paragraph that gives a conceptual description of your proposal idea.  This paragraph will not be graded, but will provide the basis of feedback from me that will help you to refine your idea.  The paragraph must describe the questions your research proposal will address and the methodology you intend to use, and provide at least two relevant "key" references.
+</p>
+
+<p>
+Next, on Week 10 you will turn in an outline of your proposal and give a short in-class presentation of your proposal.  Based on the feedback that I (and your colleagues) give you on this draft, you will write a final manuscript for your proposal (with full Abstract, Introduction, Methods, Hypothesized Results and Discussion) and give an oral presentation of your experimental paper on Week 15.  Following both the Week 10 and Week 15 presentations, written peer reviews will be required from each member of the class.  Details on the requirements for this project will be distributed in a few weeks.
+</p>
+
+<p>
+These various components of your class performance will contribute to your grade as follows:
+</p>
+
+<ul class="org-ul">
+<li>Midterm exam (25%)</li>
+<li>Final exam (25%)</li>
+<li>Weekly article summaries (10%)</li>
+<li>Leading discussions of assigned readings (10%)</li>
+<li>Research proposal (30%), consisting of:
+<ul class="org-ul">
+<li>Initial written and oral proposal (5%)</li>
+<li>Final presentation of proposal (10%)</li>
+<li>Final manuscript of proposal (10%)</li>
+<li>Peer reviews of colleagues' initial and final presentations (5%)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org644796d" class="outline-2">
+<h2 id="org644796d">Course Communication</h2>
+<div class="outline-text-2" id="text-org644796d">
+<p>
+This course is designed to be an intensive, interactive course on modern statistical methods and experimental design.  That means that I will be available for one-on-one consultation most any time.  Just stop by my office or give me a call.
+</p>
+
+<p>
+All official course communication (questions, setting up a meeting, etc.) will be conducted by email.  Any time you need to contact me, feel free to send me an email at faulkenberry@tarleton.edu.  I only ask that you adhere to two guidelines:
+</p>
+<ul class="org-ul">
+<li>please include the course number (PSYC 5303) in the subject line.  For example, one good way to do this is:  Subject: [PSYC 5303] Question about week 3 assignment.</li>
+<li>please use proper email etiquette.  Include a salutation (e.g., Dear Dr. Faulkenberry), complete sentences, and a closing (e.g., "Regards, Your Name").  You might be surprised how many times I get an email from a nondescript email address with no indication from WHOM the email was sent!</li>
+</ul>
+
+<p>
+Also, I will be sending periodic emails to each of you that update you on course progress, due dates, etc.  It is imperative that you check your <i>Tarleton email address</i> regularly so that you don't miss any of these messages.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org04cd14d" class="outline-2">
+<h2 id="org04cd14d">University Policy on "F" Grades</h2>
+<div class="outline-text-2" id="text-org04cd14d">
+<p>
+Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8aabe39" class="outline-2">
+<h2 id="org8aabe39">Academic Honesty</h2>
+<div class="outline-text-2" id="text-org8aabe39">
+<p>
+Tarleton State University expects its students to maintain high standards of personal and scholarly conduct. Students guilty of academic dishonesty are subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
+</p>
+
+<p>
+In particular, any exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  The minimum sanction for violation of this policy is a grade of 0 on the affected exam.
+</p>
+
+<p>
+Each student’s honesty and integrity are taken for granted. However, if I find evidence of academic misconduct I will pursue the matter to the fullest extent permitted by the university. ACADEMIC MISCONDUCT OR DISHONESTY WILL RESULT IN A GRADE OF F FOR THE COURSE.  Students are strongly advised to avoid even the <i>appearance</i> of academic misconduct. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org865b3a7" class="outline-2">
+<h2 id="org865b3a7">Academic Affairs Core Value Statements</h2>
+<div class="outline-text-2" id="text-org865b3a7">
+</div>
+<div id="outline-container-org839da43" class="outline-3">
+<h3 id="org839da43">Academic Integrity Statement</h3>
+<div class="outline-text-3" id="text-org839da43">
+<p>
+Tarleton State University's core values are integrity, leadership, tradition, civility, excellence, and service.  Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct.  Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8108cac" class="outline-3">
+<h3 id="org8108cac">Academic Civility Statement</h3>
+<div class="outline-text-3" id="text-org8108cac">
+<p>
+Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4ffb1ea" class="outline-3">
+<h3 id="org4ffb1ea">Academic Excellence Statement</h3>
+<div class="outline-text-3" id="text-org4ffb1ea">
+<p>
+Tarleton holds high expectations for students to assume responsibility for their own individual learning. Students are also expected to achieve academic excellence by:
+</p>
+<ul class="org-ul">
+<li>honoring Tarleton’s core values, upholding high standards of habit and behavior.</li>
+<li>maintaining excellence through class attendance and punctuality, preparing for active participation in all learning experiences.</li>
+<li>putting forth their best individual effort.</li>
+<li>continually improving as independent learners.</li>
+<li>engaging in extracurricular opportunities that encourage personal and academic growth.</li>
+<li>reflecting critically upon feedback and applying these lessons to meet future challenges.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgabd7309" class="outline-2">
+<h2 id="orgabd7309">Students with Disabilities Policy</h2>
+<div class="outline-text-2" id="text-orgabd7309">
+<p>
+It is the policy of Tarleton State University to comply with the Americans with Disabilities  Act (www.ada.gov) and other applicable laws.  If you are a student with a disability seeking accommodations for this course, please contact the Center for Access and Academic Testing, at 254.968.9400 or caat@tarleton.edu. The office is located in Math 201. More information can be found at www.tarleton.edu/caat or in the University Catalog.​
+</p>
+
+<p>
+<b>Note:  any changes to this syllabus will be communicated to you by the instructor!</b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5068418" class="outline-2">
+<h2 id="org5068418">Semester schedule</h2>
+<div class="outline-text-2" id="text-org5068418">
+<ul class="org-ul">
+<li>Week 1 (8/31): Introduction and syllabus overview; what is learning?
+<ul class="org-ul">
+<li>Background reading:
+<ul class="org-ul">
+<li>Chapter 1 of Eichenbaum</li>
+</ul></li>
+<li>Student presentations:
+<ul class="org-ul">
+<li><b>none this week</b></li>
+</ul></li>
+</ul></li>
+
+<li>Week 2 (9/7): Mechanisms of classical conditioning
+<ul class="org-ul">
+<li>Background reading:
+<ul class="org-ul">
+<li>Chapter 5 of Eichenbaum</li>
+</ul></li>
+<li>Student presentations:
+<ul class="org-ul">
+<li>Clark, R. E., &amp; Squire, L. R. (1998). Classical conditioning and brain systems: The role of awareness. <i>Science, 280</i> (3), 77-81.</li>
+<li>Orr, S. P., et al. (2000). De novo conditioning in trauma-exposed individuals with and without posttraumatic stress disorder. <i>Journal of Abnormal Psychology, 109</i> (2), 290-298</li>
+</ul></li>
+</ul></li>
+
+<li>Week 3 (9/14): Mechanisms of instrumental conditioning
+<ul class="org-ul">
+<li>Background reading:
+<ul class="org-ul">
+<li>Chapter 6 of Eichenbaum</li>
+</ul></li>
+<li>Student presentations:
+<ul class="org-ul">
+<li>Skinner, B. F. (1948). Superstition in the pigeon. <i>Journal of Experimental Psychology, 38</i>, 168-172.</li>
+<li>Powell, R. W. (1972). Operant conditioning in the common crow (Corvus brachyrhynchos). <i>The Auk, 89</i> (4), 738-742.</li>
+</ul></li>
+</ul></li>
+
+<li>Week 4 (9/21): Human associative learning
+<ul class="org-ul">
+<li>Background reading:
+<ul class="org-ul">
+<li>Chapter 6 of Bower &amp; Hilgard</li>
+</ul></li>
+<li>Student presentations:
+<ul class="org-ul">
+<li>Roediger, H. L., &amp; Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. <i>Psychological Science, 17</i> (3), 249-255.
+<ul class="org-ul">
+<li>Roediger, H. L., &amp; Crowder, R. G. (1976). A serial position effect in recall of United States presidents. <i>Bulletin of the Psychonomic Society, 8</i> (4), 275-278.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+
+<li>Week 5 (9/28): The classic multi-store model of human memory
+<ul class="org-ul">
+<li>Background reading:
+<ul class="org-ul">
+<li>Chapter 3 of Neath and Surprenant</li>
+</ul></li>
+<li>Student presentations:
+<ul class="org-ul">
+<li>Glanzer, M., &amp; Cunitz, A. R. (1966). Two storage mechanisms in free recall. <i>Journal of Verbal Learning and Verbal Behavior, 5</i> , 351-360.</li>
+<li>Bjork, R. A., &amp; Whitten, W. B. (1974). Recency-sensitive retrieval processes in long-term free recall. <i>Cognitive Psychology, 6</i>, 173-189.</li>
+</ul></li>
+</ul></li>
+
+<li>Week 6 (10/5): Working memory
+<ul class="org-ul">
+<li>Background reading:
+<ul class="org-ul">
+<li>Chapter 4 of Neath and Surprenant</li>
+</ul></li>
+<li>Student presentations:
+<ul class="org-ul">
+<li>Trbovich, P. L., &amp; LeFevre, J. (2003). Phonological and visual working memory in mental addition. <i>Memory &amp; Cognition, 31</i> (5), 738-745.</li>
+<li>Miyake, A., &amp; Friedman, N. P. (2012). The nature and organization of individual differences in executive functions: Four general conclusions. <i>Current Directions in Psychological Science, 21</i> (1), 8-14.</li>
+</ul></li>
+</ul></li>
+
+<li>Week 7 (10/12): Encoding and retrieval processes / <b>turn in paragraph describing your experimental proposal</b>
+<ul class="org-ul">
+<li>Background reading:
+<ul class="org-ul">
+<li>Chapter 5 of Neath and Surprenant</li>
+</ul></li>
+<li>Student presentations:
+<ul class="org-ul">
+<li>Bjork, R. A., &amp; Allen, T. W. (1970). The spacing effect: Consolidation or differential encoding? <i>Journal of Verbal Learning and Verbal Behavior, 9</i>, 567-572.</li>
+<li>Mulligan, N. W., &amp; Lozito, J. P. (2006). An asymmetry between memory encoding and retrieval: Revelation, generation, and transfer-appropriate processing. <i>Psychological Science, 17</i> (1), 7-11.</li>
+</ul></li>
+</ul></li>
+
+<li>Week 8 (10/19): <b>Midterm exam</b></li>
+
+<li>Week 9 (10/26): Forgetting
+<ul class="org-ul">
+<li>Background reading:
+<ul class="org-ul">
+<li>Chapter 6 of Neath and Surprenant</li>
+</ul></li>
+<li>Student presentations:
+<ul class="org-ul">
+<li>Anderson, M. C., Bjork, E. L., &amp; Bjork, R. A. (2000). Retrieval-induced forgetting: Evidence for a recall-specific mechanism. <i>Psychonomic Bulletin &amp; Review, 7</i> (3), 522-530.</li>
+<li>Campbell, J. I. D., &amp; Thompson, V. A. (2012). Retrieval-induced forgetting of arithmetic facts. <i>Journal of Experimental Psychology: Learning, Memory, and Cognition, 38</i> (1), 118-129.</li>
+</ul></li>
+</ul></li>
+
+<li>Week 10 (11/2): Implicit memory / <b>Outline of research proposals due, in-class presentations of outlines</b>
+<ul class="org-ul">
+<li>Background reading:
+<ul class="org-ul">
+<li>Chapter 7 of Neath and Surprenant</li>
+</ul></li>
+<li>Student presentations:
+<ul class="org-ul">
+<li><b>coming soon</b></li>
+</ul></li>
+</ul></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Week 11 (11/9): Knowledge representations in long-term memory
+<ul class="org-ul">
+<li>Background reading:
+<ul class="org-ul">
+<li>Chapter 10 of Neath and Surprenant</li>
+</ul></li>
+<li>Student presentations:
+<ul class="org-ul">
+<li><b>coming soon</b></li>
+</ul></li>
+</ul></li>
+
+<li>Week 12 (11/16): Mental imagery
+<ul class="org-ul">
+<li>Background reading:
+<ul class="org-ul">
+<li>Chapter 11 of Neath and Surprenant</li>
+</ul></li>
+<li>Student presentations:
+<ul class="org-ul">
+<li><b>coming soon</b></li>
+</ul></li>
+</ul></li>
+
+<li>Week 13 (11/23): <b>no class due to Thanksgiving holiday</b></li>
+
+<li>Week 14 (11/30): <b>Final exam</b></li>
+
+<li>Week 15 (12/7): In-class presentations</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Fall 2022</p>
+<p class="date">Created: 2022-06-03 Fri 09:26</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
