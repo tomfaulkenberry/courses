@@ -42,20 +42,16 @@ There are several relevant textbooks for this course, but some are hard to find,
 This is a graduate-level course. Regular attendance and full participation in each weekly class session are essential requirements. You must carefully, thoroughly, and thoughtfully complete all reading and writing assignments *prior* to each class.  
 Each week will be devoted to a single topic, supported by both secondary source material (i.e., textbook chapters) and primary source material (i.e., empirical journal articles). Before attending class any given week, you will need to complete /two readings/ -- one book chapter, and one empirical article.  All reading materials will be provided on Canvas.
 
-I will assess your understanding of these readings two ways.
-- First, at the beginning of class you will complete a short in-class quiz over the textbook reading. Students attending in-person in Stephenville will complete the quiz on paper, whereas those attending via Zoom will complete the quiz on Canvas.
-- Second, you will turn in a one-page article summary about *one* of the week's two assigned journal articles.  Your summary must contain the following:
+I will assess your understanding of these readings two ways. First, at the beginning of class you will complete a short in-class quiz over the textbook reading. Second, you will turn in a one-page article summary (submitted /before/ class starts on Canvas) about *one* of the week's two assigned journal articles.  Your summary must contain the following:
   - describe the motivation for the experiment (i.e., what problem was the paper attempting to solve?)
   - a brief description of the method, particularly describing the key dependent variables (what was measured) and independent variables (what was manipulated)
   - a conceptual description of the results (don't list the statistical results, just tell me the "big picture")
 
-After completing the in-class quiz and submitting your journal article summary, we will have a traditional lecture/discussion over the week's textbook reading.
+After completing the in-class quiz, we will have a traditional lecture/discussion over the week's textbook reading.
 
 After this lecture, we will take a short break, then conclude each class session with two student-led discussions over the assigned journal article readings. Here, two students will serve as discussion leaders.  This means they will have carefully read their assigned paper, read additional material as necessary, and prepared an oral presentation (with appropriate slides and/or handouts).  Class presentations should be short and to the point (no more than fifteen minutes for the presentation and an additional ten-fifteen minutes for discussion, giving a total of 30 minutes for each presenter).
 
 In addition to the weekly contributions during class, there will be two in-class exams (one during our Week 8 meeting and one during our Week 15 meeting).  The week prior to each exam you will be given a set of 10-15 potential essay questions. Students may work together when preparing for the exam, but the exam will be completed individually. Answers should demonstrate "graduate-level thinking" -- this means that when you answer a question, you will support your arguments with empirical evidence (not just anecdotes or statements of what /you believe/) and give descriptions of specific experiments that lead to your conclusions. Six questions from the original list will be selected for the exam, and you will be asked to answer 5 of them. The questions will be based on material covered in lecture, assigned readings, and class discussions. The exams will be given in class, and you will not be able to consult any external materials.  In other words, you will have to retrieve from your memory your responses to the practice exam.  Violations will result in a grade of ZERO on the exam.
-
-Note -- students attending via Zoom will use the Respondus lock-down browser to complete the exam during class.
 
 These various components of your class performance will contribute to your grade as follows:
 
@@ -67,7 +63,7 @@ These various components of your class performance will contribute to your grade
 
 ** Additional notes for Zoom attendees
 
-This class allows Zoom attendance for students outside the Stephenville campus area. Students enrolled in the Stephenville section (010) should plan to attend /in person/. However, students in the Zoom section (011) may attend either in person or by Zoom. The Zoom link is posted prominently on the Canvas page for the course. Attending by Zoom requires that you have access to a computer with a camera, microphone, and speakers/headphones. Please set up a quiet workspace so that you can concentrate fully on the class session. Your camera should be turned ON during the entire class session (except during breaks). All quizzes and exams will be completed on Canvas -- they will be opened at the exact moment that the corresponding "paper" version is handed out in the Stephenville class. Note that the two exams (Midterm and Final) will require the use of the Respondus lock-down browser (i.e., the online equivalent of a "closed book exam").
+This class allows Zoom attendance for students outside the Stephenville campus area. Students enrolled in the Stephenville section (010) should plan to attend /in person/. However, students in the Zoom section (011) may attend either in person or by Zoom. The Zoom link is posted prominently on the Canvas page for the course. Attending by Zoom requires that you have access to a computer with a camera, microphone, and speakers/headphones. Please set up a quiet workspace so that you can concentrate fully on the class session. Your camera should be turned ON during the entire class session (except during breaks). All quizzes and exams will be completed on Canvas -- they will be opened at the exact moment that the corresponding "paper" version is handed out in the Stephenville class. Note that the two exams (Midterm and Final) will require the use of the Respondus lock-down browser (i.e., the online equivalent of a "closed book exam"). 
 
 ** Course Communication
 
@@ -113,26 +109,87 @@ It is the policy of Tarleton State University to comply with the Americans with 
  
 *Note:  any changes to this syllabus will be communicated to you by the instructor!*
  
-** Schedule at a glance
+** Semester schedule
 
-| Week | Date  | Topic(s) covered                           |
-|------+-------+--------------------------------------------|
-|    1 | 8/23  | Introduction to course / what is learning? |
-|    2 | 8/30  | Mechanisms of classical conditioning       |
-|    3 | 9/6   | Mechanisms of instrumental conditioning    |
-|    4 | 9/13  | Mathematical models of conditioning        |
-|    5 | 9/20  | Classical models of human memory           |
-|    6 | 9/27  | Human associative learning                 |
-|    7 | 10/4  | Working memory                             |
-|    8 | 10/11 | /Midterm exam/                             |
-|    9 | 10/18 | Encoding and retrieval processes           |
-|   10 | 10/25 | Forgetting                                 |
-|   11 | 11/1  | Implicit memory                            |
-|   12 | 11/8  | Recognition                                |
-|   13 | 11/15 | Knowledge structures in long term memory   |
-|   14 | 11/22 | /No class for Thanksgiving holiday/        |
-|   15 | 11/29 | Topic TBA                                  |
-|   16 | 12/7  | /Final exam/                               |
+- Week 1 (8/23): Introduction and syllabus overview; what is learning?
+  - Background reading:
+    - Chapter 1 of Eichenbaum
+  - Student presentations:
+    - *none this week*
+
+- Week 2 (8/30): Mechanisms of classical conditioning
+  - Background reading:
+    - Chapter 5 of Eichenbaum
+  - Student presentations:
+    - Clark, R. E., & Squire, L. R. (1998). Classical conditioning and brain systems: The role of awareness. /Science, 280/ (3), 77-81.
+    - Orr, S. P., et al. (2000). De novo conditioning in trauma-exposed individuals with and without posttraumatic stress disorder. /Journal of Abnormal Psychology, 109/ (2), 290-298
+        
+- Week 3 (9/6): Mechanisms of instrumental conditioning
+  - Background reading:
+    - Chapter 6 of Eichenbaum
+  - Student presentations:
+    - Skinner, B. F. (1948). Superstition in the pigeon. /Journal of Experimental Psychology, 38/, 168-172.
+    - Powell, R. W. (1972). Operant conditioning in the common crow (Corvus brachyrhynchos). /The Auk, 89/ (4), 738-742.
+
+- Week 4 (9/13): Human associative learning
+  - Background reading:
+    - Chapter 6 of Bower & Hilgard
+  - Student presentations:
+    - Roediger, H. L., & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. /Psychological Science, 17/ (3), 249-255.
+    - Roediger, H. L., & Crowder, R. G. (1976). A serial position effect in recall of United States presidents. /Bulletin of the Psychonomic Society, 8/ (4), 275-278.
+
+- Week 5 (9/20): The classic multi-store model of human memory
+  - Background reading:
+    - Chapter 3 of Neath and Surprenant
+  - Student presentations:
+    - Glanzer, M., & Cunitz, A. R. (1966). Two storage mechanisms in free recall. /Journal of Verbal Learning and Verbal Behavior, 5/ , 351-360.
+    - Bjork, R. A., & Whitten, W. B. (1974). Recency-sensitive retrieval processes in long-term free recall. /Cognitive Psychology, 6/, 173-189.
+
+- Week 6 (9/27): Working memory
+  - Background reading:
+    - Chapter 4 of Neath and Surprenant
+  - Student presentations:
+    - Trbovich, P. L., & LeFevre, J. (2003). Phonological and visual working memory in mental addition. /Memory & Cognition, 31/ (5), 738-745.
+    - Miyake, A., & Friedman, N. P. (2012). The nature and organization of individual differences in executive functions: Four general conclusions. /Current Directions in Psychological Science, 21/ (1), 8-14.
+
+- Week 7 (10/4): Encoding and retrieval processes / *turn in paragraph describing your experimental proposal*
+  - Background reading:
+    - Chapter 5 of Neath and Surprenant
+  - Student presentations:
+    - Bjork, R. A., & Allen, T. W. (1970). The spacing effect: Consolidation or differential encoding? /Journal of Verbal Learning and Verbal Behavior, 9/, 567-572.
+    - Mulligan, N. W., & Lozito, J. P. (2006). An asymmetry between memory encoding and retrieval: Revelation, generation, and transfer-appropriate processing. /Psychological Science, 17/ (1), 7-11.
+        
+- Week 8 (10/11): *Midterm exam*
+
+- Week 9 (10/18): Forgetting
+  - Background reading:
+    - Chapter 6 of Neath and Surprenant
+  - Student presentations:
+    - Anderson, M. C., Bjork, E. L., & Bjork, R. A. (2000). Retrieval-induced forgetting: Evidence for a recall-specific mechanism. /Psychonomic Bulletin & Review, 7/ (3), 522-530.
+    - Campbell, J. I. D., & Thompson, V. A. (2012). Retrieval-induced forgetting of arithmetic facts. /Journal of Experimental Psychology: Learning, Memory, and Cognition, 38/ (1), 118-129.
+
+- Week 10 (10/25):  *Outline of research proposals due, in-class presentations of outlines*
+
+- Week 11 (11/1): Implicit memory 
+  - Background reading:
+    - Chapter 7 of Neath and Surprenant
+  - Student presentations:
+    - *coming soon*
 
 
+- Week 12 (11/8): Knowledge representations in long-term memory
+    - Background reading:
+        - Chapter 10 of Neath and Surprenant
+    - Student presentations:
+        - *coming soon*
+
+- Week 13 (11/15): Topic TBA
+    - Background reading:
+      - *coming soon*
+    - Student presentations:
+        - *coming soon*
+
+- Week 14 (11/29): *Final exam*
+        
+- Week 15 (12/7): *In-class presentations of research proposals*
 
