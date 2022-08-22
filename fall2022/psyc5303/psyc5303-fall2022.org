@@ -51,7 +51,7 @@ I will assess your understanding of these readings two ways.
 
 After completing the in-class quiz and submitting your journal article summary, we will have a traditional lecture/discussion over the week's textbook reading.
 
-After this lecture, we will take a short break, then conclude each class session with two student-led discussions over the assigned journal article readings. Here, two students will serve as discussion leaders.  This means they will have carefully read their assigned paper, read additional material as necessary, and prepared an oral presentation (with appropriate slides and/or handouts).  Class presentations should be short and to the point (no more than fifteen minutes for the presentation and an additional ten-fifteen minutes for discussion, giving a total of 30 minutes for each presenter).
+After this lecture, we will take a short break, then conclude each class session with two student-led discussions over the assigned journal article readings. Here, two students will serve as discussion leaders.  This means they will have carefully read their assigned paper, read additional material as necessary, and prepared an oral presentation (with appropriate slides and/or handouts).  Class presentations should be short and to the point (no more than 10 minutes for the presentation and an additional 10 minutes for discussion, giving a total of 20 minutes for each presenter).
 
 In addition to the weekly contributions during class, there will be two in-class exams (one during our Week 8 meeting and one during our Week 15 meeting).  The week prior to each exam you will be given a set of 10-15 potential essay questions. Students may work together when preparing for the exam, but the exam will be completed individually. Answers should demonstrate "graduate-level thinking" -- this means that when you answer a question, you will support your arguments with empirical evidence (not just anecdotes or statements of what /you believe/) and give descriptions of specific experiments that lead to your conclusions. Six questions from the original list will be selected for the exam, and you will be asked to answer 5 of them. The questions will be based on material covered in lecture, assigned readings, and class discussions. The exams will be given in class, and you will not be able to consult any external materials.  In other words, you will have to retrieve from your memory your responses to the practice exam.  Violations will result in a grade of ZERO on the exam.
 
@@ -121,8 +121,8 @@ It is the policy of Tarleton State University to comply with the Americans with 
 |    2 | 8/30  | Mechanisms of classical conditioning       |
 |    3 | 9/6   | Mechanisms of instrumental conditioning    |
 |    4 | 9/13  | Mathematical models of conditioning        |
-|    5 | 9/20  | Classical models of human memory           |
-|    6 | 9/27  | Human associative learning                 |
+|    5 | 9/20  | Human associative learning                 |
+|    6 | 9/27  | Classical models of human memory           |
 |    7 | 10/4  | Working memory                             |
 |    8 | 10/11 | /Midterm exam/                             |
 |    9 | 10/18 | Encoding and retrieval processes           |
