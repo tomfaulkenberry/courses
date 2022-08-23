@@ -12,7 +12,7 @@
 ** Contact info
 - Professor: Thomas J. Faulkenberry, Ph.D
 - Office: Math 301
-- Office hours: /TBA/
+- Office hours: MTWRF 1:00-2:00 pm (or by appointment)
 - Email: faulkenberry@tarleton.edu
 - Website: [[http://tomfaulkenberry.github.io]]
 - Phone: 254-968-9816
@@ -23,7 +23,7 @@ In this introductory level graduate course, we will survey a wide range of perse
 
 ** Course materials
 
-There are several relevant textbooks for this course, but some are hard to find, expensive, or both!  Hence, I will be providing copies of selected chapters as we need them.  However, you are welcome to find your own copies of these books, as they are very good.
+There is no /required/ textbook to purchase for this course. That said, there are several relevant books that we can use, but some are hard to find, expensive, or both!  Hence, I will be providing copies of selected chapters as we need them.  However, you are welcome to find your own copies of these books, as they are very good.
 
 - Bower, G. H., & Hilgard, E. R. (1981). *Theories of Learning* (5th ed.). Englewood Cliffs, NJ: Prentice-Hall, Inc. ([[https://www.amazon.com/Theories-Learning-5th-Gordon-Bower/dp/0139144323][Amazon link]])
 - Eichenbaum, H. (2008). *Learning & Memory*. New York: W. W. Norton Company. ([[https://www.amazon.com/Learning-Memory-Howard-Eichenbaum/dp/0393924475][Amazon link]])
@@ -40,20 +40,24 @@ There are several relevant textbooks for this course, but some are hard to find,
 ** Structure of class meetings and grading
 
 This is a graduate-level course. Regular attendance and full participation in each weekly class session are essential requirements. You must carefully, thoroughly, and thoughtfully complete all reading and writing assignments *prior* to each class.  
-Each week will be devoted to a single topic, supported by both secondary source material (i.e., textbook chapters) and primary source material (i.e., empirical journal articles). Before attending class any given week, you will need to complete /two readings/ -- one book chapter, and one empirical article.  All reading materials will be provided on Canvas.
+Each week will be devoted to a single topic, supported by both secondary source material (i.e., textbook chapters) and primary source material (i.e., empirical journal articles). So, /before attending class/, you will need to complete /two readings/ -- one book chapter, and one empirical article.  All reading materials are posted to a Github respository (link [[https://github.com/tomfaulkenberry/courses/tree/master/canvas/5303/readings][here]]) and may be freely downloaded from there.
 
 I will assess your understanding of these readings two ways.
 - First, at the beginning of class you will complete a short in-class quiz over the textbook reading. Students attending in-person in Stephenville will complete the quiz on paper, whereas those attending via Zoom will complete the quiz on Canvas.
-- Second, you will turn in a one-page article summary about *one* of the week's two assigned journal articles.  Your summary must contain the following:
+- Second, you will turn in a one-page article review about *one* of the week's two assigned journal articles.  Your summary must contain the following:
   - describe the motivation for the experiment (i.e., what problem was the paper attempting to solve?)
   - a brief description of the method, particularly describing the key dependent variables (what was measured) and independent variables (what was manipulated)
-  - a conceptual description of the results (don't list the statistical results, just tell me the "big picture")
+  - a conceptual description of the results (don't list the statistical results, just tell me the "big picture").
 
-After completing the in-class quiz and submitting your journal article summary, we will have a traditional lecture/discussion over the week's textbook reading.
+An example article review, along with a detailed grading rubric and general writing tips, can be seen [[https://raw.githack.com/tomfaulkenberry/courses/master/canvas/5303/exampleReview.pdf][here]].
 
-After this lecture, we will take a short break, then conclude each class session with two student-led discussions over the assigned journal article readings. Here, two students will serve as discussion leaders.  This means they will have carefully read their assigned paper, read additional material as necessary, and prepared an oral presentation (with appropriate slides and/or handouts).  Class presentations should be short and to the point (no more than 10 minutes for the presentation and an additional 10 minutes for discussion, giving a total of 20 minutes for each presenter).
+After completing the in-class quiz and submitting your journal article review, we will have a traditional lecture/discussion over the week's topic.
 
-In addition to the weekly contributions during class, there will be two in-class exams (one during our Week 8 meeting and one during our Week 15 meeting).  The week prior to each exam you will be given a set of 10-15 potential essay questions. Students may work together when preparing for the exam, but the exam will be completed individually. Answers should demonstrate "graduate-level thinking" -- this means that when you answer a question, you will support your arguments with empirical evidence (not just anecdotes or statements of what /you believe/) and give descriptions of specific experiments that lead to your conclusions. Six questions from the original list will be selected for the exam, and you will be asked to answer 5 of them. The questions will be based on material covered in lecture, assigned readings, and class discussions. The exams will be given in class, and you will not be able to consult any external materials.  In other words, you will have to retrieve from your memory your responses to the practice exam.  Violations will result in a grade of ZERO on the exam.
+After this lecture, we will take a short break, then conclude each class session with 2-3 student-led discussions over the week's assigned journal article readings. Here, students will serve as discussion leaders for their assigned paper. This means they will have carefully read their assigned paper, read additional material as necessary, and prepared an oral presentation (with appropriate slides and/or handouts).  Class presentations should be short and to the point (no more than 10 minutes for the presentation and an additional 10 minutes for discussion, giving a total of 20 minutes for each presenter).
+
+Note -- each student will be responsible for leading ONE discussion during the semester. Students are encouraged to look at the list of papers for the semester and choose their favorite. The list may be viewed [[https://docs.google.com/spreadsheets/d/1EyEDHDajrpZxH91b7lKSu-Le0HGNi-QrCqTrTgHdxng/edit?usp=sharing][here]]; be sure to enter your name in the list beside the paper which you'd like to present.
+
+Finally, let's talk about exams. There will be two in-class exams (one during our Week 8 meeting and one during our Week 15 meeting).  The week prior to each exam you will be given a set of 10-15 potential essay questions. Students may work together when preparing for the exam, but the exam will be completed individually. Answers should demonstrate "graduate-level thinking" -- this means that when you answer a question, you will support your arguments with empirical evidence (not just anecdotes or statements of what /you believe/) and give descriptions of specific experiments that lead to your conclusions. Six questions from the original list will be selected for the exam, and you will be asked to answer 5 of them. The questions will be based on material covered in lecture, assigned readings, and class discussions. The exams will be given in class, and you will not be able to consult any external materials.  In other words, you will have to retrieve from your memory your responses to the practice exam.  Violations will result in a grade of ZERO on the exam.
 
 Note -- students attending via Zoom will use the Respondus lock-down browser to complete the exam during class.
 
