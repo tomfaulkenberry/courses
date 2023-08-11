@@ -67,40 +67,41 @@ All official course communication (questions, setting up a meeting, etc.) will b
   - please include the course number (PSYC 5316) in the subject line.  For example, one good way to do this is:  Subject: [PSYC 5316] Question about problem set 3
   - please use proper email etiquette.  Include a salutation (e.g., Dear Dr. Faulkenberry), complete sentences, and a closing (e.g., "Regards, Your Name").  You might be surprised how many times I get an email from a nondescript email address with no indication from WHOM the email was sent!
 
-Also, I will be sending periodic emails to each of you that update you on course progress, due dates, etc.  It is imperative that you check your /Tarleton email address/ regularly so that you don't miss any of these messages.
+Note, I will send periodic class announcements via Canvas messaging. However, I ask that you send your questions by email instead of Canvas messaging. 
 
-** University Policy on "F" Grades
-Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
+** Academic Integrity Statement and Policy
 
-** Academic Honesty
+Cheating, plagiarism, or doing work for another person who will receive academic credit is impermissible. This includes the use of unauthorized books, notebooks, or other sources in order to secure or give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place. Consult the following links for further information on academic conduct. 
+  - Student Judicial Affairs: https://www.tarleton.edu/judicial/academicconduct.html  
+  - Student Handbook: https://www.tarleton.edu/studentrules/code-of-student-conduct.html  
 
-Tarleton State University expects its students to maintain high standards of personal and scholarly conduct. Students guilty of academic dishonesty are subject to disciplinary action. Cheating, plagiarism (submitting another person’s materials or ideas as one’s own), or doing work for another person who will receive academic credit are all disallowed. This includes the use of unauthorized books, notebooks, or other sources in order to secure of give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the student’s own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place.
+** Americans with Disabilities Act (ADA) - Student Success
 
-In particular, any exam taken online must be completed without the aid of any unauthorized resource (including using any search engine, Google, etc.).  Authorized resources are limited only to the official textbook and any lecture notes from the course.  Any other authorized resources will be provided to you before the exam.  The minimum sanction for violation of this policy is a grade of 0 on the affected exam.
+Tarleton State University is committed to complying with the Americans with Disabilities Act (www.ada.gov) and other applicable laws. If you are a student with a disability seeking accommodation for this course, please contact the Office of Disability Resources at 254.968.9400, disability@tarleton.edu, or visit https://www.tarleton.edu/drt/.  
 
-Each student’s honesty and integrity are taken for granted. However, if I find evidence of academic misconduct I will pursue the matter to the fullest extent permitted by the university. ACADEMIC MISCONDUCT OR DISHONESTY WILL RESULT IN A GRADE OF F FOR THE COURSE.  Students are strongly advised to avoid even the /appearance/ of academic misconduct. 
+** Academic Affairs Core Values in the Classroom
 
-** Academic Affairs Core Value Statements
+*** Academic Integrity
+Tarleton State University's core values are integrity, excellence, and respect. Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct. Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
 
-*** Academic Integrity Statement
-Tarleton State University's core values are integrity, excellence, and respect.  Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct.  Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
+*** Academic Excellence
+Tarleton holds high expectations for students to assume responsibility for their own individual learning.  Students are also expected to achieve academic excellence by:
+  - honoring Tarleton’s core values. 
+  - upholding high standards of habit and behavior. 
+  - maintaining excellence through class attendance and punctuality. 
+  - preparing for active participation in all learning experiences. 
+  - putting forth their best individual effort. 
+  - continually improving as independent learners. 
+  - engaging in extracurricular opportunities that encourage personal and academic growth. 
+  - reflecting critically upon feedback and applying these lessons to meet future challenges.
 
-*** Academic Civility Statement 
+*** Academic Respect
 Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
 
-*** Academic Excellence Statement
-Tarleton holds high expectations for students to assume responsibility for their own individual learning. Students are also expected to achieve academic excellence by:
-- honoring Tarleton’s core values, upholding high standards of habit and behavior.
-- maintaining excellence through class attendance and punctuality, preparing for active participation in all learning experiences. 
-- putting forth their best individual effort.
-- continually improving as independent learners.
-- engaging in extracurricular opportunities that encourage personal and academic growth.
-- reflecting critically upon feedback and applying these lessons to meet future challenges.
 
-** Student Success Statement
+*** Student Rules
+Students are responsible for knowing and abiding by the policies and information contained in the Tarleton Student Rules - https://www.tarleton.edu/studentrules.  
 
-Tarleton State University is committed to complying with the Americans with Disabilities Act (https://www.ada.gov) and other applicable laws. If you are a student with a disability seeking accommodation for this course, please contact the Office of Student Accessibility Services at 254.968.5491, studentaccessibilityservices@tarleton.edu, or visit https://www.tarleton.edu/sas/.  
- 
 *Note:  any changes to this syllabus will be communicated to you by the instructor!*
  
 ** Tentative schedule

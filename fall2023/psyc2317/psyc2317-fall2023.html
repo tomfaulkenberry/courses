@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-08-11 Fri 08:42 -->
+<!-- 2023-08-11 Fri 08:44 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>PSYC 5316: Advanced Quantitative Methods &amp; Experimental Design</title>
+<title>PSYC 2317: Statistical Methods for Psychology</title>
 <meta name="generator" content="Org Mode" />
 <style>
   #content { max-width: 60em; margin: auto; }
@@ -192,14 +192,35 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">PSYC 5316: Advanced Quantitative Methods &amp; Experimental Design</h1>
+<h1 class="title">PSYC 2317: Statistical Methods for Psychology</h1>
 
-<div id="outline-container-org1c3ce25" class="outline-2">
-<h2 id="org1c3ce25">Contact info</h2>
-<div class="outline-text-2" id="text-org1c3ce25">
+<div id="outline-container-orgf87eb13" class="outline-2">
+<h2 id="orgf87eb13">Contact info</h2>
+<div class="outline-text-2" id="text-orgf87eb13">
 <ul class="org-ul">
 <li>Professor: Thomas J. Faulkenberry, Ph.D</li>
 <li>Office: Math 301</li>
@@ -211,94 +232,131 @@
 </div>
 </div>
 
-<div id="outline-container-orga0bfd50" class="outline-2">
-<h2 id="orga0bfd50">Course description</h2>
-<div class="outline-text-2" id="text-orga0bfd50">
+<div id="outline-container-orgcae696a" class="outline-2">
+<h2 id="orgcae696a">Course description</h2>
+<div class="outline-text-2" id="text-orgcae696a">
 <p>
-This course is designed to teach you the advanced quantitative methods and techniques of experimental design that are necessary to read and conduct modern empirical research in the behavioral sciences. We will do this through replicating three classic experiments, each illustrating a unique experimental design and technique for data analysis.  Students taking this course are expected to have <b>previously</b> taken a graduate level course in statistics (or equivalent statistical training). 
+Statistical methods are the primary tool for research in psychology. They are what allow us as researchers to make consistent, data-driven decisions.  As such, this is an extremely important course and one that I take very seriously as your professor. The topics we will cover this semester will include descriptive statistics (how we describe data) and inferential statistics (how we make decisions about data).  Specifically, this includes central tendency, variability, the distinction between populations and samples, parameter estimation, and hypothesis testing (both classical and Bayesian).
 </p>
+</div>
+</div>
 
-<p>
-Some of the specific skills you'll learn this semester are:
-</p>
+<div id="outline-container-org9940499" class="outline-2">
+<h2 id="org9940499">Course materials</h2>
+<div class="outline-text-2" id="text-org9940499">
 <ul class="org-ul">
-<li>using a computer to program behavioral experiments and collect response time data</li>
-<li>efficiently pre-processing raw data and implement sophisticated statistical models using R</li>
-<li>writing technical manuscripts to report results of experiments</li>
+<li>Primary textbook: Faulkenberry, T. J. (2022). <i>Psychological Statistics: The Basics</i>, published by Routledge. A link to purchase on Amazon is <a href="https://www.amazon.com/Psychological-Statistics-Basics-Thomas-Faulkenberry/dp/1032020954/">here</a>
+<ul class="org-ul">
+<li>Note - this is a reasonably short and inexpensive book, and can usually be had for around $25. The small commission I make on book sales goes back to support the development and maintenance of the free web-based software tools that we use during the semester. Trust me, I am not "profiting" from book sales. If it feels weird that I am requiring you to buy my book, I understand. However, I hope you'll also realize the value of being taught by the same person who wrote your book!</li>
+</ul></li>
+
+<li>Optional reference book: For reference, I recommend our book <i>Learning Statistics with JASP: A Tutorial for Psychology Students and Other Beginners</i> by Navarro, Foxcroft, and Faulkenberry (2019), which is a textbook that can be downloaded (for free!) from <a href="http://learnstatswithjasp.com">www.learnstatswithjasp.com</a>.</li>
+
+<li>Online statistical calculator: throughout the semester, we will use the <i>PsyStat</i> calculator developed over the past few years by me and my former student Keelyn Brennan (now a Ph.D. student at the University of Oklahoma). The calculator can be accessed (for free!) on any computer or mobile device at <a href="https://tomfaulkenberry.shinyapps.io/psystat">https://tomfaulkenberry.shinyapps.io/psystat</a></li>
+
+<li>Statistical software: Later in the course, we will also learn to use the JASP statistical software package; this can be downloaded (you guessed it &#x2013; for free!) from <a href="http://www.jasp-stats.com">www.jasp-stats.com</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgbb96b06" class="outline-2">
-<h2 id="orgbb96b06">Course materials</h2>
-<div class="outline-text-2" id="text-orgbb96b06">
-<p>
-There is no required textbook for the course. However, I recommend you have access to a good statistics textbook (<a href="https://www.amazon.com/Psychological-Statistics-Basics-Thomas-Faulkenberry-dp-1032020954/dp/1032020954">mine</a> is cheap). In addition, you'll need to have access to a computer (laptop is best) on which you can install the following software packages:
-</p>
-
-<ul class="org-ul">
-<li>R statistical software (free download from <a href="http://www.r-project.org">https://www.r-project.org</a>)</li>
-<li>RStudio (free download from <a href="http://www.rstudio.com">https://www.rstudio.com</a>)</li>
-<li>OpenSesame (free download from <a href="https://osdoc.cogsci.nl/">https://osdoc.cogsci.nl/</a></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org1c2f849" class="outline-2">
-<h2 id="org1c2f849">Student learning outcomes</h2>
-<div class="outline-text-2" id="text-org1c2f849">
+<div id="outline-container-org9d1fb7c" class="outline-2">
+<h2 id="org9d1fb7c">Student learning outcomes</h2>
+<div class="outline-text-2" id="text-org9d1fb7c">
 <ol class="org-ol">
-<li>perform and interpret basic techniques of statistical inference, both in a frequentist and Bayesian framework</li>
-<li>program and administer behavioral experiments using computer software</li>
-<li>understand various methods of cleaning data for analysis in R</li>
-<li>develop skills for communicating technical material, especially through writing scientific manuscripts in APA format.</li>
+<li>Identify variables under study (including independent and dependent variables)</li>
+<li>Choose appropriate measures of descriptive statistics</li>
+<li>Select and perform appropriate inferential statistics</li>
+<li>Draw appropriate statistical conclusions from results of analyses</li>
 </ol>
 </div>
 </div>
 
-<div id="outline-container-org2cce47c" class="outline-2">
-<h2 id="org2cce47c">Requirements and grading</h2>
-<div class="outline-text-2" id="text-org2cce47c">
+<div id="outline-container-orgbad7848" class="outline-2">
+<h2 id="orgbad7848">Course format</h2>
+<div class="outline-text-2" id="text-orgbad7848">
 <p>
-You will complete four lab activities throughout the semester. With the exception of the first lab on how to use R, the labs will each take four weeks, following the same basic schedule:
+This course will be delivered in an online format. The basic structure of each week is as follows:
 </p>
 
 <ul class="org-ul">
-<li>first week: you will watch a video lecture describing to build the experiment in OpenSesame, then build your own version and submit it to me for a grade (10 points)</li>
-<li>second week: you will ask four friends to participate in your experiment, collect their data, and submit it to me for a grade (20 points)</li>
-<li>third week: you will watch a video lecture describing how to use R to analyze the collected data from the class, then complete and submit a corresponding data analysis assignment for a grade (30 points)</li>
-<li>fourth week: you will write a short APA-formatted manuscript describing the experiment and the results, and submit for a grade (40 points)</li>
+<li>early in the week, you will watch an introductory video lecture (given by me) explaining the week's topic and take a short quiz to assess your understanding. This quiz will always be due on Tuesday night at 11:59 pm. Quizzes will be multiple choice and will be graded automatically.</li>
+
+<li>after you finish the introductory video lecture and quiz, you will then be ready to work the week's homework set. To assist with this work, I will publish a video that shows me working and talking through the solutions to a set of practice problems similar to those you'll be working on in the homework set.</li>
+
+<li>after you watch the practice video, you'll be ready to finish up the week's homework set. These homework sets will always be due on Sunday night at 11:59 pm. Homeworks will be graded during the following week. Note, the labor required to grade homework problems is not insignificant, so I ask that you give me a week to get these grades and feedback posted. Rarely should I ever need to take longer than a week to get things graded.</li>
+
+<li>three times during the semester, we will pause the typical weekly schedule and have an exam.</li>
 </ul>
 
 <p>
-The labs I've planned for this semester are as follows:
-</p>
-
-<ul class="org-ul">
-<li>Lab 1 - Introduction to R statistical software</li>
-<li>Lab 2 - flanker task (an experiment on attention)</li>
-<li>Lab 3 - Sternberg memory scanning task (an experiment on short term memory)</li>
-<li>Lab 4 - addition verification task (an experiment on mathematical cognition)</li>
-</ul>
-
-<p>
-Lab 1 is worth 50 points, and Labs 2-4 are each worth 100 points. Grades will be assigned based on the percentage of points you accumulate out of a total possible 350 points.  I will use the standard grading scale of A=90%, B=80%, etc.
+More details on the quizzes, homework, and exams are given below.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge4aa995" class="outline-2">
-<h2 id="orge4aa995">Course Communication</h2>
-<div class="outline-text-2" id="text-orge4aa995">
+<div id="outline-container-org8ce14b9" class="outline-2">
+<h2 id="org8ce14b9">Requirements and grading</h2>
+<div class="outline-text-2" id="text-org8ce14b9">
+<ul class="org-ul">
+<li>Exam 1 (100 pts)</li>
+<li>Exam 2 (100 pts)</li>
+<li>Exam 3 (100 pts)</li>
+<li>Weekly quizzes (100 pts)</li>
+<li>Homework exercises (100 pts)</li>
+<li><i>Total = 500 points</i></li>
+</ul>
+
 <p>
-This course is designed to be an intensive, interactive course on modern statistical methods and experimental design.  That means that I will be available for one-on-one consultation most any time.  Just stop by my office or give me a call.
+Grades will be assigned based on the percentage of points you accumulate out of these 500 points.  I will use the standard grading scale of A=90%, B=80%, etc.
+</p>
+</div>
+
+<div id="outline-container-org22b30c1" class="outline-3">
+<h3 id="org22b30c1">Exams</h3>
+<div class="outline-text-3" id="text-org22b30c1">
+<p>
+There will be three exams throughout the semester, occurring approximately once every four to five weeks.  They will cover material from lectures, quizzes, and homework exercises. Exams will be similar in format to homework sets, primarily consisting of short-answer questions. Exams (and homework; see below) will be submitted online on Canvas &#x2013; in my experience, it is probably easiest to hand-write your solutions neatly on clean paper and either scan or take a photo of the completed work to submit. Exams may not be done collaboratively; these should be considered as honest assessments of <i>your</i> learning, and as such, should be done independently.
 </p>
 
 <p>
-All official course communication (questions, setting up a meeting, etc.) will be conducted by email.  Any time you need to contact me, feel free to send me an email at faulkenberry@tarleton.edu.  I only ask that you adhere to two guidelines:
+Tentative exam dates:
+</p>
+
+<ul class="org-ul">
+<li>Exam 1 (due Sunday, October 1 at 11:59 pm)</li>
+<li>Exam 2 (due Sunday, November 5 at 11:59 pm)</li>
+<li>Exam 3 (due Sunday, December 3 at 11:59 pm)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcb89f72" class="outline-3">
+<h3 id="orgcb89f72">Weekly quizzes</h3>
+<div class="outline-text-3" id="text-orgcb89f72">
+<p>
+At the beginning of each non-exam week, you will watch a video posted on Canvas where I introduce the week's concepts. After watching this video, you will complete an online multiple-choice quiz, the aim of which is to check for understanding of the concepts presented. Each quiz counts for 10 possible points. There will 10 of these quizzes, and these quiz scores will earn you up to 100 points for your overall quiz grade.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb8255d1" class="outline-3">
+<h3 id="orgb8255d1">Homework exercises</h3>
+<div class="outline-text-3" id="text-orgb8255d1">
+<p>
+In order to practice the statistical concepts you learn this semester, you will complete a short homework assignment every week. A set of homework exercises (usually around 4-5 problems) will be provided to you each week. You may work collaboratively on the homework exercises, but any work submitted must reflect your own understanding of the material (in other words, don't just copy someone else's work to submit). <i>Please note that all work must be shown on computational problems in order to receive full credit.</i> Each homework assignment will be due at 11:59 pm on Sunday of the week it was assigned. Homework must be submitted in PDF or DOCX format via the assigment link on Canvas; assignments sent by email or as attachments in submission comments will not be accepted.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9a3bb98" class="outline-2">
+<h2 id="org9a3bb98">Course Communication</h2>
+<div class="outline-text-2" id="text-org9a3bb98">
+<p>
+Email is the primary means of official communication for this course. If you have questions about the course, always feel free to send me an email at faulkenberry@tarleton.edu.  I only ask that you adhere to two guidelines:
 </p>
 <ul class="org-ul">
-<li>please include the course number (PSYC 5316) in the subject line.  For example, one good way to do this is:  Subject: [PSYC 5316] Question about problem set 3</li>
+<li>please include the course number (PSYC 2317) in the subject line.  For example, one good way to do this is:  Subject: [PSYC 2317] Question about Exam 2</li>
 <li>please use proper email etiquette.  Include a salutation (e.g., Dear Dr. Faulkenberry), complete sentences, and a closing (e.g., "Regards, Your Name").  You might be surprised how many times I get an email from a nondescript email address with no indication from WHOM the email was sent!</li>
 </ul>
 
@@ -308,9 +366,9 @@ Note, I will send periodic class announcements via Canvas messaging. However, I 
 </div>
 </div>
 
-<div id="outline-container-orgff0f825" class="outline-2">
-<h2 id="orgff0f825">Academic Integrity Statement and Policy</h2>
-<div class="outline-text-2" id="text-orgff0f825">
+<div id="outline-container-org5bb0c26" class="outline-2">
+<h2 id="org5bb0c26">Academic Integrity Statement and Policy</h2>
+<div class="outline-text-2" id="text-org5bb0c26">
 <p>
 Cheating, plagiarism, or doing work for another person who will receive academic credit is impermissible. This includes the use of unauthorized books, notebooks, or other sources in order to secure or give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place. Consult the following links for further information on academic conduct. 
 </p>
@@ -321,31 +379,31 @@ Cheating, plagiarism, or doing work for another person who will receive academic
 </div>
 </div>
 
-<div id="outline-container-org458e20c" class="outline-2">
-<h2 id="org458e20c">Americans with Disabilities Act (ADA) - Student Success</h2>
-<div class="outline-text-2" id="text-org458e20c">
+<div id="outline-container-org9f24b58" class="outline-2">
+<h2 id="org9f24b58">Americans with Disabilities Act (ADA) - Student Success</h2>
+<div class="outline-text-2" id="text-org9f24b58">
 <p>
 Tarleton State University is committed to complying with the Americans with Disabilities Act (www.ada.gov) and other applicable laws. If you are a student with a disability seeking accommodation for this course, please contact the Office of Disability Resources at 254.968.9400, disability@tarleton.edu, or visit <a href="https://www.tarleton.edu/drt/">https://www.tarleton.edu/drt/</a>.  
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgdf35571" class="outline-2">
-<h2 id="orgdf35571">Academic Affairs Core Values in the Classroom</h2>
-<div class="outline-text-2" id="text-orgdf35571">
+<div id="outline-container-org284de3a" class="outline-2">
+<h2 id="org284de3a">Academic Affairs Core Values in the Classroom</h2>
+<div class="outline-text-2" id="text-org284de3a">
 </div>
-<div id="outline-container-orgab5bbe7" class="outline-3">
-<h3 id="orgab5bbe7">Academic Integrity</h3>
-<div class="outline-text-3" id="text-orgab5bbe7">
+<div id="outline-container-org6e36f05" class="outline-3">
+<h3 id="org6e36f05">Academic Integrity</h3>
+<div class="outline-text-3" id="text-org6e36f05">
 <p>
 Tarleton State University's core values are integrity, excellence, and respect. Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct. Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org7b47596" class="outline-3">
-<h3 id="org7b47596">Academic Excellence</h3>
-<div class="outline-text-3" id="text-org7b47596">
+<div id="outline-container-orgc05d738" class="outline-3">
+<h3 id="orgc05d738">Academic Excellence</h3>
+<div class="outline-text-3" id="text-orgc05d738">
 <p>
 Tarleton holds high expectations for students to assume responsibility for their own individual learning.  Students are also expected to achieve academic excellence by:
 </p>
@@ -362,9 +420,9 @@ Tarleton holds high expectations for students to assume responsibility for their
 </div>
 </div>
 
-<div id="outline-container-orge7ccc5a" class="outline-3">
-<h3 id="orge7ccc5a">Academic Respect</h3>
-<div class="outline-text-3" id="text-orge7ccc5a">
+<div id="outline-container-org72b5f20" class="outline-3">
+<h3 id="org72b5f20">Academic Respect</h3>
+<div class="outline-text-3" id="text-org72b5f20">
 <p>
 Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
 </p>
@@ -372,9 +430,9 @@ Students are expected to interact with professors and peers in a respectful mann
 </div>
 
 
-<div id="outline-container-org0c6ac3d" class="outline-3">
-<h3 id="org0c6ac3d">Student Rules</h3>
-<div class="outline-text-3" id="text-org0c6ac3d">
+<div id="outline-container-org0b04767" class="outline-3">
+<h3 id="org0b04767">Student Rules</h3>
+<div class="outline-text-3" id="text-org0b04767">
 <p>
 Students are responsible for knowing and abiding by the policies and information contained in the Tarleton Student Rules - <a href="https://www.tarleton.edu/studentrules">https://www.tarleton.edu/studentrules</a>.  
 </p>
@@ -386,97 +444,92 @@ Students are responsible for knowing and abiding by the policies and information
 </div>
 </div>
 
-<div id="outline-container-orgcc44de4" class="outline-2">
-<h2 id="orgcc44de4">Tentative schedule</h2>
-<div class="outline-text-2" id="text-orgcc44de4">
+<div id="outline-container-org0370514" class="outline-2">
+<h2 id="org0370514">Semester Schedule</h2>
+<div class="outline-text-2" id="text-org0370514">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="org-right" />
-
 <col  class="org-left" />
 
 <col  class="org-left" />
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="org-right">Assignment</th>
-<th scope="col" class="org-left">Due Date</th>
-<th scope="col" class="org-left">Topics covered</th>
+<th scope="col" class="org-left">Week beginning</th>
+<th scope="col" class="org-left">Topic</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="org-right">1</td>
-<td class="org-left">9/3</td>
-<td class="org-left">Lab 1.1: installation and the basics of R</td>
+<td class="org-left">Aug 28</td>
+<td class="org-left">Unit 1 - Measures of central tendency and variability</td>
 </tr>
 
 <tr>
-<td class="org-right">2</td>
-<td class="org-left">9/10</td>
-<td class="org-left">Lab 1.2: performing basic statistical tests in R</td>
+<td class="org-left">Sep 4</td>
+<td class="org-left">Unit 2 - Transformations of scores / standardization</td>
 </tr>
 
 <tr>
-<td class="org-right">3</td>
-<td class="org-left">9/17</td>
-<td class="org-left">Lab 2.1: programming the flanker task</td>
+<td class="org-left">Sep 11</td>
+<td class="org-left">Unit 3 - The normal distribution</td>
 </tr>
 
 <tr>
-<td class="org-right">4</td>
-<td class="org-left">9/24</td>
-<td class="org-left">Lab 2.2: collecting data from the flanker task</td>
+<td class="org-left">Sep 18</td>
+<td class="org-left">Unit 4 - Distributions of sample means</td>
 </tr>
 
 <tr>
-<td class="org-right">5</td>
-<td class="org-left">10/1</td>
-<td class="org-left">Lab 2.3: analyzing the flanker data</td>
+<td class="org-left">Sep 25</td>
+<td class="org-left"><b>Exam 1</b> due Sunday, 10/1, at 11:59 pm</td>
 </tr>
 
 <tr>
-<td class="org-right">6</td>
-<td class="org-left">10/8</td>
-<td class="org-left">Lab 2.4: writing the flanker manuscript</td>
+<td class="org-left">Oct 2</td>
+<td class="org-left">Unit 5 - Estimation and hypothesis testing</td>
 </tr>
 
 <tr>
-<td class="org-right">7</td>
-<td class="org-left">10/15</td>
-<td class="org-left">Lab 3.1: programming the Sternberg memory scanning task</td>
+<td class="org-left">Oct 9</td>
+<td class="org-left">Unit 6 - Introduction to the \( t \)-test</td>
 </tr>
 
 <tr>
-<td class="org-right">8</td>
-<td class="org-left">10/22</td>
-<td class="org-left">Lab 3.2: collecting data from the Sternberg task</td>
+<td class="org-left">Oct 16</td>
+<td class="org-left">Unit 7 - \( t \)-tests for independent samples</td>
 </tr>
 
 <tr>
-<td class="org-right">9</td>
-<td class="org-left">10/29</td>
-<td class="org-left">Lab 3.3: analyzing the Sternberg data</td>
+<td class="org-left">Oct 23</td>
+<td class="org-left">Unit 8 - Confidence intervals for \( t \)-tests</td>
 </tr>
 
 <tr>
-<td class="org-right">10</td>
-<td class="org-left">11/5</td>
-<td class="org-left">Lab 3.4: writing the Sternberg manuscript</td>
+<td class="org-left">Oct 30</td>
+<td class="org-left"><b>Exam 2</b> due Sunday, 11/5, at 11:59 pm</td>
 </tr>
 
 <tr>
-<td class="org-right">11</td>
-<td class="org-left">12/3</td>
-<td class="org-left">Lab 4.1: collecting data for the addition verification task</td>
+<td class="org-left">Nov 6</td>
+<td class="org-left">Unit 9 - JASP / analysis of variance</td>
 </tr>
 
 <tr>
-<td class="org-right">12</td>
-<td class="org-left">12/10</td>
-<td class="org-left">Lab 4.2: analyzing the addition data</td>
+<td class="org-left">Nov 13</td>
+<td class="org-left">Unit 10 - Bayesian hypothesis testing</td>
+</tr>
+
+<tr>
+<td class="org-left">Nov 20</td>
+<td class="org-left"><i>no class due to Thanksgiving</i></td>
+</tr>
+
+<tr>
+<td class="org-left">Nov 27</td>
+<td class="org-left"><b>Exam 3</b> due Sunday, 12/3, at 11:59 pm</td>
 </tr>
 </tbody>
 </table>
@@ -485,7 +538,7 @@ Students are responsible for knowing and abiding by the policies and information
 </div>
 <div id="postamble" class="status">
 <p class="date">Date: Fall 2023</p>
-<p class="date">Created: 2023-08-11 Fri 08:42</p>
+<p class="date">Created: 2023-08-11 Fri 08:44</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
