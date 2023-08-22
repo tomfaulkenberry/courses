@@ -65,8 +65,8 @@ There will be three exams throughout the semester, occurring approximately once 
 Tentative exam dates:
 
 - Exam 1 (due Sunday, October 1 at 11:59 pm)
-- Exam 2 (due Sunday, November 5 at 11:59 pm)
-- Exam 3 (due Sunday, December 3 at 11:59 pm)
+- Exam 2 (due Sunday, November 12 at 11:59 pm)
+- Exam 3 (due Sunday, December 10 at 11:59 pm)
   
 *** Weekly quizzes 
 
@@ -131,10 +131,10 @@ Students are responsible for knowing and abiding by the policies and information
 | Oct 9          | Unit 6 - Introduction to the \( t \)-test             |
 | Oct 16         | Unit 7 - \( t \)-tests for independent samples        |
 | Oct 23         | Unit 8 - Confidence intervals for \( t \)-tests       |
-| Oct 30         | *Exam 2* due Sunday, 11/5, at 11:59 pm                |
-| Nov 6          | Unit 9 - JASP / analysis of variance                  |
-| Nov 13         | Unit 10 - Bayesian hypothesis testing                 |
+| Oct 30         | *Exam 2* due Sunday, 11/12, at 11:59 pm               |
+| Nov 13         | Unit 9 - JASP / analysis of variance                  |
 | Nov 20         | /no class due to Thanksgiving/                        |
-| Nov 27         | *Exam 3* due Sunday, 12/3, at 11:59 pm                |
+| Nov 27         | Unit 10 - Bayesian hypothesis testing                 |
+| Dec 4          | *Exam 3* due Sunday, 12/10, at 11:59 pm               |
 
 
