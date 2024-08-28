@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-28 Wed 08:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HNRS 3385 - Honors Seminar</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">HNRS 3385 - Honors Seminar</h1>
+
+<div id="outline-container-org244b8b7" class="outline-2">
+<h2 id="org244b8b7">Contact info</h2>
+<div class="outline-text-2" id="text-org244b8b7">
+<ul class="org-ul">
+<li>Professor: Thomas J. Faulkenberry, Ph.D</li>
+<li>Office: Admin Annex II, Room 105L</li>
+<li>Office hours: <i>tba</i></li>
+<li>Email: faulkenberry@tarleton.edu</li>
+<li>Website: <a href="http://tomfaulkenberry.github.io">http://tomfaulkenberry.github.io</a></li>
+<li>Phone: 254-968-9816</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org85f5e3b" class="outline-2">
+<h2 id="org85f5e3b">Course description</h2>
+<div class="outline-text-2" id="text-org85f5e3b">
+<p>
+The ultimate goal of this course is to produce a thesis proposal. We will achieve several intermediary steps along the way to this goal, including completing required trainings and forms, selecting a topic/committee chair/committee member, creating timelines and outlines, and producing drafts. It is important to note that each thesis looks different, and while fundamental similarities can be identified, each thesis process is also a personal one. My goal is for us to work collectively to identify the similarities and fundamental principles that are shared by research of all areas, while also working with each of you individually to craft <i>your</i> project.
+</p>
+
+<p>
+Students enrolling in this course are required to accepted into the Presidential Honors Program, or have permission granted from the Dean of the Honors College.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org43d806f" class="outline-2">
+<h2 id="org43d806f">Course materials</h2>
+<div class="outline-text-2" id="text-org43d806f">
+<p>
+There is no required textbook for the course. I will provide readings and other resources as needed on Canvas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org171d460" class="outline-2">
+<h2 id="org171d460">Student learning outcomes</h2>
+<div class="outline-text-2" id="text-org171d460">
+<p>
+Students who complete this course successfully will be able to:
+</p>
+
+<ol class="org-ol">
+<li>Formulate research questions within their field of study.</li>
+<li>Critically analyze publications within their field of study.</li>
+<li>Design a thesis-level research project within their field.</li>
+<li>Write a thesis proposal.</li>
+<li>Defend a thesis proposal.</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org44b25a0" class="outline-2">
+<h2 id="org44b25a0">Requirements and grading</h2>
+<div class="outline-text-2" id="text-org44b25a0">
+<p>
+Grades will be assigned based on the percentage of points you accumulate from the following activities:
+</p>
+
+<ul class="org-ul">
+<li>First proposal draft = 20 points</li>
+<li>Final proposal draft = 20 points</li>
+<li>Other assignments = 60 points</li>
+<li><i>Total points possible = 100 points</i></li>
+</ul>
+
+<p>
+The category "Other assignments" will include various assignments such as online research training, documentation, timelines, topic summaries, outlines, etc.  These will be explained more as we move through the semester. I will use the standard grading scale of A=90%, B=80%, etc.
+</p>
+</div>
+
+<div id="outline-container-org98fa15d" class="outline-3">
+<h3 id="org98fa15d">Grading Feedback Expectations</h3>
+<div class="outline-text-3" id="text-org98fa15d">
+<p>
+For assignments submitted on time, you can expect to receive grades and feedback within one week of the due date.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga372c8d" class="outline-3">
+<h3 id="orga372c8d">Graded Class Participation</h3>
+<div class="outline-text-3" id="text-orga372c8d">
+<p>
+Class participation is not graded. However, the structure of the course is such that failure to participate is likely to result in poor performance.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9e5251a" class="outline-3">
+<h3 id="org9e5251a">Graded Attendance</h3>
+<div class="outline-text-3" id="text-org9e5251a">
+<p>
+All absences should be discussed with me, ideally prior to class. Failure to attend at least 80% of class meetings may result in a dropped letter grade (e.g., an “A” would become a “B”). More importantly, the nature of this course is such that absences will almost certainly be reflected in the quality of your proposal.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org34dbe8d" class="outline-3">
+<h3 id="org34dbe8d">Late/Make-up Work Policy</h3>
+<div class="outline-text-3" id="text-org34dbe8d">
+<p>
+Late work will not be accepted in this course, barring certain emergencies. If you experience an emergency that interferes with your ability to submit an assignment on time, please contact me as soon as possible.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2d8b5c1" class="outline-3">
+<h3 id="org2d8b5c1">Use of Artificial Intelligence (AI)</h3>
+<div class="outline-text-3" id="text-org2d8b5c1">
+<p>
+This course is designed to foster the requisite skills needed to comprehend, evaluate, and write about your unique thesis topic. The naïve use of AI tools like ChatGPT can interfere with the development of these skills and is therefore highly discouraged. They can be a good tool for early topic exploration, but any product that you develop in this course should be almost entirely written by you. With all AI tools, "trust but verify" (and edit heavily!).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org40890c7" class="outline-2">
+<h2 id="org40890c7">Course Communication</h2>
+<div class="outline-text-2" id="text-org40890c7">
+<p>
+This course is designed to be an intensive, interactive course.  That means that I will be available for one-on-one consultation most any time.  Just stop by my office or give me a call.
+</p>
+
+<p>
+All official course communication (questions, setting up a meeting, etc.) will be conducted by email.  Any time you need to contact me, feel free to send me an email at faulkenberry@tarleton.edu.  I only ask that you adhere to two guidelines:
+</p>
+<ul class="org-ul">
+<li>please include the course number (HNRS 3385) in the subject line.</li>
+<li>please use proper email etiquette.  Include a salutation (e.g., Dear Dr. Faulkenberry), complete sentences, and a closing (e.g., "Regards, Your Name").  You might be surprised how many times I get an email from a nondescript email address with no indication from WHOM the email was sent!</li>
+</ul>
+
+<p>
+Occasionally, I may send a class announcement via Canvas messaging. However, I ask that you send your questions by email instead of Canvas messaging.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0e95f1c" class="outline-2">
+<h2 id="org0e95f1c">University Policy on "F" Grades</h2>
+<div class="outline-text-2" id="text-org0e95f1c">
+<p>
+Beginning in Fall 2015, Tarleton will begin differentiating between a failed grade in a class because a student never attended (F0 grade), stopped attending at some point in the semester (FX grade), or because the student did not pass the course (F) but attended the entire semester. These grades will be noted on the official transcript. Stopping or never attending class can result in the student having to return aid monies received.  For more information see the Tarleton Financial Aid website.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc8fb357" class="outline-2">
+<h2 id="orgc8fb357">Academic Integrity Statement and Policy</h2>
+<div class="outline-text-2" id="text-orgc8fb357">
+<p>
+Cheating, plagiarism, or doing work for another person who will receive academic credit is impermissible. This includes the use of unauthorized books, notebooks, or other sources in order to secure or give help during an examination, the unauthorized copying of examinations, assignments, reports, or term papers, or the presentation of unacknowledged material as if it were the own work. Disciplinary action may be taken beyond the academic discipline administered by the faculty member who teaches the course in which the cheating took place. Consult the following links for further information on academic conduct. 
+</p>
+<ul class="org-ul">
+<li>Student Judicial Affairs: <a href="https://www.tarleton.edu/judicial/academicconduct.html">https://www.tarleton.edu/judicial/academicconduct.html</a></li>
+<li>Student Handbook: <a href="https://www.tarleton.edu/studentrules/code-of-student-conduct.html">https://www.tarleton.edu/studentrules/code-of-student-conduct.html</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org97dc75a" class="outline-2">
+<h2 id="org97dc75a">Americans with Disabilities Act (ADA) - Student Success</h2>
+<div class="outline-text-2" id="text-org97dc75a">
+<p>
+Tarleton State University is committed to complying with the Americans with Disabilities Act (www.ada.gov) and other applicable laws. If you are a student with a disability seeking accommodation for this course, please contact the Office of Student Accessibility Services at 254.968.9650, studentaccessibilityservices@tarleton.edu,  or visit <a href="https://www.tarleton.edu/sas/">https://www.tarleton.edu/sas/</a> 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc429201" class="outline-2">
+<h2 id="orgc429201">Academic Affairs Core Values in the Classroom</h2>
+<div class="outline-text-2" id="text-orgc429201">
+</div>
+<div id="outline-container-orgd8f7ff7" class="outline-3">
+<h3 id="orgd8f7ff7">Academic Integrity</h3>
+<div class="outline-text-3" id="text-orgd8f7ff7">
+<p>
+Tarleton State University's core values are integrity, leadership, tradition, civility, excellence, and service.  Central to these values is integrity, which is maintaining a high standard of personal and scholarly conduct.  Academic integrity represents the choice to uphold ethical responsibility for one’s learning within the academic community, regardless of audience or situation.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga958d67" class="outline-3">
+<h3 id="orga958d67">Academic Civility</h3>
+<div class="outline-text-3" id="text-orga958d67">
+<p>
+Students are expected to interact with professors and peers in a respectful manner that enhances the learning environment. Professors may require a student who deviates from this expectation to leave the face-to-face (or virtual) classroom learning environment for that particular class session (and potentially subsequent class sessions) for a specific amount of time. In addition, the professor might consider the university disciplinary process (for Academic Affairs/Student Life) for egregious or continued disruptive behavior.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org742036b" class="outline-3">
+<h3 id="org742036b">Academic Excellence</h3>
+<div class="outline-text-3" id="text-org742036b">
+<p>
+Tarleton holds high expectations for students to assume responsibility for their own individual learning. Students are also expected to achieve academic excellence by:
+</p>
+<ul class="org-ul">
+<li>honoring Tarleton’s core values, upholding high standards of habit and behavior.</li>
+<li>maintaining excellence through class attendance and punctuality, preparing for active participation in all learning experiences.</li>
+<li>putting forth their best individual effort.</li>
+<li>continually improving as independent learners.</li>
+<li>engaging in extracurricular opportunities that encourage personal and academic growth.</li>
+<li>reflecting critically upon feedback and applying these lessons to meet future challenges.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2b38c87" class="outline-3">
+<h3 id="org2b38c87">Student Rules</h3>
+<div class="outline-text-3" id="text-org2b38c87">
+<p>
+Students are responsible for knowing and abiding by the policies and information contained in the Tarleton Student Rules - <a href="https://www.tarleton.edu/studentrules">https://www.tarleton.edu/studentrules</a>.  
+</p>
+
+
+
+<p>
+<b>Note:  any changes to this syllabus will be communicated to you by the instructor!</b>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbc8399c" class="outline-2">
+<h2 id="orgbc8399c">Tentative schedule</h2>
+<div class="outline-text-2" id="text-orgbc8399c">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Week</th>
+<th scope="col" class="org-left">Date</th>
+<th scope="col" class="org-left">Potential topics covered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">August 28</td>
+<td class="org-left">What is an honors thesis?</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">September 4</td>
+<td class="org-left">Elements and structure of a good honors thesis</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">September 11</td>
+<td class="org-left">Choosing a thesis topic and committee</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">September 18</td>
+<td class="org-left">Trainings and required documentation</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">September 25</td>
+<td class="org-left">The thesis process and various approaches</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">October 2</td>
+<td class="org-left">Creating a timeline and managing expectations</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">October 9</td>
+<td class="org-left">Reading and writing like a scholar</td>
+</tr>
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-left">October 16</td>
+<td class="org-left">Tools for reading and writing</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">October 23</td>
+<td class="org-left">No class &#x2013; continue reading and writing</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">October 30</td>
+<td class="org-left">In class writing group / progress check in</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">November 6</td>
+<td class="org-left">Tips and tricks for editing</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">November 13</td>
+<td class="org-left">The defense &#x2013; what and why?</td>
+</tr>
+
+<tr>
+<td class="org-right">13</td>
+<td class="org-left">November 20</td>
+<td class="org-left">No class &#x2013; continue writing</td>
+</tr>
+
+<tr>
+<td class="org-right">14</td>
+<td class="org-left">November 27</td>
+<td class="org-left">No class &#x2013; Thanksgiving holiday</td>
+</tr>
+
+<tr>
+<td class="org-right">15</td>
+<td class="org-left">December 4</td>
+<td class="org-left">Tips for a successful defense</td>
+</tr>
+
+<tr>
+<td class="org-right">16</td>
+<td class="org-left">December 11</td>
+<td class="org-left">Final proposal draft due!</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: Fall 2024</p>
+<p class="date">Created: 2024-08-28 Wed 08:41</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
